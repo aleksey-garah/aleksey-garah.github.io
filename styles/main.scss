@@ -623,6 +623,7 @@
 
     .team-members-list-container {
       @include default-container;
+      @include clear-element;
       position: absolute;
       top: 50%;
       left: 0;
@@ -630,8 +631,13 @@
       transform: translateY(-50%);
 
       .team-members-list-item {
-        display: inline-block;
+        float: left;
         text-align: center;
+        margin-right: 40px;
+
+        &:last-child {
+          margin-right: 0;
+        }
 
         .team-members-list-item-image {
           width: 74px;

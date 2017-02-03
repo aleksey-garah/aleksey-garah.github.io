@@ -852,9 +852,16 @@ table {
       left: 0;
       right: 0;
       transform: translateY(-50%); }
+      .section-team .team-members-list .team-members-list-container:after {
+        content: "";
+        display: block;
+        clear: both; }
       .section-team .team-members-list .team-members-list-container .team-members-list-item {
-        display: inline-block;
-        text-align: center; }
+        float: left;
+        text-align: center;
+        margin-right: 40px; }
+        .section-team .team-members-list .team-members-list-container .team-members-list-item:last-child {
+          margin-right: 0; }
         .section-team .team-members-list .team-members-list-container .team-members-list-item .team-members-list-item-image {
           width: 74px;
           height: 74px;
