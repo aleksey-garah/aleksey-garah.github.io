@@ -1,0 +1,19 @@
+@mixin default-container {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+@mixin clear-element {
+  &:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
+
+@mixin text-overfolow {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

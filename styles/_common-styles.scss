@@ -1,0 +1,565 @@
+//=======================================H E A D E R===============================================================
+header {
+  position: fixed;
+  top: 0;
+  z-index: 111;
+  background-color: $navbar-color;
+  width: 100%;
+  box-shadow: $nav-box-shadow;
+
+  .top-navigation {
+    @include default-container;
+    padding: 23px 0;
+    -webkit-transition: padding 1s ease;
+    -moz-transition: padding 1s ease;
+    -o-transition: padding 1s ease;
+    transition: padding 1s ease;
+
+    &.start-scroll {
+      padding: 0;
+    }
+
+    .main-navigation-logo {
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 27px;
+    }
+
+    nav {
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 51px;
+
+      .main-navigation-menu {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        text-transform: uppercase;
+
+        .main-navigation-menu-item {
+          display: inline-block;
+          padding: 0 20px;
+
+          &:first-child {
+            padding-left: 0;
+          }
+
+          &:last-child {
+            padding-right: 0;
+          }
+
+          a {
+            color: $nav-brown;
+            text-decoration: none;
+            font-size: 13px;
+          }
+        }
+      }
+    }
+
+    .nav-phone-number {
+      text-decoration: none;
+      color: $text-color;
+      font-size: 16px;
+      font-weight: 700;
+      margin-right: 22px;
+      vertical-align: middle;
+    }
+
+    .nav-order-phone-button {
+      color: $white;
+      background-color: $green;
+      vertical-align: middle;
+      float: right;
+      margin-top: 6px;
+
+      &:hover {
+        background-color: $dark-green;
+      }
+    }
+  }
+}
+
+//====================================================================================================
+
+//========================================F O O T E R=================================================
+footer {
+
+  &.black-footer {
+    width: 100%;
+    padding: 26px 0;
+    background-color: $footer-color;
+
+    .footer-container {
+      @include default-container;
+      @include clear-element;
+
+      .customer-copyright {
+        width: 50%;
+        float: left;
+        color: $white;
+        font-size: 16px;
+        font-weight: $font-light;
+        font-style: normal;
+      }
+
+      .developers-copyright {
+        color: $white;
+        margin-left: 50%;
+        text-align: right;
+        font-size: 16px;
+        font-weight: $font-light;
+        font-style: normal;
+      }
+    }
+  }
+
+  &.white-footer {
+    width: 100%;
+    padding: 26px 0;
+    background-color: $white-footer;
+
+    .footer-container {
+      @include default-container;
+      @include clear-element;
+
+      .customer-copyright {
+        width: 50%;
+        float: left;
+        color: $text-color;
+        font-size: 16px;
+        font-weight: $font-light;
+        font-style: normal;
+      }
+
+      .developers-copyright {
+        color: $text-color;
+        margin-left: 50%;
+        text-align: right;
+        font-size: 16px;
+        font-weight: $font-light;
+        font-style: normal;
+      }
+    }
+  }
+}
+
+//====================================================================================================
+
+//========================================Default section arrow=======================================
+.default-section-header {
+  height: 115px;
+  position: relative;
+  background-color: $green;
+
+  .default-section-header-block {
+    position: absolute;
+    width: 100%;
+    transform: translateY(-50%);
+    top: 50%;
+
+    .default-section-title {
+      margin: 0;
+      text-transform: uppercase;
+      font-size: 30px;
+      font-weight: $font-black;
+      color: $white;
+      text-align: center;
+    }
+
+    .default-section-title-description {
+      text-align: center;
+      margin: 0;
+      font-size: 20px;
+      color: $white;
+      font-weight: $font-light;
+    }
+  }
+}
+
+.default-section-arrow {
+  width: 100%;
+}
+
+//==================================================================================================
+
+//=======================================Default forms title========================================
+.default-forms-header {
+  position: relative;
+  height: 127px;
+
+  .default-forms-title {
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    transform: translateY(-50%);
+    top: 50%;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: $font-black;
+  }
+}
+
+.default-forms-arrow {
+  width: 100%;
+  margin-top: -1px;
+}
+
+//==================================================================================================
+
+//=============================================buttons==============================================
+.default-button {
+  //TODO font-family
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 40px;
+  padding: 0 21px;
+  border: 0;
+  cursor: pointer;
+  box-shadow: $buttons-box-shadow;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.5s ease;
+
+  .icon-arrow {
+    font-size: 21px;
+    vertical-align: sub;
+    margin-left: 12px;
+  }
+}
+
+.default-zoom-button {
+  height: 58px;
+  width: 58px;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  box-shadow: $buttons-box-shadow;
+  background-color: $white;
+
+  .icon-zoom {
+    font-size: 27px;
+    color: $green;
+    line-height: 58px;
+  }
+}
+
+//===================================================================================================
+
+//==========================================default card styles======================================
+.default-card {
+  width: 270px;
+  box-shadow: $card-box-shadow;
+  border: 1px solid $card-border-color;
+  padding: 15px;
+  position: relative;
+  text-align: left;
+
+  .default-card-image {
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+    margin-bottom: 50px;
+    background-color: black;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .default-card-title {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    color: $text-color;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: $font-bold;
+
+    span {
+      position: absolute;
+      top: 180px;
+      width: 100%;
+      right: 0;
+      padding: 0 13px;
+      @include text-overfolow;
+    }
+  }
+
+  .default-card-text {
+    color: $card-text-color;
+    margin: 5px 0 0 0;
+    font-size: 15px;
+  }
+}
+
+//==========================================================================================
+
+//==================================FORMS STYLES============================================
+.default-form-group {
+  width: 100%;
+  font-size: 0;
+}
+
+.default-form-block {
+  box-shadow: $card-box-shadow;
+  border: 1px solid $card-border-color;
+  height: 46px;
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  max-width: 384px;
+  font-size: initial;
+
+  &:first-child {
+    margin-right: 24px;
+  }
+
+  .default-form-label {
+    background-color: $form-label-color;
+    border-right: 1px solid $card-border-color;
+    color: $white;
+    width: 124px;
+    display: block;
+    position: absolute;
+    height: 44px;
+    line-height: 44px;
+    padding: 0 0 0 12px;
+    font-size: 18px;
+    font-weight: $font-light;
+  }
+
+  .default-form-control {
+    border: none;
+    display: block;
+    height: 44px;
+    margin: 0;
+    padding: 0 0 0 136px;
+    background-color: $card-body-gray;
+    width: 100%;
+  }
+}
+
+.default-form-textarea-block {
+  width: 100%;
+  border: 1px solid $card-border-color;
+  box-shadow: $card-box-shadow;
+  position: relative;
+
+  .default-form-label {
+    background-color: $form-label-color;
+    border-right: 1px solid $card-border-color;
+    color: $white;
+    width: 124px;
+    position: absolute;
+    display: block;
+    height: 98px;
+    line-height: 46px;
+    padding: 0 0 0 12px;
+    font-size: 18px;
+    font-weight: $font-light;
+  }
+
+  .default-form-textarea {
+    border: none;
+    display: block;
+    margin: 0;
+    padding: 15px 0 0 136px;
+    background-color: $card-body-gray;
+    height: 98px;
+    max-height: 98px;
+    width: 100%;
+  }
+}
+
+//=====================================================================================
+
+.breadcrumbs {
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 0;
+
+    li {
+      font-size: 14px;
+      display: inline;
+      font-weight: $font-regular;
+
+      .breadcrumbs-arrow {
+        margin: 0 10px;
+        color: $breadcrumbs-text-color;
+      }
+
+      a {
+        text-decoration: none;
+        color: $breadcrumbs-text-color;
+      }
+
+      &:first-child {
+
+        .breadcrumbs-arrow {
+          display: none;
+          margin: 0 10px;
+        }
+      }
+
+      &:last-child {
+
+        .breadcrumbs-arrow {
+          color: $green;
+        }
+
+        a {
+          color: $dark-green;
+        }
+      }
+    }
+  }
+}
+
+//==============================================================================================
+
+.section-with-image-right {
+  width: 100%;
+
+  .section-with-image-right-container {
+    @include default-container;
+    @include clear-element;
+    padding: 80px 0;
+  }
+
+  .section-with-image-right-image {
+    width: 485px;
+    height: 297px;
+    float: right;
+    margin-left: 50px;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .section-with-image-right-text {
+    font-size: 18px;
+    font-weight: $font-regular;
+    margin: 0;
+  }
+}
+
+.section-with-image-left {
+  width: 100%;
+
+  .section-with-image-left-container {
+    @include default-container;
+    @include clear-element;
+    padding: 80px 0;
+  }
+
+  .section-with-image-left-image {
+    width: 485px;
+    height: 297px;
+    float: left;
+    margin-right: 50px;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .section-with-image-left-text {
+    font-size: 18px;
+    font-weight: $font-regular;
+    margin: 0;
+  }
+}
+
+//=====================================================================================
+
+//==================================Pagination=========================================
+.pagination-buttons {
+  width: 344px;
+  font-size: 0;
+  text-align: justify;
+  margin: 0 auto;
+
+  &:after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+  }
+
+  .pagination-buttons-item {
+    width: 36px;
+    height: 36px;
+    font-size: 18px;
+    line-height: 36px;
+    background-color: $white;
+    border: none;
+    cursor: pointer;
+    box-shadow: $buttons-box-shadow;
+
+    &:first-child {
+      color: $green;
+    }
+
+    &:last-child {
+      color: $green;
+    }
+
+    &:hover {
+      background-color: $green;
+      color: $white;
+    }
+  }
+}
+//===================================================Tables========================================================
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+
+  thead {
+    tr {
+      background-color: $thead-color;
+      box-shadow: $card-box-shadow;
+
+      th {
+        height: 60px;
+        text-align: center;
+        font-size: 18px;
+        font-weight: $font-bold;
+        border: 1px solid $card-border-color;
+        border-collapse: collapse;
+      }
+    }
+  }
+
+  tbody {
+    tr {
+
+      &:nth-of-type(odd) {
+        background-color: $section-building-homes;
+      }
+
+      &:nth-of-type(even) {
+        background-color: $white;
+      }
+
+      td {
+        height: 50px;
+        font-size: 18px;
+        font-weight: $font-regular;
+        border: 1px solid $card-border-color;
+        border-collapse: collapse;
+        padding: 0 12px;
+      }
+    }
+  }
+}

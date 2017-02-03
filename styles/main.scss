@@ -1,0 +1,2981 @@
+@import "../assets/fonts/icomoon/style.css";
+@import "./normalize.css";
+@import "conf/variables";
+@import "conf/mixins";
+@import "./common-styles";
+
+//=====================================index page============================================
+.section-main {
+  padding-top: 100px;
+  background-color: $background-gray;
+
+  .section-main-container {
+    @include default-container;
+    height: 433px;
+    position: relative;
+
+    .section-main-background-image-block {
+      height: 100%;
+      width: 683px;
+      position: relative;
+      margin-left: -20px;
+
+      &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100px;
+        background: -moz-linear-gradient(left, rgba(238, 238, 238, 1) 0%, rgba(255, 255, 255, 0) 100%);
+        background: -webkit-linear-gradient(left, rgba(238, 238, 238, 1) 0%, rgba(255, 255, 255, 0) 100%);
+        background: linear-gradient(to right, rgba(238, 238, 238, 1) 0%, rgba(255, 255, 255, 0) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eeeeee', endColorstr='#00ffffff', GradientType=1);
+      }
+
+      &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 100%;
+        width: 100px;
+        background: -moz-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(238, 238, 238, 1) 100%);
+        background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(238, 238, 238, 1) 100%);
+        background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(238, 238, 238, 1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff', endColorstr='#eeeeee', GradientType=1);
+      }
+
+      .section-main-background-image {
+        height: 100%;
+      }
+
+      .section-main-background-lable {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+      }
+    }
+
+    .section-main-content {
+      position: absolute;
+      top: 55px;
+      right: 0;
+
+      .section-main-content-title {
+        font-size: 24px;
+        line-height: 36px;
+        margin: 0 0 35px 0;
+        font-weight: $font-regular;
+        max-width: 500px;
+
+        span {
+          font-weight: $font-bold;
+        }
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0 0 35px 0;
+
+        li {
+          padding: 15px;
+
+          i {
+            font-size: 20px;
+            color: $green;
+            margin-right: 16px;
+            vertical-align: text-bottom;
+          }
+
+          &:first-child {
+            padding-top: 0;
+          }
+
+          &:last-child {
+            padding-bottom: 0;
+          }
+        }
+      }
+
+      .section-main-calculate-button {
+        color: $white;
+        background-color: $green;
+
+        &:hover {
+          background-color: $dark-green;
+        }
+      }
+    }
+  }
+}
+
+//============================================================================================================
+
+.section-steps {
+  width: 100%;
+
+  .section-steps-container {
+    @include default-container;
+
+    font-size: 0;
+    text-align: justify;
+    height: 127px;
+
+    &:after {
+      content: '';
+      display: inline-block;
+      width: 100%;
+    }
+
+    .steps-item {
+      position: relative;
+      width: 33%;
+      max-width: 300px;
+      height: 100%;
+      display: inline-block;
+      font-size: initial;
+      padding-left: 15px;
+      text-align: left;
+
+      .steps-item-number {
+        background-color: $green;
+        width: 58px;
+        height: 58px;
+        position: absolute;
+        top: 50%;
+        margin-top: -29px;
+        transform: rotate(45deg);
+        border: 2px solid $dark-green;
+        outline: 4px solid $green;
+        box-shadow: $buttons-box-shadow;
+
+        div {
+          color: $white;
+          font-size: 30px;
+          font-weight: 800;
+          transform: rotate(-45deg);
+          text-align: center;
+          height: 58px;
+          width: 58px;
+          line-height: 50px;
+        }
+      }
+
+      .steps-item-description {
+        margin: 0 0 0 101px;
+        position: absolute;
+        transform: translateY(-50%);
+        top: 50%;
+      }
+    }
+
+    .steps-item-devider {
+      display: inline-block;
+      font-size: initial;
+      position: relative;
+      height: 100%;
+      width: 50px;
+
+      .steps-item-devider-dots {
+        position: absolute;
+        font-size: 0;
+        width: 100%;
+        top: 50%;
+        margin-top: -4px;
+        text-align: justify;
+
+        &:after {
+          content: '';
+          display: inline-block;
+          width: 100%;
+        }
+
+        span {
+          display: inline-block;
+          width: 8px;
+          height: 8px;
+          border-radius: 4px;
+          background-color: $green;
+
+          &:first-child, &:last-child {
+            background-color: $dark-green;
+          }
+        }
+      }
+    }
+  }
+}
+
+.section-concrete-blocks-building {
+  width: 100%;
+
+  .section-concrete-blocks-building-header {
+    width: 100%;
+  }
+
+  .section-concrete-blocks-building-content {
+    @include default-container;
+    @include clear-element;
+
+    padding: 62px 0 76px;
+
+    img {
+      float: left;
+      height: 287px;
+      width: 450px;
+      margin-right: 25px;
+    }
+
+    .section-concrete-blocks-building-text {
+      margin-left: 492px;
+
+      p {
+        margin: 0 0 22px 0;
+      }
+
+      .section-concrete-blocks-building-more-button {
+        background-color: $green;
+        color: $white;
+
+        &:hover {
+          background-color: $dark-green;
+        }
+      }
+    }
+  }
+}
+
+.section-advantages {
+  width: 100%;
+  background: url(../assets/images/blue-brick.jpg) $light-blue;
+
+  .section-advantages-container {
+    @include default-container;
+    padding: 45px 0;
+    font-size: 0;
+    text-align: justify;
+
+    &:after {
+      content: '';
+      display: inline-block;
+      width: 100%;
+    }
+
+    .advantages-item {
+      display: inline-block;
+      max-width: 265px;
+      text-align: center;
+      vertical-align: top;
+
+      .advantages-item-icon {
+        background-color: $dark-blue;
+        width: 76px;
+        height: 76px;
+        border: 2px solid $light-blue;
+        outline: 7px solid $dark-blue;
+        box-shadow: $buttons-box-shadow;
+        transform: rotate(45deg);
+        margin-top: 16px;
+        display: inline-block;
+
+        i {
+          color: $white;
+          position: absolute;
+          transform: rotate(-45deg);
+          font-size: 38px;
+          top: 50%;
+          margin-top: -19px;
+          right: 0;
+          left: 0;
+        }
+      }
+
+      .advantages-item-title {
+        font-weight: $font-bold;
+        font-size: 20px;
+        color: $white;
+        margin: 41px 0 12px 0;
+      }
+
+      .advantages-item-text {
+        font-size: 15px;
+        font-weight: $font-light;
+        color: $white;
+      }
+    }
+  }
+}
+
+.section-popular-projects {
+  width: 100%;
+
+  .section-popular-projects-header {
+    width: 100%;
+  }
+
+  .section-popular-projects-content {
+    @include default-container;
+
+    padding: 62px 0 76px;
+    text-align: center;
+
+    .section-popular-projects-content-cards {
+      font-size: 0;
+      margin-bottom: 20px;
+      text-align: left;
+
+      .popular-projects-item {
+        margin: 0 15px 30px 15px;
+        display: inline-block;
+        font-size: initial;
+
+        &:nth-child(4n+1) {
+          margin-left: 0;
+        }
+
+        &:nth-child(4n+4) {
+          margin-right: 0;
+        }
+
+        &:hover {
+          background-color: $green;
+
+          .default-card-title {
+            color: $white;
+
+            &:before {
+              font-family: 'icomoon';
+              content: "\e909";
+              color: $white;
+              position: absolute;
+              top: 90px;
+              left: 50%;
+              margin-left: -20px;
+              text-align: center;
+              margin-top: -9px;
+              font-size: 40px;
+              z-index: 1;
+            }
+          }
+
+          .default-card-text {
+            color: $white;
+          }
+
+          .default-card-image {
+
+            img {
+              opacity: 0.5;
+            }
+          }
+        }
+      }
+    }
+
+    .section-popular-projects-all-button {
+      background-color: $green;
+      color: $white;
+
+      &:hover {
+        background-color: $dark-green;
+      }
+    }
+  }
+}
+
+.section-last-projects {
+  width: 100%;
+
+  .section-last-projects-header {
+    width: 100%;
+
+    .section-last-projects-title {
+      padding: 20px 0;
+    }
+  }
+
+  .section-last-projects-content {
+    @include default-container;
+
+    padding: 62px 0 76px;
+    text-align: center;
+
+    .section-last-projects-content-cards {
+      margin-bottom: 20px;
+      font-size: 0;
+      text-align: left;
+
+      .last-projects-item {
+        margin: 0 15px 30px 15px;
+        display: inline-block;
+        font-size: initial;
+        background-color: $card-body-gray;
+
+        &:nth-child(4n+1) {
+          margin-left: 0;
+        }
+
+        &:nth-child(4n+4) {
+          margin-right: 0;
+        }
+
+        &:hover {
+          background-color: $green;
+
+          .default-card-title {
+            color: $white;
+
+            &:before {
+              font-family: 'icomoon';
+              content: "\e909";
+              color: $white;
+              position: absolute;
+              top: 90px;
+              left: 50%;
+              margin-left: -20px;
+              text-align: center;
+              margin-top: -9px;
+              font-size: 40px;
+              z-index: 1;
+            }
+          }
+
+          .default-card-text {
+            color: $white;
+          }
+
+          .default-card-image {
+
+            img {
+              opacity: 0.5;
+            }
+          }
+        }
+      }
+    }
+
+    .section-last-projects-all-button {
+      background-color: $green;
+      color: $white;
+
+      &:hover {
+        background-color: $dark-green;
+      }
+    }
+  }
+}
+
+.section-feedback {
+  width: 100%;
+  height: 710px;
+  position: relative;
+  background-color: black;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url("../assets/images/homes-bg.png");
+    background-size: cover;
+    opacity: 0.5;
+  }
+
+  .section-feedback-container {
+    width: 100%;
+    max-width: 915px;
+    margin: 0 auto;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    position: absolute;
+    background-color: $white;
+
+    .section-feedback-header {
+      background-color: $forms-blue;
+
+      .section-feedback-title {
+        color: $white;
+        padding: 0 50px;
+      }
+    }
+
+    form {
+      padding: 40px 60px 50px 60px;
+
+      .feedback-form-group {
+        margin-bottom: 24px;
+      }
+
+      .feedback-form-textarea-block {
+        margin-bottom: 40px;
+      }
+
+      .section-feedback-submit-button {
+        background-color: $light-blue;
+        color: $white;
+        text-transform: uppercase;
+        display: block;
+        margin: 0 auto;
+
+        &:hover {
+          background-color: $dark-blue;
+        }
+      }
+    }
+  }
+}
+
+.section-team {
+  width: 100%;
+
+  .section-team-header {
+    width: 100%;
+
+    .section-team-title {
+      padding: 20px 0;
+    }
+  }
+
+  .section-team-content {
+    @include default-container;
+    padding: 62px 0 0 0;
+
+    .team-member-block {
+      @include clear-element;
+      background-color: $card-body-gray;
+      box-shadow: $card-box-shadow;
+      border: 1px solid $card-border-color;
+      margin-bottom: 50px;
+
+      .team-member-block-image {
+        width: 340px;
+        float: left;
+        overflow: hidden;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      .team-member-block-info {
+        margin-left: 395px;
+        padding: 45px 45px 45px 0;
+
+        .team-member-block-fio {
+          font-size: 28px;
+          font-weight: $font-bold;
+          margin: 0 0 10px;
+        }
+
+        .team-member-block-title {
+          font-size: 20px;
+          font-weight: $font-light;
+          margin: 0 0 30px 0;
+        }
+
+        .team-member-block-text {
+          font-size: 20px;
+          font-weight: $font-light;
+          color: $card-text-color;
+          margin: 0 0 30px 0;
+        }
+
+        .team-member-block-contact-button {
+          background-color: $green;
+          color: $white;
+
+          &:hover {
+            background-color: $dark-green;
+          }
+        }
+      }
+    }
+  }
+
+  .team-members-list {
+    height: 272px;
+    background-color: $card-body-gray;
+    border-top: 1px solid $card-border-color;
+    box-shadow: 0px -2px 5px 0px rgba(0, 0, 0, 0.11);
+    position: relative;
+
+    &:before {
+      content: '';
+      position: absolute;
+      width: 48px;
+      height: 48px;
+      transform: rotate(-45deg);
+      top: -24px;
+      left: 50%;
+      border-top: 1px solid $card-border-color;
+      border-right: 1px solid $card-border-color;
+      box-shadow: 2px -2px 5px 0px rgba(0, 0, 0, 0.11);
+      background-color: $card-body-gray;
+    }
+
+    .team-members-list-container {
+      @include default-container;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      right: 0;
+      transform: translateY(-50%);
+
+      .team-members-list-item {
+        display: inline-block;
+        text-align: center;
+
+        .team-members-list-item-image {
+          width: 74px;
+          height: 74px;
+          border-radius: 37px;
+          margin-bottom: 10px;
+        }
+
+        .team-members-list-item-fio {
+          font-size: 20px;
+          font-weight: $font-bold;
+          margin: 0 0 5px 0;
+        }
+
+        .team-members-list-item-title {
+          font-size: 16px;
+          font-weight: $font-light;
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+
+.section-buildings-coordinates {
+
+  .section-buildings-coordinates-header {
+    width: 100%;
+    height: 327px;
+    background: url("../assets/images/green-brick.jpg") $green;
+    box-shadow: $card-box-shadow;
+
+    .default-section-header-block {
+      @include default-container;
+      left: 0;
+      right: 0;
+
+      .section-buildings-coordinates-title {
+        font-size: 36px;
+        color: $white;
+        margin-bottom: 40px;
+      }
+
+      .section-buildings-coordinates-description {
+        color: $white;
+        margin: 0;
+        font-size: 24px;
+        font-weight: $font-light;
+      }
+    }
+  }
+
+  .section-buildings-coordinates-content {
+    height: 500px;
+  }
+}
+
+//===========================================================================================================
+
+//========================================services page======================================================
+.section-main-services {
+  width: 100%;
+  padding-top: 100px;
+
+  .section-main-services-container {
+    @include default-container;
+    @include clear-element;
+
+    padding: 30px 0 74px 0;
+
+    .breadcrumbs {
+      margin-bottom: 30px;
+    }
+
+    .section-main-services-title {
+      font-size: 30px;
+      font-weight: $font-bold;
+      text-transform: uppercase;
+      margin: 0 0 40px 0;
+    }
+
+    .section-main-services-text {
+      font-size: 18px;
+      font-weight: $font-regular;
+    }
+
+    .section-main-services-image {
+      width: 490px;
+      height: 305px;
+      overflow: hidden;
+      margin-left: 25px;
+      float: right;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.section-services-links {
+  width: 100%;
+  background-color: $section-services-links-color;
+
+  .section-services-links-container {
+    @include default-container;
+    padding: 80px 0 30px 0;
+    font-size: 0;
+
+    .service-link-block {
+      width: 560px;
+      height: 190px;
+      display: inline-block;
+      position: relative;
+      background-color: $white;
+      box-shadow: $card-box-shadow;
+      border: 1px solid $card-border-color;
+      margin: 0 25px 50px 25px;
+
+      &:nth-of-type(2n) {
+        margin-right: 0;
+      }
+
+      &:nth-of-type(2n+1) {
+        margin-left: 0;
+      }
+
+      .service-link-block-image {
+        width: 158px;
+        height: 158px;
+        border-radius: 78px;
+        position: absolute;
+        left: 20px;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+      }
+
+      .service-link-block-title {
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        font-size: 27px;
+        font-weight: $font-bold;
+        color: $text-color;
+        text-decoration: none;
+        padding: 50px 20px 0 218px;
+      }
+    }
+  }
+}
+
+//==============================================================================================
+
+//===================================S E R V I C E page=========================================
+.section-main-service {
+  width: 100%;
+  padding-top: 100px;
+
+  .section-main-service-container {
+    @include default-container;
+    @include clear-element;
+
+    padding: 30px 0 74px 0;
+
+    .breadcrumbs {
+      margin-bottom: 30px;
+    }
+
+    .section-main-service-title {
+      font-size: 30px;
+      font-weight: $font-bold;
+      text-transform: uppercase;
+      margin: 0 0 40px 0;
+    }
+
+    .section-main-service-text-block {
+      font-size: 18px;
+      font-weight: $font-regular;
+
+      .section-main-service-text {
+        margin-bottom: 30px;
+        font-size: 18px;
+        font-weight: $font-regular;
+      }
+
+      .section-main-service-price {
+        height: 60px;
+        text-align: center;
+        text-transform: uppercase;
+        line-height: 60px;
+        display: block;
+        float: left;
+        width: 270px;
+        color: $green;
+        background-color: $section-services-links-color;
+        font-size: 19px;
+        font-weight: $font-black;
+      }
+
+      .section-main-service-button {
+        color: $white;
+        background-color: $green;
+        line-height: 60px;
+
+        &:hover {
+          background-color: $dark-green;
+        }
+      }
+    }
+
+    .section-main-service-image {
+      width: 490px;
+      height: 305px;
+      overflow: hidden;
+      margin-left: 25px;
+      float: right;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.section-how-we-work {
+  background-color: $section-services-links-color;
+
+  .default-section-header {
+
+    .default-section-header-block {
+
+      .section-how-we-work-title {
+        padding: 20px 0;
+      }
+    }
+  }
+
+  .section-how-we-work-container {
+    @include default-container;
+    padding: 62px 0 76px 0;
+
+    .section-how-we-work-blocks {
+      margin-bottom: 50px;
+      font-size: 0;
+      text-align: justify;
+
+      &:after {
+        content: '';
+        display: inline-block;
+        width: 100%;
+      }
+
+      .section-how-we-work-block {
+        position: relative;
+        width: 25%;
+        max-width: 220px;
+        display: inline-block;
+        font-size: initial;
+        text-align: center;
+
+        .how-we-work-icon {
+          display: inline-block;
+          background-color: $green;
+          width: 90px;
+          height: 90px;
+          margin: 25px 0 32px 0;
+          transform: rotate(45deg);
+          border: 2px solid $dark-green;
+          outline: 4px solid $green;
+          box-shadow: $buttons-box-shadow;
+
+          i {
+            font-size: 40px;
+            color: $white;
+            transform: rotate(-45deg);
+            height: 90px;
+            width: 90px;
+            display: inline-block;
+            line-height: 78px;
+          }
+        }
+
+        .how-we-work-description {
+          font-size: 20px;
+          font-weight: $font-bold;
+        }
+      }
+
+      .how-we-work-devider {
+        display: inline-block;
+        font-size: initial;
+        width: 50px;
+        vertical-align: top;
+        margin-top: 64px;
+
+        .how-we-work-devider-dots {
+          font-size: 0;
+          text-align: justify;
+
+          &:after {
+            content: '';
+            display: inline-block;
+            width: 100%;
+          }
+
+          span {
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            border-radius: 4px;
+            background-color: $green;
+
+            &:first-child, &:last-child {
+              background-color: $dark-green;
+            }
+          }
+        }
+      }
+    }
+
+    .section-how-we-work-button {
+      background-color: $green;
+      color: $white;
+      display: block;
+      margin: 0 auto;
+
+      &:hover {
+        background-color: $dark-green;
+      }
+    }
+  }
+}
+
+.section-another-services {
+  width: 100%;
+  background-color: $section-services-links-color;
+
+  .section-advantages-container {
+    @include default-container;
+    padding: 62px 0 76px 0;
+    font-size: 0;
+
+    .service-link-block {
+      width: 355px;
+      height: 140px;
+      display: inline-block;
+      position: relative;
+      background-color: $white;
+      box-shadow: $card-box-shadow;
+      border: 1px solid $card-border-color;
+      margin: 0 25px 0 25px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      .service-link-block-image {
+        width: 100px;
+        height: 100px;
+        border-radius: 50px;
+        position: absolute;
+        left: 20px;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+      }
+
+      .service-link-block-title {
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        font-size: 20px;
+        font-weight: $font-bold;
+        color: $text-color;
+        text-decoration: none;
+        padding: 40px 20px 0 157px;
+      }
+    }
+  }
+}
+
+//=============================================================================================
+
+//======================================Main Materials=========================================
+.section-main-materials {
+  width: 100%;
+  padding-top: 100px;
+
+  .section-main-materials-container {
+    @include default-container;
+    @include clear-element;
+
+    padding: 30px 0 74px 0;
+
+    .breadcrumbs {
+      margin-bottom: 30px;
+    }
+
+    .section-main-materials-title {
+      font-size: 30px;
+      font-weight: $font-bold;
+      text-transform: uppercase;
+      margin: 0 0 40px 0;
+    }
+
+    .section-main-materials-text {
+      font-size: 18px;
+      font-weight: $font-regular;
+    }
+
+    .section-main-materials-image {
+      width: 490px;
+      height: 305px;
+      overflow: hidden;
+      margin-left: 25px;
+      float: right;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.section-building-homes {
+  width: 100%;
+  background-color: $section-building-homes;
+
+  .section-building-homes-container {
+    @include default-container;
+    padding: 62px 0 76px 0;
+
+    .section-building-homes-subsection-info {
+      margin-bottom: 60px;
+      @include clear-element;
+
+      .section-building-homes-subsection-info-video {
+        width: 452px;
+        height: 286px;
+        float: left;
+        overflow: hidden;
+        margin-right: 50px;
+      }
+
+      .section-building-homes-subsection-info-text-block {
+
+        .section-building-homes-subsection-info-text {
+          font-size: 20px;
+          font-weight: $font-light;
+          margin: 0 0 30px 0;
+        }
+
+        .section-building-homes-subsection-info-button {
+          background-color: $green;
+          color: $white;
+
+          &:hover {
+            background-color: $dark-green;
+          }
+        }
+      }
+    }
+
+    .section-building-homes-subsection-galery {
+      //TODO
+      height: 385px;
+      width: 100%;
+      box-shadow: $card-box-shadow;
+      border: 1px solid $card-border-color;
+    }
+  }
+}
+
+.section-materials-general-info {
+  width: 100%;
+
+  .section-materials-general-info-container {
+    @include default-container;
+    padding: 80px 0;
+
+    .section-materials-general-info-title {
+      font-size: 30px;
+      font-weight: $font-black;
+      margin: 0 0 60px 0;
+      text-transform: uppercase;
+    }
+
+    .section-with-image-right {
+      @include clear-element;
+      margin-bottom: 60px;
+    }
+
+    .section-with-image-left {
+      @include clear-element;
+    }
+  }
+}
+
+//==================================================================================================
+
+//=====================================Comments page================================================
+.section-main-comments {
+  width: 100%;
+  padding-top: 100px;
+
+  .section-main-comments-container {
+    @include default-container;
+    padding: 30px 0 74px 0;
+
+    .breadcrumbs {
+      margin-bottom: 30px;
+    }
+
+    .section-main-comments-title {
+      font-size: 30px;
+      font-weight: $font-bold;
+      text-transform: uppercase;
+      margin: 0 0 40px 0;
+    }
+
+    .section-main-materials-content {
+
+    }
+  }
+
+  .comment-senders-list {
+    height: 272px;
+    background-color: $card-body-gray;
+    border-top: 1px solid $card-border-color;
+    box-shadow: 0px -2px 5px 0px rgba(0, 0, 0, 0.11);
+    position: relative;
+
+    &:before {
+      content: '';
+      position: absolute;
+      width: 48px;
+      height: 48px;
+      transform: rotate(-45deg);
+      top: -24px;
+      left: 50%;
+      border-top: 1px solid $card-border-color;
+      border-right: 1px solid $card-border-color;
+      box-shadow: 2px -2px 5px 0px rgba(0, 0, 0, 0.11);
+      background-color: $card-body-gray;
+    }
+
+    .comment-senders-list-container {
+      @include default-container;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      right: 0;
+      transform: translateY(-50%);
+
+      .comment-senders-list-item {
+        display: inline-block;
+        text-align: center;
+
+        .comment-senders-list-item-image {
+          width: 74px;
+          height: 74px;
+          border-radius: 37px;
+          margin-bottom: 10px;
+        }
+
+        .comment-senders-list-item-fio {
+          font-size: 20px;
+          font-weight: $font-bold;
+          margin: 0 0 5px 0;
+        }
+
+        .comment-senders-list-item-title {
+          font-size: 16px;
+          font-weight: $font-light;
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+
+//======================================================================================
+
+//==============================About Company===========================================
+.section-main-about-company {
+  width: 100%;
+  padding-top: 100px;
+
+  .section-main-about-company-container {
+    @include default-container;
+    @include clear-element;
+
+    padding: 30px 0 74px 0;
+
+    .breadcrumbs {
+      margin-bottom: 30px;
+    }
+
+    .section-main-about-company-title {
+      font-size: 30px;
+      font-weight: $font-bold;
+      text-transform: uppercase;
+      margin: 0 0 40px 0;
+    }
+
+    .section-main-about-company-text {
+      font-size: 18px;
+      font-weight: $font-regular;
+    }
+
+    .section-main-about-company-image {
+      width: 490px;
+      height: 305px;
+      overflow: hidden;
+      margin-right: 30px;
+      float: left;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.section-about-news {
+  width: 100%;
+  background-color: $navbar-color;
+
+  .section-about-news-container {
+    @include default-container;
+    padding: 62px 0 76px 0;
+
+    .section-about-news-blocks {
+      font-size: 0;
+      text-align: justify;
+      margin-bottom: 40px;
+
+      &:after {
+        content: '';
+        display: inline-block;
+        width: 100%;
+      }
+
+      .section-about-news-big-news {
+        width: 585px;
+        height: 365px;
+        display: inline-block;
+        vertical-align: top;
+        box-shadow: $card-box-shadow;
+        position: relative;
+        background-color: $white;
+
+        .big-news-image {
+          height: 268px;
+          width: 100%;
+          overflow: hidden;
+
+          img {
+            width: 100%;
+          }
+        }
+
+        .big-news-link {
+          font-weight: $font-black;
+          font-size: 20px;
+          color: $text-color;
+          text-decoration: none;
+          text-align: left;
+          padding: 288px 20px 0 20px;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          right: 0;
+          left: 0;
+          @include text-overfolow;
+        }
+
+        .big-news-date {
+          color: $news-date-color;
+          font-size: 14px;
+          font-weight: $font-regular;
+          margin: 0;
+          position: absolute;
+          bottom: 20px;
+          left: 20px;
+        }
+      }
+
+      .section-about-news-small-block {
+        width: 550px;
+        height: 365px;
+        display: inline-block;
+
+        .section-about-news-small-news {
+          width: 100%;
+          height: 165px;
+          box-shadow: $card-box-shadow;
+          @include clear-element;
+          position: relative;
+          background-color: $white;
+
+          &:first-child {
+            margin-bottom: 35px;
+          }
+
+          .small-news-image {
+            width: 170px;
+            float: left;
+            overflow: hidden;
+            margin-right: 25px;
+            height: 100%;
+
+            img {
+              width: 100%;
+            }
+          }
+
+          .small-news-link {
+            font-weight: $font-black;
+            font-size: 20px;
+            color: $text-color;
+            text-decoration: none;
+            @include text-overfolow;
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            padding: 25px 0 0 195px;
+          }
+
+          .small-news-date {
+            color: $news-date-color;
+            font-size: 14px;
+            font-weight: $font-regular;
+            margin: 0;
+            position: absolute;
+            bottom: 20px;
+            left: 195px;
+          }
+        }
+      }
+    }
+
+    .section-about-news-view-all-button {
+      background-color: $green;
+      color: $white;
+      display: block;
+      margin: 0 auto;
+
+      &:hover {
+        background-color: $dark-green;
+      }
+    }
+  }
+}
+
+.section-diploms {
+  width: 100%;
+
+  .default-section-header {
+    .default-section-header-block {
+
+      .section-diploms-title {
+        padding: 20px 0;
+      }
+    }
+  }
+
+  .section-diploms-container {
+    @include default-container;
+    padding: 62px 0 76px 0;
+    font-size: 0;
+    text-align: justify;
+
+    &:after {
+      content: '';
+      display: inline-block;
+      width: 100%;
+    }
+
+    .section-diploms-item {
+      display: inline-block;
+      width: 250px;
+      overflow: hidden;
+      background-color: black;
+      position: relative;
+      cursor: pointer;
+
+      .section-diploms-item-image {
+        width: 100%;
+      }
+
+      &:hover {
+
+        &:before {
+          font-family: 'icomoon';
+          content: "\e909";
+          width: 100%;
+          font-size: 40px;
+          color: #ffffff;
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          text-align: center;
+          z-index: 1;
+        }
+
+        .section-diploms-item-image {
+          opacity: 0.5;
+        }
+      }
+    }
+  }
+}
+
+//============================================================================================
+
+//=================================News page==================================================
+.section-main-news {
+  width: 100%;
+  padding-top: 100px;
+
+  .section-main-news-container {
+    @include default-container;
+
+    padding: 30px 0 74px 0;
+
+    .breadcrumbs {
+      margin-bottom: 30px;
+    }
+
+    .section-main-news-title {
+      font-size: 30px;
+      font-weight: $font-bold;
+      text-transform: uppercase;
+      margin: 0 0 40px 0;
+    }
+
+    .section-main-news-content {
+      width: 100%;
+      @include clear-element;
+      background-color: $white-footer;
+      box-shadow: $card-box-shadow;
+      border: 1px solid $card-border-color;
+      position: relative;
+
+      .section-main-news-image {
+        width: 580px;
+        height: 366px;
+        overflow: hidden;
+        float: left;
+        margin-right: 35px;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      .section-main-news-text-block {
+        padding: 40px 25px 0 0;
+
+        .section-main-news-text-title {
+          font-weight: $font-bold;
+          font-size: 24px;
+          text-decoration: none;
+          color: $text-color;
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          padding: 30px 25px 0 615px;
+          @include text-overfolow;
+        }
+
+        .section-main-news-text {
+          font-weight: $font-regular;
+          font-size: 18px;
+          margin: 40px 0 30px 0;
+          height: 220px;
+          overflow: hidden;
+        }
+
+        .section-main-news-text-date {
+          color: $news-date-color;
+          font-size: 14px;
+          font-weight: $font-regular;
+          margin: 0;
+          position: absolute;
+          left: 615px;
+          bottom: 25px;
+        }
+      }
+    }
+  }
+}
+
+.section-list-of-news {
+  width: 100%;
+  background-color: $list-of-news-section-color;
+
+  .section-list-of-news-container {
+    @include default-container;
+    padding: 76px 0 80px 0;
+
+    .section-list-of-news-item {
+      width: 100%;
+      background-color: $white;
+      box-shadow: $card-box-shadow;
+      border: 1px solid $card-border-color;
+      margin-bottom: 40px;
+      @include clear-element;
+      position: relative;
+
+      .section-list-of-news-item-image {
+        height: 160px;
+        width: 280px;
+        float: left;
+        margin-right: 35px;
+        overflow: hidden;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      .section-list-of-news-item-text-block {
+
+        .section-list-of-news-item-title {
+          font-weight: $font-bold;
+          font-size: 24px;
+          text-decoration: none;
+          color: $text-color;
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          padding: 25px 200px 0 315px;
+          @include text-overfolow;
+        }
+
+        .section-list-of-news-item-text {
+          margin: 0;
+          padding: 70px 25px 0 0;
+          height: 130px;
+        }
+
+        .section-main-news-text-date {
+          color: $news-date-color;
+          font-size: 14px;
+          font-weight: $font-regular;
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+
+.section-subscribe {
+  width: 100%;
+  height: 710px;
+  position: relative;
+  background-color: black;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url("../assets/images/homes-bg.png");
+    background-size: cover;
+    opacity: 0.5;
+  }
+
+  .section-subscribe-container {
+    width: 100%;
+    max-width: 615px;
+    margin: 0 auto;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    position: absolute;
+    background-color: $white;
+
+    .section-subscribe-header {
+      background-color: $forms-blue;
+
+      .section-subscribe-title {
+        color: $white;
+        padding: 0 50px;
+      }
+    }
+
+    form {
+      padding: 40px 60px 50px 60px;
+
+      .subscribe-form-group {
+        margin-bottom: 40px;
+
+        .subscribe-form-block {
+          display: block;
+          max-width: none;
+
+          &:first-child {
+            margin: 0 0 30px 0;
+          }
+        }
+      }
+
+      .section-subscribe-submit-button {
+        background-color: $light-blue;
+        color: $white;
+        text-transform: uppercase;
+        display: block;
+        margin: 0 auto;
+
+        &:hover {
+          background-color: $dark-blue;
+        }
+      }
+    }
+  }
+}
+
+//=======================================================================================================
+
+//======================================News Item Page===================================================
+
+.section-about-news-item {
+  width: 100%;
+  padding-top: 100px;
+
+  .section-about-news-item-container {
+    @include default-container;
+    padding: 30px 0 76px 0;
+
+    .breadcrumbs {
+      margin-bottom: 30px;
+    }
+
+    .section-about-news-item-title {
+      font-size: 30px;
+      font-weight: $font-bold;
+      text-transform: uppercase;
+      margin: 0 0 40px 0;
+    }
+  }
+}
+
+.section-similar-news-items {
+  width: 100%;
+  background-color: $section-services-links-color;
+
+  .section-similar-news-items-container {
+    padding: 62px 0 76px 0;
+    @include default-container;
+    font-size: 0;
+    text-align: justify;
+
+    &:after {
+      content: '';
+      display: inline-block;
+      width: 100%;
+    }
+
+    .section-similar-news-items-block {
+      display: inline-block;
+      position: relative;
+      width: 560px;
+      height: 160px;
+      background-color: $white;
+      box-shadow: $card-box-shadow;
+      border: 1px solid $card-border-color;
+      @include clear-element;
+
+      .section-similar-news-item-image {
+        width: 170px;
+        margin-right: 30px;
+        float: left;
+        height: 100%;
+        overflow: hidden;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      .section-similar-news-item-title {
+        font-weight: $font-bold;
+        font-size: 24px;
+        text-decoration: none;
+        color: $text-color;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        padding: 25px 30px 0 200px;
+        @include text-overfolow;
+      }
+
+      .section-similar-news-item-date {
+        color: $news-date-color;
+        font-size: 14px;
+        font-weight: $font-regular;
+        margin: 0;
+        position: absolute;
+        bottom: 25px;
+        left: 200px;
+      }
+    }
+  }
+}
+
+//=======================================================================================
+
+//===========================Prices Page=================================================
+.section-main-prices-table {
+  width: 100%;
+  padding-top: 100px;
+
+  .section-main-prices-table-container {
+    @include default-container;
+    padding: 30px 0 80px 0;
+
+    .breadcrumbs {
+      margin-bottom: 30px;
+    }
+
+    .section-main-prices-table-title {
+      font-size: 30px;
+      font-weight: $font-bold;
+      text-transform: uppercase;
+      margin: 0 0 40px 0;
+    }
+
+    .section-main-prices-table-content {
+
+      .section-main-prices-table-content-tabs-headers {
+        list-style: none;
+        padding: 0;
+        width: 100%;
+        font-size: 0;
+        text-align: justify;
+        margin-bottom: 30px;
+
+        &:after {
+          content: '';
+          display: inline-block;
+          width: 100%;
+        }
+
+        li {
+          display: inline-block;
+          width: 50%;
+          height: 50px;
+
+          a {
+            color: $text-color;
+            background-color: $navbar-color;
+            font-size: 20px;
+            font-weight: $font-regular;
+            display: block;
+            height: 48px;
+            line-height: 48px;
+            text-align: center;
+            text-decoration: none;
+            outline: none;
+            box-shadow: $card-box-shadow;
+            border: 1px solid $card-border-color;
+
+            &:hover {
+              background-color: $green;
+              color: $white;
+            }
+          }
+
+          &.ui-tabs-active {
+
+            a {
+              background-color: $green;
+              color: $white;
+            }
+          }
+
+          &:first-child {
+            a {
+              border-right: none;
+            }
+          }
+
+          &:last-child {
+
+            a {
+              border-left: none;
+            }
+          }
+        }
+      }
+
+      .section-main-prices-table-content-table {
+        border: 1px solid $card-border-color;
+        box-shadow: $card-box-shadow;
+      }
+
+      .section-main-prices-table-footer {
+        background-color: $form-label-color;
+        border: 1px solid $card-border-color;
+        box-shadow: $card-box-shadow;
+        position: relative;
+        height: 60px;
+
+        .sort-block {
+          height: 36px;
+          line-height: 36px;
+          position: absolute;
+          left: 16px;
+          top: 50%;
+          margin-top: -18px;
+
+          label {
+            font-size: 18px;
+            font-weight: $font-regular;
+            margin-right: 20px;
+          }
+
+          select {
+            height: 36px;
+            border: none;
+            font-size: 18px;
+            font-weight: $font-regular;
+            text-transform: lowercase;
+            width: 220px;
+            padding: 0 10px;
+            cursor: pointer;
+          }
+        }
+
+        .pagination-buttons {
+          width: 290px;
+          position: absolute;
+          top: 50%;
+          margin-top: -18px;
+          right: 16px;
+        }
+      }
+    }
+  }
+}
+
+//==================================================================================================
+
+//=======================================Contacts Page==============================================
+
+.section-main-contacts {
+  width: 100%;
+  padding-top: 100px;
+
+  .section-main-contacts-container {
+    @include default-container;
+    padding: 30px 0 80px 0;
+
+    .breadcrumbs {
+      margin-bottom: 30px;
+    }
+
+    .section-main-contacts-title {
+      font-size: 30px;
+      font-weight: $font-bold;
+      text-transform: uppercase;
+      margin: 0 0 40px 0;
+    }
+
+    .section-main-contacts-content {
+      font-size: 0;
+      text-align: justify;
+
+      &:after {
+        content: '';
+        display: inline-block;
+        width: 100%;
+      }
+
+      .section-main-contacts-half-block {
+        display: inline-block;
+        vertical-align: top;
+        width: 48%;
+
+        &.contacts-adress-block {
+
+          .contacts-item {
+            position: relative;
+            max-width: 400px;
+            height: 60px;
+            font-size: initial;
+            padding-left: 15px;
+            text-align: left;
+            margin-bottom: 35px;
+
+            &:last-child {
+              margin-bottom: 0;
+            }
+
+            .contacts-item-icon {
+              background-color: $green;
+              width: 40px;
+              height: 40px;
+              position: absolute;
+              top: 50%;
+              margin-top: -20px;
+              transform: rotate(45deg);
+              border: 2px solid $dark-green;
+              outline: 4px solid $green;
+              box-shadow: $buttons-box-shadow;
+
+              i {
+                position: absolute;
+                color: $white;
+                font-size: 20px;
+                font-weight: 800;
+                transform: rotate(-45deg);
+                text-align: center;
+                height: 40px;
+                width: 40px;
+                line-height: 33px;
+              }
+            }
+
+            .contacts-item-phones {
+              position: absolute;
+              margin: 0 0 0 83px;
+              top: 50%;
+              transform: translateY(-50%);
+
+              .contacts-item-phone {
+                margin: 0;
+                font-size: 20px;
+                font-weight: $font-bold;
+
+                &:first-child {
+                  margin-bottom: 5px;
+                }
+              }
+            }
+
+            .contacts-item-description {
+              margin: 0 0 0 83px;
+              position: absolute;
+              transform: translateY(-50%);
+              top: 50%;
+              font-size: 20px;
+              font-weight: $font-bold;
+            }
+          }
+        }
+
+        &.contacts-persons-block {
+
+          .contacts-item {
+            @include clear-element;
+            margin-bottom: 50px;
+
+            &:last-child {
+              margin-bottom: 0;
+            }
+
+            .contacts-item-image {
+              width: 88px;
+              height: 88px;
+              border: 1px solid $card-border-color;
+              box-shadow: $card-box-shadow;
+              float: left;
+              margin-right: 30px;
+              overflow: hidden;
+
+              img {
+                width: 100%;
+              }
+            }
+
+            .contacts-item-info-block {
+
+              .contacts-item-fio {
+                margin: 0 0 10px 0;
+                font-size: 24px;
+                font-weight: $font-bold;
+              }
+
+              .contacts-item-title {
+                margin: 0 0 20px 0;
+                color: $contacts-personal-info-color;
+                font-size: 18px;
+                font-weight: $font-regular;
+              }
+
+              .contacts-item-phone {
+                margin: 0;
+                font-size: 16px;
+                font-weight: $font-regular;
+                color: $contacts-personal-info-color;
+
+                .icon-phone {
+                  font-size: 19px;
+                  color: $contacts-phone-icon-color;
+                  margin-right: 7px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.section-contacts-map {
+
+  .contacts-map-block {
+    width: 100%;
+    height: 640px;
+  }
+
+  .section-contacts-map-container {
+    @include default-container;
+    position: relative;
+
+    .section-contacts-map-feedback {
+      width: 450px;
+      position: absolute;
+      top: 125px;
+      z-index: 1;
+      background-color: $white;
+      box-shadow: $card-box-shadow;
+
+      .section-contacts-map-header {
+        background-color: $forms-blue;
+
+        .section-contacts-map-title {
+          color: $white;
+          padding: 0 50px;
+        }
+      }
+
+      .default-forms-arrow {
+        height: 14px;
+      }
+
+      form {
+        padding: 40px 60px 50px 60px;
+
+        .contacts-map-form-group {
+          margin-bottom: 40px;
+
+          .contacts-map-form-block {
+            display: block;
+            max-width: none;
+
+            &:first-child {
+              margin: 0 0 30px 0;
+            }
+          }
+        }
+
+        .section-contacts-map-submit-button {
+          background-color: $light-blue;
+          color: $white;
+          text-transform: uppercase;
+          display: block;
+          margin: 0 auto;
+
+          &:hover {
+            background-color: $dark-blue;
+          }
+        }
+      }
+    }
+  }
+}
+
+//======================================================================================
+
+//=====================================Service Area Page================================
+
+.section-main-service-area {
+  width: 100%;
+  padding-top: 100px;
+
+  .section-main-service-area-container {
+    @include default-container;
+    @include clear-element;
+
+    padding: 30px 0 74px 0;
+
+    .breadcrumbs {
+      margin-bottom: 30px;
+    }
+
+    .section-main-service-area-title {
+      font-size: 30px;
+      font-weight: $font-bold;
+      text-transform: uppercase;
+      margin: 0 0 40px 0;
+    }
+
+    .section-main-service-area-text {
+      font-size: 18px;
+      font-weight: $font-regular;
+    }
+
+    .section-main-service-area-image {
+      width: 490px;
+      height: 305px;
+      overflow: hidden;
+      margin-left: 25px;
+      float: right;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.section-types-of-service {
+  width: 100%;
+  background-color: $section-services-links-color;
+
+  .section-types-of-service-container {
+    @include default-container;
+    padding: 80px 0 30px 0;
+    font-size: 0;
+
+    .section-types-of-service-item {
+      width: 355px;
+      height: 140px;
+      border: 1px solid $card-border-color;
+      box-shadow: $card-box-shadow;
+      background-color: $white;
+      display: inline-block;
+      position: relative;
+      margin: 0 25px 50px 25px;
+
+      &:nth-of-type(3n+1) {
+        margin-left: 0;
+      }
+
+      &:nth-of-type(3n+3) {
+        margin-right: 0;
+      }
+
+      .section-types-of-service-item-img {
+        width: 102px;
+        height: 102px;
+        border-radius: 51px;
+        position: absolute;
+        left: 25px;
+        top: 50%;
+        margin-top: -51px;
+        overflow: hidden;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      .section-types-of-service-item-link {
+        font-size: 20px;
+        font-weight: $font-bold;
+        text-decoration: none;
+        color: $text-color;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        padding: 40px 25px 0 157px;
+      }
+    }
+  }
+}
+
+//=======================================================================================
+
+//================================Project Card Page======================================
+.section-main-project-card {
+  width: 100%;
+  padding-top: 100px;
+
+  .section-main-project-card-container {
+    @include default-container;
+    @include clear-element;
+
+    padding: 30px 0 80px 0;
+
+    .breadcrumbs {
+      margin-bottom: 30px;
+    }
+
+    .section-main-project-card-title {
+      font-size: 30px;
+      font-weight: $font-bold;
+      text-transform: uppercase;
+      margin: 0 0 40px 0;
+    }
+
+    .section-main-project-card-galery {
+      width: 100%;
+      max-width: 745px;
+      float: left;
+      margin-right: 30px;
+
+      .section-main-project-card-galery-big-img {
+        width: 100%;
+        height: 460px;
+        margin-bottom: 15px;
+        box-shadow: $card-box-shadow;
+        overflow: hidden;
+        position: relative;
+
+        img {
+          width: 100%;
+        }
+
+        .default-zoom-button {
+          position: absolute;
+          left: 0;
+          bottom: 35px;
+        }
+      }
+
+      .section-main-project-card-galery-small-images {
+        width: 100%;
+        font-size: 0;
+
+        .section-main-project-card-galery-small-img {
+          width: 80px;
+          height: 80px;
+          margin: 0 7px;
+          overflow: hidden;
+          position: relative;
+          display: inline-block;
+          box-shadow: $card-box-shadow;
+          cursor: pointer;
+          background-color: $green;
+
+          &:hover {
+
+            &:before {
+              font-family: 'icomoon';
+              content: '\e909';
+              color: $white;
+              position: absolute;
+              right: 0;
+              left: 0;
+              top: 50%;
+              transform: translateY(-50%);
+              font-size: 38px;
+              text-align: center;
+              z-index: 1;
+            }
+
+            img {
+              opacity: 0.5;
+            }
+          }
+
+          &:first-child {
+            margin-left: 0;
+          }
+
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    .section-main-project-card-info-block {
+      width: 395px;
+      box-shadow: $card-box-shadow;
+      border: 1px solid $card-border-color;
+      display: inline-block;
+      margin-bottom: 55px;
+
+      .section-main-project-card-info-row {
+        @include clear-element;
+        height: 50px;
+        line-height: 50px;
+        padding: 0 12px;
+        border-bottom: 1px solid $card-border-color;
+
+        &:last-child {
+          border: none;
+        }
+
+        &:nth-of-type(even) {
+          background-color: $white;
+        }
+
+        &:nth-of-type(odd) {
+          background-color: $section-building-homes;
+        }
+
+        .section-main-project-card-info-row-title {
+          float: left;
+          font-size: 18px;
+          font-weight: $font-regular;
+        }
+
+        .section-main-project-card-info-row-value {
+          float: right;
+          font-size: 18px;
+          font-weight: $font-bold;
+
+          &.green-value {
+            color: $green;
+          }
+        }
+      }
+    }
+
+    .section-main-project-card-price-block {
+      display: inline-block;
+      width: 395px;
+      text-align: center;
+      margin-bottom: 50px;
+
+      .section-main-project-card-price-title {
+        font-size: 30px;
+        font-weight: $font-regular;
+        margin-right: 5px;
+      }
+
+      .section-main-project-card-price-value {
+        font-size: 30px;
+        font-weight: $font-black;
+        color: $green;
+      }
+    }
+
+    .section-main-project-card-clarify-button {
+      width: 395px;
+      border: 1px solid $card-border-color;
+      height: 47px;
+      line-height: 47px;
+      margin-bottom: 16px;
+      font-weight: $font-bold;
+    }
+
+    .section-main-project-card-wanna-same-button {
+      width: 395px;
+      height: 47px;
+      line-height: 47px;
+      color: $white;
+      background-color: $green;
+      font-weight: $font-bold;
+
+      &:hover {
+        background-color: $dark-green
+      }
+    }
+  }
+}
+
+.section-detailed-project-card-info {
+  width: 100%;
+  background-color: $section-building-homes;
+
+  .detailed-project-card-info-container {
+    @include default-container;
+    padding: 80px 0;
+
+    .detailed-project-card-info-tabs {
+      border: 1px solid $card-border-color;
+      box-shadow: $card-box-shadow;
+
+      ul {
+        width: 100%;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        font-size: 0;
+        text-align: justify;
+
+        &:after {
+          content: '';
+          display: inline-block;
+          width: 100%;
+        }
+
+        li {
+          display: inline-block;
+          width: 25%;
+          text-align: center;
+          font-size: 20px;
+          background-color: $white;
+
+          &.ui-tabs-active {
+            background-color: $green;
+
+            a {
+              color: $white;
+            }
+          }
+
+          &:hover {
+            background-color: $green;
+
+            a {
+              color: $white;
+            }
+          }
+
+          a {
+            color: $text-color;
+            text-decoration: none;
+            height: 50px;
+            line-height: 50px;
+            display: block;
+            outline: none;
+          }
+        }
+      }
+
+      .detailed-project-card-info-tab {
+        padding: 30px;
+        font-size: 0;
+        background-color: $form-label-color;
+
+        .detailed-project-card-info-tab-galery {
+          width: 50%;
+          display: inline-block;
+
+          &:first-child {
+            border-right: 1px solid $galery-border-color;
+            padding-right: 30px;
+          }
+
+          &:last-child {
+            padding-left: 30px;
+          }
+
+          .detailed-project-card-info-tab-galery-big-img {
+            width: 100%;
+            height: 372px;
+            overflow: hidden;
+            margin-bottom: 15px;
+            position: relative;
+
+            img {
+              width: 100%;
+              box-shadow: $card-box-shadow;
+            }
+
+            .default-zoom-button {
+              position: absolute;
+              left: 0;
+              bottom: 35px;
+            }
+          }
+
+          .detailed-project-card-info-tab-galery-small-images {
+
+            .detailed-project-card-info-tab-galery-small-img {
+              width: 65px;
+              height: 65px;
+              margin: 0 6px;
+              overflow: hidden;
+              display: inline-block;
+              position: relative;
+              background-color: $green;
+              cursor: pointer;
+
+              &:hover {
+
+                &:before {
+                  font-family: 'icomoon';
+                  content: '\e909';
+                  color: $white;
+                  position: absolute;
+                  right: 0;
+                  left: 0;
+                  top: 50%;
+                  transform: translateY(-50%);
+                  font-size: 38px;
+                  text-align: center;
+                  z-index: 1;
+                }
+
+                img {
+                  opacity: 0.5;
+                }
+              }
+
+              &:first-child {
+                margin-left: 0;
+              }
+
+              img {
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.section-popular-projects {
+
+  &.section-project-card-last-finished {
+
+    .section-popular-projects-content {
+
+      .section-popular-projects-content-cards {
+        margin-bottom: 0;
+
+        .popular-projects-item {
+          margin-bottom: 0;
+          background-color: $card-body-gray;
+
+          &:hover {
+            background-color: $green;
+          }
+        }
+      }
+    }
+  }
+}
+
+//===========================================================================================
+
+//====================================Finished Projects======================================
+
+.section-main-finished-projects {
+  width: 100%;
+  padding-top: 100px;
+
+  .section-main-finished-projects-container {
+    @include default-container;
+
+    padding: 30px 0 80px 0;
+
+    .breadcrumbs {
+      margin-bottom: 30px;
+    }
+
+    .section-main-finished-projects-title {
+      font-size: 30px;
+      font-weight: $font-bold;
+      text-transform: uppercase;
+      margin: 0 0 40px 0;
+    }
+
+    .section-main-finished-projects-content {
+
+      .section-main-finished-projects-pagination-block {
+        width: 100%;
+        background-color: $white-footer;
+        border: 1px solid $card-border-color;
+        box-shadow: $card-box-shadow;
+        position: relative;
+        height: 60px;
+
+        .sort-block {
+          height: 36px;
+          line-height: 36px;
+          position: absolute;
+          left: 16px;
+          top: 50%;
+          margin-top: -18px;
+
+          label {
+            font-size: 18px;
+            font-weight: $font-regular;
+            margin-right: 20px;
+          }
+
+          select {
+            height: 36px;
+            border: none;
+            font-size: 18px;
+            font-weight: $font-regular;
+            text-transform: lowercase;
+            width: 220px;
+            padding: 0 10px;
+            cursor: pointer;
+          }
+        }
+
+        .pagination-buttons {
+          width: 290px;
+          position: absolute;
+          top: 50%;
+          margin-top: -18px;
+          right: 16px;
+        }
+      }
+
+      .section-main-finished-projects-list {
+        font-size: 0;
+        margin: 20px 0 -10px 0;
+
+        .finished-projects-list-item {
+          margin: 0 15px 30px 15px;
+          display: inline-block;
+          font-size: initial;
+          background-color: $card-body-gray;
+
+          &:nth-child(4n+1) {
+            margin-left: 0;
+          }
+
+          &:nth-child(4n+4) {
+            margin-right: 0;
+          }
+
+          &:hover {
+            background-color: $green;
+
+            .default-card-title {
+              color: $white;
+
+              &:before {
+                font-family: 'icomoon';
+                content: "\e909";
+                color: $white;
+                position: absolute;
+                top: 90px;
+                left: 50%;
+                margin-left: -20px;
+                text-align: center;
+                margin-top: -9px;
+                font-size: 40px;
+                z-index: 1;
+              }
+            }
+
+            .default-card-text {
+              color: $white;
+            }
+
+            .default-card-image {
+
+              img {
+                opacity: 0.5;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.section-finished-projects-image-right {
+  background-color: $section-building-homes;
+}
+
+//==================================================================================================
+
+//=====================================Finished Project=============================================
+.section-main-finished-project-card {
+
+  .section-main-project-card-container {
+
+    .section-main-project-card-galery {
+
+      .section-main-project-card-galery-big-img {
+
+        .project-card-galery {
+          position: absolute;
+          left: 0;
+          bottom: 35px;
+          font-size: 0;
+
+          span {
+            display: inline-block;
+            font-size: 24px;
+            font-weight: $font-bold;
+            padding: 0 25px;
+            color: $white;
+            background-color: $green;
+            line-height: 58px;
+            vertical-align: top;
+          }
+
+          .default-zoom-button {
+            position: static;
+          }
+        }
+      }
+    }
+
+    .section-main-project-card-comment-button {
+      width: 395px;
+      border: 1px solid $card-border-color;
+      height: 47px;
+      line-height: 47px;
+      margin-bottom: 16px;
+      font-weight: $font-bold;
+    }
+  }
+}
+
+//=========================================================================================
+
+//==============================Catalog Page===============================================
+
+.section-main-catalog {
+  width: 100%;
+  padding-top: 100px;
+
+  .section-main-catalog-container {
+    @include default-container;
+    @include clear-element;
+
+    padding: 30px 0 74px 0;
+
+    .breadcrumbs {
+      margin-bottom: 30px;
+    }
+
+    .section-main-catalog-title {
+      font-size: 30px;
+      font-weight: $font-bold;
+      text-transform: uppercase;
+      margin: 0 0 40px 0;
+    }
+
+    .catalog-info-tabs {
+      width: 100%;
+      box-shadow: $card-box-shadow;
+      border: 1px solid $card-border-color;
+      margin-bottom: 25px;
+
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        font-size: 0;
+
+        li {
+          display: inline-block;
+          width: 20%;
+          background-color: $top-filters-color;
+          box-shadow: 5px 2px 5px 0 rgba(0, 0, 0, 0.11);
+
+          &:hover {
+            background-color: $green;
+
+            a {
+              color: $white;
+            }
+          }
+
+          &.ui-tabs-active {
+            background-color: $green;
+
+            a {
+              color: $white;
+            }
+          }
+
+          a {
+            display: block;
+            height: 50px;
+            line-height: 50px;
+            color: $text-color;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: $font-regular;
+            text-align: center;
+            outline: none;
+          }
+        }
+      }
+
+      .detailed-project-card-info-tab {
+        padding: 12px 20px 10px 20px;
+        background-color: $white-footer;
+
+        .filter-categories {
+          display: inline-block;
+          height: 34px;
+          line-height: 34px;
+          font-size: 20px;
+          font-weight: $font-regular;
+          padding: 0 12px;
+          margin: 0 20px 5px 0;
+          background-color: $white;
+          box-shadow: $card-box-shadow;
+        }
+      }
+    }
+
+    .left-filters-block {
+      width: 272px;
+      float: left;
+      height: 800px;
+      box-shadow: $card-box-shadow;
+      border: 1px solid $card-border-color;
+      background-color: $white-footer;
+    }
+
+    .main-content-block {
+      margin-left: 298px;
+
+      .main-content-actions-block {
+        width: 100%;
+        border: 1px solid $card-border-color;
+        box-shadow: $card-box-shadow;
+        margin-bottom: 20px;
+
+        &.bottom-actions {
+          margin-bottom: 0;
+        }
+
+        .main-content-block-search-info {
+          height: 50px;
+          line-height: 50px;
+          padding: 0 15px;
+          background-color: $green;
+          color: $white;
+          font-size: 20px;
+          font-weight: $font-regular;
+          box-shadow: 5px 2px 5px 0 rgba(0, 0, 0, 0.11);
+
+          span {
+            font-size: 24px;
+            font-weight: $font-bold;
+          }
+        }
+
+        .main-content-block-actions {
+          background-color: $white-footer;
+          position: relative;
+          height: 60px;
+
+          .sort-block {
+            height: 36px;
+            line-height: 36px;
+            position: absolute;
+            left: 16px;
+            top: 50%;
+            margin-top: -18px;
+
+            label {
+              font-size: 18px;
+              font-weight: $font-regular;
+              margin-right: 20px;
+            }
+
+            select {
+              height: 36px;
+              border: none;
+              font-size: 18px;
+              font-weight: $font-regular;
+              text-transform: lowercase;
+              width: 220px;
+              padding: 0 10px;
+              cursor: pointer;
+            }
+          }
+
+          .pagination-buttons {
+            width: 290px;
+            position: absolute;
+            top: 50%;
+            margin-top: -18px;
+            right: 16px;
+          }
+        }
+      }
+
+      .main-content-project-items-container {
+
+        .main-content-project-item {
+          margin: 0 12px 22px 12px;
+          display: inline-block;
+          font-size: initial;
+          background-color: $card-body-gray;
+
+          &:nth-child(3n+1) {
+            margin-left: 0;
+          }
+
+          &:nth-child(3n) {
+            margin-right: 0;
+          }
+
+          &:hover {
+            background-color: $green;
+
+            .default-card-title {
+              color: $white;
+
+              &:before {
+                font-family: 'icomoon';
+                content: "\e909";
+                color: $white;
+                position: absolute;
+                top: 90px;
+                left: 50%;
+                margin-left: -20px;
+                text-align: center;
+                margin-top: -9px;
+                font-size: 40px;
+                z-index: 1;
+              }
+            }
+
+            .default-card-text {
+              color: $white;
+            }
+
+            .default-card-image {
+
+              img {
+                opacity: 0.5;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.section-catalog-image-right {
+  background-color: $section-building-homes;
+}
