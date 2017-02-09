@@ -571,11 +571,14 @@ table {
       content: "";
       display: block;
       clear: both; }
-    .section-concrete-blocks-building .section-concrete-blocks-building-content img {
+    .section-concrete-blocks-building .section-concrete-blocks-building-content .section-concrete-blocks-building-img {
       float: left;
       height: 287px;
       width: 450px;
-      margin-right: 25px; }
+      margin-right: 25px;
+      overflow: hidden; }
+      .section-concrete-blocks-building .section-concrete-blocks-building-content .section-concrete-blocks-building-img img {
+        width: 100%; }
     .section-concrete-blocks-building .section-concrete-blocks-building-content .section-concrete-blocks-building-text {
       margin-left: 492px; }
       .section-concrete-blocks-building .section-concrete-blocks-building-content .section-concrete-blocks-building-text p {

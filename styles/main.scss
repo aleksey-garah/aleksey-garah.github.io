@@ -223,11 +223,16 @@
 
     padding: 62px 0 76px;
 
-    img {
+    .section-concrete-blocks-building-img {
       float: left;
       height: 287px;
       width: 450px;
       margin-right: 25px;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+      }
     }
 
     .section-concrete-blocks-building-text {
