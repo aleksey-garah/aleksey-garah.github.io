@@ -535,6 +535,19 @@ footer {
     font-weight: $font-regular;
     margin: 0;
   }
+
+  @media only screen and (max-width: 1024px) {
+
+    .section-with-image-right-container {
+      padding: 40px 25px;
+    }
+
+    .section-with-image-right-image {
+      width: 100%;
+      float: none;
+      margin: 0 0 25px 0;
+    }
+  }
 }
 
 .section-with-image-left {

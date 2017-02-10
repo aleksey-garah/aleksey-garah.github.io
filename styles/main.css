@@ -373,6 +373,13 @@ footer.white-footer {
     font-size: 18px;
     font-weight: 400;
     margin: 0; }
+  @media only screen and (max-width: 1024px) {
+    .section-with-image-right .section-with-image-right-container {
+      padding: 40px 25px; }
+    .section-with-image-right .section-with-image-right-image {
+      width: 100%;
+      float: none;
+      margin: 0 0 25px 0; } }
 
 .section-with-image-left {
   width: 100%; }
@@ -2703,6 +2710,9 @@ input.custom-checkbox {
       font-weight: 700;
       text-transform: uppercase;
       margin: 0 0 40px 0; }
+      @media only screen and (max-width: 1024px) {
+        .section-main-finished-projects .section-main-finished-projects-container .section-main-finished-projects-title {
+          text-align: center; } }
     .section-main-finished-projects .section-main-finished-projects-container .section-main-finished-projects-content .section-main-finished-projects-pagination-block {
       width: 100%;
       background-color: #fafafa;
@@ -2768,6 +2778,16 @@ input.custom-checkbox {
             color: #ffffff; }
           .section-main-finished-projects .section-main-finished-projects-container .section-main-finished-projects-content .section-main-finished-projects-list .finished-projects-list-item:hover .default-card-image img {
             opacity: 0.5; }
+      @media only screen and (max-width: 1024px) {
+        .section-main-finished-projects .section-main-finished-projects-container .section-main-finished-projects-content .section-main-finished-projects-list {
+          text-align: center; }
+          .section-main-finished-projects .section-main-finished-projects-container .section-main-finished-projects-content .section-main-finished-projects-list .finished-projects-list-item:nth-child(4n+1) {
+            margin-left: 15px; }
+          .section-main-finished-projects .section-main-finished-projects-container .section-main-finished-projects-content .section-main-finished-projects-list .finished-projects-list-item:nth-child(4n+4) {
+            margin-right: 15px; } }
+    @media only screen and (max-width: 1024px) {
+      .section-main-finished-projects .section-main-finished-projects-container {
+        padding: 40px; } }
 
 .section-finished-projects-image-right {
   background-color: #f7f7f7; }

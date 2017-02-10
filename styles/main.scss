@@ -3175,6 +3175,10 @@
       font-weight: $font-bold;
       text-transform: uppercase;
       margin: 0 0 40px 0;
+
+      @media only screen and (max-width: 1024px) {
+        text-align: center;
+      }
     }
 
     .section-main-finished-projects-content {
@@ -3273,7 +3277,26 @@
             }
           }
         }
+
+        @media only screen and (max-width: 1024px) {
+          text-align: center;
+
+          .finished-projects-list-item {
+
+            &:nth-child(4n+1) {
+              margin-left: 15px;
+            }
+
+            &:nth-child(4n+4) {
+              margin-right: 15px;
+            }
+          }
+        }
       }
+    }
+
+    @media only screen and (max-width: 1024px) {
+      padding: 40px 25px;
     }
   }
 }
