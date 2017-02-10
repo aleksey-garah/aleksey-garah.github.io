@@ -411,6 +411,13 @@ footer.white-footer {
     font-size: 18px;
     font-weight: 400;
     margin: 0; }
+  @media only screen and (max-width: 1024px) {
+    .section-with-image-left .section-with-image-left-container {
+      padding: 40px 25px; }
+    .section-with-image-left .section-with-image-left-image {
+      width: 100%;
+      float: none;
+      margin: 0 0 25px 0; } }
 
 .pagination-buttons {
   width: 344px;
@@ -2406,6 +2413,9 @@ input.custom-checkbox {
       font-weight: 700;
       text-transform: uppercase;
       margin: 0 0 40px 0; }
+      @media only screen and (max-width: 1024px) {
+        .section-main-service-area .section-main-service-area-container .section-main-service-area-title {
+          text-align: center; } }
     .section-main-service-area .section-main-service-area-container .section-main-service-area-text {
       font-size: 18px;
       font-weight: 400; }
@@ -2417,6 +2427,13 @@ input.custom-checkbox {
       float: right; }
       .section-main-service-area .section-main-service-area-container .section-main-service-area-image img {
         width: 100%; }
+    @media only screen and (max-width: 1024px) {
+      .section-main-service-area .section-main-service-area-container {
+        padding: 40px 25px; }
+        .section-main-service-area .section-main-service-area-container .section-main-service-area-image {
+          float: none;
+          width: 100%;
+          margin: 0 0 25px 0; } }
 
 .section-types-of-service {
   width: 100%;
@@ -2462,6 +2479,16 @@ input.custom-checkbox {
         top: 0;
         bottom: 0;
         padding: 40px 25px 0 157px; }
+    @media only screen and (max-width: 1024px) {
+      .section-types-of-service .section-types-of-service-container {
+        padding: 40px 25px;
+        text-align: center; }
+        .section-types-of-service .section-types-of-service-container .section-types-of-service-item {
+          margin: 0 15px 30px 15px; }
+          .section-types-of-service .section-types-of-service-container .section-types-of-service-item:nth-of-type(3n+1) {
+            margin-left: 15px; }
+          .section-types-of-service .section-types-of-service-container .section-types-of-service-item:nth-of-type(3n+3) {
+            margin-right: 15px; } }
 
 .section-main-project-card {
   width: 100%;
