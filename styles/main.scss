@@ -2807,6 +2807,10 @@
       font-weight: $font-bold;
       text-transform: uppercase;
       margin: 0 0 40px 0;
+
+      @media only screen and (max-width: 1024px) {
+        text-align: center;
+      }
     }
 
     .section-main-project-card-galery {
@@ -2879,6 +2883,12 @@
           }
         }
       }
+
+      @media only screen and (max-width: 1024px) {
+        float: none;
+        width: 100%;
+        margin: 0 auto 25px auto;
+      }
     }
 
     .section-main-project-card-info-block {
@@ -2922,6 +2932,12 @@
             color: $green;
           }
         }
+      }
+
+      @media only screen and (max-width: 1024px) {
+        display: block;
+        width: auto;
+        margin: 0 auto 25px auto;
       }
     }
 
@@ -3347,6 +3363,24 @@
       line-height: 47px;
       margin-bottom: 16px;
       font-weight: $font-bold;
+    }
+
+    @media only screen and (max-width: 1024px) {
+      padding: 40px 25px;
+      text-align: center;
+
+      .breadcrumbs {
+        text-align: left;
+      }
+
+      .default-button {
+        width: 30%;
+        display: inline-block;
+      }
+
+      .section-main-project-card-galery {
+        text-align: left;
+      }
     }
   }
 }
