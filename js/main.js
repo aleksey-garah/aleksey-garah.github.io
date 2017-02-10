@@ -41,10 +41,10 @@ $(document).ready(function () {
 });
 
 $(window).on("load", function () {
-    // $(".team-members-list-container").mCustomScrollbar({
-    //     axis: "x",
-    //     scrollButtons: {
-    //         enable: true
-    //     }
-    // });
+    $(".team-members-list-container").mCustomScrollbar({
+        axis: "x",
+        scrollButtons: {
+            enable: true
+        }
+    });
 });

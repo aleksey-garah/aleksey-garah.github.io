@@ -111,6 +111,61 @@
       }
     }
   }
+
+  @media only screen and (max-width: 1024px) {
+
+    .section-main-container {
+
+      .section-main-background-image-block {
+        width: 100%;
+        margin: 0;
+        background: url("../assets/images/Layer%2033.jpg");
+        background-size: cover;
+
+        .section-main-background-image {
+          display: none;
+        }
+      }
+
+      .section-main-content {
+        width: 100%;
+        text-align: center;
+        bottom: 0;
+        top: auto;
+        padding-bottom: 25px;
+
+        .section-main-content-title {
+          max-width: none;
+        }
+
+        ul {
+          font-size: 0;
+          text-align: justify;
+
+          &:after {
+            content: '';
+            display: inline-block;
+            width: 100%;
+          }
+
+          li {
+            display: inline-block;
+            font-size: 14px;
+            font-weight: $font-medium;
+            padding: 0 15px;
+
+            i {
+              display: block;
+              vertical-align: baseline;
+              margin: 0 0 8px 0;
+              font-size: 25px;
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 //============================================================================================================
@@ -208,6 +263,10 @@
       }
     }
   }
+
+  @media only screen and (max-width: 1024px) {
+    display: none;
+  }
 }
 
 .section-concrete-blocks-building {
@@ -248,6 +307,28 @@
 
         &:hover {
           background-color: $dark-green;
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1024px) {
+
+    .section-concrete-blocks-building-content {
+      padding: 40px 25px;
+
+      .section-concrete-blocks-building-img {
+        float: none;
+        width: 100%;
+        margin: 0 0 25px 0;
+      }
+
+      .section-concrete-blocks-building-text {
+        margin: 0;
+        text-align: center;
+
+        p {
+          text-align: left;
         }
       }
     }
@@ -310,6 +391,17 @@
         font-size: 15px;
         font-weight: $font-light;
         color: $white;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1024px) {
+
+    .section-advantages-container {
+      text-align: center;
+
+      .advantages-item {
+        margin: 15px;
       }
     }
   }
@@ -387,6 +479,37 @@
 
       &:hover {
         background-color: $dark-green;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1024px) {
+
+    .section-popular-projects-content {
+      padding: 40px 25px;
+
+      .section-popular-projects-content-cards {
+        text-align: center;
+
+        .popular-projects-item {
+
+          &:nth-child(4n+1) {
+            margin-left: 15px;
+
+            &:first-child {
+              margin-left: 0;
+            }
+          }
+
+          &:nth-child(4n+4) {
+            margin-left: 0;
+            margin-right: 15px;
+          }
+
+          &:nth-child(3n+3) {
+            margin-right: 0;
+          }
+        }
       }
     }
   }
@@ -472,6 +595,37 @@
       }
     }
   }
+
+  @media only screen and (max-width: 1024px) {
+
+    .section-last-projects-content {
+      padding: 40px 25px;
+
+      .section-last-projects-content-cards {
+        text-align: center;
+
+        .last-projects-item {
+
+          &:nth-child(4n+1) {
+            margin-left: 15px;
+
+            &:first-child {
+              margin-left: 0;
+            }
+          }
+
+          &:nth-child(4n+4) {
+            margin-left: 0;
+            margin-right: 15px;
+          }
+
+          &:nth-child(3n+3) {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
 }
 
 .section-feedback {
@@ -532,6 +686,33 @@
 
         &:hover {
           background-color: $dark-blue;
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1024px) {
+    .section-feedback-container {
+
+      .section-feedback-header {
+        background-color: $white;
+
+        .section-feedback-title {
+          color: $text-color;
+        }
+      }
+
+      form {
+        padding-top: 0;
+
+        .feedback-form-group {
+          margin-bottom: 0;
+
+          .feedback-form-block {
+            margin-bottom: 24px;
+            max-width: none;
+            display: block;
+          }
         }
       }
     }
@@ -667,6 +848,10 @@
       }
     }
   }
+
+  @media only screen and (max-width: 1024px) {
+    display: none;
+  }
 }
 
 .section-buildings-coordinates {
@@ -694,6 +879,11 @@
         font-size: 24px;
         font-weight: $font-light;
       }
+    }
+
+    @media only screen and (max-width: 1024px) {
+      height: auto;
+      padding-bottom: 40px;
     }
   }
 
@@ -1340,7 +1530,7 @@
               outline: none;
             }
 
-            @media (min-width: 1024px) {
+            @media only screen and (min-width: 1024px) {
 
               &:first-child {
                 display: none;
