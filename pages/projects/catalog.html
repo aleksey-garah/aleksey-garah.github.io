@@ -9,9 +9,13 @@
 
 <header>
     <div class="top-navigation">
-        <a class="main-navigation-logo" href="/index.html">
-            <img src="../../assets/images/Layer%201.png" alt=""></a>
-        <nav>
+        <a class="main-navigation-logo" href="/index.html"><img src="../../assets/images/Layer%201.png"
+                                                                alt=""></a>
+        <div class="nav-phone-block">
+            <a class="nav-phone-number" href="tel:89688313196">8 (968) 831-31-96</a>
+            <button class="nav-order-phone-button default-button">Заказать звонок</button>
+        </div>
+        <nav id="menu">
             <ul class="main-navigation-menu">
                 <li class="main-navigation-menu-item"><a href="/pages/materials/materials.html">Технологии и
                     материалы</a></li>
@@ -22,8 +26,6 @@
                         href="/pages/finished-projects/finished-projects.html">Выполненные проекты</a></li>
             </ul>
         </nav>
-        <a class="nav-phone-number" href="tel:89688313196">8 (968) 831-31-96</a>
-        <button class="nav-order-phone-button default-button">Заказать звонок</button>
     </div>
 </header>
 
@@ -67,7 +69,87 @@
         </div>
 
         <div class="left-filters-block">
+            <div class="left-filter-block-section">
+                <h4>По площади:</h4>
+                <input type="checkbox" id="checkbox-for-area1" class="custom-checkbox">
+                <label for="checkbox-for-area1"><120 м<sup>2</sup></label>
+                <input type="checkbox" id="checkbox-for-area2" class="custom-checkbox">
+                <label for="checkbox-for-area2">120 - 250 м<sup>2</sup></label>
+                <input type="checkbox" id="checkbox-for-area3" class="custom-checkbox">
+                <label for="checkbox-for-area3">250 - 350 м<sup>2</sup></label>
+                <input type="checkbox" id="checkbox-for-area4" class="custom-checkbox">
+                <label for="checkbox-for-area4">350 - 500 м<sup>2</sup></label>
+                <input type="checkbox" id="checkbox-for-area5" class="custom-checkbox">
+                <label for="checkbox-for-area5">> 500 м<sup>2</sup></label>
+            </div>
+            <div class="left-filter-block-section">
+                <h4>По опциям:</h4>
+                <input type="checkbox" id="checkbox-for-options1" class="custom-checkbox">
+                <label for="checkbox-for-options1">с гаражом</label>
+                <input type="checkbox" id="checkbox-for-options2" class="custom-checkbox">
+                <label for="checkbox-for-options2">с сауной</label>
+                <input type="checkbox" id="checkbox-for-options3" class="custom-checkbox">
+                <label for="checkbox-for-options3">с мансардой</label>
+                <input type="checkbox" id="checkbox-for-options4" class="custom-checkbox">
+                <label for="checkbox-for-options4">с чердаком</label>
+                <input type="checkbox" id="checkbox-for-options5" class="custom-checkbox">
+                <label for="checkbox-for-options5">с плоской крышей</label>
+                <input type="checkbox" id="checkbox-for-options6" class="custom-checkbox">
+                <label for="checkbox-for-options6">с террасой</label>
+            </div>
+            <div class="left-filter-block-section">
+                <h4>По типу строения:</h4>
+                <input type="checkbox" id="checkbox-for-type1" class="custom-checkbox">
+                <label for="checkbox-for-type1">жилой дом</label>
+                <input type="checkbox" id="checkbox-for-type2" class="custom-checkbox">
+                <label for="checkbox-for-type2">коттедж</label>
+                <input type="checkbox" id="checkbox-for-type3" class="custom-checkbox">
+                <label for="checkbox-for-type3">беседка</label>
+                <input type="checkbox" id="checkbox-for-type4" class="custom-checkbox">
+                <label for="checkbox-for-type4">гараж</label>
+                <input type="checkbox" id="checkbox-for-type5" class="custom-checkbox">
+                <label for="checkbox-for-type5">баня</label>
+                <input type="checkbox" id="checkbox-for-type6" class="custom-checkbox">
+                <label for="checkbox-for-type6">таунхаус</label>
+            </div>
+            <div class="left-filter-block-section">
+                <h4>По стилю:</h4>
+                <input type="checkbox" id="checkbox-for-style1" class="custom-checkbox">
+                <label for="checkbox-for-style1">классический</label>
+                <input type="checkbox" id="checkbox-for-style2" class="custom-checkbox">
+                <label for="checkbox-for-style2">хай-тек</label>
+                <input type="checkbox" id="checkbox-for-style3" class="custom-checkbox">
+                <label for="checkbox-for-style3">европейский</label>
+                <input type="checkbox" id="checkbox-for-style4" class="custom-checkbox">
+                <label for="checkbox-for-style4">скандинавский</label>
+                <input type="checkbox" id="checkbox-for-style5" class="custom-checkbox">
+                <label for="checkbox-for-style5">американский</label>
+                <input type="checkbox" id="checkbox-for-style6" class="custom-checkbox">
+                <label for="checkbox-for-style6">английский</label>
+                <input type="checkbox" id="checkbox-for-style7" class="custom-checkbox">
+                <label for="checkbox-for-style7">русский</label>
+                <input type="checkbox" id="checkbox-for-style8" class="custom-checkbox">
+                <label for="checkbox-for-style8">на 2 семьи</label>
+                <input type="checkbox" id="checkbox-for-style9" class="custom-checkbox">
+                <label for="checkbox-for-style9">шалеё</label>
+                <input type="checkbox" id="checkbox-for-style10" class="custom-checkbox">
+                <label for="checkbox-for-style10">модерн</label>
+                <input type="checkbox" id="checkbox-for-style11" class="custom-checkbox">
+                <label for="checkbox-for-style11">современный</label>
+            </div>
+            <div class="left-filter-block-section">
+                <h4>По количеству этажей:</h4>
 
+                <input type="text" id="minCost" value="0"/>
+                <input type="text" id="maxCost" value="1000"/>
+                <div id="slider-range"></div>
+            </div>
+            <div class="left-filter-block-section">
+                <h4>По количеству комнат:</h4>
+            </div>
+            <div class="left-filter-block-section">
+                <h4>Стоимость, тыс. рую.:</h4>
+            </div>
         </div>
         <div class="main-content-block">
             <div class="main-content-actions-block">
@@ -353,6 +435,7 @@
 
 <script src="../../js/jquery.min.js"></script>
 <script src="../../js/jquery-ui.min.js"></script>
+<script src="../../js/jquery.ui-slider.js"></script>
 <script src="../../js/main.js"></script>
 </body>
 </html>

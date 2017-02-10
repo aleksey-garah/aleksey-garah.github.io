@@ -8,6 +8,7 @@ header {
   box-shadow: $nav-box-shadow;
 
   .top-navigation {
+    white-space: nowrap;
     @include default-container;
     padding: 23px 0;
     -webkit-transition: padding 1s ease;
@@ -15,30 +16,40 @@ header {
     -o-transition: padding 1s ease;
     transition: padding 1s ease;
 
+    @include clear-element;
+
     &.start-scroll {
       padding: 0;
     }
 
     .main-navigation-logo {
-      display: inline-block;
+      float: left;
       vertical-align: middle;
       margin-right: 27px;
+      padding: 5px 0;
     }
 
     nav {
-      display: inline-block;
       vertical-align: middle;
       line-height: 51px;
+      max-width: 720px;
+      margin-left: 79px;
+      margin-right: 347px;
 
       .main-navigation-menu {
         list-style: none;
         margin: 0;
         padding: 0;
         text-transform: uppercase;
+        white-space: nowrap;
 
         .main-navigation-menu-item {
           display: inline-block;
           padding: 0 20px;
+
+          &.on-hidden {
+            display: none;
+          }
 
           &:first-child {
             padding-left: 0;
@@ -57,24 +68,27 @@ header {
       }
     }
 
-    .nav-phone-number {
-      text-decoration: none;
-      color: $text-color;
-      font-size: 16px;
-      font-weight: 700;
-      margin-right: 22px;
-      vertical-align: middle;
-    }
-
-    .nav-order-phone-button {
-      color: $white;
-      background-color: $green;
-      vertical-align: middle;
+    .nav-phone-block {
       float: right;
-      margin-top: 6px;
+      padding: 5px 0;
 
-      &:hover {
-        background-color: $dark-green;
+      .nav-phone-number {
+        text-decoration: none;
+        color: $text-color;
+        font-size: 16px;
+        font-weight: 700;
+        margin-right: 22px;
+        vertical-align: middle;
+      }
+
+      .nav-order-phone-button {
+        color: $white;
+        background-color: $green;
+        vertical-align: middle;
+
+        &:hover {
+          background-color: $dark-green;
+        }
       }
     }
   }
@@ -519,6 +533,7 @@ footer {
     }
   }
 }
+
 //===================================================Tables========================================================
 
 table {
@@ -562,4 +577,147 @@ table {
       }
     }
   }
+}
+
+//==================================================================================
+//==============================checkbox============================================
+
+input.custom-checkbox {
+  display: none;
+
+  &:checked + label {
+    font-size: 16px;
+    font-weight: $font-regular;
+    display: block;
+  }
+
+  & + label {
+    font-size: 16px;
+    font-weight: $font-regular;
+    display: block;
+    margin-bottom: 11px;
+  }
+}
+
+//============================================================
+
+/* Ширина слайдера */
+#slider {
+  width: 200px;
+
+}
+
+/* Контейнер слайдера */
+
+.ui-slider {
+
+  position: relative;
+
+}
+
+/* Ползунок */
+
+.ui-slider .ui-slider-handle {
+
+  position: absolute;
+
+  z-index: 2;
+
+  width: 13px; /* Задаем нужную ширину */
+
+  height: 13px; /* и высоту */
+
+  background: url(../img/slider.png) no-repeat; /* картинка изображающая ползунок. Или можно залить цветом, задать бордюр и скругления */
+
+  cursor: pointer
+
+}
+
+.ui-slider .ui-slider-range {
+
+  position: absolute;
+
+  z-index: 1;
+
+  font-size: .7em;
+
+  display: block;
+
+  border: 0;
+
+  overflow: hidden;
+
+}
+
+/* горизонтальный слайдер (сама полоса по которой бегает ползунок) */
+
+.ui-slider-horizontal {
+
+  height: 3px; /* задаем высоту согласно дизайна */
+
+}
+
+/* позиционируем ползунки */
+
+.ui-slider-horizontal .ui-slider-handle {
+
+  top: -5px;
+
+  margin-left: -6px;
+
+}
+
+.ui-slider-horizontal .ui-slider-range {
+
+  top: 0;
+
+  height: 100%;
+
+}
+
+.ui-slider-horizontal .ui-slider-range-min {
+
+  left: 0;
+
+}
+
+.ui-slider-horizontal .ui-slider-range-max {
+
+  right: 0;
+
+}
+
+/* оформление полосы по которой ходит ползунок */
+
+.ui-widget-content {
+
+  border: 1px solid #D4D4D4;
+
+  background: #fff;
+
+}
+
+/* оформление активного участка (между двумя ползунками) */
+
+.ui-widget-header {
+
+  border: 1px solid #D4D4D4;
+
+  background: #f00;
+
+}
+
+/* скругление для полосы слайдера */
+.ui-corner-all {
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+}
+
+.ui-slider-vertical .ui-slider-range-min {
+  bottom: 0;
+}
+
+.ui-slider-vertical .ui-slider-range-max {
+  top: 0;
 }

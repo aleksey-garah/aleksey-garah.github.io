@@ -628,15 +628,17 @@
 
     .team-members-list-container {
       @include default-container;
-      @include clear-element;
       position: absolute;
       top: 50%;
       left: 0;
       right: 0;
       transform: translateY(-50%);
+      font-size: 0;
+
+      @include forScrollHorizontal;
 
       .team-members-list-item {
-        float: left;
+        display: inline-block;
         text-align: center;
         margin-right: 40px;
 
@@ -1115,12 +1117,115 @@
       }
     }
 
-    .section-building-homes-subsection-galery {
-      //TODO
-      height: 385px;
+    .section-building-homes-subsection-galery-tabs {
       width: 100%;
       box-shadow: $card-box-shadow;
       border: 1px solid $card-border-color;
+      background-color: $white;
+      padding: 2px;
+      @include clear-element;
+
+      ul {
+        width: 260px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        float: left;
+
+        li {
+          display: block;
+          text-align: center;
+          font-size: 20px;
+          background-color: $section-building-homes;
+          margin-bottom: 2px;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+
+          &.ui-tabs-active {
+            background-color: $green;
+
+            a {
+              color: $white;
+            }
+          }
+
+          &:hover {
+            background-color: $green;
+
+            a {
+              color: $white;
+            }
+          }
+
+          a {
+            color: $card-text-color;
+            text-decoration: none;
+            height: 52px;
+            line-height: 52px;
+            display: block;
+            outline: none;
+          }
+        }
+      }
+
+      .galery-tab {
+        margin-left: 260px;
+        padding: 25px 25px 0 25px;
+        @include clear-element;
+
+        .galery-tab-images {
+          float: right;
+          width: 360px;
+
+          .galery-tab-big-image {
+            width: 100%;
+            height: 240px;
+            overflow: hidden;
+            margin-bottom: 11px;
+
+            img {
+              width: 100%;
+            }
+          }
+
+          .galery-tab-small-images {
+            font-size: 0;
+
+            .galery-tab-small-image {
+              margin-right: 13px;
+              width: 80px;
+              height: 80px;
+              display: inline-block;
+              overflow: hidden;
+
+              img {
+                width: 100%;
+              }
+
+              &:last-child {
+                margin-right: 0;
+              }
+            }
+          }
+        }
+
+        .galery-tab-description {
+
+          .galery-tab-description-header {
+            margin: 0 0 25px 0;
+            font-size: 20px;
+            font-weight: $font-black;
+          }
+
+          .galery-tab-description-text {
+            font-size: 20px;
+            font-weight: $font-regular;
+            color: $materials-galery-text;
+          }
+        }
+      }
     }
   }
 }
@@ -1173,7 +1278,190 @@
     }
 
     .section-main-materials-content {
+      border: 1px solid $card-border-color;
+      box-shadow: $card-box-shadow;
+      @include clear-element;
 
+      .section-main-materials-content-text-block {
+        border-right: 1px solid $card-border-color;
+        background-color: $card-body-gray;
+      }
+
+      .main-materials-images-block-tabs {
+        float: right;
+        width: 585px;
+
+        ul {
+          width: 100%;
+          list-style: none;
+          margin: 0;
+          padding: 13px 14px;
+          font-size: 0;
+          text-align: justify;
+          border-left: 1px solid $card-border-color;
+          border-bottom: 1px solid $card-border-color;
+          background-color: $navbar-color;
+
+          &:after {
+            content: '';
+            display: inline-block;
+            width: 100%;
+          }
+
+          li {
+            display: inline-block;
+            width: 33.3%;
+            text-align: center;
+            font-size: 18px;
+            background-color: $white;
+
+            &.ui-tabs-active {
+              background-color: $green;
+
+              a {
+                color: $white;
+              }
+            }
+
+            &:hover {
+              background-color: $green;
+
+              a {
+                color: $white;
+              }
+            }
+
+            a {
+              color: $text-color;
+              text-decoration: none;
+              height: 44px;
+              line-height: 44px;
+              display: block;
+              outline: none;
+            }
+
+            @media (min-width: 1024px) {
+
+              &:first-child {
+                display: none;
+              }
+            }
+          }
+        }
+
+        .main-materials-images-block-tab {
+          background-color: $comments-tab-content-color;
+          padding: 32px 38px;
+
+          &.main-materials-project-tab {
+
+            .main-materials-project-tab-image {
+              width: 100%;
+              height: 310px;
+              overflow: hidden;
+              box-shadow: $card-box-shadow;
+              margin-bottom: 21px;
+              position: relative;
+
+              img {
+                width: 100%;
+              }
+
+              .text-block-header-image-label {
+                position: absolute;
+                left: 0;
+                bottom: 36px;
+                width: 185px;
+                background-color: $white;
+                text-align: center;
+                padding: 14px 0;
+                font-size: 30px;
+                font-weight: $font-regular;
+              }
+            }
+
+            .main-materials-project-tab-button {
+              color: $white;
+              background-color: $green;
+              display: block;
+              margin: 0 auto;
+
+              &:hover {
+                background-color: $dark-green;
+              }
+            }
+          }
+        }
+      }
+
+      .section-main-materials-text-block {
+        margin-right: 585px;
+        border-right: 1px solid $card-border-color;
+
+        .section-main-materials-text-block-header {
+          height: 70px;
+          background-color: $green;
+          color: $white;
+          position: relative;
+
+          .main-materials-text-block-header-image {
+            width: 54px;
+            height: 54px;
+            overflow: hidden;
+            border-radius: 27px;
+            position: absolute;
+            left: 12px;
+            top: 50%;
+            margin-top: -27px;
+
+            img {
+              width: 100%;
+            }
+          }
+
+          .main-materials-text-block-header-name {
+            margin: 0;
+            position: absolute;
+            left: 81px;
+            top: 50%;
+            transform: translateY(-50%);
+
+            .text-block-header-fio {
+              font-size: 24px;
+              font-weight: $font-bold;
+            }
+
+            .text-block-header-location {
+              font-size: 24px;
+              font-weight: $font-light;
+            }
+          }
+        }
+
+        .section-main-materials-text-block-content {
+          padding: 34px 26px;
+          background-color: $card-body-gray;
+          min-height: 438px;
+
+          .main-materials-text-block-content-header {
+            font-weight: $font-bold;
+            font-size: 24px;
+            margin: 0 0 30px 0;
+          }
+
+          .main-materials-text-block-content-text {
+            margin: 0 0 25px 0;
+            color: $card-text-color;
+          }
+
+          .main-materials-text-block-content-date {
+            color: $news-date-color;
+            font-size: 14px;
+            font-weight: $font-regular;
+            margin: 0;
+          }
+        }
+      }
     }
   }
 
@@ -2935,10 +3223,25 @@
     .left-filters-block {
       width: 272px;
       float: left;
-      height: 800px;
+      min-height: 800px;
+      padding: 40px 0 0 20px;
       box-shadow: $card-box-shadow;
       border: 1px solid $card-border-color;
       background-color: $white-footer;
+
+      .left-filter-block-section {
+        margin-bottom: 40px;
+
+        h4 {
+          margin: 0 0 20px 0;
+          font-size: 22px;
+          font-weight: $font-regular;
+        }
+
+        label {
+          margin-left: 12px;
+        }
+      }
     }
 
     .main-content-block {
