@@ -3364,6 +3364,10 @@
       border: 1px solid $card-border-color;
       margin-bottom: 25px;
 
+      .catalog-info-tabs-button {
+        display: none;
+      }
+
       ul {
         list-style: none;
         margin: 0;
@@ -3427,6 +3431,13 @@
         float: right;
         width: 50%;
         margin-bottom: 0;
+        height: 40px;
+        overflow: hidden;
+
+        &.active {
+          height: auto;
+          overflow: auto;
+        }
 
         ul {
 
@@ -3437,8 +3448,9 @@
           }
         }
 
-        .detailed-project-card-info-tab {
-
+        .catalog-info-tabs-button {
+          display: block;
+          width: 100%;
         }
       }
     }
@@ -3451,6 +3463,10 @@
       box-shadow: $card-box-shadow;
       border: 1px solid $card-border-color;
       background-color: $white-footer;
+
+      .left-filters-block-button {
+        display: none;
+      }
 
       .left-filter-block-section {
         margin-bottom: 40px;
@@ -3469,6 +3485,25 @@
       @media only screen and (max-width: 1024px) {
         float: none;
         width: 50%;
+        padding: 0;
+        height: 40px;
+        overflow: hidden;
+        min-height: auto;
+
+        &.active {
+          height: auto;
+          overflow: auto;
+        }
+
+        .left-filters-block-button {
+          display: block;
+          width: 100%;
+        }
+
+        .left-filter-block-section {
+          margin: 25px 0 0 0;
+          padding: 0 25px;
+        }
       }
     }
 
@@ -3595,6 +3630,21 @@
 
       @media only screen and (max-width: 1024px) {
         margin: 25px 0 0 0;
+        clear: both;
+
+        .main-content-project-items-container {
+          text-align: center;
+
+          .main-content-project-item {
+            &:nth-child(3n+1) {
+              margin-left: 12px;
+            }
+
+            &:nth-child(3n) {
+              margin-right: 12px;
+            }
+          }
+        }
       }
     }
   }
