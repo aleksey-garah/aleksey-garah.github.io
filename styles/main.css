@@ -1524,6 +1524,35 @@ input.custom-checkbox {
         content: "";
         display: block;
         clear: both; }
+      .section-main-comments .section-main-comments-container .section-main-materials-content .section-main-materials-header {
+        display: none;
+        height: 70px;
+        background-color: #82d15c;
+        color: #ffffff;
+        position: relative; }
+        .section-main-comments .section-main-comments-container .section-main-materials-content .section-main-materials-header .main-materials-text-block-header-image {
+          width: 54px;
+          height: 54px;
+          overflow: hidden;
+          border-radius: 27px;
+          position: absolute;
+          left: 12px;
+          top: 50%;
+          margin-top: -27px; }
+          .section-main-comments .section-main-comments-container .section-main-materials-content .section-main-materials-header .main-materials-text-block-header-image img {
+            width: 100%; }
+        .section-main-comments .section-main-comments-container .section-main-materials-content .section-main-materials-header .main-materials-text-block-header-name {
+          margin: 0;
+          position: absolute;
+          left: 81px;
+          top: 50%;
+          transform: translateY(-50%); }
+          .section-main-comments .section-main-comments-container .section-main-materials-content .section-main-materials-header .main-materials-text-block-header-name .text-block-header-fio {
+            font-size: 24px;
+            font-weight: 700; }
+          .section-main-comments .section-main-comments-container .section-main-materials-content .section-main-materials-header .main-materials-text-block-header-name .text-block-header-location {
+            font-size: 24px;
+            font-weight: 300; }
       .section-main-comments .section-main-comments-container .section-main-materials-content .section-main-materials-content-text-block {
         border-right: 1px solid #cacaca;
         background-color: #f6f6f6; }
@@ -1597,6 +1626,18 @@ input.custom-checkbox {
             margin: 0 auto; }
             .section-main-comments .section-main-comments-container .section-main-materials-content .main-materials-images-block-tabs .main-materials-images-block-tab.main-materials-project-tab .main-materials-project-tab-button:hover {
               background-color: #589d52; }
+          .section-main-comments .section-main-comments-container .section-main-materials-content .main-materials-images-block-tabs .main-materials-images-block-tab .section-main-materials-text-block-content .main-materials-text-block-content-header {
+            font-weight: 700;
+            font-size: 24px;
+            margin: 0 0 30px 0; }
+          .section-main-comments .section-main-comments-container .section-main-materials-content .main-materials-images-block-tabs .main-materials-images-block-tab .section-main-materials-text-block-content .main-materials-text-block-content-text {
+            margin: 0 0 25px 0;
+            color: black; }
+          .section-main-comments .section-main-comments-container .section-main-materials-content .main-materials-images-block-tabs .main-materials-images-block-tab .section-main-materials-text-block-content .main-materials-text-block-content-date {
+            color: #cccccc;
+            font-size: 14px;
+            font-weight: #b1b1b1;
+            margin: 0; }
       .section-main-comments .section-main-comments-container .section-main-materials-content .section-main-materials-text-block {
         margin-right: 585px;
         border-right: 1px solid #cacaca; }
@@ -1687,6 +1728,22 @@ input.custom-checkbox {
           font-size: 16px;
           font-weight: 300;
           margin: 0; }
+  @media only screen and (max-width: 1024px) {
+    .section-main-comments .section-main-comments-container {
+      padding: 40px 25px; }
+      .section-main-comments .section-main-comments-container .section-main-comments-title {
+        text-align: center; }
+      .section-main-comments .section-main-comments-container .section-main-materials-content .section-main-materials-header {
+        display: block; }
+      .section-main-comments .section-main-comments-container .section-main-materials-content .main-materials-images-block-tabs {
+        float: none;
+        width: 100%; }
+        .section-main-comments .section-main-comments-container .section-main-materials-content .main-materials-images-block-tabs ul li {
+          width: 25%; }
+      .section-main-comments .section-main-comments-container .section-main-materials-content .section-main-materials-text-block {
+        display: none; }
+    .section-main-comments .comment-senders-list .comment-senders-list-container {
+      padding: 0 25px; } }
 
 .section-main-about-company {
   width: 100%;
