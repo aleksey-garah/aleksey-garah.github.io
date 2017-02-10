@@ -8,6 +8,7 @@ header {
   box-shadow: $nav-box-shadow;
 
   .top-navigation {
+    white-space: nowrap;
     @include default-container;
     padding: 23px 0;
     -webkit-transition: padding 1s ease;
@@ -15,30 +16,40 @@ header {
     -o-transition: padding 1s ease;
     transition: padding 1s ease;
 
+    @include clear-element;
+
     &.start-scroll {
       padding: 0;
     }
 
     .main-navigation-logo {
-      display: inline-block;
+      float: left;
       vertical-align: middle;
       margin-right: 27px;
+      padding: 5px 0;
     }
 
     nav {
-      display: inline-block;
       vertical-align: middle;
       line-height: 51px;
+      max-width: 720px;
+      margin-left: 79px;
+      margin-right: 347px;
 
       .main-navigation-menu {
         list-style: none;
         margin: 0;
         padding: 0;
         text-transform: uppercase;
+        white-space: nowrap;
 
         .main-navigation-menu-item {
           display: inline-block;
           padding: 0 20px;
+
+          &.on-hidden {
+            display: none;
+          }
 
           &:first-child {
             padding-left: 0;
@@ -57,24 +68,27 @@ header {
       }
     }
 
-    .nav-phone-number {
-      text-decoration: none;
-      color: $text-color;
-      font-size: 16px;
-      font-weight: 700;
-      margin-right: 22px;
-      vertical-align: middle;
-    }
-
-    .nav-order-phone-button {
-      color: $white;
-      background-color: $green;
-      vertical-align: middle;
+    .nav-phone-block {
       float: right;
-      margin-top: 6px;
+      padding: 5px 0;
 
-      &:hover {
-        background-color: $dark-green;
+      .nav-phone-number {
+        text-decoration: none;
+        color: $text-color;
+        font-size: 16px;
+        font-weight: 700;
+        margin-right: 22px;
+        vertical-align: middle;
+      }
+
+      .nav-order-phone-button {
+        color: $white;
+        background-color: $green;
+        vertical-align: middle;
+
+        &:hover {
+          background-color: $dark-green;
+        }
       }
     }
   }
@@ -142,6 +156,44 @@ footer {
       }
     }
   }
+
+  @media only screen and (max-width: 1024px) {
+    &.black-footer {
+
+      .footer-container {
+
+        .customer-copyright {
+          float: none;
+          width: auto;
+          text-align: center;
+          margin-bottom: 8px;
+        }
+
+        .developers-copyright {
+          text-align: center;
+          margin-left: 0;
+        }
+      }
+    }
+
+    &.white-footer {
+
+      .footer-container {
+
+        .customer-copyright {
+          float: none;
+          width: auto;
+          text-align: center;
+          margin-bottom: 8px;
+        }
+
+        .developers-copyright {
+          text-align: center;
+          margin-left: 0;
+        }
+      }
+    }
+  }
 }
 
 //====================================================================================================
@@ -175,10 +227,29 @@ footer {
       font-weight: $font-light;
     }
   }
+
+  @media only screen and (max-width: 1024px) {
+    height: 80px;
+
+    .default-section-header-block {
+
+      .default-section-title {
+        font-size: 26px;
+      }
+
+      .default-section-title-description {
+
+      }
+    }
+  }
 }
 
 .default-section-arrow {
   width: 100%;
+
+  @media only screen and (max-width: 1024px) {
+
+  }
 }
 
 //==================================================================================================
@@ -199,11 +270,23 @@ footer {
     font-size: 30px;
     font-weight: $font-black;
   }
+
+  @media only screen and (max-width: 1024px) {
+    height: 80px;
+
+    .default-forms-title {
+      font-size: 26px;
+    }
+  }
 }
 
 .default-forms-arrow {
   width: 100%;
   margin-top: -1px;
+
+  @media only screen and (max-width: 1024px) {
+
+  }
 }
 
 //==================================================================================================
@@ -519,6 +602,7 @@ footer {
     }
   }
 }
+
 //===================================================Tables========================================================
 
 table {
@@ -563,3 +647,25 @@ table {
     }
   }
 }
+
+//==================================================================================
+//==============================checkbox============================================
+
+input.custom-checkbox {
+  display: none;
+
+  &:checked + label {
+    font-size: 16px;
+    font-weight: $font-regular;
+    display: block;
+  }
+
+  & + label {
+    font-size: 16px;
+    font-weight: $font-regular;
+    display: block;
+    margin-bottom: 11px;
+  }
+}
+
+//============================================================

@@ -3,14 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <title>Homes</title>
+    <link rel="stylesheet" href="./node_modules/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css">
     <link rel="stylesheet" href="./styles/main.css">
 </head>
 <body>
 
 <header>
     <div class="top-navigation">
-        <a class="main-navigation-logo" href="#"><img src="./assets/images/Layer%201.png" alt=""></a>
-        <nav>
+        <a class="main-navigation-logo" href="/index.html"><img src="./assets/images/Layer%201.png"
+                                                                alt=""></a>
+        <div class="nav-phone-block">
+            <a class="nav-phone-number" href="tel:89688313196">8 (968) 831-31-96</a>
+            <button class="nav-order-phone-button default-button">Заказать звонок</button>
+        </div>
+        <nav id="menu">
             <ul class="main-navigation-menu">
                 <li class="main-navigation-menu-item"><a href="/pages/materials/materials.html">Технологии и
                     материалы</a></li>
@@ -21,8 +27,6 @@
                         href="/pages/finished-projects/finished-projects.html">Выполненные проекты</a></li>
             </ul>
         </nav>
-        <a class="nav-phone-number" href="tel:89688313196">8 (968) 831-31-96</a>
-        <button class="nav-order-phone-button default-button">Заказать звонок</button>
     </div>
 </header>
 
@@ -33,7 +37,7 @@
             <img class="section-main-background-lable" src="./assets/images/Vector%20Smart%20Object.png" alt="">
         </div>
         <div class="section-main-content">
-            <h1 class="section-main-content-title">Теплый и надежный дом для вашей семьи
+            <h1 class="section-main-content-title">Теплый и надежный дом для вашей семьи</br>
                 <span>за 3 месяца от 17 500 за м2</span>
             </h1>
             <ul>
@@ -95,12 +99,16 @@
     <img class="default-section-arrow" src="./assets/images/greenAngle.png" alt="">
 
     <div class="section-concrete-blocks-building-content">
-        <img src="./assets/BN-BY925_mag041_OZ_20140318165119.jpg" alt="">
+        <div class="section-concrete-blocks-building-img">
+            <img src="./assets/BN-BY925_mag041_OZ_20140318165119.jpg" alt="">
+        </div>
         <div class="section-concrete-blocks-building-text">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Aliquid amet animi consequatur consequuntur corporis earum facere facilis id magni odit pariatur
-                praesentium quasi,
-                recusandae reiciendis repellendus, voluptate voluptatibus! Impedit, labore?</p>
+            <p>Прочный, легкий и красивый материал, монолитный пенобетон дает возможность быстро и по доступной цене
+                построить дачный дом, коттедж "под ключ" и другие здания. По сути, технология сводится к использованию
+                несъемной опалубки и заливки в нее монолитного неавтоклавного пенобетона.
+
+                Наша компания предлагает технологию строительства, основанную на применении монолитного пенобетона с
+                использованием несъемной опалубки из пожаробезопасных и влагостойких плит.</p>
             <a href="javascript:void(0)"
                class="section-concrete-blocks-building-more-button default-button">
                 Подробнее <i class="icon-arrow"></i>
@@ -344,10 +352,10 @@
             <div class="team-member-block-info">
                 <h4 class="team-member-block-fio">Иван Иванов</h4>
                 <p class="team-member-block-title">Архитектор</p>
-                <p class="team-member-block-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    A asperiores blanditiis consectetur dicta ea facere facilis in incidunt ipsam ipsum, minus modi
-                    optio
-                    qui quidem quisquam quod sapiente similique voluptas?
+                <p class="team-member-block-text">Когда планировал начать строительство своего будущего дома, мысленно
+                    готовил себя к изнуряющему ожиданию и постоянной нервотрепке. Но, к счастью, познакомился с Вашей
+                    компанией. Такого качества и скорости работы я не ожидал. Но, к счастью, познакомился с Вашей
+                    компанией. Такого качества и скорости работы я не ожидал.
                 </p>
                 <button class="team-member-block-contact-button default-button">
                     Связаться <i class="icon-arrow"></i>
@@ -357,6 +365,11 @@
     </div>
     <div class="team-members-list">
         <div class="team-members-list-container">
+            <div class="team-members-list-item">
+                <img class="team-members-list-item-image" src="./assets/BN-BY925_mag041_OZ_20140318165119.jpg" alt="">
+                <p class="team-members-list-item-fio">Николай Николаев</p>
+                <p class="team-members-list-item-title">Архитектор</p>
+            </div>
             <div class="team-members-list-item">
                 <img class="team-members-list-item-image" src="./assets/BN-BY925_mag041_OZ_20140318165119.jpg" alt="">
                 <p class="team-members-list-item-fio">Николай Николаев</p>
@@ -415,6 +428,8 @@
 </footer>
 
 <script src="./js/jquery.min.js"></script>
+<script src="./js/jquery.mousewheel.js"></script>
+<script src="./js/jquery.mCustomScrollbar.concat.min.js"></script>
 <script src="./js/main.js"></script>
 
 <script type="text/javascript">
@@ -423,14 +438,71 @@
         var center = {lat: -25.363, lng: 131.044};
         var myLatLng1 = {lat: -25.363, lng: 131.044};
         var myLatLng2 = {lat: -27.365, lng: 134.055};
+        var styles = [{
+            "featureType": "water",
+            "elementType": "geometry",
+            "stylers": [{"color": "#e9e9e9"}, {"lightness": 17}]
+        }, {
+            "featureType": "landscape",
+            "elementType": "geometry",
+            "stylers": [{"color": "#f5f5f5"}, {"lightness": 20}]
+        }, {
+            "featureType": "road.highway",
+            "elementType": "geometry.fill",
+            "stylers": [{"color": "#ffffff"}, {"lightness": 17}]
+        }, {
+            "featureType": "road.highway",
+            "elementType": "geometry.stroke",
+            "stylers": [{"color": "#ffffff"}, {"lightness": 29}, {"weight": 0.2}]
+        }, {
+            "featureType": "road.arterial",
+            "elementType": "geometry",
+            "stylers": [{"color": "#ffffff"}, {"lightness": 18}]
+        }, {
+            "featureType": "road.local",
+            "elementType": "geometry",
+            "stylers": [{"color": "#ffffff"}, {"lightness": 16}]
+        }, {
+            "featureType": "poi",
+            "elementType": "geometry",
+            "stylers": [{"color": "#f5f5f5"}, {"lightness": 21}]
+        }, {
+            "featureType": "poi.park",
+            "elementType": "geometry",
+            "stylers": [{"color": "#dedede"}, {"lightness": 21}]
+        }, {
+            "elementType": "labels.text.stroke",
+            "stylers": [{"visibility": "on"}, {"color": "#ffffff"}, {"lightness": 16}]
+        }, {
+            "elementType": "labels.text.fill",
+            "stylers": [{"saturation": 36}, {"color": "#333333"}, {"lightness": 40}]
+        }, {"elementType": "labels.icon", "stylers": [{"visibility": "off"}]}, {
+            "featureType": "transit",
+            "elementType": "geometry",
+            "stylers": [{"color": "#f2f2f2"}, {"lightness": 19}]
+        }, {
+            "featureType": "administrative",
+            "elementType": "geometry.fill",
+            "stylers": [{"color": "#fefefe"}, {"lightness": 20}]
+        }, {
+            "featureType": "administrative",
+            "elementType": "geometry.stroke",
+            "stylers": [{"color": "#fefefe"}, {"lightness": 17}, {"weight": 1.2}]
+        }];
+
+        var styledMap = new google.maps.StyledMapType(styles,
+            {name: "Styled Map"});
 
         var map = new google.maps.Map(document.getElementById('map'), {
             zoom: 4,
-            center: center
+            center: center,
+            mapTypeControlOptions: {
+                mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'map_style']
+            }
         });
 
         var contentString = '<div id="content">' +
-            '<div id="siteNotice">' +
+            '<div id="location">' +
             '</div>' +
             '<h1 id="firstHeading" class="firstHeading">Uluru</h1>' +
             '<div id="bodyContent">' +
@@ -475,6 +547,9 @@
             animation: google.maps.Animation.DROP,
             title: 'Hello World!'
         });
+
+        map.mapTypes.set('map_style', styledMap);
+        map.setMapTypeId('map_style');
     }
 </script>
 
