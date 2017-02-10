@@ -2475,6 +2475,10 @@
       font-weight: $font-bold;
       text-transform: uppercase;
       margin: 0 0 40px 0;
+
+      @media only screen and (max-width: 1024px) {
+        text-align: center;
+      }
     }
 
     .section-main-contacts-content {
@@ -2620,6 +2624,7 @@
 }
 
 .section-contacts-map {
+  position: relative;
 
   .contacts-map-block {
     width: 100%;
@@ -2628,7 +2633,6 @@
 
   .section-contacts-map-container {
     @include default-container;
-    position: relative;
 
     .section-contacts-map-feedback {
       width: 450px;
@@ -2678,6 +2682,13 @@
             background-color: $dark-blue;
           }
         }
+      }
+
+      @media only screen and (max-width: 1024px) {
+        left: 50%;
+        margin-left: -225px;
+        top: 50%;
+        transform: translateY(-50%);
       }
     }
   }
