@@ -37,9 +37,11 @@ header {
       header .top-navigation nav .main-navigation-menu {
         list-style: none;
         margin: 0;
-        padding: 0;
+        padding: 0 15px 0 0;
         text-transform: uppercase;
-        white-space: nowrap; }
+        white-space: nowrap;
+        overflow-x: hidden;
+        text-overflow: ellipsis; }
         header .top-navigation nav .main-navigation-menu .main-navigation-menu-item {
           display: inline-block;
           padding: 0 20px; }
