@@ -2631,6 +2631,16 @@ input.custom-checkbox {
       font-weight: 700; }
       .section-main-project-card .section-main-project-card-container .section-main-project-card-wanna-same-button:hover {
         background-color: #589d52; }
+    @media only screen and (max-width: 1024px) {
+      .section-main-project-card .section-main-project-card-container {
+        padding: 40px 25px; }
+        .section-main-project-card .section-main-project-card-container .section-main-project-card-price-block {
+          display: block;
+          width: 100%;
+          margin-bottom: 25px; }
+        .section-main-project-card .section-main-project-card-container .default-button {
+          width: 48%;
+          display: inline-block; } }
 
 .section-detailed-project-card-info {
   width: 100%;
@@ -2727,6 +2737,17 @@ input.custom-checkbox {
               margin-left: 0; }
             .section-detailed-project-card-info .detailed-project-card-info-container .detailed-project-card-info-tabs .detailed-project-card-info-tab .detailed-project-card-info-tab-galery .detailed-project-card-info-tab-galery-small-images .detailed-project-card-info-tab-galery-small-img img {
               width: 100%; }
+        @media only screen and (max-width: 1024px) {
+          .section-detailed-project-card-info .detailed-project-card-info-container .detailed-project-card-info-tabs .detailed-project-card-info-tab .detailed-project-card-info-tab-galery:first-child {
+            padding: 0 0 30px 0;
+            border-right: none;
+            border-bottom: 1px solid #cacaca;
+            width: 100%;
+            display: block; }
+          .section-detailed-project-card-info .detailed-project-card-info-container .detailed-project-card-info-tabs .detailed-project-card-info-tab .detailed-project-card-info-tab-galery:last-child {
+            padding: 30px 0 0 0;
+            width: 100%;
+            display: block; } }
 
 .section-popular-projects.section-project-card-last-finished .section-popular-projects-content .section-popular-projects-content-cards {
   margin-bottom: 0; }
