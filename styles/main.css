@@ -164,20 +164,12 @@ footer.white-footer {
       font-weight: 300; }
   @media only screen and (max-width: 1024px) {
     .default-section-header {
-      background: transparent;
-      height: auto;
-      padding-top: 40px; }
-      .default-section-header .default-section-header-block {
-        position: static;
-        transform: none; }
-        .default-section-header .default-section-header-block .default-section-title, .default-section-header .default-section-header-block .default-section-title-description {
-          color: black; } }
+      height: 80px; }
+      .default-section-header .default-section-header-block .default-section-title {
+        font-size: 26px; } }
 
 .default-section-arrow {
   width: 100%; }
-  @media only screen and (max-width: 1024px) {
-    .default-section-arrow {
-      display: none; } }
 
 .default-forms-header {
   position: relative;
@@ -194,20 +186,13 @@ footer.white-footer {
     font-weight: 800; }
   @media only screen and (max-width: 1024px) {
     .default-forms-header {
-      background-color: #ffffff;
-      height: auto;
-      padding: 40px 25px; }
+      height: 80px; }
       .default-forms-header .default-forms-title {
-        color: black;
-        position: static;
-        transform: none; } }
+        font-size: 26px; } }
 
 .default-forms-arrow {
   width: 100%;
   margin-top: -1px; }
-  @media only screen and (max-width: 1024px) {
-    .default-forms-arrow {
-      display: none; } }
 
 .default-button {
   text-transform: uppercase;
@@ -811,13 +796,8 @@ input.custom-checkbox {
         text-align: center; }
         .section-popular-projects .section-popular-projects-content .section-popular-projects-content-cards .popular-projects-item:nth-child(4n+1) {
           margin-left: 15px; }
-          .section-popular-projects .section-popular-projects-content .section-popular-projects-content-cards .popular-projects-item:nth-child(4n+1):first-child {
-            margin-left: 0; }
         .section-popular-projects .section-popular-projects-content .section-popular-projects-content-cards .popular-projects-item:nth-child(4n+4) {
-          margin-left: 0;
-          margin-right: 15px; }
-        .section-popular-projects .section-popular-projects-content .section-popular-projects-content-cards .popular-projects-item:nth-child(3n+3) {
-          margin-right: 0; } }
+          margin-right: 15px; } }
 
 .section-last-projects {
   width: 100%; }
@@ -876,13 +856,8 @@ input.custom-checkbox {
         text-align: center; }
         .section-last-projects .section-last-projects-content .section-last-projects-content-cards .last-projects-item:nth-child(4n+1) {
           margin-left: 15px; }
-          .section-last-projects .section-last-projects-content .section-last-projects-content-cards .last-projects-item:nth-child(4n+1):first-child {
-            margin-left: 0; }
         .section-last-projects .section-last-projects-content .section-last-projects-content-cards .last-projects-item:nth-child(4n+4) {
-          margin-left: 0;
-          margin-right: 15px; }
-        .section-last-projects .section-last-projects-content .section-last-projects-content-cards .last-projects-item:nth-child(3n+3) {
-          margin-right: 0; } }
+          margin-right: 15px; } }
 
 .section-feedback {
   width: 100%;
@@ -929,10 +904,6 @@ input.custom-checkbox {
         .section-feedback .section-feedback-container form .section-feedback-submit-button:hover {
           background-color: #262c96; }
   @media only screen and (max-width: 1024px) {
-    .section-feedback .section-feedback-container .section-feedback-header {
-      background-color: #ffffff; }
-      .section-feedback .section-feedback-container .section-feedback-header .section-feedback-title {
-        color: black; }
     .section-feedback .section-feedback-container form {
       padding-top: 0; }
       .section-feedback .section-feedback-container form .feedback-form-group {
@@ -1096,8 +1067,11 @@ input.custom-checkbox {
       font-weight: 300; }
   @media only screen and (max-width: 1024px) {
     .section-buildings-coordinates .section-buildings-coordinates-header {
-      height: auto;
-      padding-bottom: 40px; } }
+      height: 227px; }
+      .section-buildings-coordinates .section-buildings-coordinates-header .default-section-header-block .section-buildings-coordinates-title {
+        font-size: 30px; }
+      .section-buildings-coordinates .section-buildings-coordinates-header .default-section-header-block .section-buildings-coordinates-description {
+        font-size: 20px; } }
 .section-buildings-coordinates .section-buildings-coordinates-content {
   height: 500px; }
 
@@ -2705,6 +2679,12 @@ input.custom-checkbox {
     background-color: #f6f6f6; }
     .section-popular-projects.section-project-card-last-finished .section-popular-projects-content .section-popular-projects-content-cards .popular-projects-item:hover {
       background-color: #82d15c; }
+@media only screen and (max-width: 1024px) {
+  .section-popular-projects.section-project-card-last-finished .section-popular-projects-content .section-popular-projects-content-cards .popular-projects-item {
+    margin-bottom: 30px;
+    background-color: #f6f6f6; }
+    .section-popular-projects.section-project-card-last-finished .section-popular-projects-content .section-popular-projects-content-cards .popular-projects-item:hover {
+      background-color: #82d15c; } }
 
 .section-main-finished-projects {
   width: 100%;
@@ -2833,6 +2813,10 @@ input.custom-checkbox {
       font-weight: 700;
       text-transform: uppercase;
       margin: 0 0 40px 0; }
+      @media only screen and (max-width: 1024px) {
+        .section-main-catalog .section-main-catalog-container .section-main-catalog-title {
+          text-align: center;
+          font-size: 26px; } }
     .section-main-catalog .section-main-catalog-container .catalog-info-tabs {
       width: 100%;
       box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.11);
@@ -2879,6 +2863,15 @@ input.custom-checkbox {
           margin: 0 20px 5px 0;
           background-color: #ffffff;
           box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.11); }
+      @media only screen and (max-width: 1024px) {
+        .section-main-catalog .section-main-catalog-container .catalog-info-tabs {
+          float: right;
+          width: 50%;
+          margin-bottom: 0; }
+          .section-main-catalog .section-main-catalog-container .catalog-info-tabs ul li {
+            display: block;
+            width: 100%;
+            margin-bottom: 2px; } }
     .section-main-catalog .section-main-catalog-container .left-filters-block {
       width: 272px;
       float: left;
@@ -2895,6 +2888,10 @@ input.custom-checkbox {
           font-weight: 400; }
         .section-main-catalog .section-main-catalog-container .left-filters-block .left-filter-block-section label {
           margin-left: 12px; }
+      @media only screen and (max-width: 1024px) {
+        .section-main-catalog .section-main-catalog-container .left-filters-block {
+          float: none;
+          width: 50%; } }
     .section-main-catalog .section-main-catalog-container .main-content-block {
       margin-left: 298px; }
       .section-main-catalog .section-main-catalog-container .main-content-block .main-content-actions-block {
@@ -2975,8 +2972,18 @@ input.custom-checkbox {
             color: #ffffff; }
           .section-main-catalog .section-main-catalog-container .main-content-block .main-content-project-items-container .main-content-project-item:hover .default-card-image img {
             opacity: 0.5; }
+      @media only screen and (max-width: 1024px) {
+        .section-main-catalog .section-main-catalog-container .main-content-block {
+          margin: 25px 0 0 0; } }
 
 .section-catalog-image-right {
   background-color: #f7f7f7; }
+  @media only screen and (max-width: 1024px) {
+    .section-catalog-image-right .section-with-image-right-container {
+      padding: 40px 25px; }
+      .section-catalog-image-right .section-with-image-right-container .section-with-image-right-image {
+        width: 100%;
+        margin: 0 0 25px;
+        float: none; } }
 
 /*# sourceMappingURL=main.css.map */

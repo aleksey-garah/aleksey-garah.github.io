@@ -229,16 +229,16 @@ footer {
   }
 
   @media only screen and (max-width: 1024px) {
-    background: transparent;
-    height: auto;
-    padding-top: 40px;
+    height: 80px;
 
     .default-section-header-block {
-      position: static;
-      transform: none;
 
-      .default-section-title, .default-section-title-description {
-        color: $text-color;
+      .default-section-title {
+        font-size: 26px;
+      }
+
+      .default-section-title-description {
+
       }
     }
   }
@@ -248,7 +248,7 @@ footer {
   width: 100%;
 
   @media only screen and (max-width: 1024px) {
-    display: none;
+
   }
 }
 
@@ -272,14 +272,10 @@ footer {
   }
 
   @media only screen and (max-width: 1024px) {
-    background-color: $white;
-    height: auto;
-    padding: 40px 25px;
+    height: 80px;
 
     .default-forms-title {
-      color: $text-color;
-      position: static;
-      transform: none;
+      font-size: 26px;
     }
   }
 }
@@ -289,7 +285,7 @@ footer {
   margin-top: -1px;
 
   @media only screen and (max-width: 1024px) {
-    display: none;
+
   }
 }
 
