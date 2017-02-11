@@ -13,8 +13,6 @@ $(document).ready(function () {
     $("#section-main-prices-table-tabs").tabs();
     $("#catalog-info-tabs").tabs();
     $("#project-card-info-tabs").tabs();
-
-    $("#homes-subsection-galery-tabs").tabs();
 });
 
 $(window).on("load", function () {

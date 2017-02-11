@@ -862,7 +862,7 @@
       }
     }
 
-    @media only screen and (max-width: 1024px) {
+    @media only screen and (max-width: $tablet-max) {
       height: 227px;
 
       .default-section-header-block {
@@ -1050,6 +1050,40 @@
         width: 100%;
       }
     }
+
+    @media only screen and (max-width: $tablet-max) {
+      padding: 40px 25px;
+
+      .section-main-service-title {
+        text-align: center;
+      }
+
+      .section-main-service-content {
+
+        .section-main-service-image {
+          float: none;
+          width: 100%;
+          margin: 0 0 25px 0;
+        }
+
+        .section-main-service-text-block {
+
+          .section-main-service-text {
+            margin-top: 0;
+          }
+
+          .section-main-service-price {
+            width: 50%;
+          }
+
+          .section-main-service-button {
+            display: block;
+            float: right;
+            width: 50%;
+          }
+        }
+      }
+    }
   }
 }
 
@@ -1160,6 +1194,28 @@
       }
     }
   }
+
+  @media only screen and (max-width: $tablet-max) {
+
+    .section-how-we-work-container {
+      padding: 40px 0;
+
+      .section-how-we-work-blocks {
+
+        .section-how-we-work-block {
+          width: 180px;
+
+          .how-we-work-description {
+            font-size: 16px;
+          }
+        }
+
+        .how-we-work-devider {
+          width: 32px;
+        }
+      }
+    }
+  }
 }
 
 .section-another-services {
@@ -1211,6 +1267,24 @@
         color: $text-color;
         text-decoration: none;
         padding: 40px 20px 0 157px;
+      }
+    }
+
+    @media only screen and (max-width: $tablet-max) {
+      padding: 40px 0;
+      text-align: center;
+
+      .service-link-block {
+        margin: 0 16px 20px 16px;
+
+        &:first-child {
+          margin-left: 16px;
+        }
+
+        &:last-child {
+          margin-right: 16px;
+          margin-bottom: 0;
+        }
       }
     }
   }

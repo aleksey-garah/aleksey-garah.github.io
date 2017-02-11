@@ -1224,6 +1224,23 @@ input.custom-checkbox {
       float: right; }
       .section-main-service .section-main-service-container .section-main-service-image img {
         width: 100%; }
+    @media only screen and (max-width: 1024px) {
+      .section-main-service .section-main-service-container {
+        padding: 40px 25px; }
+        .section-main-service .section-main-service-container .section-main-service-title {
+          text-align: center; }
+        .section-main-service .section-main-service-container .section-main-service-content .section-main-service-image {
+          float: none;
+          width: 100%;
+          margin: 0 0 25px 0; }
+        .section-main-service .section-main-service-container .section-main-service-content .section-main-service-text-block .section-main-service-text {
+          margin-top: 0; }
+        .section-main-service .section-main-service-container .section-main-service-content .section-main-service-text-block .section-main-service-price {
+          width: 50%; }
+        .section-main-service .section-main-service-container .section-main-service-content .section-main-service-text-block .section-main-service-button {
+          display: block;
+          float: right;
+          width: 50%; } }
 
 .section-how-we-work {
   background-color: #f2f2f2; }
@@ -1298,6 +1315,15 @@ input.custom-checkbox {
       margin: 0 auto; }
       .section-how-we-work .section-how-we-work-container .section-how-we-work-button:hover {
         background-color: #589d52; }
+  @media only screen and (max-width: 1024px) {
+    .section-how-we-work .section-how-we-work-container {
+      padding: 40px 0; }
+      .section-how-we-work .section-how-we-work-container .section-how-we-work-blocks .section-how-we-work-block {
+        width: 180px; }
+        .section-how-we-work .section-how-we-work-container .section-how-we-work-blocks .section-how-we-work-block .how-we-work-description {
+          font-size: 16px; }
+      .section-how-we-work .section-how-we-work-container .section-how-we-work-blocks .how-we-work-devider {
+        width: 32px; } }
 
 .section-another-services {
   width: 100%;
@@ -1341,6 +1367,17 @@ input.custom-checkbox {
         color: black;
         text-decoration: none;
         padding: 40px 20px 0 157px; }
+    @media only screen and (max-width: 1024px) {
+      .section-another-services .section-advantages-container {
+        padding: 40px 0;
+        text-align: center; }
+        .section-another-services .section-advantages-container .service-link-block {
+          margin: 0 16px 20px 16px; }
+          .section-another-services .section-advantages-container .service-link-block:first-child {
+            margin-left: 16px; }
+          .section-another-services .section-advantages-container .service-link-block:last-child {
+            margin-right: 16px;
+            margin-bottom: 0; } }
 
 .section-main-materials {
   width: 100%;
@@ -1558,7 +1595,7 @@ input.custom-checkbox {
         padding: 40px 25px; }
         .section-materials-general-info .section-materials-general-info-container .section-materials-general-info-title {
           text-align: center;
-          font-size: 26; } }
+          font-size: 26px; } }
 
 .section-main-comments {
   width: 100%;
