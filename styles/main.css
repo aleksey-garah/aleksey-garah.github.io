@@ -1372,6 +1372,17 @@ input.custom-checkbox {
       float: right; }
       .section-main-materials .section-main-materials-container .section-main-materials-image img {
         width: 100%; }
+  @media only screen and (max-width: 1024px) {
+    .section-main-materials .section-main-materials-container {
+      padding: 40px 25px; }
+      .section-main-materials .section-main-materials-container .section-main-materials-title {
+        text-align: center; }
+      .section-main-materials .section-main-materials-container .section-main-materials-content .section-main-materials-image {
+        float: none;
+        margin: 0 0 25px 0;
+        width: 100%; }
+      .section-main-materials .section-main-materials-container .section-main-materials-content .section-main-materials-text {
+        margin: 0; } }
 
 .section-building-homes {
   width: 100%;
@@ -1393,6 +1404,8 @@ input.custom-checkbox {
         float: left;
         overflow: hidden;
         margin-right: 50px; }
+        .section-building-homes .section-building-homes-container .section-building-homes-subsection-info .section-building-homes-subsection-info-video img {
+          width: 100%; }
       .section-building-homes .section-building-homes-container .section-building-homes-subsection-info .section-building-homes-subsection-info-text-block .section-building-homes-subsection-info-text {
         font-size: 20px;
         font-weight: 300;
@@ -1412,6 +1425,9 @@ input.custom-checkbox {
         content: "";
         display: block;
         clear: both; }
+      .section-building-homes .section-building-homes-container .section-building-homes-subsection-galery-tabs .homes-subsection-galery-tabs-dropdown {
+        display: none;
+        width: 100%; }
       .section-building-homes .section-building-homes-container .section-building-homes-subsection-galery-tabs ul {
         width: 260px;
         margin: 0;
@@ -1478,6 +1494,42 @@ input.custom-checkbox {
           font-size: 20px;
           font-weight: 400;
           color: #8c8c8c; }
+    @media only screen and (max-width: 1024px) {
+      .section-building-homes .section-building-homes-container {
+        padding: 40px 25px; }
+        .section-building-homes .section-building-homes-container .section-building-homes-subsection-info .section-building-homes-subsection-info-video {
+          width: 100%;
+          margin: 0 0 25px 0; }
+        .section-building-homes .section-building-homes-container .section-building-homes-subsection-info .section-building-homes-subsection-info-text-block .section-building-homes-subsection-info-button {
+          display: block;
+          margin: 0 auto; }
+        .section-building-homes .section-building-homes-container .section-building-homes-subsection-galery-tabs {
+          position: relative; }
+          .section-building-homes .section-building-homes-container .section-building-homes-subsection-galery-tabs .homes-subsection-galery-tabs-dropdown {
+            display: block;
+            text-align: left; }
+          .section-building-homes .section-building-homes-container .section-building-homes-subsection-galery-tabs ul {
+            float: none;
+            width: 100%;
+            position: absolute;
+            background-color: #ffffff;
+            padding: 0 2px;
+            left: 0;
+            z-index: 11;
+            height: 0;
+            overflow: hidden; }
+            .section-building-homes .section-building-homes-container .section-building-homes-subsection-galery-tabs ul.active {
+              height: auto; }
+            .section-building-homes .section-building-homes-container .section-building-homes-subsection-galery-tabs ul li {
+              font-size: 15px; }
+              .section-building-homes .section-building-homes-container .section-building-homes-subsection-galery-tabs ul li a {
+                text-align: left;
+                padding: 0 15px; }
+          .section-building-homes .section-building-homes-container .section-building-homes-subsection-galery-tabs .galery-tab {
+            margin: 0;
+            padding: 25px; }
+            .section-building-homes .section-building-homes-container .section-building-homes-subsection-galery-tabs .galery-tab .galery-tab-images {
+              margin-left: 25px; } }
 
 .section-materials-general-info {
   width: 100%; }
@@ -1501,6 +1553,12 @@ input.custom-checkbox {
       content: "";
       display: block;
       clear: both; }
+    @media only screen and (max-width: 1024px) {
+      .section-materials-general-info .section-materials-general-info-container {
+        padding: 40px 25px; }
+        .section-materials-general-info .section-materials-general-info-container .section-materials-general-info-title {
+          text-align: center;
+          font-size: 26; } }
 
 .section-main-comments {
   width: 100%;

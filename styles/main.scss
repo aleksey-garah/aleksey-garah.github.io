@@ -1257,6 +1257,30 @@
       }
     }
   }
+
+  @media only screen and (max-width: $tablet-max) {
+
+    .section-main-materials-container {
+      padding: 40px 25px;
+
+      .section-main-materials-title {
+        text-align: center;
+      }
+
+      .section-main-materials-content {
+
+        .section-main-materials-image {
+          float: none;
+          margin: 0 0 25px 0;
+          width: 100%;
+        }
+
+        .section-main-materials-text {
+          margin: 0;
+        }
+      }
+    }
+  }
 }
 
 .section-building-homes {
@@ -1277,6 +1301,11 @@
         float: left;
         overflow: hidden;
         margin-right: 50px;
+
+        img {
+          //TODO Video
+          width: 100%;
+        }
       }
 
       .section-building-homes-subsection-info-text-block {
@@ -1305,6 +1334,11 @@
       background-color: $white;
       padding: 2px;
       @include clear-element;
+
+      .homes-subsection-galery-tabs-dropdown {
+        display: none;
+        width: 100%;
+      }
 
       ul {
         width: 260px;
@@ -1408,6 +1442,71 @@
         }
       }
     }
+
+    @media only screen and (max-width: $tablet-max) {
+      padding: 40px 25px;
+
+      .section-building-homes-subsection-info {
+
+        .section-building-homes-subsection-info-video {
+          width: 100%;
+          margin: 0 0 25px 0;
+
+          //TODO Video
+        }
+
+        .section-building-homes-subsection-info-text-block {
+
+          .section-building-homes-subsection-info-button {
+            display: block;
+            margin: 0 auto;
+          }
+        }
+      }
+
+      .section-building-homes-subsection-galery-tabs {
+        position: relative;
+
+        .homes-subsection-galery-tabs-dropdown {
+          display: block;
+          text-align: left;
+        }
+
+        ul {
+          float: none;
+          width: 100%;
+          position: absolute;
+          background-color: $white;
+          padding: 0 2px;
+          left: 0;
+          z-index: 11;
+          height: 0;
+          overflow: hidden;
+
+          &.active {
+            height: auto;
+          }
+
+          li {
+            font-size: 15px;
+
+            a {
+              text-align: left;
+              padding: 0 15px;
+            }
+          }
+        }
+
+        .galery-tab {
+          margin: 0;
+          padding: 25px;
+
+          .galery-tab-images {
+            margin-left: 25px;
+          }
+        }
+      }
+    }
   }
 }
 
@@ -1432,6 +1531,15 @@
 
     .section-with-image-left {
       @include clear-element;
+    }
+
+    @media only screen and (max-width: $tablet-max) {
+      padding: 40px 25px;
+
+      .section-materials-general-info-title {
+        text-align: center;
+        font-size: 26px;
+      }
     }
   }
 }
