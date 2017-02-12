@@ -24,4 +24,4 @@ $(window).on("load", function () {
             enable: true
         }
     });
-};
+});
