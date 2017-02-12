@@ -624,6 +624,45 @@ input.custom-checkbox {
   -webkit-transition-delay: .0s;
   transition-delay: .0s; }
 
+.ui-dialog {
+  width: auto !important;
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); }
+
+.modal-window.section-feedback-container {
+  width: 100%;
+  max-width: 915px;
+  margin: 0 auto;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  position: absolute;
+  background-color: #ffffff; }
+  .modal-window.section-feedback-container .section-feedback-header {
+    background-color: #595fce; }
+    .modal-window.section-feedback-container .section-feedback-header .section-feedback-title {
+      color: #ffffff;
+      padding: 0 50px; }
+  .modal-window.section-feedback-container form {
+    padding: 40px 60px 50px 60px; }
+    .modal-window.section-feedback-container form .feedback-form-group {
+      margin-bottom: 24px; }
+    .modal-window.section-feedback-container form .feedback-form-textarea-block {
+      margin-bottom: 40px; }
+    .modal-window.section-feedback-container form .section-feedback-submit-button {
+      background-color: #565ccb;
+      color: #ffffff;
+      text-transform: uppercase;
+      display: block;
+      margin: 0 auto; }
+      .modal-window.section-feedback-container form .section-feedback-submit-button:hover {
+        background-color: #262c96; }
+
 .section-main {
   padding-top: 100px;
   background-color: #eeeeee; }

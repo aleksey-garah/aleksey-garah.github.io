@@ -12,69 +12,82 @@ $(document).ready(function () {
 
     $("#section-main-prices-table-tabs").tabs();
     $("#project-card-info-tabs").tabs();
+
+    $( "#calculate-dialog" ).dialog({
+        autoOpen: false
+    });
+
+    $("#open-calculate-window").on("click", function (event) {
+        $("#calculate-dialog").dialog("open");
+    });
+
+    $(".ui-dialog ").on("click", function (event) {
+        $("#calculate-dialog").dialog("close");
+    });
+
+    $(".ui-dialog-content").on("click", function (event) {
+        event.stopPropagation();
+    })
 });
 
 $(window).on("load", function () {
+
     $(".team-members-list-container").mCustomScrollbar({
         axis: "x",
         scrollButtons: {
             enable: true
         }
     });
+
+    hiddenNavBar = {
+        $menu: $('#menu'),
+        init: function () {
+            this.resize();
+            $('<div id="on-hidden-menu"><div class="toggle "><span></span></div><ul></ul></div>').hide().insertAfter(".nav-phone-block");
+            // toggle
+            $('#on-hidden-menu .toggle').click(function () {
+                $('#on-hidden-menu').toggleClass('open');
+            });
+
+            // win load & resize
+            $(window).on('load resize', function () {
+                hiddenNavBar.resize();
+            });
+        },
+        resize: function () {
+            setTimeout(function () {
+                var menuWidth = $('#menu').width();
+                var winW = $(".main-navigation-menu").width();
+
+                console.log(menuWidth, winW);
+
+                if (winW > menuWidth) {
+                    console.log('init');
+
+                    $('#on-hidden-menu').show();
+                    $clone = $('li:not(".on-hidden"):last', $('#menu')).addClass('on-hidden').clone();
+
+                    if ($clone.parent().length == 0) {
+                        $clone.prependTo($('#on-hidden-menu ul'));
+                    }
+
+                    hiddenNavBar.resize();
+
+                } else if (winW + $('li.on-hidden:first').width() < menuWidth) {
+                    $('li.on-hidden:first').removeClass('on-hidden');
+                    $('#on-hidden-menu ul li:first').remove();
+                }
+
+                if ($('.on-hidden').length == 0) {
+                    $('#on-hidden-menu').removeClass('open').hide();
+                }
+            }, 10);
+        }
+    };
+
+    hiddenNavBar.init();
 });
 
 /*--------------------------------------------------
  Hidden Nav
  --------------------------------------------------*/
-hiddenNavBar = {
-    $menu: $('#menu'),
-    init: function () {
-        this.resize();
-        $('<div id="on-hidden-menu"><div class="toggle "><span></span></div><ul></ul></div>').hide().insertAfter(".nav-phone-block");
-        // toggle
-        $('#on-hidden-menu .toggle').click(function () {
-            $('#on-hidden-menu').toggleClass('open');
-        });
-
-        // win load & resize
-        $(window).on('load resize', function () {
-            hiddenNavBar.resize();
-        });
-    },
-    resize: function () {
-        setTimeout(function () {
-            var menuWidth = $('#menu').width();
-            var winW = $(".main-navigation-menu").width();
-
-            console.log(menuWidth, winW);
-
-            if (winW > menuWidth) {
-                console.log('init');
-
-                $('#on-hidden-menu').show();
-                $clone = $('li:not(".on-hidden"):last', $('#menu')).addClass('on-hidden').clone();
-
-                if ($clone.parent().length == 0) {
-                    $clone.prependTo($('#on-hidden-menu ul'));
-                }
-
-                hiddenNavBar.resize();
-
-            } else if (winW + $('li.on-hidden:first').width() < menuWidth) {
-                $('li.on-hidden:first').removeClass('on-hidden');
-                $('#on-hidden-menu ul li:first').remove();
-            }
-
-            if ($('.on-hidden').length == 0) {
-                $('#on-hidden-menu').removeClass('open').hide();
-            }
-        }, 10);
-    }
-};
-
-/*--------------------------------------------------
- DOC READY
- --------------------------------------------------*/
-$(function () {
-    hiddenNavBar.init();
-});

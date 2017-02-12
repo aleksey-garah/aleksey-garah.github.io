@@ -879,3 +879,63 @@ input.custom-checkbox {
   -webkit-transition-delay: .0s;
   transition-delay: .0s;
 }
+
+//=========================================================================================
+
+.ui-dialog {
+  width: auto !important;
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-window {
+
+  &.section-feedback-container {
+    width: 100%;
+    max-width: 915px;
+    margin: 0 auto;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    position: absolute;
+    background-color: $white;
+
+    .section-feedback-header {
+      background-color: $forms-blue;
+
+      .section-feedback-title {
+        color: $white;
+        padding: 0 50px;
+      }
+    }
+
+    form {
+      padding: 40px 60px 50px 60px;
+
+      .feedback-form-group {
+        margin-bottom: 24px;
+      }
+
+      .feedback-form-textarea-block {
+        margin-bottom: 40px;
+      }
+
+      .section-feedback-submit-button {
+        background-color: $light-blue;
+        color: $white;
+        text-transform: uppercase;
+        display: block;
+        margin: 0 auto;
+
+        &:hover {
+          background-color: $dark-blue;
+        }
+      }
+    }
+  }
+}

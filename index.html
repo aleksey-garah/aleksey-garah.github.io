@@ -46,7 +46,9 @@
                 <li><i class="icon-house2"></i>Большой выбор проектов</li>
                 <li><i class="icon-wallet"></i>Низкие цены</li>
             </ul>
-            <button class="section-main-calculate-button default-button">Рассчитать смету бесплатно</button>
+            <button id="open-calculate-window" class="section-main-calculate-button default-button">Рассчитать смету
+                бесплатно
+            </button>
         </div>
     </div>
 </section>
@@ -427,7 +429,40 @@
     </div>
 </footer>
 
+<div class="section-feedback-container modal-window" id="calculate-dialog">
+    <div class="section-feedback-header default-forms-header">
+        <h3 class="section-feedback-title default-forms-title">Оставьте заявку на консультацию и узнайте о наших
+            услугах больше</h3>
+    </div>
+
+    <img class="default-forms-arrow" src="./assets/images/blueAngle.png" alt="">
+
+    <form>
+        <div class="feedback-form-group default-form-group">
+            <div class="feedback-form-block default-form-block">
+                <label class="default-form-label" for="feedback-name">Имя*</label>
+                <input class="feedback-form-control default-form-control" name="feedback-name" id="feedback-name"
+                       type="text"/>
+            </div>
+            <div class="feedback-form-block default-form-block">
+                <label class="default-form-label" for="feedback-phone">Телефон*</label>
+                <input class="feedback-form-control default-form-control" name="feedback-phone" id="feedback-phone"
+                       type="text"/>
+            </div>
+        </div>
+        <div class="feedback-form-textarea-block default-form-textarea-block">
+            <label class="default-form-label" for="feedback-comments">Комментарий</label>
+            <textarea class="feedback-form-textarea default-form-textarea" name="feedback-comments"
+                      id="feedback-comments" cols="30" rows="10"></textarea>
+        </div>
+        <button class="section-feedback-submit-button default-button" type="submit">
+            Посмотреть все проекты <i class="icon-arrow"></i>
+        </button>
+    </form>
+</div>
+
 <script src="./js/jquery.min.js"></script>
+<script src="./js/jquery-ui.min.js"></script>
 <script src="./js/jquery.mousewheel.js"></script>
 <script src="./js/jquery.mCustomScrollbar.concat.min.js"></script>
 <script src="./js/main.js"></script>
