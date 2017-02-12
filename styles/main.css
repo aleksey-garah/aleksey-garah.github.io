@@ -662,6 +662,15 @@ input.custom-checkbox {
       margin: 0 auto; }
       .modal-window.section-feedback-container form .section-feedback-submit-button:hover {
         background-color: #1e289a; }
+  @media only screen and (max-width: 1024px) {
+    .modal-window.section-feedback-container form {
+      padding-top: 0; }
+      .modal-window.section-feedback-container form .feedback-form-group {
+        margin-bottom: 0; }
+        .modal-window.section-feedback-container form .feedback-form-group .feedback-form-block {
+          margin-bottom: 24px;
+          max-width: none;
+          display: block; } }
 
 .section-main {
   padding-top: 100px;

@@ -14,7 +14,15 @@ $(document).ready(function () {
 
     $(".ui-dialog-content").on("click", function (event) {
         event.stopPropagation();
-    })
+    });
+
+    $("#order-call-dialog").dialog({
+        autoOpen: false
+    });
+
+    $("#open-order-call-window").on("click", function (event) {
+        $("#calculate-dialog").dialog("open");
+    });
 });
 
 $(window).on("load", function () {

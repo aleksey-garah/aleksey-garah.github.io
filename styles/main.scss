@@ -675,7 +675,7 @@
     }
   }
 
-  @media only screen and (max-width: 1024px) {
+  @media only screen and (max-width: $tablet-max) {
     .section-feedback-container {
 
       .section-feedback-header {
@@ -838,7 +838,7 @@
     }
   }
 
-  @media only screen and (max-width: 1024px) {
+  @media only screen and (max-width: $tablet-max) {
     display: none;
   }
 }

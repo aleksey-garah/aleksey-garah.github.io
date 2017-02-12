@@ -779,7 +779,6 @@ input.custom-checkbox {
   color: $nav-brown-hovered;
 }
 
-
 /* on hidden menu open */
 
 #on-hidden-menu.open ul {
@@ -794,7 +793,6 @@ input.custom-checkbox {
 #on-hidden-menu.open ul li:last-child {
   border-bottom-left-radius: 5px;
 }
-
 
 /* toggle */
 
@@ -840,7 +838,6 @@ input.custom-checkbox {
   -webkit-transition-delay: .2s;
   transition-delay: .2s;
 }
-
 
 /* close */
 
@@ -934,6 +931,29 @@ input.custom-checkbox {
 
         &:hover {
           background-color: $dark-blue;
+        }
+      }
+    }
+
+    @media only screen and (max-width: $tablet-max) {
+      .section-feedback-header {
+
+        .section-feedback-title {
+
+        }
+      }
+
+      form {
+        padding-top: 0;
+
+        .feedback-form-group {
+          margin-bottom: 0;
+
+          .feedback-form-block {
+            margin-bottom: 24px;
+            max-width: none;
+            display: block;
+          }
         }
       }
     }
