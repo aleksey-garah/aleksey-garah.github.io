@@ -1,4 +1,5 @@
 @import url(../assets/fonts/icomoon/style.css);
+@import url(../assets/fonts/stylesheet.css);
 @import url(./normalize.css);
 header {
   position: fixed;
@@ -36,11 +37,11 @@ header {
       margin-right: 347px; }
       header .top-navigation nav .main-navigation-menu {
         list-style: none;
+        display: inline-block;
         margin: 0;
-        padding: 0 15px 0 0;
+        padding: 0;
         text-transform: uppercase;
         white-space: nowrap;
-        overflow-x: hidden;
         text-overflow: ellipsis; }
         header .top-navigation nav .main-navigation-menu .main-navigation-menu-item {
           display: inline-block;
@@ -481,6 +482,147 @@ input.custom-checkbox {
     font-weight: 400;
     display: block;
     margin-bottom: 11px; }
+
+.InfoWindowContent {
+  width: 214px; }
+  .InfoWindowContent p {
+    margin: 0;
+    padding: 12px 0;
+    font-size: 16px;
+    font-weight: 300; }
+  .InfoWindowContent a {
+    display: block;
+    line-height: 44px;
+    text-align: center;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 300;
+    background-color: #82d15c; }
+    .InfoWindowContent a:hover {
+      background-color: #589d52; }
+
+#menu ul li.on-hidden {
+  display: none; }
+
+#on-hidden-menu {
+  display: block;
+  float: right;
+  z-index: 10;
+  right: 0;
+  position: relative;
+  padding: 0 20px 0 0; }
+
+#on-hidden-menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: absolute;
+  right: 0; }
+
+#on-hidden-menu li {
+  background: #f2f2f2;
+  border-bottom: 1px solid #d0d0d0;
+  opacity: 0;
+  -moz-transition: all .4s ease-in-out .2s;
+  -o-transition: all .4s ease-in-out .2s;
+  -webkit-transition: all .4s ease-in-out .2s;
+  transition: all .4s ease-in-out .2s;
+  position: relative; }
+
+#on-hidden-menu li a {
+  color: #6b4d2f;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: block; }
+
+#on-hidden-menu li a:hover {
+  color: #442b22; }
+
+/* on hidden menu open */
+#on-hidden-menu.open ul {
+  display: block;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.11); }
+
+#on-hidden-menu.open ul li {
+  opacity: 1; }
+
+#on-hidden-menu.open ul li:last-child {
+  border-bottom-left-radius: 5px; }
+
+/* toggle */
+#on-hidden-menu .toggle {
+  width: 32px;
+  margin: auto 0 auto auto;
+  height: 52px;
+  z-index: 1;
+  cursor: pointer;
+  border-radius: 2px; }
+
+#on-hidden-menu .toggle:before,
+#on-hidden-menu .toggle:after,
+#on-hidden-menu .toggle span:before {
+  content: '';
+  width: 4px;
+  height: 4px;
+  background: #6b4d2f;
+  border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  margin-top: -2px;
+  left: 5px;
+  -moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out; }
+
+#on-hidden-menu .toggle:after {
+  left: 13px;
+  -moz-transition-delay: .1s;
+  -o-transition-delay: .1s;
+  -webkit-transition-delay: .1s;
+  transition-delay: .1s; }
+
+#on-hidden-menu .toggle span:before {
+  left: 21px;
+  -moz-transition-delay: .2s;
+  -o-transition-delay: .2s;
+  -webkit-transition-delay: .2s;
+  transition-delay: .2s; }
+
+/* close */
+#on-hidden-menu.open .toggle:before,
+#on-hidden-menu.open .toggle:after {
+  width: 20px;
+  -moz-transform: rotate(225deg);
+  -ms-transform: rotate(225deg);
+  -o-transform: rotate(225deg);
+  -webkit-transform: rotate(225deg);
+  transform: rotate(225deg);
+  top: 50%;
+  height: 3px; }
+
+#on-hidden-menu.open .toggle:after {
+  -moz-transform: rotate(-225deg);
+  -ms-transform: rotate(-225deg);
+  -o-transform: rotate(-225deg);
+  -webkit-transform: rotate(-225deg);
+  transform: rotate(-225deg);
+  left: 5px;
+  -moz-transition-delay: .0s;
+  -o-transition-delay: .0s;
+  -webkit-transition-delay: .0s;
+  transition-delay: .0s; }
+
+#on-hidden-menu.open .toggle span:before {
+  top: 50%;
+  left: 13px;
+  width: 2px;
+  height: 2px;
+  -moz-transition-delay: .0s;
+  -o-transition-delay: .0s;
+  -webkit-transition-delay: .0s;
+  transition-delay: .0s; }
 
 .section-main {
   padding-top: 100px;
