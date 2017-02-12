@@ -9,30 +9,11 @@ $(document).ready(function () {
             $('.top-navigation').removeClass("start-scroll");
         }
     });
-
-    $("#section-main-prices-table-tabs").tabs();
-    $("#project-card-info-tabs").tabs();
-
-    $( "#calculate-dialog" ).dialog({
-        autoOpen: false
-    });
-
-    $("#open-calculate-window").on("click", function (event) {
-        $("#calculate-dialog").dialog("open");
-    });
-
-    $(".ui-dialog ").on("click", function (event) {
-        $("#calculate-dialog").dialog("close");
-    });
-
-    $(".ui-dialog-content").on("click", function (event) {
-        event.stopPropagation();
-    })
 });
 
 $(window).on("load", function () {
 
-    $(".team-members-list-container").mCustomScrollbar({
+    $(".scrollable-content").mCustomScrollbar({
         axis: "x",
         scrollButtons: {
             enable: true
@@ -87,7 +68,3 @@ $(window).on("load", function () {
 
     hiddenNavBar.init();
 });
-
-/*--------------------------------------------------
- Hidden Nav
- --------------------------------------------------*/
