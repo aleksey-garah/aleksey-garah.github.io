@@ -23,6 +23,14 @@ $(document).ready(function () {
     $("#open-order-call-window").on("click", function (event) {
         $("#calculate-dialog").dialog("open");
     });
+
+    $("#connect-with-worker-dialog").dialog({
+        autoOpen: false
+    });
+
+    $("#open-connect-with-worker-dialog").on("click", function (event) {
+        $("#calculate-dialog").dialog("open");
+    });
 });
 
 $(window).on("load", function () {
@@ -40,5 +48,5 @@ $(window).on("load", function () {
         $(".team-member-block-image").children().attr("src", $(this).children("img").attr("src"));
         $(".team-member-block-fio").text($(this).children(".team-members-list-item-fio").text());
         $(".team-member-block-title").text($(this).children(".team-members-list-item-title").text());
-    })
+    });
 });
