@@ -13,13 +13,6 @@ $(document).ready(function () {
 
 $(window).on("load", function () {
 
-    $(".scrollable-content").mCustomScrollbar({
-        axis: "x",
-        scrollButtons: {
-            enable: true
-        }
-    });
-
     hiddenNavBar = {
         $menu: $('#menu'),
         init: function () {

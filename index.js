@@ -16,3 +16,12 @@ $(document).ready(function () {
         event.stopPropagation();
     })
 });
+
+$(window).on("load", function () {
+    $(".scrollable-content").mCustomScrollbar({
+        axis: "x",
+        scrollButtons: {
+            enable: true
+        }
+    });
+};

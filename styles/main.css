@@ -2911,7 +2911,8 @@ input.custom-checkbox {
         .section-main-project-card .section-main-project-card-container .section-main-project-card-galery .section-main-project-card-galery-big-img .default-zoom-button {
           position: absolute;
           left: 0;
-          bottom: 35px; }
+          bottom: 35px;
+          text-decoration: none; }
       .section-main-project-card .section-main-project-card-container .section-main-project-card-galery .section-main-project-card-galery-small-images {
         width: 100%;
         font-size: 0; }
@@ -3021,8 +3022,8 @@ input.custom-checkbox {
           width: 100%;
           margin-bottom: 25px; }
         .section-main-project-card .section-main-project-card-container .default-button {
-          width: 48%;
-          display: inline-block; } }
+          width: 50%;
+          float: left; } }
 
 .section-detailed-project-card-info {
   width: 100%;
@@ -3091,7 +3092,8 @@ input.custom-checkbox {
             .section-detailed-project-card-info .detailed-project-card-info-container .detailed-project-card-info-tabs .detailed-project-card-info-tab .detailed-project-card-info-tab-galery .detailed-project-card-info-tab-galery-big-img .default-zoom-button {
               position: absolute;
               left: 0;
-              bottom: 35px; }
+              bottom: 35px;
+              text-decoration: none; }
           .section-detailed-project-card-info .detailed-project-card-info-container .detailed-project-card-info-tabs .detailed-project-card-info-tab .detailed-project-card-info-tab-galery .detailed-project-card-info-tab-galery-small-images .detailed-project-card-info-tab-galery-small-img {
             width: 65px;
             height: 65px;
@@ -3257,7 +3259,8 @@ input.custom-checkbox {
     line-height: 58px;
     vertical-align: top; }
   .section-main-finished-project-card .section-main-project-card-container .section-main-project-card-galery .section-main-project-card-galery-big-img .project-card-galery .default-zoom-button {
-    position: static; }
+    position: static;
+    text-decoration: none; }
 .section-main-finished-project-card .section-main-project-card-container .section-main-project-card-comment-button {
   width: 395px;
   border: 1px solid #cacaca;

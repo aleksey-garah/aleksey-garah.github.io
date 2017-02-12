@@ -3230,6 +3230,7 @@
           position: absolute;
           left: 0;
           bottom: 35px;
+          text-decoration: none;
         }
       }
 
@@ -3388,8 +3389,8 @@
       }
 
       .default-button {
-        width: 48%;
-        display: inline-block;
+        width: 50%;
+        float: left;
       }
     }
   }
@@ -3489,6 +3490,7 @@
               position: absolute;
               left: 0;
               bottom: 35px;
+              text-decoration: none;
             }
           }
 
@@ -3782,6 +3784,7 @@
 
           .default-zoom-button {
             position: static;
+            text-decoration: none;
           }
         }
       }
