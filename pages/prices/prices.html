@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Цены</title>
     <link rel="stylesheet" href="../../styles/main.css">
 </head>
@@ -13,7 +14,7 @@
                                                                 alt=""></a>
         <div class="nav-phone-block">
             <a class="nav-phone-number" href="tel:89688313196">8 (968) 831-31-96</a>
-            <button class="nav-order-phone-button default-button">Заказать звонок</button>
+            <button id="open-order-call-window" class="nav-order-phone-button default-button">Заказать звонок</button>
         </div>
         <nav id="menu">
             <ul class="main-navigation-menu">
@@ -99,7 +100,15 @@
                     </thead>
                     <tbody>
                     <tr>
-                        <td>Ривьера 3</td>
+                        <td>Ривьера 1</td>
+                        <td>2</td>
+                        <td>250</td>
+                        <td>6</td>
+                        <td>от 60 дней</td>
+                        <td>5 500 00</td>
+                    </tr>
+                    <tr>
+                        <td>Ривьера 2</td>
                         <td>2</td>
                         <td>250</td>
                         <td>6</td>
@@ -115,7 +124,15 @@
                         <td>5 500 00</td>
                     </tr>
                     <tr>
-                        <td>Ривьера 3</td>
+                        <td>Ривьера 4</td>
+                        <td>2</td>
+                        <td>250</td>
+                        <td>6</td>
+                        <td>от 60 дней</td>
+                        <td>5 500 00</td>
+                    </tr>
+                    <tr>
+                        <td>Ривьера 5</td>
                         <td>2</td>
                         <td>250</td>
                         <td>6</td>
@@ -189,6 +206,38 @@
         </address>
     </div>
 </footer>
+
+<div class="section-feedback-container modal-window" id="order-call-dialog">
+    <div class="section-feedback-header default-forms-header">
+        <h3 class="section-feedback-title default-forms-title">Оставьте заявку на консультацию и узнайте о наших
+            услугах больше</h3>
+    </div>
+
+    <img class="default-forms-arrow" src="../../assets/images/blueAngle.png" alt="">
+
+    <form>
+        <div class="feedback-form-group default-form-group">
+            <div class="feedback-form-block default-form-block">
+                <label class="default-form-label" for="order-name">Имя*</label>
+                <input class="feedback-form-control default-form-control" name="order-name" id="order-name"
+                       type="text"/>
+            </div>
+            <div class="feedback-form-block default-form-block">
+                <label class="default-form-label" for="order-phone">Телефон*</label>
+                <input class="feedback-form-control default-form-control" name="order-phone" id="order-phone"
+                       type="text"/>
+            </div>
+        </div>
+        <div class="feedback-form-textarea-block default-form-textarea-block">
+            <label class="default-form-label" for="order-comments">Комментарий</label>
+            <textarea class="feedback-form-textarea default-form-textarea" name="order-comments"
+                      id="order-comments" cols="30" rows="10"></textarea>
+        </div>
+        <button class="section-feedback-submit-button default-button" type="submit">
+            Посмотреть все проекты <i class="icon-arrow"></i>
+        </button>
+    </form>
+</div>
 
 <script src="../../js/jquery.min.js"></script>
 <script src="../../js/jquery-ui.min.js"></script>

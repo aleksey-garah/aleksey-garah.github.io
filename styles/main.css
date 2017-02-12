@@ -631,7 +631,8 @@ input.custom-checkbox {
   left: 0 !important;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5); }
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 10; }
 
 .modal-window.section-feedback-container {
   width: 100%;
@@ -671,6 +672,9 @@ input.custom-checkbox {
           margin-bottom: 24px;
           max-width: none;
           display: block; } }
+
+.scrollable-content .mCustomScrollBox {
+  outline: none; }
 
 .section-main {
   padding-top: 100px;
@@ -2001,10 +2005,51 @@ input.custom-checkbox {
       top: 50%;
       left: 0;
       right: 0;
-      transform: translateY(-50%); }
+      transform: translateY(-50%);
+      white-space: nowrap;
+      overflow: hidden; }
+      .section-main-comments .comment-senders-list .comment-senders-list-container .mCSB_scrollTools.mCSB_scrollTools_horizontal {
+        background-color: #ffffff; }
+        .section-main-comments .comment-senders-list .comment-senders-list-container .mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_dragger {
+          background-color: #46d251; }
+          .section-main-comments .comment-senders-list .comment-senders-list-container .mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar {
+            background-color: #46d251; }
+        .section-main-comments .comment-senders-list .comment-senders-list-container .mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_buttonLeft {
+          text-decoration: none;
+          color: #ffffff;
+          background-color: #46d251;
+          font-size: 10px;
+          opacity: 1;
+          background-image: none;
+          text-align: center;
+          line-height: 16px; }
+          .section-main-comments .comment-senders-list .comment-senders-list-container .mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_buttonLeft:before {
+            font-family: 'icomoon';
+            content: '\e903'; }
+        .section-main-comments .comment-senders-list .comment-senders-list-container .mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_buttonRight {
+          text-decoration: none;
+          color: #ffffff;
+          background-color: #46d251;
+          font-size: 10px;
+          opacity: 1;
+          background-image: none;
+          text-align: center;
+          line-height: 16px; }
+          .section-main-comments .comment-senders-list .comment-senders-list-container .mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_buttonRight:before {
+            font-family: 'icomoon';
+            content: '\e904'; }
+      .section-main-comments .comment-senders-list .comment-senders-list-container .mCSB_scrollTools .mCSB_draggerRail {
+        background-color: #ffffff; }
       .section-main-comments .comment-senders-list .comment-senders-list-container .comment-senders-list-item {
         display: inline-block;
-        text-align: center; }
+        text-align: center;
+        margin-right: 40px;
+        opacity: 0.5;
+        cursor: pointer; }
+        .section-main-comments .comment-senders-list .comment-senders-list-container .comment-senders-list-item.active, .section-main-comments .comment-senders-list .comment-senders-list-container .comment-senders-list-item:hover {
+          opacity: 1; }
+        .section-main-comments .comment-senders-list .comment-senders-list-container .comment-senders-list-item:last-child {
+          margin-right: 0; }
         .section-main-comments .comment-senders-list .comment-senders-list-container .comment-senders-list-item .comment-senders-list-item-image {
           width: 74px;
           height: 74px;
@@ -2452,6 +2497,16 @@ input.custom-checkbox {
             margin-right: 46px; }
           .section-about-news-item .section-about-news-item-container .section-about-news-item-content .about-news-item-double-images .about-news-item-small-img img {
             width: 100%; }
+      .section-about-news-item .section-about-news-item-container .section-about-news-item-content .about-news-item-video {
+        width: 100%;
+        height: 485px;
+        overflow: hidden;
+        margin-bottom: 40px; }
+        .section-about-news-item .section-about-news-item-container .section-about-news-item-content .about-news-item-video:last-child {
+          margin-bottom: 0; }
+        .section-about-news-item .section-about-news-item-container .section-about-news-item-content .about-news-item-video iframe {
+          height: 100%;
+          width: 100%; }
     .section-about-news-item .section-about-news-item-container .socials-block {
       max-width: 774px;
       width: 100%;
@@ -2765,7 +2820,9 @@ input.custom-checkbox {
           color: #ffffff;
           padding: 0 50px; }
       .section-contacts-map .section-contacts-map-container .section-contacts-map-feedback .default-forms-arrow {
-        height: 14px; }
+        height: 14px;
+        position: relative;
+        top: -1px; }
       .section-contacts-map .section-contacts-map-container .section-contacts-map-feedback form {
         padding: 40px 60px 50px 60px; }
         .section-contacts-map .section-contacts-map-container .section-contacts-map-feedback form .contacts-map-form-group {
@@ -2939,25 +2996,30 @@ input.custom-checkbox {
           display: inline-block;
           box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.11);
           cursor: pointer;
-          background-color: #46d251; }
-          .section-main-project-card .section-main-project-card-container .section-main-project-card-galery .section-main-project-card-galery-small-images .section-main-project-card-galery-small-img:hover:before {
-            font-family: 'icomoon';
-            content: '\e909';
-            color: #ffffff;
-            position: absolute;
-            right: 0;
-            left: 0;
-            top: 50%;
-            transform: translateY(-50%);
-            font-size: 38px;
-            text-align: center;
-            z-index: 1; }
+          background-color: #000000; }
           .section-main-project-card .section-main-project-card-container .section-main-project-card-galery .section-main-project-card-galery-small-images .section-main-project-card-galery-small-img:hover img {
-            opacity: 0.5; }
+            opacity: 1; }
+          .section-main-project-card .section-main-project-card-container .section-main-project-card-galery .section-main-project-card-galery-small-images .section-main-project-card-galery-small-img.active {
+            background-color: #46d251; }
+            .section-main-project-card .section-main-project-card-container .section-main-project-card-galery .section-main-project-card-galery-small-images .section-main-project-card-galery-small-img.active:before {
+              font-family: 'icomoon';
+              content: '\e909';
+              color: #ffffff;
+              position: absolute;
+              right: 0;
+              left: 0;
+              top: 50%;
+              transform: translateY(-50%);
+              font-size: 38px;
+              text-align: center;
+              z-index: 1; }
+            .section-main-project-card .section-main-project-card-container .section-main-project-card-galery .section-main-project-card-galery-small-images .section-main-project-card-galery-small-img.active:hover img {
+              opacity: 0.5; }
           .section-main-project-card .section-main-project-card-container .section-main-project-card-galery .section-main-project-card-galery-small-images .section-main-project-card-galery-small-img:first-child {
             margin-left: 0; }
           .section-main-project-card .section-main-project-card-container .section-main-project-card-galery .section-main-project-card-galery-small-images .section-main-project-card-galery-small-img img {
-            width: 100%; }
+            width: 100%;
+            opacity: 0.5; }
       @media only screen and (max-width: 1024px) {
         .section-main-project-card .section-main-project-card-container .section-main-project-card-galery {
           float: none;
@@ -3115,26 +3177,31 @@ input.custom-checkbox {
             overflow: hidden;
             display: inline-block;
             position: relative;
-            background-color: #46d251;
+            background-color: #000000;
             cursor: pointer; }
-            .section-detailed-project-card-info .detailed-project-card-info-container .detailed-project-card-info-tabs .detailed-project-card-info-tab .detailed-project-card-info-tab-galery .detailed-project-card-info-tab-galery-small-images .detailed-project-card-info-tab-galery-small-img:hover:before {
-              font-family: 'icomoon';
-              content: '\e909';
-              color: #ffffff;
-              position: absolute;
-              right: 0;
-              left: 0;
-              top: 50%;
-              transform: translateY(-50%);
-              font-size: 38px;
-              text-align: center;
-              z-index: 1; }
             .section-detailed-project-card-info .detailed-project-card-info-container .detailed-project-card-info-tabs .detailed-project-card-info-tab .detailed-project-card-info-tab-galery .detailed-project-card-info-tab-galery-small-images .detailed-project-card-info-tab-galery-small-img:hover img {
-              opacity: 0.5; }
+              opacity: 1; }
+            .section-detailed-project-card-info .detailed-project-card-info-container .detailed-project-card-info-tabs .detailed-project-card-info-tab .detailed-project-card-info-tab-galery .detailed-project-card-info-tab-galery-small-images .detailed-project-card-info-tab-galery-small-img.active {
+              background-color: #46d251; }
+              .section-detailed-project-card-info .detailed-project-card-info-container .detailed-project-card-info-tabs .detailed-project-card-info-tab .detailed-project-card-info-tab-galery .detailed-project-card-info-tab-galery-small-images .detailed-project-card-info-tab-galery-small-img.active:before {
+                font-family: 'icomoon';
+                content: '\e909';
+                color: #ffffff;
+                position: absolute;
+                right: 0;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                font-size: 38px;
+                text-align: center;
+                z-index: 1; }
+              .section-detailed-project-card-info .detailed-project-card-info-container .detailed-project-card-info-tabs .detailed-project-card-info-tab .detailed-project-card-info-tab-galery .detailed-project-card-info-tab-galery-small-images .detailed-project-card-info-tab-galery-small-img.active img {
+                opacity: 0.5; }
             .section-detailed-project-card-info .detailed-project-card-info-container .detailed-project-card-info-tabs .detailed-project-card-info-tab .detailed-project-card-info-tab-galery .detailed-project-card-info-tab-galery-small-images .detailed-project-card-info-tab-galery-small-img:first-child {
               margin-left: 0; }
             .section-detailed-project-card-info .detailed-project-card-info-container .detailed-project-card-info-tabs .detailed-project-card-info-tab .detailed-project-card-info-tab-galery .detailed-project-card-info-tab-galery-small-images .detailed-project-card-info-tab-galery-small-img img {
-              width: 100%; }
+              width: 100%;
+              opacity: 0.5; }
         @media only screen and (max-width: 1024px) {
           .section-detailed-project-card-info .detailed-project-card-info-container .detailed-project-card-info-tabs .detailed-project-card-info-tab .detailed-project-card-info-tab-galery:first-child {
             padding: 0 0 30px 0;
@@ -3274,14 +3341,18 @@ input.custom-checkbox {
     vertical-align: top; }
   .section-main-finished-project-card .section-main-project-card-container .section-main-project-card-galery .section-main-project-card-galery-big-img .project-card-galery .default-zoom-button {
     position: static;
-    text-decoration: none; }
+    text-decoration: none;
+    display: inline-block; }
 .section-main-finished-project-card .section-main-project-card-container .section-main-project-card-comment-button {
   width: 395px;
   border: 1px solid #cacaca;
   height: 47px;
   line-height: 47px;
   margin-bottom: 16px;
-  font-weight: 700; }
+  font-weight: 700;
+  color: black;
+  background-color: red;
+  text-align: center; }
 @media only screen and (max-width: 1024px) {
   .section-main-finished-project-card .section-main-project-card-container {
     padding: 40px 25px;

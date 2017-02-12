@@ -1,13 +1,6 @@
 $(document).ready(function () {
-    $("#catalog-info-tabs").tabs();
 
-    $(".catalog-info-tabs-button").on("click", function (event) {
-        $("#catalog-info-tabs").toggleClass("active")
-    });
-
-    $(".left-filters-block-button").on("click", function (event) {
-        $(".left-filters-block").toggleClass("active")
-    });
+    //===========modals============
 
     $("#order-call-dialog").dialog({
         autoOpen: false
@@ -16,7 +9,8 @@ $(document).ready(function () {
         $("#order-call-dialog").dialog("open");
     });
 
-    //===================================================
+    //============================
+
     $(".ui-dialog").on("click", function (event) {
         $("#order-call-dialog").dialog("close");
     });

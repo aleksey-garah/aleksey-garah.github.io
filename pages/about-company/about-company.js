@@ -1,13 +1,5 @@
 $(document).ready(function () {
 
-    //===========modals============
-    $("#calculate-dialog").dialog({
-        autoOpen: false
-    });
-    $("#open-calculate-window").on("click", function (event) {
-        $("#calculate-dialog").dialog("open");
-    });
-
     $("#order-call-dialog").dialog({
         autoOpen: false
     });
@@ -23,9 +15,7 @@ $(document).ready(function () {
     });
 
     //============================
-
     $(".ui-dialog").on("click", function (event) {
-        $("#calculate-dialog").dialog("close");
         $("#order-call-dialog").dialog("close");
         $("#connect-with-worker-dialog").dialog("close");
     });

@@ -313,7 +313,7 @@ footer {
     margin-left: 12px;
   }
 
-  @media only screen and (max-width: 1024px) {
+  @media only screen and (max-width: $tablet-max) {
     font-size: 14px;
     padding: 0 15px;
     white-space: nowrap;
@@ -887,6 +887,7 @@ input.custom-checkbox {
   right: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.5);
+  z-index: 10;
 }
 
 .modal-window {
@@ -957,5 +958,14 @@ input.custom-checkbox {
         }
       }
     }
+  }
+}
+
+//======================
+
+.scrollable-content {
+
+  .mCustomScrollBox {
+    outline: none;
   }
 }

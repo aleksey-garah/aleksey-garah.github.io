@@ -2,7 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Готовый проект</title>
+    <link rel="stylesheet" href="../../../styles/lightbox.css">
     <link rel="stylesheet" href="../../../styles/main.css">
 </head>
 <body>
@@ -13,7 +15,7 @@
                                                                 alt=""></a>
         <div class="nav-phone-block">
             <a class="nav-phone-number" href="tel:89688313196">8 (968) 831-31-96</a>
-            <button class="nav-order-phone-button default-button">Заказать звонок</button>
+            <button id="open-order-call-window" class="nav-order-phone-button default-button">Заказать звонок</button>
         </div>
         <nav id="menu">
             <ul class="main-navigation-menu">
@@ -38,20 +40,22 @@
                 <li><span class="breadcrumbs-arrow">></span><a href="#">Ривера-2, 28.09.2016</a></li>
             </ul>
         </div>
-        <h1 class="section-main-project-card-title">Ривера-2</h1>
+        <h1 class="section-main-project-card-title">Строительство коттеджа ривьера-3 по монолитной
+            технологии в несъемной опалубке</h1>
         <div class="section-main-project-card-galery">
-            <div class="section-main-project-card-galery-big-img">
+            <div class="section-main-project-card-galery-big-img galery-big-img">
                 <img src="../../../assets/BN-BY925_mag041_OZ_20140318165119.jpg" alt="">
                 <div class="project-card-galery">
                     <span>Заливка опалубки бетоном</span>
-                    <button class="default-zoom-button"><i class="icon-zoom"></i></button>
+                    <a href="../../../assets/BN-BY925_mag041_OZ_20140318165119.jpg" data-lightbox="image-1"
+                       class="default-zoom-button"><i class="icon-zoom"></i></a>
                 </div>
             </div>
             <div class="section-main-project-card-galery-small-images">
-                <div class="section-main-project-card-galery-small-img">
+                <div class="section-main-project-card-galery-small-img galery-small-img active">
                     <img src="../../../assets/BN-BY925_mag041_OZ_20140318165119.jpg" alt="">
                 </div>
-                <div class="section-main-project-card-galery-small-img">
+                <div class="section-main-project-card-galery-small-img galery-small-img">
                     <img src="../../../assets/BN-BY925_mag041_OZ_20140318165119.jpg" alt="">
                 </div>
             </div>
@@ -84,9 +88,14 @@
             </div>
         </div>
 
-        <button class="section-main-project-card-comment-button default-button">Отзыв от хозяина</button>
-        <button class="section-main-project-card-clarify-button default-button">Уточнить информацию</button>
-        <button class="section-main-project-card-wanna-same-button default-button">Хочу такой дом</button>
+        <a href="/pages/about-company/comments/comments.html"
+           class="section-main-project-card-comment-button default-button">Отзыв от хозяина</a>
+        <button id="open-clarify-dialog" class="section-main-project-card-clarify-button default-button">Уточнить
+            информацию
+        </button>
+        <button id="open-wanna-same-dialog" class="section-main-project-card-wanna-same-button default-button">Хочу
+            такой дом
+        </button>
     </div>
 </section>
 
@@ -225,8 +234,106 @@
     </div>
 </footer>
 
+<div class="section-feedback-container modal-window" id="order-call-dialog">
+    <div class="section-feedback-header default-forms-header">
+        <h3 class="section-feedback-title default-forms-title">Оставьте заявку на консультацию и узнайте о наших
+            услугах больше</h3>
+    </div>
+
+    <img class="default-forms-arrow" src="../../../assets/images/blueAngle.png" alt="">
+
+    <form>
+        <div class="feedback-form-group default-form-group">
+            <div class="feedback-form-block default-form-block">
+                <label class="default-form-label" for="order-name">Имя*</label>
+                <input class="feedback-form-control default-form-control" name="order-name" id="order-name"
+                       type="text"/>
+            </div>
+            <div class="feedback-form-block default-form-block">
+                <label class="default-form-label" for="order-phone">Телефон*</label>
+                <input class="feedback-form-control default-form-control" name="order-phone" id="order-phone"
+                       type="text"/>
+            </div>
+        </div>
+        <div class="feedback-form-textarea-block default-form-textarea-block">
+            <label class="default-form-label" for="order-comments">Комментарий</label>
+            <textarea class="feedback-form-textarea default-form-textarea" name="order-comments"
+                      id="order-comments" cols="30" rows="10"></textarea>
+        </div>
+        <button class="section-feedback-submit-button default-button" type="submit">
+            Посмотреть все проекты <i class="icon-arrow"></i>
+        </button>
+    </form>
+</div>
+
+<div class="section-feedback-container modal-window" id="clarify-info-dialog">
+    <div class="section-feedback-header default-forms-header">
+        <h3 class="section-feedback-title default-forms-title">Оставьте заявку на консультацию и узнайте о наших
+            услугах больше</h3>
+    </div>
+
+    <img class="default-forms-arrow" src="../../../assets/images/blueAngle.png" alt="">
+
+    <form>
+        <div class="feedback-form-group default-form-group">
+            <div class="feedback-form-block default-form-block">
+                <label class="default-form-label" for="clarify-name">Имя*</label>
+                <input class="feedback-form-control default-form-control" name="clarify-name" id="clarify-name"
+                       type="text"/>
+            </div>
+            <div class="feedback-form-block default-form-block">
+                <label class="default-form-label" for="clarify-phone">Телефон*</label>
+                <input class="feedback-form-control default-form-control" name="clarify-phone" id="clarify-phone"
+                       type="text"/>
+            </div>
+        </div>
+        <div class="feedback-form-textarea-block default-form-textarea-block">
+            <label class="default-form-label" for="clarify-comments">Комментарий</label>
+            <textarea class="feedback-form-textarea default-form-textarea" name="clarify-comments"
+                      id="clarify-comments" cols="30" rows="10"></textarea>
+        </div>
+        <button class="section-feedback-submit-button default-button" type="submit">
+            Посмотреть все проекты <i class="icon-arrow"></i>
+        </button>
+    </form>
+</div>
+
+<div class="section-feedback-container modal-window" id="wanna-same-house-dialog">
+    <div class="section-feedback-header default-forms-header">
+        <h3 class="section-feedback-title default-forms-title">Оставьте заявку на консультацию и узнайте о наших
+            услугах больше</h3>
+    </div>
+
+    <img class="default-forms-arrow" src="../../../assets/images/blueAngle.png" alt="">
+
+    <form>
+        <div class="feedback-form-group default-form-group">
+            <div class="feedback-form-block default-form-block">
+                <label class="default-form-label" for="wanna-same-name">Имя*</label>
+                <input class="feedback-form-control default-form-control" name="wanna-same-name" id="wanna-same-name"
+                       type="text"/>
+            </div>
+            <div class="feedback-form-block default-form-block">
+                <label class="default-form-label" for="wanna-same-phone">Телефон*</label>
+                <input class="feedback-form-control default-form-control" name="wanna-same-phone" id="wanna-same-phone"
+                       type="text"/>
+            </div>
+        </div>
+        <div class="feedback-form-textarea-block default-form-textarea-block">
+            <label class="default-form-label" for="wanna-same-comments">Комментарий</label>
+            <textarea class="feedback-form-textarea default-form-textarea" name="wanna-same-comments"
+                      id="wanna-same-comments" cols="30" rows="10"></textarea>
+        </div>
+        <button class="section-feedback-submit-button default-button" type="submit">
+            Посмотреть все проекты <i class="icon-arrow"></i>
+        </button>
+    </form>
+</div>
+
 <script src="../../../js/jquery.min.js"></script>
 <script src="../../../js/jquery-ui.min.js"></script>
+<script src="../../../js/lightbox.js"></script>
 <script src="../../../js/main.js"></script>
+<script src="finished-project.js"></script>
 </body>
 </html>

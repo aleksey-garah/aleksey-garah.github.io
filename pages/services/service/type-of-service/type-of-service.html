@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Другая Инжинерная Услуга</title>
     <link rel="stylesheet" href="../../../../styles/main.css">
 </head>
@@ -13,7 +14,7 @@
                                                                 alt=""></a>
         <div class="nav-phone-block">
             <a class="nav-phone-number" href="tel:89688313196">8 (968) 831-31-96</a>
-            <button class="nav-order-phone-button default-button">Заказать звонок</button>
+            <button id="open-order-call-window" class="nav-order-phone-button default-button">Заказать звонок</button>
         </div>
         <nav id="menu">
             <ul class="main-navigation-menu">
@@ -64,7 +65,9 @@
                 <span class="section-main-service-price">
                     от 9 999 руб
                 </span>
-                <button class="section-main-service-button default-button">Узнать стоимость вашего проекта</button>
+                <button id="open-know-price-dialog" class="section-main-service-button default-button">Узнать стоимость
+                    вашего проекта
+                </button>
             </div>
         </div>
     </div>
@@ -130,7 +133,8 @@
                 <p class="how-we-work-description">Оплата</p>
             </div>
         </div>
-        <button class="section-how-we-work-button default-button">Заказать услугу</button>
+        <button id="open-order-service-dialog" class="section-how-we-work-button default-button">Заказать услугу
+        </button>
     </div>
 </section>
 
@@ -254,8 +258,107 @@
     </div>
 </footer>
 
+<div class="section-feedback-container modal-window" id="order-call-dialog">
+    <div class="section-feedback-header default-forms-header">
+        <h3 class="section-feedback-title default-forms-title">Оставьте заявку на консультацию и узнайте о наших
+            услугах больше</h3>
+    </div>
+
+    <img class="default-forms-arrow" src="../../../../assets/images/blueAngle.png" alt="">
+
+    <form>
+        <div class="feedback-form-group default-form-group">
+            <div class="feedback-form-block default-form-block">
+                <label class="default-form-label" for="order-name">Имя*</label>
+                <input class="feedback-form-control default-form-control" name="order-name" id="order-name"
+                       type="text"/>
+            </div>
+            <div class="feedback-form-block default-form-block">
+                <label class="default-form-label" for="order-phone">Телефон*</label>
+                <input class="feedback-form-control default-form-control" name="order-phone" id="order-phone"
+                       type="text"/>
+            </div>
+        </div>
+        <div class="feedback-form-textarea-block default-form-textarea-block">
+            <label class="default-form-label" for="order-comments">Комментарий</label>
+            <textarea class="feedback-form-textarea default-form-textarea" name="order-comments"
+                      id="order-comments" cols="30" rows="10"></textarea>
+        </div>
+        <button class="section-feedback-submit-button default-button" type="submit">
+            Посмотреть все проекты <i class="icon-arrow"></i>
+        </button>
+    </form>
+</div>
+
+<div class="section-feedback-container modal-window" id="know-price-dialog">
+    <div class="section-feedback-header default-forms-header">
+        <h3 class="section-feedback-title default-forms-title">Оставьте заявку на консультацию и узнайте о наших
+            услугах больше</h3>
+    </div>
+
+    <img class="default-forms-arrow" src="../../../../assets/images/blueAngle.png" alt="">
+
+    <form>
+        <div class="feedback-form-group default-form-group">
+            <div class="feedback-form-block default-form-block">
+                <label class="default-form-label" for="know-name">Имя*</label>
+                <input class="feedback-form-control default-form-control" name="know-name" id="know-name"
+                       type="text"/>
+            </div>
+            <div class="feedback-form-block default-form-block">
+                <label class="default-form-label" for="know-phone">Телефон*</label>
+                <input class="feedback-form-control default-form-control" name="know-phone" id="know-phone"
+                       type="text"/>
+            </div>
+        </div>
+        <div class="feedback-form-textarea-block default-form-textarea-block">
+            <label class="default-form-label" for="know-comments">Комментарий</label>
+            <textarea class="feedback-form-textarea default-form-textarea" name="know-comments"
+                      id="know-comments" cols="30" rows="10"></textarea>
+        </div>
+        <button class="section-feedback-submit-button default-button" type="submit">
+            Посмотреть все проекты <i class="icon-arrow"></i>
+        </button>
+    </form>
+</div>
+
+<div class="section-feedback-container modal-window" id="order-service-dialog">
+    <div class="section-feedback-header default-forms-header">
+        <h3 class="section-feedback-title default-forms-title">Оставьте заявку на консультацию и узнайте о наших
+            услугах больше</h3>
+    </div>
+
+    <img class="default-forms-arrow" src="../../../../assets/images/blueAngle.png" alt="">
+
+    <form>
+        <div class="feedback-form-group default-form-group">
+            <div class="feedback-form-block default-form-block">
+                <label class="default-form-label" for="order-service-name">Имя*</label>
+                <input class="feedback-form-control default-form-control" name="order-service-name"
+                       id="order-service-name"
+                       type="text"/>
+            </div>
+            <div class="feedback-form-block default-form-block">
+                <label class="default-form-label" for="order-service-phone">Телефон*</label>
+                <input class="feedback-form-control default-form-control" name="order-service-phone"
+                       id="order-service-phone"
+                       type="text"/>
+            </div>
+        </div>
+        <div class="feedback-form-textarea-block default-form-textarea-block">
+            <label class="default-form-label" for="order-service-comments">Комментарий</label>
+            <textarea class="feedback-form-textarea default-form-textarea" name="order-service-comments"
+                      id="order-service-comments" cols="30" rows="10"></textarea>
+        </div>
+        <button class="section-feedback-submit-button default-button" type="submit">
+            Посмотреть все проекты <i class="icon-arrow"></i>
+        </button>
+    </form>
+</div>
+
 <script src="../../../../js/jquery.min.js"></script>
 <script src="../../../../js/jquery-ui.min.js"></script>
 <script src="../../../../js/main.js"></script>
+<script src="type-of-service.js"></script>
 </body>
 </html>

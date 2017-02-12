@@ -2,7 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>О компании</title>
+    <link rel="stylesheet" href="../../styles/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" href="../../styles/lightbox.css">
     <link rel="stylesheet" href="../../styles/main.css">
 </head>
 <body>
@@ -13,7 +16,7 @@
                                                                 alt=""></a>
         <div class="nav-phone-block">
             <a class="nav-phone-number" href="tel:89688313196">8 (968) 831-31-96</a>
-            <button class="nav-order-phone-button default-button">Заказать звонок</button>
+            <button id="open-order-call-window" class="nav-order-phone-button default-button">Заказать звонок</button>
         </div>
         <nav id="menu">
             <ul class="main-navigation-menu">
@@ -130,7 +133,8 @@
         <div class="default-section-header-block">
             <h3 class="section-team-title default-section-title">Наша команда</h3>
             <p class="section-team-title-description default-section-title-description">Все наши сотрудники имеют высшее
-                образование и опыт работы в своей сфере от 3-х лет. У нас молодой и дружный коллектив, который не боится показать себя.
+                образование и опыт работы в своей сфере от 3-х лет. У нас молодой и дружный коллектив, который не боится
+                показать себя.
             </p>
         </div>
     </div>
@@ -150,7 +154,7 @@
                     optio
                     qui quidem quisquam quod sapiente similique voluptas?
                 </p>
-                <button class="team-member-block-contact-button default-button">
+                <button id="open-connect-with-worker-dialog" class="team-member-block-contact-button default-button">
                     Связаться <i class="icon-arrow"></i>
                 </button>
             </div>
@@ -158,7 +162,7 @@
     </div>
     <div class="team-members-list">
         <div class="team-members-list-container scrollable-content">
-            <div class="team-members-list-item">
+            <div class="team-members-list-item active">
                 <img class="team-members-list-item-image" src="../../assets/BN-BY925_mag041_OZ_20140318165119.jpg"
                      alt="">
                 <p class="team-members-list-item-fio">Иван Иванов</p>
@@ -210,18 +214,22 @@
     <img class="default-section-arrow" src="../../assets/images/greenAngle.png" alt="">
 
     <div class="section-diploms-container">
-        <div class="section-diploms-item">
+        <a href="../../assets/BN-BY925_mag041_OZ_20140318165119.jpg" data-lightbox="image-1"
+           class="section-diploms-item">
             <img class="section-diploms-item-image" src="../../assets/BN-BY925_mag041_OZ_20140318165119.jpg" alt="">
-        </div>
-        <div class="section-diploms-item">
+        </a>
+        <a href="../../assets/BN-BY925_mag041_OZ_20140318165119.jpg" data-lightbox="image-1"
+           class="section-diploms-item">
             <img class="section-diploms-item-image" src="../../assets/BN-BY925_mag041_OZ_20140318165119.jpg" alt="">
-        </div>
-        <div class="section-diploms-item">
+        </a>
+        <a href="../../assets/BN-BY925_mag041_OZ_20140318165119.jpg" data-lightbox="image-1"
+           class="section-diploms-item">
             <img class="section-diploms-item-image" src="../../assets/BN-BY925_mag041_OZ_20140318165119.jpg" alt="">
-        </div>
-        <div class="section-diploms-item">
+        </a>
+        <a href="../../assets/BN-BY925_mag041_OZ_20140318165119.jpg" data-lightbox="image-1"
+           class="section-diploms-item">
             <img class="section-diploms-item-image" src="../../assets/BN-BY925_mag041_OZ_20140318165119.jpg" alt="">
-        </div>
+        </a>
     </div>
 </section>
 
@@ -270,8 +278,76 @@
     </div>
 </footer>
 
+<div class="section-feedback-container modal-window" id="order-call-dialog">
+    <div class="section-feedback-header default-forms-header">
+        <h3 class="section-feedback-title default-forms-title">Оставьте заявку на консультацию и узнайте о наших
+            услугах больше</h3>
+    </div>
+
+    <img class="default-forms-arrow" src="../../assets/images/blueAngle.png" alt="">
+
+    <form>
+        <div class="feedback-form-group default-form-group">
+            <div class="feedback-form-block default-form-block">
+                <label class="default-form-label" for="order-name">Имя*</label>
+                <input class="feedback-form-control default-form-control" name="order-name" id="order-name"
+                       type="text"/>
+            </div>
+            <div class="feedback-form-block default-form-block">
+                <label class="default-form-label" for="order-phone">Телефон*</label>
+                <input class="feedback-form-control default-form-control" name="order-phone" id="order-phone"
+                       type="text"/>
+            </div>
+        </div>
+        <div class="feedback-form-textarea-block default-form-textarea-block">
+            <label class="default-form-label" for="order-comments">Комментарий</label>
+            <textarea class="feedback-form-textarea default-form-textarea" name="order-comments"
+                      id="order-comments" cols="30" rows="10"></textarea>
+        </div>
+        <button class="section-feedback-submit-button default-button" type="submit">
+            Посмотреть все проекты <i class="icon-arrow"></i>
+        </button>
+    </form>
+</div>
+
+<div class="section-feedback-container modal-window" id="connect-with-worker-dialog">
+    <div class="section-feedback-header default-forms-header">
+        <h3 class="section-feedback-title default-forms-title">Оставьте заявку на консультацию и узнайте о наших
+            услугах больше</h3>
+    </div>
+
+    <img class="default-forms-arrow" src="../../assets/images/blueAngle.png" alt="">
+
+    <form>
+        <div class="feedback-form-group default-form-group">
+            <div class="feedback-form-block default-form-block">
+                <label class="default-form-label" for="connect-name">Имя*</label>
+                <input class="feedback-form-control default-form-control" name="connect-name" id="connect-name"
+                       type="text"/>
+            </div>
+            <div class="feedback-form-block default-form-block">
+                <label class="default-form-label" for="connect-phone">Телефон*</label>
+                <input class="feedback-form-control default-form-control" name="connect-phone" id="connect-phone"
+                       type="text"/>
+            </div>
+        </div>
+        <div class="feedback-form-textarea-block default-form-textarea-block">
+            <label class="default-form-label" for="connect-comments">Комментарий</label>
+            <textarea class="feedback-form-textarea default-form-textarea" name="connect-comments"
+                      id="connect-comments" cols="30" rows="10"></textarea>
+        </div>
+        <button class="section-feedback-submit-button default-button" type="submit">
+            Посмотреть все проекты <i class="icon-arrow"></i>
+        </button>
+    </form>
+</div>
+
 <script src="../../js/jquery.min.js"></script>
 <script src="../../js/jquery-ui.min.js"></script>
+<script src="../../js/jquery.mousewheel.js"></script>
+<script src="../../js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="../../js/lightbox.js"></script>
 <script src="../../js/main.js"></script>
+<script src="about-company.js"></script>
 </body>
 </html>
