@@ -39,15 +39,15 @@ header {
       line-height: 51px;
       max-width: 720px;
       margin-left: 79px;
-      margin-right: 347px; }
+      margin-right: 347px;
+      overflow: hidden; }
       header .top-navigation nav .main-navigation-menu {
         list-style: none;
         display: inline-block;
         margin: 0;
         padding: 0;
         text-transform: uppercase;
-        white-space: nowrap;
-        text-overflow: ellipsis; }
+        white-space: nowrap; }
         header .top-navigation nav .main-navigation-menu .main-navigation-menu-item {
           display: inline-block;
           padding: 0 20px; }
@@ -820,7 +820,7 @@ input.custom-checkbox {
           padding: 15px; }
           .section-main .section-main-container .section-main-content ul li i {
             font-size: 20px;
-            color: #46d251;
+            color: #00a04c;
             margin-right: 16px;
             vertical-align: text-bottom; }
           .section-main .section-main-container .section-main-content ul li:first-child {
@@ -1053,7 +1053,9 @@ input.custom-checkbox {
     .section-advantages .section-advantages-container {
       text-align: center; }
       .section-advantages .section-advantages-container .advantages-item {
-        margin: 15px; } }
+        margin: 15px;
+        max-width: none;
+        width: 180px; } }
 
 .section-popular-projects {
   width: 100%;
@@ -1082,23 +1084,26 @@ input.custom-checkbox {
         .section-popular-projects .section-popular-projects-content .section-popular-projects-content-cards .popular-projects-item:hover {
           background-color: #46d251; }
           .section-popular-projects .section-popular-projects-content .section-popular-projects-content-cards .popular-projects-item:hover .default-card-title {
+            color: #ffffff;
+            z-index: 2; }
+          .section-popular-projects .section-popular-projects-content .section-popular-projects-content-cards .popular-projects-item:hover .default-card-text {
             color: #ffffff; }
-            .section-popular-projects .section-popular-projects-content .section-popular-projects-content-cards .popular-projects-item:hover .default-card-title:before {
+          .section-popular-projects .section-popular-projects-content .section-popular-projects-content-cards .popular-projects-item:hover .default-card-image {
+            position: relative; }
+            .section-popular-projects .section-popular-projects-content .section-popular-projects-content-cards .popular-projects-item:hover .default-card-image:before {
               font-family: 'icomoon';
               content: "\e909";
               color: #ffffff;
               position: absolute;
-              top: 90px;
+              top: 50%;
               left: 50%;
               margin-left: -20px;
               text-align: center;
-              margin-top: -9px;
+              margin-top: -20px;
               font-size: 40px;
               z-index: 1; }
-          .section-popular-projects .section-popular-projects-content .section-popular-projects-content-cards .popular-projects-item:hover .default-card-text {
-            color: #ffffff; }
-          .section-popular-projects .section-popular-projects-content .section-popular-projects-content-cards .popular-projects-item:hover .default-card-image img {
-            opacity: 0.5; }
+            .section-popular-projects .section-popular-projects-content .section-popular-projects-content-cards .popular-projects-item:hover .default-card-image img {
+              opacity: 0.5; }
     .section-popular-projects .section-popular-projects-content .section-popular-projects-all-button {
       background-color: #46d251;
       color: #ffffff; }
@@ -1142,23 +1147,26 @@ input.custom-checkbox {
         .section-last-projects .section-last-projects-content .section-last-projects-content-cards .last-projects-item:hover {
           background-color: #46d251; }
           .section-last-projects .section-last-projects-content .section-last-projects-content-cards .last-projects-item:hover .default-card-title {
+            color: #ffffff;
+            z-index: 2; }
+          .section-last-projects .section-last-projects-content .section-last-projects-content-cards .last-projects-item:hover .default-card-text {
             color: #ffffff; }
-            .section-last-projects .section-last-projects-content .section-last-projects-content-cards .last-projects-item:hover .default-card-title:before {
+          .section-last-projects .section-last-projects-content .section-last-projects-content-cards .last-projects-item:hover .default-card-image {
+            position: relative; }
+            .section-last-projects .section-last-projects-content .section-last-projects-content-cards .last-projects-item:hover .default-card-image:before {
               font-family: 'icomoon';
               content: "\e909";
               color: #ffffff;
               position: absolute;
-              top: 90px;
+              top: 50%;
               left: 50%;
               margin-left: -20px;
               text-align: center;
-              margin-top: -9px;
+              margin-top: -20px;
               font-size: 40px;
               z-index: 1; }
-          .section-last-projects .section-last-projects-content .section-last-projects-content-cards .last-projects-item:hover .default-card-text {
-            color: #ffffff; }
-          .section-last-projects .section-last-projects-content .section-last-projects-content-cards .last-projects-item:hover .default-card-image img {
-            opacity: 0.5; }
+            .section-last-projects .section-last-projects-content .section-last-projects-content-cards .last-projects-item:hover .default-card-image img {
+              opacity: 0.5; }
     .section-last-projects .section-last-projects-content .section-last-projects-all-button {
       background-color: #46d251;
       color: #ffffff; }
@@ -3239,7 +3247,7 @@ input.custom-checkbox {
         overflow: hidden;
         position: relative; }
         .section-main-project-card .section-main-project-card-container .section-main-project-card-galery .section-main-project-card-galery-big-img img {
-          width: 100%; }
+          height: 100%; }
         .section-main-project-card .section-main-project-card-container .section-main-project-card-galery .section-main-project-card-galery-big-img .default-zoom-button {
           position: absolute;
           left: 0;
@@ -3279,7 +3287,7 @@ input.custom-checkbox {
           .section-main-project-card .section-main-project-card-container .section-main-project-card-galery .section-main-project-card-galery-small-images .section-main-project-card-galery-small-img:first-child {
             margin-left: 0; }
           .section-main-project-card .section-main-project-card-container .section-main-project-card-galery .section-main-project-card-galery-small-images .section-main-project-card-galery-small-img img {
-            width: 100%;
+            height: 100%;
             opacity: 0.5; }
       @media only screen and (max-width: 1024px) {
         .section-main-project-card .section-main-project-card-container .section-main-project-card-galery {
@@ -3428,7 +3436,7 @@ input.custom-checkbox {
             margin-bottom: 15px;
             position: relative; }
             .section-detailed-project-card-info .detailed-project-card-info-container .detailed-project-card-info-tabs .detailed-project-card-info-tab .detailed-project-card-info-tab-galery .detailed-project-card-info-tab-galery-big-img img {
-              width: 100%;
+              height: 100%;
               box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.11); }
             .section-detailed-project-card-info .detailed-project-card-info-container .detailed-project-card-info-tabs .detailed-project-card-info-tab .detailed-project-card-info-tab-galery .detailed-project-card-info-tab-galery-big-img .default-zoom-button {
               position: absolute;
@@ -3465,7 +3473,7 @@ input.custom-checkbox {
             .section-detailed-project-card-info .detailed-project-card-info-container .detailed-project-card-info-tabs .detailed-project-card-info-tab .detailed-project-card-info-tab-galery .detailed-project-card-info-tab-galery-small-images .detailed-project-card-info-tab-galery-small-img:first-child {
               margin-left: 0; }
             .section-detailed-project-card-info .detailed-project-card-info-container .detailed-project-card-info-tabs .detailed-project-card-info-tab .detailed-project-card-info-tab-galery .detailed-project-card-info-tab-galery-small-images .detailed-project-card-info-tab-galery-small-img img {
-              width: 100%;
+              height: 100%;
               opacity: 0.5; }
         @media only screen and (max-width: 1024px) {
           .section-detailed-project-card-info .detailed-project-card-info-container .detailed-project-card-info-tabs .detailed-project-card-info-tab .detailed-project-card-info-tab-galery:first-child {
@@ -3562,23 +3570,26 @@ input.custom-checkbox {
         .section-main-finished-projects .section-main-finished-projects-container .section-main-finished-projects-content .section-main-finished-projects-list .finished-projects-list-item:hover {
           background-color: #46d251; }
           .section-main-finished-projects .section-main-finished-projects-container .section-main-finished-projects-content .section-main-finished-projects-list .finished-projects-list-item:hover .default-card-title {
+            color: #ffffff;
+            z-index: 2; }
+          .section-main-finished-projects .section-main-finished-projects-container .section-main-finished-projects-content .section-main-finished-projects-list .finished-projects-list-item:hover .default-card-text {
             color: #ffffff; }
-            .section-main-finished-projects .section-main-finished-projects-container .section-main-finished-projects-content .section-main-finished-projects-list .finished-projects-list-item:hover .default-card-title:before {
+          .section-main-finished-projects .section-main-finished-projects-container .section-main-finished-projects-content .section-main-finished-projects-list .finished-projects-list-item:hover .default-card-image {
+            position: relative; }
+            .section-main-finished-projects .section-main-finished-projects-container .section-main-finished-projects-content .section-main-finished-projects-list .finished-projects-list-item:hover .default-card-image:before {
               font-family: 'icomoon';
               content: "\e909";
               color: #ffffff;
               position: absolute;
-              top: 90px;
+              top: 50%;
               left: 50%;
               margin-left: -20px;
               text-align: center;
-              margin-top: -9px;
+              margin-top: -20px;
               font-size: 40px;
               z-index: 1; }
-          .section-main-finished-projects .section-main-finished-projects-container .section-main-finished-projects-content .section-main-finished-projects-list .finished-projects-list-item:hover .default-card-text {
-            color: #ffffff; }
-          .section-main-finished-projects .section-main-finished-projects-container .section-main-finished-projects-content .section-main-finished-projects-list .finished-projects-list-item:hover .default-card-image img {
-            opacity: 0.5; }
+            .section-main-finished-projects .section-main-finished-projects-container .section-main-finished-projects-content .section-main-finished-projects-list .finished-projects-list-item:hover .default-card-image img {
+              opacity: 0.5; }
       @media only screen and (max-width: 1024px) {
         .section-main-finished-projects .section-main-finished-projects-container .section-main-finished-projects-content .section-main-finished-projects-list {
           text-align: center; }
@@ -3694,7 +3705,7 @@ input.custom-checkbox {
             text-align: center;
             outline: none; }
       .section-main-catalog .section-main-catalog-container .catalog-info-tabs .detailed-project-card-info-tab {
-        padding: 12px 20px 10px 20px;
+        padding: 12px 20px 5px 20px;
         background-color: #fafafa; }
         .section-main-catalog .section-main-catalog-container .catalog-info-tabs .detailed-project-card-info-tab .filter-categories {
           display: inline-block;
@@ -3717,14 +3728,30 @@ input.custom-checkbox {
           overflow: hidden; }
           .section-main-catalog .section-main-catalog-container .catalog-info-tabs.active {
             height: auto;
-            overflow: auto; }
+            overflow: visible; }
+            .section-main-catalog .section-main-catalog-container .catalog-info-tabs.active .catalog-info-tabs-button {
+              background-color: #46d251;
+              color: #ffffff; }
+              .section-main-catalog .section-main-catalog-container .catalog-info-tabs.active .catalog-info-tabs-button:after {
+                transform: rotate(180deg); }
+            .section-main-catalog .section-main-catalog-container .catalog-info-tabs.active ul {
+              width: 200%;
+              margin-left: -100%; }
+            .section-main-catalog .section-main-catalog-container .catalog-info-tabs.active .detailed-project-card-info-tab {
+              width: 200%;
+              margin-left: -100%; }
           .section-main-catalog .section-main-catalog-container .catalog-info-tabs ul li {
             display: block;
             width: 100%;
             margin-bottom: 2px; }
           .section-main-catalog .section-main-catalog-container .catalog-info-tabs .catalog-info-tabs-button {
             display: block;
-            width: 100%; } }
+            width: 100%;
+            text-align: left; }
+            .section-main-catalog .section-main-catalog-container .catalog-info-tabs .catalog-info-tabs-button:after {
+              font-family: 'icomoon';
+              content: '\e917';
+              float: right; } }
     .section-main-catalog .section-main-catalog-container .left-filters-block {
       width: 272px;
       float: left;
@@ -3753,10 +3780,31 @@ input.custom-checkbox {
           min-height: auto; }
           .section-main-catalog .section-main-catalog-container .left-filters-block.active {
             height: auto;
-            overflow: auto; }
+            overflow: visible;
+            box-shadow: none;
+            border: none; }
+            .section-main-catalog .section-main-catalog-container .left-filters-block.active .left-filters-block-button {
+              background-color: #46d251;
+              color: #ffffff; }
+              .section-main-catalog .section-main-catalog-container .left-filters-block.active .left-filters-block-button:after {
+                transform: rotate(180deg); }
+            .section-main-catalog .section-main-catalog-container .left-filters-block.active .left-filters-block-wrapper {
+              width: 200%;
+              margin-right: -100%;
+              background-color: #fafafa;
+              box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.11);
+              border: 1px solid #cacaca; }
+              .section-main-catalog .section-main-catalog-container .left-filters-block.active .left-filters-block-wrapper .left-filter-block-section {
+                display: inline-block;
+                vertical-align: top; }
           .section-main-catalog .section-main-catalog-container .left-filters-block .left-filters-block-button {
             display: block;
-            width: 100%; }
+            width: 100%;
+            text-align: left; }
+            .section-main-catalog .section-main-catalog-container .left-filters-block .left-filters-block-button:after {
+              font-family: 'icomoon';
+              content: '\e917';
+              float: right; }
           .section-main-catalog .section-main-catalog-container .left-filters-block .left-filter-block-section {
             margin: 25px 0 0 0;
             padding: 0 25px; } }
@@ -3824,23 +3872,26 @@ input.custom-checkbox {
         .section-main-catalog .section-main-catalog-container .main-content-block .main-content-project-items-container .main-content-project-item:hover {
           background-color: #46d251; }
           .section-main-catalog .section-main-catalog-container .main-content-block .main-content-project-items-container .main-content-project-item:hover .default-card-title {
+            color: #ffffff;
+            z-index: 2; }
+          .section-main-catalog .section-main-catalog-container .main-content-block .main-content-project-items-container .main-content-project-item:hover .default-card-text {
             color: #ffffff; }
-            .section-main-catalog .section-main-catalog-container .main-content-block .main-content-project-items-container .main-content-project-item:hover .default-card-title:before {
+          .section-main-catalog .section-main-catalog-container .main-content-block .main-content-project-items-container .main-content-project-item:hover .default-card-image {
+            position: relative; }
+            .section-main-catalog .section-main-catalog-container .main-content-block .main-content-project-items-container .main-content-project-item:hover .default-card-image:before {
               font-family: 'icomoon';
               content: "\e909";
               color: #ffffff;
               position: absolute;
-              top: 90px;
+              top: 50%;
               left: 50%;
               margin-left: -20px;
               text-align: center;
-              margin-top: -9px;
+              margin-top: -20px;
               font-size: 40px;
               z-index: 1; }
-          .section-main-catalog .section-main-catalog-container .main-content-block .main-content-project-items-container .main-content-project-item:hover .default-card-text {
-            color: #ffffff; }
-          .section-main-catalog .section-main-catalog-container .main-content-block .main-content-project-items-container .main-content-project-item:hover .default-card-image img {
-            opacity: 0.5; }
+            .section-main-catalog .section-main-catalog-container .main-content-block .main-content-project-items-container .main-content-project-item:hover .default-card-image img {
+              opacity: 0.5; }
       @media only screen and (max-width: 1024px) {
         .section-main-catalog .section-main-catalog-container .main-content-block {
           margin: 25px 0 0 0;
@@ -3855,11 +3906,9 @@ input.custom-checkbox {
 .section-catalog-image-right {
   background-color: #f7f7f7; }
   @media only screen and (max-width: 1024px) {
-    .section-catalog-image-right .section-with-image-right-container {
-      padding: 40px 25px; }
-      .section-catalog-image-right .section-with-image-right-container .section-with-image-right-image {
-        width: 100%;
-        margin: 0 0 25px 0;
-        float: none; } }
+    .section-catalog-image-right .section-with-image-right-container .section-with-image-right-image {
+      width: 100%;
+      margin: 0 0 25px 0;
+      float: none; } }
 
 /*# sourceMappingURL=main.css.map */

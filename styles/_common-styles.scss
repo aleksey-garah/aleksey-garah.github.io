@@ -50,6 +50,7 @@ header {
       max-width: 720px;
       margin-left: 79px;
       margin-right: 347px;
+      overflow: hidden;
 
       .main-navigation-menu {
         list-style: none;
@@ -58,7 +59,6 @@ header {
         padding: 0;
         text-transform: uppercase;
         white-space: nowrap;
-        text-overflow: ellipsis;
 
         .main-navigation-menu-item {
           display: inline-block;

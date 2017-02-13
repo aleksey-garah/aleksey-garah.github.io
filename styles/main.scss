@@ -89,7 +89,7 @@
 
           i {
             font-size: 20px;
-            color: $green;
+            color: #00a04c;
             margin-right: 16px;
             vertical-align: text-bottom;
           }
@@ -426,6 +426,8 @@
 
       .advantages-item {
         margin: 15px;
+        max-width: none;
+        width: 180px;
       }
     }
   }
@@ -469,20 +471,7 @@
 
           .default-card-title {
             color: $white;
-
-            &:before {
-              font-family: 'icomoon';
-              content: "\e909";
-              color: $white;
-              position: absolute;
-              top: 90px;
-              left: 50%;
-              margin-left: -20px;
-              text-align: center;
-              margin-top: -9px;
-              font-size: 40px;
-              z-index: 1;
-            }
+            z-index: 2;
           }
 
           .default-card-text {
@@ -490,6 +479,21 @@
           }
 
           .default-card-image {
+            position: relative;
+
+            &:before {
+              font-family: 'icomoon';
+              content: "\e909";
+              color: $white;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              margin-left: -20px;
+              text-align: center;
+              margin-top: -20px;
+              font-size: 40px;
+              z-index: 1;
+            }
 
             img {
               opacity: 0.5;
@@ -570,20 +574,7 @@
 
           .default-card-title {
             color: $white;
-
-            &:before {
-              font-family: 'icomoon';
-              content: "\e909";
-              color: $white;
-              position: absolute;
-              top: 90px;
-              left: 50%;
-              margin-left: -20px;
-              text-align: center;
-              margin-top: -9px;
-              font-size: 40px;
-              z-index: 1;
-            }
+            z-index: 2;
           }
 
           .default-card-text {
@@ -591,6 +582,21 @@
           }
 
           .default-card-image {
+            position: relative;
+
+            &:before {
+              font-family: 'icomoon';
+              content: "\e909";
+              color: $white;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              margin-left: -20px;
+              text-align: center;
+              margin-top: -20px;
+              font-size: 40px;
+              z-index: 1;
+            }
 
             img {
               opacity: 0.5;
@@ -3530,7 +3536,7 @@
         position: relative;
 
         img {
-          width: 100%;
+          height: 100%;
         }
 
         .default-zoom-button {
@@ -3591,7 +3597,7 @@
           }
 
           img {
-            width: 100%;
+            height: 100%;
             opacity: 0.5;
           }
         }
@@ -3803,7 +3809,7 @@
             position: relative;
 
             img {
-              width: 100%;
+              height: 100%;
               box-shadow: $card-box-shadow;
             }
 
@@ -3860,7 +3866,7 @@
               }
 
               img {
-                width: 100%;
+                height: 100%;
                 opacity: 0.5;
               }
             }
@@ -4029,20 +4035,7 @@
 
             .default-card-title {
               color: $white;
-
-              &:before {
-                font-family: 'icomoon';
-                content: "\e909";
-                color: $white;
-                position: absolute;
-                top: 90px;
-                left: 50%;
-                margin-left: -20px;
-                text-align: center;
-                margin-top: -9px;
-                font-size: 40px;
-                z-index: 1;
-              }
+              z-index: 2;
             }
 
             .default-card-text {
@@ -4050,6 +4043,21 @@
             }
 
             .default-card-image {
+              position: relative;
+
+              &:before {
+                font-family: 'icomoon';
+                content: "\e909";
+                color: $white;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                margin-left: -20px;
+                text-align: center;
+                margin-top: -20px;
+                font-size: 40px;
+                z-index: 1;
+              }
 
               img {
                 opacity: 0.5;
@@ -4180,7 +4188,7 @@
       text-transform: uppercase;
       margin: 0 0 40px 0;
 
-      @media only screen and (max-width: 1024px) {
+      @media only screen and (max-width: $tablet-max) {
         text-align: center;
         font-size: 26px;
       }
@@ -4239,7 +4247,7 @@
       }
 
       .detailed-project-card-info-tab {
-        padding: 12px 20px 10px 20px;
+        padding: 12px 20px 5px 20px;
         background-color: $white-footer;
 
         .filter-categories {
@@ -4257,7 +4265,7 @@
         }
       }
 
-      @media only screen and (max-width: 1024px) {
+      @media only screen and (max-width: $tablet-max) {
         float: right;
         width: 50%;
         margin-bottom: 0;
@@ -4266,7 +4274,26 @@
 
         &.active {
           height: auto;
-          overflow: auto;
+          overflow: visible;
+
+          .catalog-info-tabs-button {
+            background-color: $green;
+            color: $white;
+
+            &:after {
+              transform: rotate(180deg);
+            }
+          }
+
+          ul {
+            width: 200%;
+            margin-left: -100%;
+          }
+
+          .detailed-project-card-info-tab {
+            width: 200%;
+            margin-left: -100%;
+          }
         }
 
         ul {
@@ -4281,6 +4308,13 @@
         .catalog-info-tabs-button {
           display: block;
           width: 100%;
+          text-align: left;
+
+          &:after {
+            font-family: 'icomoon';
+            content: '\e917';
+            float: right;
+          }
         }
       }
     }
@@ -4312,7 +4346,7 @@
         }
       }
 
-      @media only screen and (max-width: 1024px) {
+      @media only screen and (max-width: $tablet-max) {
         float: none;
         width: 50%;
         padding: 0;
@@ -4322,12 +4356,43 @@
 
         &.active {
           height: auto;
-          overflow: auto;
+          overflow: visible;
+          box-shadow: none;
+          border: none;
+
+          .left-filters-block-button {
+            background-color: $green;
+            color: $white;
+
+            &:after {
+              transform: rotate(180deg);
+            }
+          }
+
+          .left-filters-block-wrapper {
+            width: 200%;
+            margin-right: -100%;
+            background-color: #fafafa;
+            box-shadow: $card-box-shadow;
+            border: 1px solid $card-border-color;
+
+            .left-filter-block-section {
+              display: inline-block;
+              vertical-align: top;
+            }
+          }
         }
 
         .left-filters-block-button {
           display: block;
           width: 100%;
+          text-align: left;
+
+          &:after {
+            font-family: 'icomoon';
+            content: '\e917';
+            float: right;
+          }
         }
 
         .left-filter-block-section {
@@ -4429,20 +4494,7 @@
 
             .default-card-title {
               color: $white;
-
-              &:before {
-                font-family: 'icomoon';
-                content: "\e909";
-                color: $white;
-                position: absolute;
-                top: 90px;
-                left: 50%;
-                margin-left: -20px;
-                text-align: center;
-                margin-top: -9px;
-                font-size: 40px;
-                z-index: 1;
-              }
+              z-index: 2;
             }
 
             .default-card-text {
@@ -4450,6 +4502,21 @@
             }
 
             .default-card-image {
+              position: relative;
+
+              &:before {
+                font-family: 'icomoon';
+                content: "\e909";
+                color: $white;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                margin-left: -20px;
+                text-align: center;
+                margin-top: -20px;
+                font-size: 40px;
+                z-index: 1;
+              }
 
               img {
                 opacity: 0.5;
@@ -4459,7 +4526,7 @@
         }
       }
 
-      @media only screen and (max-width: 1024px) {
+      @media only screen and (max-width: $tablet-max) {
         margin: 25px 0 0 0;
         clear: both;
 
@@ -4485,10 +4552,9 @@
 .section-catalog-image-right {
   background-color: $section-building-homes;
 
-  @media only screen and (max-width: 1024px) {
+  @media only screen and (max-width: $tablet-max) {
 
     .section-with-image-right-container {
-      padding: 40px 25px;
 
       .section-with-image-right-image {
         width: 100%;
