@@ -659,6 +659,13 @@
     }
   }
 
+  &.prices-feedback {
+
+    &:before {
+      background: url("../assets/images/technologes-bg.jpg");
+    }
+  }
+
   .section-feedback-container {
     width: 100%;
     max-width: 915px;
@@ -2883,7 +2890,7 @@
     .section-main-prices-table-title {
       font-size: 30px;
       font-weight: $font-bold;
-      font-family: Conv_PFDinDisplayPro-Bold;
+      font-family: Conv_PFDinDisplayPro-Black;
       text-transform: uppercase;
       margin: 0 0 40px 0;
     }

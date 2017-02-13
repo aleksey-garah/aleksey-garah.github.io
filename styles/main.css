@@ -1192,6 +1192,8 @@ input.custom-checkbox {
     opacity: 0.5; }
   .section-feedback.service-feedback-block:before {
     background: url("../assets/images/usluga--bg.png"); }
+  .section-feedback.prices-feedback:before {
+    background: url("../assets/images/technologes-bg.jpg"); }
   .section-feedback .section-feedback-container {
     width: 100%;
     max-width: 915px;
@@ -2801,7 +2803,7 @@ input.custom-checkbox {
     .section-main-prices-table .section-main-prices-table-container .section-main-prices-table-title {
       font-size: 30px;
       font-weight: 700;
-      font-family: Conv_PFDinDisplayPro-Bold;
+      font-family: Conv_PFDinDisplayPro-Black;
       text-transform: uppercase;
       margin: 0 0 40px 0; }
     .section-main-prices-table .section-main-prices-table-container .section-main-prices-table-content .section-main-prices-table-content-tabs-headers {
