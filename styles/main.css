@@ -2961,12 +2961,9 @@ input.custom-checkbox {
     .section-main-contacts .section-main-contacts-container .section-main-contacts-title {
       font-size: 30px;
       font-weight: 700;
-      font-family: Conv_PFDinDisplayPro-Bold;
+      font-family: Conv_PFDinDisplayPro-Black;
       text-transform: uppercase;
       margin: 0 0 40px 0; }
-      @media only screen and (max-width: 1024px) {
-        .section-main-contacts .section-main-contacts-container .section-main-contacts-title {
-          text-align: center; } }
     .section-main-contacts .section-main-contacts-container .section-main-contacts-content {
       font-size: 0;
       text-align: justify; }
@@ -2976,7 +2973,7 @@ input.custom-checkbox {
         width: 100%; }
       .section-main-contacts .section-main-contacts-container .section-main-contacts-content .section-main-contacts-half-block {
         display: inline-block;
-        vertical-align: top;
+        vertical-align: middle;
         width: 48%; }
         .section-main-contacts .section-main-contacts-container .section-main-contacts-content .section-main-contacts-half-block.contacts-adress-block .contacts-item {
           position: relative;
@@ -3053,7 +3050,7 @@ input.custom-checkbox {
             font-weight: 700;
             font-family: Conv_PFDinDisplayPro-Bold; }
           .section-main-contacts .section-main-contacts-container .section-main-contacts-content .section-main-contacts-half-block.contacts-persons-block .contacts-item .contacts-item-info-block .contacts-item-title {
-            margin: 0 0 20px 0;
+            margin: 0 0 15px 0;
             color: #858585;
             font-size: 18px;
             font-weight: 400; }
@@ -3066,6 +3063,12 @@ input.custom-checkbox {
               font-size: 19px;
               color: #747474;
               margin-right: 7px; }
+  @media only screen and (max-width: 1024px) {
+    .section-main-contacts .section-main-contacts-container {
+      padding-left: 25px;
+      padding-right: 25px; }
+      .section-main-contacts .section-main-contacts-container .section-main-contacts-title {
+        text-align: center; } }
 
 .section-contacts-map {
   position: relative; }
@@ -3109,12 +3112,13 @@ input.custom-checkbox {
           margin: 0 auto; }
           .section-contacts-map .section-contacts-map-container .section-contacts-map-feedback form .section-contacts-map-submit-button:hover {
             background-color: #1e289a; }
-      @media only screen and (max-width: 1024px) {
+    @media only screen and (max-width: 1024px) {
+      .section-contacts-map .section-contacts-map-container {
+        height: 390px;
+        position: relative; }
         .section-contacts-map .section-contacts-map-container .section-contacts-map-feedback {
-          left: 50%;
-          margin-left: -225px;
-          top: 50%;
-          transform: translateY(-50%); } }
+          top: 0;
+          width: 100%; } }
 
 .section-main-service-area {
   width: 100%;

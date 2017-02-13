@@ -3140,13 +3140,9 @@
     .section-main-contacts-title {
       font-size: 30px;
       font-weight: $font-bold;
-      font-family: Conv_PFDinDisplayPro-Bold;
+      font-family: Conv_PFDinDisplayPro-Black;
       text-transform: uppercase;
       margin: 0 0 40px 0;
-
-      @media only screen and (max-width: 1024px) {
-        text-align: center;
-      }
     }
 
     .section-main-contacts-content {
@@ -3161,7 +3157,7 @@
 
       .section-main-contacts-half-block {
         display: inline-block;
-        vertical-align: top;
+        vertical-align: middle;
         width: 48%;
 
         &.contacts-adress-block {
@@ -3268,7 +3264,7 @@
               }
 
               .contacts-item-title {
-                margin: 0 0 20px 0;
+                margin: 0 0 15px 0;
                 color: $contacts-personal-info-color;
                 font-size: 18px;
                 font-weight: $font-regular;
@@ -3289,6 +3285,18 @@
             }
           }
         }
+      }
+    }
+  }
+
+  @media only screen and (max-width: $tablet-max) {
+
+    .section-main-contacts-container {
+      padding-left: 25px;
+      padding-right: 25px;
+
+      .section-main-contacts-title {
+        text-align: center;
       }
     }
   }
@@ -3356,12 +3364,15 @@
           }
         }
       }
+    }
 
-      @media only screen and (max-width: 1024px) {
-        left: 50%;
-        margin-left: -225px;
-        top: 50%;
-        transform: translateY(-50%);
+    @media only screen and (max-width: 1024px) {
+      height: 390px;
+      position: relative;
+
+      .section-contacts-map-feedback {
+        top: 0;
+        width: 100%;
       }
     }
   }
