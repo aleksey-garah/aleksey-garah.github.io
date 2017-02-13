@@ -2499,7 +2499,7 @@
     .section-main-news-title {
       font-size: 30px;
       font-weight: $font-bold;
-      font-family: Conv_PFDinDisplayPro-Bold;
+      font-family: Conv_PFDinDisplayPro-Black;
       text-transform: uppercase;
       margin: 0 0 40px 0;
     }
@@ -2753,7 +2753,7 @@
     .section-about-news-item-title {
       font-size: 30px;
       font-weight: $font-bold;
-      font-family: Conv_PFDinDisplayPro-Bold;
+      font-family: Conv_PFDinDisplayPro-Black;
       text-transform: uppercase;
       margin: 0 0 40px 0;
     }
@@ -2853,8 +2853,12 @@
       }
     }
 
-    @media only screen and (max-width: 1024px) {
-      padding: 40px 25px;
+    @media only screen and (max-width: $tablet-max) {
+      padding: 40px 90px;
+
+      .section-about-news-item-title {
+        text-align: center;
+      }
 
       .section-about-news-item-content {
 
@@ -2898,6 +2902,10 @@
       box-shadow: $card-box-shadow;
       border: 1px solid $card-border-color;
       @include clear-element;
+
+      &:hover {
+        box-shadow: $card-double-box-shadow;
+      }
 
       .section-similar-news-item-image {
         width: 170px;
