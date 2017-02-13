@@ -7,6 +7,20 @@ header {
   width: 100%;
   box-shadow: $nav-box-shadow;
 
+  &.index-header {
+    background-color: $white;
+
+    #on-hidden-menu {
+
+      ul {
+
+        li {
+          background-color: $white;
+        }
+      }
+    }
+  }
+
   .top-navigation {
     white-space: nowrap;
     @include default-container;
@@ -19,7 +33,8 @@ header {
     @include clear-element;
 
     &.start-scroll {
-      padding: 0;
+      padding-top: 0;
+      padding-bottom: 0;
     }
 
     .main-navigation-logo {
@@ -92,6 +107,10 @@ header {
           background-color: $dark-green;
         }
       }
+    }
+
+    @media only screen and (max-width: $tablet-max) {
+      padding: 23px 30px;
     }
   }
 }
@@ -209,8 +228,17 @@ footer {
   .default-section-header-block {
     position: absolute;
     width: 100%;
-    transform: translateY(-50%);
+    transform: translateY(-22%);
     top: 50%;
+
+    &.two-lined {
+      transform: translateY(-32%);
+      top: 50%;
+    }
+
+    &.cordinates-header {
+      transform: translateY(-50%);
+    }
 
     .default-section-title {
       margin: 0;
@@ -265,7 +293,7 @@ footer {
     text-align: center;
     position: absolute;
     width: 100%;
-    transform: translateY(-50%);
+    transform: translateY(-34%);
     top: 50%;
     margin: 0;
     text-transform: uppercase;
@@ -273,7 +301,7 @@ footer {
     font-weight: $font-black;
   }
 
-  @media only screen and (max-width: 1024px) {
+  @media only screen and (max-width: $tablet-max) {
     height: 80px;
 
     .default-forms-title {
@@ -286,7 +314,7 @@ footer {
   width: 100%;
   margin-top: -1px;
 
-  @media only screen and (max-width: 1024px) {
+  @media only screen and (max-width: $tablet-max) {
 
   }
 }
@@ -386,6 +414,22 @@ footer {
     color: $card-text-color;
     margin: 5px 0 0 0;
     font-size: 15px;
+  }
+
+  @media only screen and (max-width: $tablet-max) {
+    width: 222px;
+
+    .default-card-image {
+      height: 100px;
+      margin-bottom: 40px;
+    }
+
+    .default-card-title {
+
+      span {
+        top: 125px;
+      }
+    }
   }
 }
 
@@ -773,6 +817,7 @@ input.custom-checkbox {
   text-decoration: none;
   padding: 10px 15px;
   display: block;
+  text-transform: uppercase;
 }
 
 #on-hidden-menu li a:hover {
@@ -937,6 +982,7 @@ input.custom-checkbox {
     }
 
     @media only screen and (max-width: $tablet-max) {
+
       .section-feedback-header {
 
         .section-feedback-title {
