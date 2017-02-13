@@ -1097,9 +1097,9 @@
       font-weight: $font-regular;
 
       .section-main-service-text {
-        margin-bottom: 30px;
         font-size: 18px;
         font-weight: $font-regular;
+        margin-bottom: 25px;
       }
 
       .section-main-service-price {
@@ -1181,9 +1181,15 @@
   .default-section-header {
 
     .default-section-header-block {
+      transform: translateY(-34%);
 
       .section-how-we-work-title {
-        padding: 20px 0;
+        margin: 0 0 10px 0;
+      }
+
+      .default-section-title-description {
+        width: 50%;
+        margin: 0 auto;
       }
     }
   }
@@ -1223,7 +1229,7 @@
           box-shadow: $buttons-box-shadow;
 
           i {
-            font-size: 40px;
+            font-size: 50px;
             color: $white;
             transform: rotate(-45deg);
             height: 90px;
@@ -1284,6 +1290,18 @@
   }
 
   @media only screen and (max-width: $tablet-max) {
+
+    .default-section-header {
+      height: 120px;
+
+      .default-section-header-block {
+
+        .default-section-title-description {
+          width: 80%;
+          font-size: 18px;
+        }
+      }
+    }
 
     .section-how-we-work-container {
       padding: 40px 0;
@@ -1358,7 +1376,14 @@
         font-weight: $font-bold;
         color: $text-color;
         text-decoration: none;
-        padding: 40px 20px 0 157px;
+        padding: 0 20px 0 157px;
+        text-align: left;
+
+        span {
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+        }
       }
     }
 
@@ -1376,6 +1401,11 @@
         &:last-child {
           margin-right: 16px;
           margin-bottom: 0;
+        }
+
+        .service-link-block-title {
+          padding: 0 20px 0 140px;
+          font-size: 18px;
         }
       }
     }

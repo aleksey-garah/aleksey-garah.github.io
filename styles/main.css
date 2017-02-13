@@ -686,14 +686,12 @@ input.custom-checkbox {
       .modal-window.section-feedback-container form .section-feedback-submit-button:hover {
         background-color: #1e289a; }
   @media only screen and (max-width: 1024px) {
-    .modal-window.section-feedback-container form {
-      padding-top: 0; }
-      .modal-window.section-feedback-container form .feedback-form-group {
-        margin-bottom: 0; }
-        .modal-window.section-feedback-container form .feedback-form-group .feedback-form-block {
-          margin-bottom: 24px;
-          max-width: none;
-          display: block; } }
+    .modal-window.section-feedback-container form .feedback-form-group {
+      margin-bottom: 0; }
+      .modal-window.section-feedback-container form .feedback-form-group .feedback-form-block {
+        margin-bottom: 24px;
+        max-width: none;
+        display: block; } }
 
 .scrollable-content .mCustomScrollBox {
   outline: none; }
@@ -1474,9 +1472,9 @@ input.custom-checkbox {
       font-size: 18px;
       font-weight: 400; }
       .section-main-service .section-main-service-container .section-main-service-text-block .section-main-service-text {
-        margin-bottom: 30px;
         font-size: 18px;
-        font-weight: 400; }
+        font-weight: 400;
+        margin-bottom: 25px; }
       .section-main-service .section-main-service-container .section-main-service-text-block .section-main-service-price {
         height: 60px;
         text-align: center;
@@ -1523,8 +1521,13 @@ input.custom-checkbox {
 
 .section-how-we-work {
   background-color: #f2f2f2; }
-  .section-how-we-work .default-section-header .default-section-header-block .section-how-we-work-title {
-    padding: 20px 0; }
+  .section-how-we-work .default-section-header .default-section-header-block {
+    transform: translateY(-34%); }
+    .section-how-we-work .default-section-header .default-section-header-block .section-how-we-work-title {
+      margin: 0 0 10px 0; }
+    .section-how-we-work .default-section-header .default-section-header-block .default-section-title-description {
+      width: 50%;
+      margin: 0 auto; }
   .section-how-we-work .section-how-we-work-container {
     width: 100%;
     max-width: 1170px;
@@ -1556,7 +1559,7 @@ input.custom-checkbox {
           outline: 4px solid #46d251;
           box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.13); }
           .section-how-we-work .section-how-we-work-container .section-how-we-work-blocks .section-how-we-work-block .how-we-work-icon i {
-            font-size: 40px;
+            font-size: 50px;
             color: #ffffff;
             transform: rotate(-45deg);
             height: 90px;
@@ -1595,6 +1598,11 @@ input.custom-checkbox {
       .section-how-we-work .section-how-we-work-container .section-how-we-work-button:hover {
         background-color: #009e4b; }
   @media only screen and (max-width: 1024px) {
+    .section-how-we-work .default-section-header {
+      height: 120px; }
+      .section-how-we-work .default-section-header .default-section-header-block .default-section-title-description {
+        width: 80%;
+        font-size: 18px; }
     .section-how-we-work .section-how-we-work-container {
       padding: 40px 0; }
       .section-how-we-work .section-how-we-work-container .section-how-we-work-blocks .section-how-we-work-block {
@@ -1647,7 +1655,12 @@ input.custom-checkbox {
         font-weight: 700;
         color: black;
         text-decoration: none;
-        padding: 40px 20px 0 157px; }
+        padding: 0 20px 0 157px;
+        text-align: left; }
+        .section-another-services .section-advantages-container .service-link-block .service-link-block-title span {
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%); }
     @media only screen and (max-width: 1024px) {
       .section-another-services .section-advantages-container {
         padding: 40px 0;
@@ -1658,7 +1671,10 @@ input.custom-checkbox {
             margin-left: 16px; }
           .section-another-services .section-advantages-container .service-link-block:last-child {
             margin-right: 16px;
-            margin-bottom: 0; } }
+            margin-bottom: 0; }
+          .section-another-services .section-advantages-container .service-link-block .service-link-block-title {
+            padding: 0 20px 0 140px;
+            font-size: 18px; } }
 
 .section-main-materials {
   width: 100%;
