@@ -1784,7 +1784,8 @@ input.custom-checkbox {
       margin: 0 0 40px 0; }
     .section-main-materials .section-main-materials-container .section-main-materials-text {
       font-size: 18px;
-      font-weight: 400;
+      font-weight: 300;
+      font-family: Conv_PFDinDisplayPro-Light;
       margin-bottom: 20px; }
     .section-main-materials .section-main-materials-container .section-main-materials-image {
       width: 490px;
@@ -1802,9 +1803,7 @@ input.custom-checkbox {
       .section-main-materials .section-main-materials-container .section-main-materials-content .section-main-materials-image {
         float: none;
         margin: 0 0 25px 0;
-        width: 100%; }
-      .section-main-materials .section-main-materials-container .section-main-materials-content .section-main-materials-text {
-        margin: 0; } }
+        width: 100%; } }
 
 .section-building-homes {
   width: 100%;
@@ -1930,15 +1929,19 @@ input.custom-checkbox {
           color: #8c8c8c; }
     @media only screen and (max-width: 1024px) {
       .section-building-homes .section-building-homes-container {
-        padding: 40px 90px; }
-        .section-building-homes .section-building-homes-container .section-building-homes-subsection-info .section-building-homes-subsection-info-video {
-          width: 100%;
-          margin: 0 0 25px 0; }
-        .section-building-homes .section-building-homes-container .section-building-homes-subsection-info .section-building-homes-subsection-info-text-block .section-building-homes-subsection-info-button {
-          display: block;
-          margin: 0 auto; }
+        padding-top: 0; }
+        .section-building-homes .section-building-homes-container .section-building-homes-subsection-info {
+          padding: 40px 90px; }
+          .section-building-homes .section-building-homes-container .section-building-homes-subsection-info .section-building-homes-subsection-info-video {
+            width: 100%;
+            margin: 0 0 25px 0; }
+          .section-building-homes .section-building-homes-container .section-building-homes-subsection-info .section-building-homes-subsection-info-text-block .section-building-homes-subsection-info-button {
+            display: block;
+            margin: 0 auto; }
         .section-building-homes .section-building-homes-container .section-building-homes-subsection-galery-tabs {
-          position: relative; }
+          position: relative;
+          margin: 0 40px;
+          width: auto; }
           .section-building-homes .section-building-homes-container .section-building-homes-subsection-galery-tabs .homes-subsection-galery-tabs-dropdown {
             display: block;
             text-align: left; }
@@ -2937,6 +2940,11 @@ input.custom-checkbox {
         top: 50%;
         margin-top: -18px;
         right: 16px; }
+  @media only screen and (max-width: 1024px) {
+    .section-main-prices-table .section-main-prices-table-container {
+      padding: 30px 20px; }
+      .section-main-prices-table .section-main-prices-table-container .section-main-prices-table-title {
+        text-align: center; } }
 
 .section-main-contacts {
   width: 100%;
@@ -3475,7 +3483,32 @@ input.custom-checkbox {
             .section-detailed-project-card-info .detailed-project-card-info-container .detailed-project-card-info-tabs .detailed-project-card-info-tab .detailed-project-card-info-tab-galery .detailed-project-card-info-tab-galery-small-images .detailed-project-card-info-tab-galery-small-img img {
               height: 100%;
               opacity: 0.5; }
+        .section-detailed-project-card-info .detailed-project-card-info-container .detailed-project-card-info-tabs .detailed-project-card-info-tab .detailed-project-card-info-tab-text-block {
+          width: 50%;
+          display: inline-block; }
+          .section-detailed-project-card-info .detailed-project-card-info-container .detailed-project-card-info-tabs .detailed-project-card-info-tab .detailed-project-card-info-tab-text-block:first-child {
+            border-right: 1px solid #d0d0d0;
+            padding-right: 30px; }
+          .section-detailed-project-card-info .detailed-project-card-info-container .detailed-project-card-info-tabs .detailed-project-card-info-tab .detailed-project-card-info-tab-text-block:last-child {
+            padding-left: 30px; }
+          .section-detailed-project-card-info .detailed-project-card-info-container .detailed-project-card-info-tabs .detailed-project-card-info-tab .detailed-project-card-info-tab-text-block .tab-text {
+            font-size: 18px;
+            font-weight: 400;
+            margin: 0 0 20px 0; }
+            .section-detailed-project-card-info .detailed-project-card-info-container .detailed-project-card-info-tabs .detailed-project-card-info-tab .detailed-project-card-info-tab-text-block .tab-text:last-child {
+              margin-bottom: 0; }
         @media only screen and (max-width: 1024px) {
+          .section-detailed-project-card-info .detailed-project-card-info-container .detailed-project-card-info-tabs .detailed-project-card-info-tab .detailed-project-card-info-tab-galery:after {
+            content: "";
+            display: block;
+            clear: both; }
+          .section-detailed-project-card-info .detailed-project-card-info-container .detailed-project-card-info-tabs .detailed-project-card-info-tab .detailed-project-card-info-tab-galery .detailed-project-card-info-tab-galery-big-img {
+            width: 60%;
+            float: left;
+            margin-right: 30px; }
+          .section-detailed-project-card-info .detailed-project-card-info-container .detailed-project-card-info-tabs .detailed-project-card-info-tab .detailed-project-card-info-tab-galery .detailed-project-card-info-tab-galery-small-images .detailed-project-card-info-tab-galery-small-img {
+            display: block;
+            margin: 0 0 10px 0; }
           .section-detailed-project-card-info .detailed-project-card-info-container .detailed-project-card-info-tabs .detailed-project-card-info-tab .detailed-project-card-info-tab-galery:first-child {
             padding: 0 0 30px 0;
             border-right: none;
@@ -3483,6 +3516,22 @@ input.custom-checkbox {
             width: 100%;
             display: block; }
           .section-detailed-project-card-info .detailed-project-card-info-container .detailed-project-card-info-tabs .detailed-project-card-info-tab .detailed-project-card-info-tab-galery:last-child {
+            padding: 30px 0 0 0;
+            width: 100%;
+            display: block; }
+          .section-detailed-project-card-info .detailed-project-card-info-container .detailed-project-card-info-tabs .detailed-project-card-info-tab .detailed-project-card-info-tab-text-block .tab-text {
+            font-size: 18px;
+            font-weight: 400;
+            margin: 0 0 20px 0; }
+            .section-detailed-project-card-info .detailed-project-card-info-container .detailed-project-card-info-tabs .detailed-project-card-info-tab .detailed-project-card-info-tab-text-block .tab-text:last-child {
+              margin-bottom: 0; }
+          .section-detailed-project-card-info .detailed-project-card-info-container .detailed-project-card-info-tabs .detailed-project-card-info-tab .detailed-project-card-info-tab-text-block:first-child {
+            padding: 0 0 30px 0;
+            border-right: none;
+            border-bottom: 1px solid #cacaca;
+            width: 100%;
+            display: block; }
+          .section-detailed-project-card-info .detailed-project-card-info-container .detailed-project-card-info-tabs .detailed-project-card-info-tab .detailed-project-card-info-tab-text-block:last-child {
             padding: 30px 0 0 0;
             width: 100%;
             display: block; } }

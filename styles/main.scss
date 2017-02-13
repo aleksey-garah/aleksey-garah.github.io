@@ -1475,7 +1475,8 @@
 
     .section-main-materials-text {
       font-size: 18px;
-      font-weight: $font-regular;
+      font-weight: $font-light;
+      font-family: Conv_PFDinDisplayPro-Light;
       margin-bottom: 20px;
     }
 
@@ -1507,10 +1508,6 @@
           float: none;
           margin: 0 0 25px 0;
           width: 100%;
-        }
-
-        .section-main-materials-text {
-          margin: 0;
         }
       }
     }
@@ -1696,9 +1693,10 @@
     }
 
     @media only screen and (max-width: $tablet-max) {
-      padding: 40px 90px;
+      padding-top: 0;
 
       .section-building-homes-subsection-info {
+        padding: 40px 90px;
 
         .section-building-homes-subsection-info-video {
           width: 100%;
@@ -1718,6 +1716,8 @@
 
       .section-building-homes-subsection-galery-tabs {
         position: relative;
+        margin: 0 40px;
+        width: auto;
 
         .homes-subsection-galery-tabs-dropdown {
           display: block;
@@ -2951,7 +2951,7 @@
       }
     }
 
-    @media only screen and (max-width: 1024px) {
+    @media only screen and (max-width: $tablet-max) {
       padding: 40px 25px;
 
       .section-similar-news-items-block {
@@ -3095,6 +3095,17 @@
           margin-top: -18px;
           right: 16px;
         }
+      }
+    }
+  }
+
+  @media only screen and (max-width: $tablet-max) {
+
+    .section-main-prices-table-container {
+      padding: 30px 20px;
+
+      .section-main-prices-table-title {
+        text-align: center;
       }
     }
   }
@@ -3873,9 +3884,75 @@
           }
         }
 
+        .detailed-project-card-info-tab-text-block {
+          width: 50%;
+          display: inline-block;
+
+          &:first-child {
+            border-right: 1px solid $galery-border-color;
+            padding-right: 30px;
+          }
+
+          &:last-child {
+            padding-left: 30px;
+          }
+
+          .tab-text {
+            font-size: 18px;
+            font-weight: $font-regular;
+            margin: 0 0 20px 0;
+
+            &:last-child {
+              margin-bottom: 0;
+            }
+          }
+        }
+
         @media only screen and (max-width: $tablet-max) {
 
           .detailed-project-card-info-tab-galery {
+            @include clear-element;
+
+            .detailed-project-card-info-tab-galery-big-img {
+              width: 60%;
+              float: left;
+              margin-right: 30px;
+            }
+
+            .detailed-project-card-info-tab-galery-small-images {
+
+              .detailed-project-card-info-tab-galery-small-img {
+                display: block;
+                margin: 0 0 10px 0;
+              }
+            }
+
+            &:first-child {
+              padding: 0 0 30px 0;
+              border-right: none;
+              border-bottom: 1px solid $card-border-color;
+              width: 100%;
+              display: block;
+            }
+
+            &:last-child {
+              padding: 30px 0 0 0;
+              width: 100%;
+              display: block;
+            }
+          }
+
+          .detailed-project-card-info-tab-text-block {
+
+            .tab-text {
+              font-size: 18px;
+              font-weight: $font-regular;
+              margin: 0 0 20px 0;
+
+              &:last-child {
+                margin-bottom: 0;
+              }
+            }
 
             &:first-child {
               padding: 0 0 30px 0;
