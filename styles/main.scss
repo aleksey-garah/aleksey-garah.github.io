@@ -2202,7 +2202,7 @@
     .section-main-about-company-title {
       font-size: 30px;
       font-weight: $font-bold;
-      font-family: Conv_PFDinDisplayPro-Bold;
+      font-family: Conv_PFDinDisplayPro-Black;
       text-transform: uppercase;
       margin: 0 0 40px 0;
     }
@@ -2210,6 +2210,7 @@
     .section-main-about-company-text {
       font-size: 18px;
       font-weight: $font-regular;
+      margin-bottom: 20px;
     }
 
     .section-main-about-company-image {
@@ -2224,6 +2225,23 @@
       }
     }
   }
+
+  @media only screen and (max-width: $tablet-max) {
+
+    .section-main-about-company-container {
+      padding: 40px 90px;
+
+      .section-main-about-company-title {
+        text-align: center;
+      }
+
+      .section-main-about-company-image {
+        float: none;
+        width: 100%;
+        margin: 0 0 25px 0;
+      }
+    }
+  }
 }
 
 .section-about-news {
@@ -2233,6 +2251,7 @@
   .section-about-news-container {
     @include default-container;
     padding: 62px 0 76px 0;
+    text-align: center;
 
     .section-about-news-blocks {
       font-size: 0;
@@ -2253,6 +2272,10 @@
         box-shadow: $card-box-shadow;
         position: relative;
         background-color: $white;
+
+        &:hover {
+          box-shadow: $card-double-box-shadow;
+        }
 
         .big-news-image {
           height: 268px;
@@ -2308,6 +2331,10 @@
             margin-bottom: 35px;
           }
 
+          &:hover {
+            box-shadow: $card-double-box-shadow;
+          }
+
           .small-news-image {
             width: 170px;
             float: left;
@@ -2351,11 +2378,33 @@
     .section-about-news-view-all-button {
       background-color: $green;
       color: $white;
-      display: block;
-      margin: 0 auto;
+      text-decoration: none;
 
       &:hover {
         background-color: $dark-green;
+      }
+    }
+  }
+
+  @media only screen and (max-width: $tablet-max) {
+
+    .section-about-news-container {
+      padding: 40px 25px;
+
+      .section-about-news-blocks {
+
+        .section-about-news-big-news {
+          width: 100%;
+          margin-bottom: 30px;
+        }
+
+        .section-about-news-small-block {
+          width: 100%;
+
+          .section-about-news-small-news {
+            width: 100%;
+          }
+        }
       }
     }
   }
@@ -2365,10 +2414,13 @@
   width: 100%;
 
   .default-section-header {
+    height: 120px;
+
     .default-section-header-block {
+      transform: translateY(-39%);
 
       .section-diploms-title {
-        padding: 20px 0;
+        margin: 0 0 10px 0;
       }
     }
   }
@@ -2415,6 +2467,14 @@
         .section-diploms-item-image {
           opacity: 0.5;
         }
+      }
+    }
+
+    @media only screen and (max-width: $tablet-max) {
+      padding: 40px 25px;
+
+      .section-diploms-item {
+        width: 170px;
       }
     }
   }
