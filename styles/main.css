@@ -429,7 +429,7 @@ footer.white-footer {
     margin: 0 0 20px 0; }
   @media only screen and (max-width: 1024px) {
     .section-with-image-right .section-with-image-right-container {
-      padding: 40px 25px; }
+      padding: 60px 80px; }
     .section-with-image-right .section-with-image-right-image {
       width: 100%;
       float: none;
@@ -3469,7 +3469,7 @@ input.custom-checkbox {
     .section-main-finished-projects .section-main-finished-projects-container .section-main-finished-projects-title {
       font-size: 30px;
       font-weight: 700;
-      font-family: Conv_PFDinDisplayPro-Bold;
+      font-family: Conv_PFDinDisplayPro-Black;
       text-transform: uppercase;
       margin: 0 0 40px 0; }
       @media only screen and (max-width: 1024px) {

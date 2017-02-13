@@ -3884,11 +3884,11 @@
     .section-main-finished-projects-title {
       font-size: 30px;
       font-weight: $font-bold;
-      font-family: Conv_PFDinDisplayPro-Bold;
+      font-family: Conv_PFDinDisplayPro-Black;
       text-transform: uppercase;
       margin: 0 0 40px 0;
 
-      @media only screen and (max-width: 1024px) {
+      @media only screen and (max-width: $tablet-max) {
         text-align: center;
       }
     }
