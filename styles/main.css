@@ -1050,6 +1050,8 @@ input.custom-checkbox {
         font-family: Conv_PFDinDisplayPro-Light;
         color: #ffffff; }
   @media only screen and (max-width: 1024px) {
+    .section-advantages.finished-project-advantages .section-advantages-container .advantages-item {
+      width: 210px; }
     .section-advantages .section-advantages-container {
       text-align: center; }
       .section-advantages .section-advantages-container .advantages-item {
@@ -3687,12 +3689,15 @@ input.custom-checkbox {
 @media only screen and (max-width: 1024px) {
   .section-main-finished-project-card .section-main-project-card-container {
     padding: 40px 25px;
-    text-align: center; }
+    text-align: center;
+    font-size: 0; }
     .section-main-finished-project-card .section-main-project-card-container .breadcrumbs {
       text-align: left; }
     .section-main-finished-project-card .section-main-project-card-container .default-button {
-      width: 30%;
-      display: inline-block; }
+      width: 33%;
+      display: inline-block;
+      vertical-align: top;
+      float: none; }
     .section-main-finished-project-card .section-main-project-card-container .section-main-project-card-galery {
       text-align: left; } }
 

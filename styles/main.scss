@@ -421,6 +421,16 @@
 
   @media only screen and (max-width: $tablet-max) {
 
+    &.finished-project-advantages {
+
+      .section-advantages-container {
+
+        .advantages-item {
+          width: 210px;
+        }
+      }
+    }
+
     .section-advantages-container {
       text-align: center;
 
@@ -4224,14 +4234,17 @@
     @media only screen and (max-width: $tablet-max) {
       padding: 40px 25px;
       text-align: center;
+      font-size: 0;
 
       .breadcrumbs {
         text-align: left;
       }
 
       .default-button {
-        width: 30%;
+        width: 33%;
         display: inline-block;
+        vertical-align: top;
+        float: none;
       }
 
       .section-main-project-card-galery {
