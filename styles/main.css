@@ -435,7 +435,7 @@ footer.white-footer {
     margin: 0 0 20px 0; }
   @media only screen and (max-width: 1024px) {
     .section-with-image-left .section-with-image-left-container {
-      padding: 40px 25px; }
+      padding: 60px 90px; }
     .section-with-image-left .section-with-image-left-image {
       width: 100%;
       float: none;
@@ -1378,6 +1378,15 @@ input.custom-checkbox {
       float: right; }
       .section-main-services .section-main-services-container .section-main-services-image img {
         width: 100%; }
+    @media only screen and (max-width: 1024px) {
+      .section-main-services .section-main-services-container {
+        padding: 40px 90px; }
+        .section-main-services .section-main-services-container .section-main-services-title {
+          text-align: center; }
+        .section-main-services .section-main-services-container .section-main-services-image {
+          float: none;
+          width: 100%;
+          margin: 0 0 25px 0; } }
 
 .section-services-links {
   width: 100%;
@@ -1427,6 +1436,20 @@ input.custom-checkbox {
           position: absolute;
           top: 50%;
           transform: translateY(-50%); }
+  @media only screen and (max-width: 1024px) {
+    .section-services-links .section-services-links-container {
+      padding: 40px 0;
+      text-align: center; }
+      .section-services-links .section-services-links-container .service-link-block {
+        width: 340px;
+        height: 115px; }
+        .section-services-links .section-services-links-container .service-link-block .service-link-block-image {
+          width: 84px;
+          height: 84px; }
+        .section-services-links .section-services-links-container .service-link-block .service-link-block-title {
+          padding: 0 20px 0 120px;
+          text-align: left;
+          font-size: 18px; } }
 
 .section-main-service {
   width: 100%;
