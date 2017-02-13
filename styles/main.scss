@@ -1462,7 +1462,7 @@
     .section-main-materials-title {
       font-size: 30px;
       font-weight: $font-bold;
-      font-family: Conv_PFDinDisplayPro-Bold;
+      font-family: Conv_PFDinDisplayPro-Black;
       text-transform: uppercase;
       margin: 0 0 40px 0;
     }
@@ -1470,6 +1470,7 @@
     .section-main-materials-text {
       font-size: 18px;
       font-weight: $font-regular;
+      margin-bottom: 20px;
     }
 
     .section-main-materials-image {
@@ -1488,7 +1489,7 @@
   @media only screen and (max-width: $tablet-max) {
 
     .section-main-materials-container {
-      padding: 40px 25px;
+      padding: 40px 90px;
 
       .section-main-materials-title {
         text-align: center;
@@ -1529,9 +1530,9 @@
         overflow: hidden;
         margin-right: 50px;
 
-        img {
-          //TODO Video
+        iframe {
           width: 100%;
+          height: 100%;
         }
       }
 
@@ -1566,6 +1567,12 @@
       .homes-subsection-galery-tabs-dropdown {
         display: none;
         width: 100%;
+
+        &:after {
+          font-family: 'icomoon';
+          content: "\e918";
+          float: right;
+        }
       }
 
       ul {
@@ -1642,13 +1649,23 @@
               height: 80px;
               display: inline-block;
               overflow: hidden;
+              background-color: $black;
+              cursor: pointer;
 
               img {
                 width: 100%;
+                opacity: 0.5;
               }
 
               &:last-child {
                 margin-right: 0;
+              }
+
+              &.active, &:hover {
+
+                img {
+                  opacity: 1;
+                }
               }
             }
           }
@@ -1673,7 +1690,7 @@
     }
 
     @media only screen and (max-width: $tablet-max) {
-      padding: 40px 25px;
+      padding: 40px 90px;
 
       .section-building-homes-subsection-info {
 
@@ -1764,7 +1781,7 @@
     }
 
     @media only screen and (max-width: $tablet-max) {
-      padding: 40px 25px;
+      padding: 40px 90px;
 
       .section-materials-general-info-title {
         text-align: center;

@@ -8,6 +8,18 @@ $(document).ready(function () {
         $("#homes-subsection-galery-tabs-menu").toggleClass("active");
     });
 
+    var smallImageBlock = $(".galery-small-img");
+
+    smallImageBlock.on("click", function (event) {
+        var smallSrc = $(this).children().attr("src");
+        var bigImgBlock = $(this).parent().parent().children(".galery-big-img");
+
+        $(this).parent().children(".galery-small-img").removeClass("active");
+        $(this).addClass("active");
+
+        bigImgBlock.children("img").attr("src", smallSrc);
+    });
+
     $("#order-call-dialog").dialog({
         autoOpen: false
     });
