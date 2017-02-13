@@ -135,6 +135,7 @@ footer {
         color: $white;
         font-size: 16px;
         font-weight: $font-light;
+        font-family: Conv_PFDinDisplayPro-Light;
         font-style: normal;
       }
 
@@ -144,6 +145,7 @@ footer {
         text-align: right;
         font-size: 16px;
         font-weight: $font-light;
+        font-family: Conv_PFDinDisplayPro-Light;
         font-style: normal;
       }
     }
@@ -164,6 +166,7 @@ footer {
         color: $text-color;
         font-size: 16px;
         font-weight: $font-light;
+        font-family: Conv_PFDinDisplayPro-Light;
         font-style: normal;
       }
 
@@ -173,12 +176,13 @@ footer {
         text-align: right;
         font-size: 16px;
         font-weight: $font-light;
+        font-family: Conv_PFDinDisplayPro-Light;
         font-style: normal;
       }
     }
   }
 
-  @media only screen and (max-width: 1024px) {
+  @media only screen and (max-width: $tablet-max) {
     &.black-footer {
 
       .footer-container {
@@ -244,6 +248,7 @@ footer {
       margin: 0;
       text-transform: uppercase;
       font-size: 30px;
+      font-family: Conv_PFDinDisplayPro-Black;
       font-weight: $font-black;
       color: $white;
       text-align: center;
@@ -255,6 +260,7 @@ footer {
       font-size: 20px;
       color: $white;
       font-weight: $font-light;
+      font-family: Conv_PFDinDisplayPro-Light;
     }
   }
 
@@ -298,6 +304,7 @@ footer {
     margin: 0;
     text-transform: uppercase;
     font-size: 30px;
+    font-family: Conv_PFDinDisplayPro-Black;
     font-weight: $font-black;
   }
 
@@ -339,6 +346,28 @@ footer {
     font-size: 21px;
     vertical-align: sub;
     margin-left: 12px;
+  }
+
+  &.arrow-button {
+    position: relative;
+    padding: 0 40px;
+
+    .icon-arrow {
+      top: 50%;
+      right: -22px;
+      transition: 0.5s;
+      position: absolute;
+      transform: translateY(-50%);
+    }
+
+    &:hover {
+      padding: 0 57px 0 20px;
+
+      .icon-arrow {
+        opacity: 1;
+        right: 20px;
+      }
+    }
   }
 
   @media only screen and (max-width: $tablet-max) {
@@ -399,6 +428,7 @@ footer {
     text-decoration: none;
     font-size: 20px;
     font-weight: $font-bold;
+    font-family: Conv_PFDinDisplayPro-Bold;
 
     span {
       position: absolute;
@@ -467,6 +497,7 @@ footer {
     padding: 0 0 0 12px;
     font-size: 18px;
     font-weight: $font-light;
+    font-family: Conv_PFDinDisplayPro-Light;
   }
 
   .default-form-control {
@@ -498,6 +529,7 @@ footer {
     padding: 0 0 0 12px;
     font-size: 18px;
     font-weight: $font-light;
+    font-family: Conv_PFDinDisplayPro-Light;
   }
 
   .default-form-textarea {
@@ -699,6 +731,7 @@ table {
         text-align: center;
         font-size: 18px;
         font-weight: $font-bold;
+        font-family: Conv_PFDinDisplayPro-Bold;
         border: 1px solid $card-border-color;
         border-collapse: collapse;
       }
@@ -760,6 +793,7 @@ input.custom-checkbox {
     padding: 12px 0;
     font-size: 16px;
     font-weight: $font-light;
+    font-family: Conv_PFDinDisplayPro-Light;
   }
 
   a {
@@ -770,6 +804,7 @@ input.custom-checkbox {
     text-decoration: none;
     font-size: 20px;
     font-weight: $font-light;
+    font-family: Conv_PFDinDisplayPro-Light;
     background-color: $green;
 
     &:hover {
@@ -803,13 +838,14 @@ input.custom-checkbox {
 
 #on-hidden-menu li {
   background: #f2f2f2;
-  border-bottom: 1px solid #d0d0d0;
   opacity: 0;
   -moz-transition: all .4s ease-in-out .2s;
   -o-transition: all .4s ease-in-out .2s;
   -webkit-transition: all .4s ease-in-out .2s;
   transition: all .4s ease-in-out .2s;
   position: relative;
+  height: 0;
+  overflow: hidden;
 }
 
 #on-hidden-menu li a {
@@ -833,6 +869,8 @@ input.custom-checkbox {
 
 #on-hidden-menu.open ul li {
   opacity: 1;
+  height: auto;
+  border-bottom: 1px solid #d0d0d0;
 }
 
 #on-hidden-menu.open ul li:last-child {

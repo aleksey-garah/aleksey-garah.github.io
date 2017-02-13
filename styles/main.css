@@ -99,6 +99,7 @@ footer.black-footer {
       color: #ffffff;
       font-size: 16px;
       font-weight: 300;
+      font-family: Conv_PFDinDisplayPro-Light;
       font-style: normal; }
     footer.black-footer .footer-container .developers-copyright {
       color: #ffffff;
@@ -106,6 +107,7 @@ footer.black-footer {
       text-align: right;
       font-size: 16px;
       font-weight: 300;
+      font-family: Conv_PFDinDisplayPro-Light;
       font-style: normal; }
 footer.white-footer {
   width: 100%;
@@ -125,6 +127,7 @@ footer.white-footer {
       color: black;
       font-size: 16px;
       font-weight: 300;
+      font-family: Conv_PFDinDisplayPro-Light;
       font-style: normal; }
     footer.white-footer .footer-container .developers-copyright {
       color: black;
@@ -132,6 +135,7 @@ footer.white-footer {
       text-align: right;
       font-size: 16px;
       font-weight: 300;
+      font-family: Conv_PFDinDisplayPro-Light;
       font-style: normal; }
 @media only screen and (max-width: 1024px) {
   footer.black-footer .footer-container .customer-copyright {
@@ -169,6 +173,7 @@ footer.white-footer {
       margin: 0;
       text-transform: uppercase;
       font-size: 30px;
+      font-family: Conv_PFDinDisplayPro-Black;
       font-weight: 800;
       color: #ffffff;
       text-align: center; }
@@ -177,7 +182,8 @@ footer.white-footer {
       margin: 0;
       font-size: 20px;
       color: #ffffff;
-      font-weight: 300; }
+      font-weight: 300;
+      font-family: Conv_PFDinDisplayPro-Light; }
   @media only screen and (max-width: 1024px) {
     .default-section-header {
       height: 80px; }
@@ -199,6 +205,7 @@ footer.white-footer {
     margin: 0;
     text-transform: uppercase;
     font-size: 30px;
+    font-family: Conv_PFDinDisplayPro-Black;
     font-weight: 800; }
   @media only screen and (max-width: 1024px) {
     .default-forms-header {
@@ -225,6 +232,20 @@ footer.white-footer {
     font-size: 21px;
     vertical-align: sub;
     margin-left: 12px; }
+  .default-button.arrow-button {
+    position: relative;
+    padding: 0 40px; }
+    .default-button.arrow-button .icon-arrow {
+      top: 50%;
+      right: -22px;
+      transition: 0.5s;
+      position: absolute;
+      transform: translateY(-50%); }
+    .default-button.arrow-button:hover {
+      padding: 0 57px 0 20px; }
+      .default-button.arrow-button:hover .icon-arrow {
+        opacity: 1;
+        right: 20px; }
   @media only screen and (max-width: 1024px) {
     .default-button {
       font-size: 14px;
@@ -270,7 +291,8 @@ footer.white-footer {
     color: black;
     text-decoration: none;
     font-size: 20px;
-    font-weight: 700; }
+    font-weight: 700;
+    font-family: Conv_PFDinDisplayPro-Bold; }
     .default-card .default-card-title span {
       position: absolute;
       top: 180px;
@@ -319,7 +341,8 @@ footer.white-footer {
     line-height: 44px;
     padding: 0 0 0 12px;
     font-size: 18px;
-    font-weight: 300; }
+    font-weight: 300;
+    font-family: Conv_PFDinDisplayPro-Light; }
   .default-form-block .default-form-control {
     border: none;
     display: block;
@@ -345,7 +368,8 @@ footer.white-footer {
     line-height: 46px;
     padding: 0 0 0 12px;
     font-size: 18px;
-    font-weight: 300; }
+    font-weight: 300;
+    font-family: Conv_PFDinDisplayPro-Light; }
   .default-form-textarea-block .default-form-textarea {
     border: none;
     display: block;
@@ -478,6 +502,7 @@ table {
       text-align: center;
       font-size: 18px;
       font-weight: 700;
+      font-family: Conv_PFDinDisplayPro-Bold;
       border: 1px solid #cacaca;
       border-collapse: collapse; }
   table tbody tr:nth-of-type(odd) {
@@ -510,7 +535,8 @@ input.custom-checkbox {
     margin: 0;
     padding: 12px 0;
     font-size: 16px;
-    font-weight: 300; }
+    font-weight: 300;
+    font-family: Conv_PFDinDisplayPro-Light; }
   .InfoWindowContent a {
     display: block;
     line-height: 44px;
@@ -519,6 +545,7 @@ input.custom-checkbox {
     text-decoration: none;
     font-size: 20px;
     font-weight: 300;
+    font-family: Conv_PFDinDisplayPro-Light;
     background-color: #46d251; }
     .InfoWindowContent a:hover {
       background-color: #009e4b; }
@@ -543,13 +570,14 @@ input.custom-checkbox {
 
 #on-hidden-menu li {
   background: #f2f2f2;
-  border-bottom: 1px solid #d0d0d0;
   opacity: 0;
   -moz-transition: all .4s ease-in-out .2s;
   -o-transition: all .4s ease-in-out .2s;
   -webkit-transition: all .4s ease-in-out .2s;
   transition: all .4s ease-in-out .2s;
-  position: relative; }
+  position: relative;
+  height: 0;
+  overflow: hidden; }
 
 #on-hidden-menu li a {
   color: #6b4d2f;
@@ -567,7 +595,9 @@ input.custom-checkbox {
   box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.11); }
 
 #on-hidden-menu.open ul li {
-  opacity: 1; }
+  opacity: 1;
+  height: auto;
+  border-bottom: 1px solid #d0d0d0; }
 
 #on-hidden-menu.open ul li:last-child {
   border-bottom-left-radius: 5px; }
@@ -752,7 +782,8 @@ input.custom-checkbox {
         font-weight: 400;
         max-width: 500px; }
         .section-main .section-main-container .section-main-content .section-main-content-title span {
-          font-weight: 700; }
+          font-weight: 700;
+          font-family: Conv_PFDinDisplayPro-Bold; }
       .section-main .section-main-container .section-main-content ul {
         list-style: none;
         padding: 0;
@@ -921,7 +952,8 @@ input.custom-checkbox {
       .section-concrete-blocks-building .section-concrete-blocks-building-content .section-concrete-blocks-building-text p {
         margin: 0 0 22px 0;
         font-size: 20px;
-        font-weight: 300; }
+        font-weight: 300;
+        font-family: Conv_PFDinDisplayPro-Light; }
       .section-concrete-blocks-building .section-concrete-blocks-building-content .section-concrete-blocks-building-text .section-concrete-blocks-building-more-button {
         background-color: #46d251;
         color: #ffffff; }
@@ -980,12 +1012,14 @@ input.custom-checkbox {
           left: 0; }
       .section-advantages .section-advantages-container .advantages-item .advantages-item-title {
         font-weight: 700;
+        font-family: Conv_PFDinDisplayPro-Bold;
         font-size: 20px;
         color: #ffffff;
         margin: 41px 0 12px 0; }
       .section-advantages .section-advantages-container .advantages-item .advantages-item-text {
         font-size: 15px;
         font-weight: 300;
+        font-family: Conv_PFDinDisplayPro-Light;
         color: #ffffff; }
   @media only screen and (max-width: 1024px) {
     .section-advantages .section-advantages-container {
@@ -1211,14 +1245,17 @@ input.custom-checkbox {
         .section-team .section-team-content .team-member-block .team-member-block-info .team-member-block-fio {
           font-size: 28px;
           font-weight: 700;
+          font-family: Conv_PFDinDisplayPro-Bold;
           margin: 0 0 10px; }
         .section-team .section-team-content .team-member-block .team-member-block-info .team-member-block-title {
           font-size: 20px;
           font-weight: 300;
+          font-family: Conv_PFDinDisplayPro-Light;
           margin: 0 0 30px 0; }
         .section-team .section-team-content .team-member-block .team-member-block-info .team-member-block-text {
           font-size: 20px;
           font-weight: 300;
+          font-family: Conv_PFDinDisplayPro-Light;
           color: #b1b1b1;
           margin: 0 0 30px 0; }
         .section-team .section-team-content .team-member-block .team-member-block-info .team-member-block-contact-button {
@@ -1306,10 +1343,12 @@ input.custom-checkbox {
         .section-team .team-members-list .team-members-list-container .team-members-list-item .team-members-list-item-fio {
           font-size: 20px;
           font-weight: 700;
+          font-family: Conv_PFDinDisplayPro-Bold;
           margin: 0 0 5px 0; }
         .section-team .team-members-list .team-members-list-container .team-members-list-item .team-members-list-item-title {
           font-size: 16px;
           font-weight: 300;
+          font-family: Conv_PFDinDisplayPro-Light;
           margin: 0; }
   @media only screen and (max-width: 1024px) {
     .section-team {
@@ -1335,6 +1374,7 @@ input.custom-checkbox {
       color: #ffffff;
       font-size: 24px;
       font-weight: 300;
+      font-family: Conv_PFDinDisplayPro-Light;
       width: 70%;
       margin: 0 auto; }
   @media only screen and (max-width: 1024px) {
@@ -1364,6 +1404,7 @@ input.custom-checkbox {
     .section-main-services .section-main-services-container .section-main-services-title {
       font-size: 30px;
       font-weight: 700;
+      font-family: Conv_PFDinDisplayPro-Bold;
       text-transform: uppercase;
       margin: 0 0 40px 0; }
     .section-main-services .section-main-services-container .section-main-services-text {
@@ -1429,6 +1470,7 @@ input.custom-checkbox {
         bottom: 0;
         font-size: 27px;
         font-weight: 700;
+        font-family: Conv_PFDinDisplayPro-Bold;
         color: black;
         text-decoration: none;
         padding: 0 20px 0 218px; }
@@ -1468,6 +1510,7 @@ input.custom-checkbox {
     .section-main-service .section-main-service-container .section-main-service-title {
       font-size: 30px;
       font-weight: 700;
+      font-family: Conv_PFDinDisplayPro-Bold;
       text-transform: uppercase;
       margin: 0 0 40px 0; }
     .section-main-service .section-main-service-container .section-main-service-text-block {
@@ -1488,7 +1531,8 @@ input.custom-checkbox {
         color: #46d251;
         background-color: #f2f2f2;
         font-size: 19px;
-        font-weight: 800; }
+        font-weight: 800;
+        font-family: Conv_PFDinDisplayPro-Black; }
       .section-main-service .section-main-service-container .section-main-service-text-block .section-main-service-button {
         color: #ffffff;
         background-color: #46d251;
@@ -1570,7 +1614,8 @@ input.custom-checkbox {
             line-height: 78px; }
         .section-how-we-work .section-how-we-work-container .section-how-we-work-blocks .section-how-we-work-block .how-we-work-description {
           font-size: 20px;
-          font-weight: 700; }
+          font-weight: 700;
+          font-family: Conv_PFDinDisplayPro-Bold; }
       .section-how-we-work .section-how-we-work-container .section-how-we-work-blocks .how-we-work-devider {
         display: inline-block;
         font-size: initial;
@@ -1655,6 +1700,7 @@ input.custom-checkbox {
         bottom: 0;
         font-size: 20px;
         font-weight: 700;
+        font-family: Conv_PFDinDisplayPro-Bold;
         color: black;
         text-decoration: none;
         padding: 0 20px 0 157px;
@@ -1695,6 +1741,7 @@ input.custom-checkbox {
     .section-main-materials .section-main-materials-container .section-main-materials-title {
       font-size: 30px;
       font-weight: 700;
+      font-family: Conv_PFDinDisplayPro-Bold;
       text-transform: uppercase;
       margin: 0 0 40px 0; }
     .section-main-materials .section-main-materials-container .section-main-materials-text {
@@ -1745,6 +1792,7 @@ input.custom-checkbox {
       .section-building-homes .section-building-homes-container .section-building-homes-subsection-info .section-building-homes-subsection-info-text-block .section-building-homes-subsection-info-text {
         font-size: 20px;
         font-weight: 300;
+        font-family: Conv_PFDinDisplayPro-Light;
         margin: 0 0 30px 0; }
       .section-building-homes .section-building-homes-container .section-building-homes-subsection-info .section-building-homes-subsection-info-text-block .section-building-homes-subsection-info-button {
         background-color: #46d251;
@@ -1825,7 +1873,8 @@ input.custom-checkbox {
         .section-building-homes .section-building-homes-container .section-building-homes-subsection-galery-tabs .galery-tab .galery-tab-description .galery-tab-description-header {
           margin: 0 0 25px 0;
           font-size: 20px;
-          font-weight: 800; }
+          font-weight: 800;
+          font-family: Conv_PFDinDisplayPro-Black; }
         .section-building-homes .section-building-homes-container .section-building-homes-subsection-galery-tabs .galery-tab .galery-tab-description .galery-tab-description-text {
           font-size: 20px;
           font-weight: 400;
@@ -1878,7 +1927,8 @@ input.custom-checkbox {
       font-size: 30px;
       font-weight: 800;
       margin: 0 0 60px 0;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      font-family: Conv_PFDinDisplayPro-Black; }
     .section-materials-general-info .section-materials-general-info-container .section-with-image-right {
       margin-bottom: 60px; }
       .section-materials-general-info .section-materials-general-info-container .section-with-image-right:after {
@@ -1909,6 +1959,7 @@ input.custom-checkbox {
     .section-main-comments .section-main-comments-container .section-main-comments-title {
       font-size: 30px;
       font-weight: 700;
+      font-family: Conv_PFDinDisplayPro-Bold;
       text-transform: uppercase;
       margin: 0 0 40px 0; }
     .section-main-comments .section-main-comments-container .section-main-materials-content {
@@ -1943,10 +1994,12 @@ input.custom-checkbox {
           transform: translateY(-50%); }
           .section-main-comments .section-main-comments-container .section-main-materials-content .section-main-materials-header .main-materials-text-block-header-name .text-block-header-fio {
             font-size: 24px;
-            font-weight: 700; }
+            font-weight: 700;
+            font-family: Conv_PFDinDisplayPro-Bold; }
           .section-main-comments .section-main-comments-container .section-main-materials-content .section-main-materials-header .main-materials-text-block-header-name .text-block-header-location {
             font-size: 24px;
-            font-weight: 300; }
+            font-weight: 300;
+            font-family: Conv_PFDinDisplayPro-Light; }
       .section-main-comments .section-main-comments-container .section-main-materials-content .section-main-materials-content-text-block {
         border-right: 1px solid #cacaca;
         background-color: #f6f6f6; }
@@ -2022,6 +2075,7 @@ input.custom-checkbox {
               background-color: #009e4b; }
           .section-main-comments .section-main-comments-container .section-main-materials-content .main-materials-images-block-tabs .main-materials-images-block-tab .section-main-materials-text-block-content .main-materials-text-block-content-header {
             font-weight: 700;
+            font-family: Conv_PFDinDisplayPro-Bold;
             font-size: 24px;
             margin: 0 0 30px 0; }
           .section-main-comments .section-main-comments-container .section-main-materials-content .main-materials-images-block-tabs .main-materials-images-block-tab .section-main-materials-text-block-content .main-materials-text-block-content-text {
@@ -2059,16 +2113,19 @@ input.custom-checkbox {
             transform: translateY(-50%); }
             .section-main-comments .section-main-comments-container .section-main-materials-content .section-main-materials-text-block .section-main-materials-text-block-header .main-materials-text-block-header-name .text-block-header-fio {
               font-size: 24px;
-              font-weight: 700; }
+              font-weight: 700;
+              font-family: Conv_PFDinDisplayPro-Bold; }
             .section-main-comments .section-main-comments-container .section-main-materials-content .section-main-materials-text-block .section-main-materials-text-block-header .main-materials-text-block-header-name .text-block-header-location {
               font-size: 24px;
-              font-weight: 300; }
+              font-weight: 300;
+              font-family: Conv_PFDinDisplayPro-Light; }
         .section-main-comments .section-main-comments-container .section-main-materials-content .section-main-materials-text-block .section-main-materials-text-block-content {
           padding: 34px 26px;
           background-color: #f6f6f6;
           min-height: 438px; }
           .section-main-comments .section-main-comments-container .section-main-materials-content .section-main-materials-text-block .section-main-materials-text-block-content .main-materials-text-block-content-header {
             font-weight: 700;
+            font-family: Conv_PFDinDisplayPro-Bold;
             font-size: 24px;
             margin: 0 0 30px 0; }
           .section-main-comments .section-main-comments-container .section-main-materials-content .section-main-materials-text-block .section-main-materials-text-block-content .main-materials-text-block-content-text {
@@ -2158,10 +2215,12 @@ input.custom-checkbox {
         .section-main-comments .comment-senders-list .comment-senders-list-container .comment-senders-list-item .comment-senders-list-item-fio {
           font-size: 20px;
           font-weight: 700;
+          font-family: Conv_PFDinDisplayPro-Bold;
           margin: 0 0 5px 0; }
         .section-main-comments .comment-senders-list .comment-senders-list-container .comment-senders-list-item .comment-senders-list-item-title {
           font-size: 16px;
           font-weight: 300;
+          font-family: Conv_PFDinDisplayPro-Light;
           margin: 0; }
   @media only screen and (max-width: 1024px) {
     .section-main-comments .section-main-comments-container {
@@ -2197,6 +2256,7 @@ input.custom-checkbox {
     .section-main-about-company .section-main-about-company-container .section-main-about-company-title {
       font-size: 30px;
       font-weight: 700;
+      font-family: Conv_PFDinDisplayPro-Bold;
       text-transform: uppercase;
       margin: 0 0 40px 0; }
     .section-main-about-company .section-main-about-company-container .section-main-about-company-text {
@@ -2243,6 +2303,7 @@ input.custom-checkbox {
             width: 100%; }
         .section-about-news .section-about-news-container .section-about-news-blocks .section-about-news-big-news .big-news-link {
           font-weight: 800;
+          font-family: Conv_PFDinDisplayPro-Black;
           font-size: 20px;
           color: black;
           text-decoration: none;
@@ -2290,6 +2351,7 @@ input.custom-checkbox {
               width: 100%; }
           .section-about-news .section-about-news-container .section-about-news-blocks .section-about-news-small-block .section-about-news-small-news .small-news-link {
             font-weight: 800;
+            font-family: Conv_PFDinDisplayPro-Black;
             font-size: 20px;
             color: black;
             text-decoration: none;
@@ -2369,6 +2431,7 @@ input.custom-checkbox {
     .section-main-news .section-main-news-container .section-main-news-title {
       font-size: 30px;
       font-weight: 700;
+      font-family: Conv_PFDinDisplayPro-Bold;
       text-transform: uppercase;
       margin: 0 0 40px 0; }
     .section-main-news .section-main-news-container .section-main-news-content {
@@ -2393,6 +2456,7 @@ input.custom-checkbox {
         padding: 40px 25px 0 0; }
         .section-main-news .section-main-news-container .section-main-news-content .section-main-news-text-block .section-main-news-text-title {
           font-weight: 700;
+          font-family: Conv_PFDinDisplayPro-Bold;
           font-size: 24px;
           text-decoration: none;
           color: black;
@@ -2467,6 +2531,7 @@ input.custom-checkbox {
           width: 100%; }
       .section-list-of-news .section-list-of-news-container .section-list-of-news-item .section-list-of-news-item-text-block .section-list-of-news-item-title {
         font-weight: 700;
+        font-family: Conv_PFDinDisplayPro-Bold;
         font-size: 24px;
         text-decoration: none;
         color: black;
@@ -2553,6 +2618,7 @@ input.custom-checkbox {
     .section-about-news-item .section-about-news-item-container .section-about-news-item-title {
       font-size: 30px;
       font-weight: 700;
+      font-family: Conv_PFDinDisplayPro-Bold;
       text-transform: uppercase;
       margin: 0 0 40px 0; }
     .section-about-news-item .section-about-news-item-container .section-about-news-item-content {
@@ -2666,6 +2732,7 @@ input.custom-checkbox {
           width: 100%; }
       .section-similar-news-items .section-similar-news-items-container .section-similar-news-items-block .section-similar-news-item-title {
         font-weight: 700;
+        font-family: Conv_PFDinDisplayPro-Bold;
         font-size: 24px;
         text-decoration: none;
         color: black;
@@ -2707,6 +2774,7 @@ input.custom-checkbox {
     .section-main-prices-table .section-main-prices-table-container .section-main-prices-table-title {
       font-size: 30px;
       font-weight: 700;
+      font-family: Conv_PFDinDisplayPro-Bold;
       text-transform: uppercase;
       margin: 0 0 40px 0; }
     .section-main-prices-table .section-main-prices-table-container .section-main-prices-table-content .section-main-prices-table-content-tabs-headers {
@@ -2796,6 +2864,7 @@ input.custom-checkbox {
     .section-main-contacts .section-main-contacts-container .section-main-contacts-title {
       font-size: 30px;
       font-weight: 700;
+      font-family: Conv_PFDinDisplayPro-Bold;
       text-transform: uppercase;
       margin: 0 0 40px 0; }
       @media only screen and (max-width: 1024px) {
@@ -2851,7 +2920,8 @@ input.custom-checkbox {
             .section-main-contacts .section-main-contacts-container .section-main-contacts-content .section-main-contacts-half-block.contacts-adress-block .contacts-item .contacts-item-phones .contacts-item-phone {
               margin: 0;
               font-size: 20px;
-              font-weight: 700; }
+              font-weight: 700;
+              font-family: Conv_PFDinDisplayPro-Bold; }
               .section-main-contacts .section-main-contacts-container .section-main-contacts-content .section-main-contacts-half-block.contacts-adress-block .contacts-item .contacts-item-phones .contacts-item-phone:first-child {
                 margin-bottom: 5px; }
           .section-main-contacts .section-main-contacts-container .section-main-contacts-content .section-main-contacts-half-block.contacts-adress-block .contacts-item .contacts-item-description {
@@ -2860,7 +2930,8 @@ input.custom-checkbox {
             transform: translateY(-50%);
             top: 50%;
             font-size: 20px;
-            font-weight: 700; }
+            font-weight: 700;
+            font-family: Conv_PFDinDisplayPro-Bold; }
         .section-main-contacts .section-main-contacts-container .section-main-contacts-content .section-main-contacts-half-block.contacts-persons-block .contacts-item {
           margin-bottom: 50px; }
           .section-main-contacts .section-main-contacts-container .section-main-contacts-content .section-main-contacts-half-block.contacts-persons-block .contacts-item:after {
@@ -2882,7 +2953,8 @@ input.custom-checkbox {
           .section-main-contacts .section-main-contacts-container .section-main-contacts-content .section-main-contacts-half-block.contacts-persons-block .contacts-item .contacts-item-info-block .contacts-item-fio {
             margin: 0 0 10px 0;
             font-size: 24px;
-            font-weight: 700; }
+            font-weight: 700;
+            font-family: Conv_PFDinDisplayPro-Bold; }
           .section-main-contacts .section-main-contacts-container .section-main-contacts-content .section-main-contacts-half-block.contacts-persons-block .contacts-item .contacts-item-info-block .contacts-item-title {
             margin: 0 0 20px 0;
             color: #858585;
@@ -2963,7 +3035,8 @@ input.custom-checkbox {
       margin-bottom: 30px; }
     .section-main-service-area .section-main-service-area-container .section-main-service-area-title {
       font-size: 30px;
-      font-weight: 700;
+      font-weight: 800;
+      font-family: Conv_PFDinDisplayPro-Black;
       text-transform: uppercase;
       margin: 0 0 40px 0; }
       @media only screen and (max-width: 1024px) {
@@ -2983,7 +3056,7 @@ input.custom-checkbox {
         width: 100%; }
     @media only screen and (max-width: 1024px) {
       .section-main-service-area .section-main-service-area-container {
-        padding: 40px 25px; }
+        padding: 40px 90px; }
         .section-main-service-area .section-main-service-area-container .section-main-service-area-image {
           float: none;
           width: 100%;
@@ -3011,6 +3084,8 @@ input.custom-checkbox {
         margin-left: 0; }
       .section-types-of-service .section-types-of-service-container .section-types-of-service-item:nth-of-type(3n+3) {
         margin-right: 0; }
+      .section-types-of-service .section-types-of-service-container .section-types-of-service-item:hover {
+        box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.11); }
       .section-types-of-service .section-types-of-service-container .section-types-of-service-item .section-types-of-service-item-img {
         width: 102px;
         height: 102px;
@@ -3025,6 +3100,7 @@ input.custom-checkbox {
       .section-types-of-service .section-types-of-service-container .section-types-of-service-item .section-types-of-service-item-link {
         font-size: 20px;
         font-weight: 700;
+        font-family: Conv_PFDinDisplayPro-Bold;
         text-decoration: none;
         color: black;
         position: absolute;
@@ -3040,7 +3116,7 @@ input.custom-checkbox {
     @media only screen and (max-width: 1024px) {
       .section-types-of-service .section-types-of-service-container {
         padding: 40px 25px;
-        text-align: center; }
+        text-align: left; }
         .section-types-of-service .section-types-of-service-container .section-types-of-service-item {
           margin: 0 15px 30px 15px; }
           .section-types-of-service .section-types-of-service-container .section-types-of-service-item:nth-of-type(3n+1) {
@@ -3065,6 +3141,7 @@ input.custom-checkbox {
     .section-main-project-card .section-main-project-card-container .section-main-project-card-title {
       font-size: 30px;
       font-weight: 700;
+      font-family: Conv_PFDinDisplayPro-Bold;
       text-transform: uppercase;
       margin: 0 0 40px 0; }
       @media only screen and (max-width: 1024px) {
@@ -3158,7 +3235,8 @@ input.custom-checkbox {
         .section-main-project-card .section-main-project-card-container .section-main-project-card-info-block .section-main-project-card-info-row .section-main-project-card-info-row-value {
           float: right;
           font-size: 18px;
-          font-weight: 700; }
+          font-weight: 700;
+          font-family: Conv_PFDinDisplayPro-Bold; }
           .section-main-project-card .section-main-project-card-container .section-main-project-card-info-block .section-main-project-card-info-row .section-main-project-card-info-row-value.green-value {
             color: #46d251; }
       @media only screen and (max-width: 1024px) {
@@ -3178,6 +3256,7 @@ input.custom-checkbox {
       .section-main-project-card .section-main-project-card-container .section-main-project-card-price-block .section-main-project-card-price-value {
         font-size: 30px;
         font-weight: 800;
+        font-family: Conv_PFDinDisplayPro-Black;
         color: #46d251; }
     .section-main-project-card .section-main-project-card-container .section-main-project-card-clarify-button {
       width: 395px;
@@ -3185,14 +3264,16 @@ input.custom-checkbox {
       height: 47px;
       line-height: 47px;
       margin-bottom: 16px;
-      font-weight: 700; }
+      font-weight: 700;
+      font-family: Conv_PFDinDisplayPro-Bold; }
     .section-main-project-card .section-main-project-card-container .section-main-project-card-wanna-same-button {
       width: 395px;
       height: 47px;
       line-height: 47px;
       color: #ffffff;
       background-color: #46d251;
-      font-weight: 700; }
+      font-weight: 700;
+      font-family: Conv_PFDinDisplayPro-Bold; }
       .section-main-project-card .section-main-project-card-container .section-main-project-card-wanna-same-button:hover {
         background-color: #009e4b; }
     @media only screen and (max-width: 1024px) {
@@ -3346,6 +3427,7 @@ input.custom-checkbox {
     .section-main-finished-projects .section-main-finished-projects-container .section-main-finished-projects-title {
       font-size: 30px;
       font-weight: 700;
+      font-family: Conv_PFDinDisplayPro-Bold;
       text-transform: uppercase;
       margin: 0 0 40px 0; }
       @media only screen and (max-width: 1024px) {
@@ -3439,6 +3521,7 @@ input.custom-checkbox {
     display: inline-block;
     font-size: 24px;
     font-weight: 700;
+    font-family: Conv_PFDinDisplayPro-Bold;
     padding: 0 25px;
     color: #ffffff;
     background-color: #46d251;
@@ -3455,6 +3538,7 @@ input.custom-checkbox {
   line-height: 47px;
   margin-bottom: 16px;
   font-weight: 700;
+  font-family: Conv_PFDinDisplayPro-Bold;
   color: black;
   background-color: red;
   text-align: center; }
@@ -3487,6 +3571,7 @@ input.custom-checkbox {
     .section-main-catalog .section-main-catalog-container .section-main-catalog-title {
       font-size: 30px;
       font-weight: 700;
+      font-family: Conv_PFDinDisplayPro-Bold;
       text-transform: uppercase;
       margin: 0 0 40px 0; }
       @media only screen and (max-width: 1024px) {
@@ -3615,7 +3700,8 @@ input.custom-checkbox {
           box-shadow: 5px 2px 5px 0 rgba(0, 0, 0, 0.11); }
           .section-main-catalog .section-main-catalog-container .main-content-block .main-content-actions-block .main-content-block-search-info span {
             font-size: 24px;
-            font-weight: 700; }
+            font-weight: 700;
+            font-family: Conv_PFDinDisplayPro-Bold; }
         .section-main-catalog .section-main-catalog-container .main-content-block .main-content-actions-block .main-content-block-actions {
           background-color: #fafafa;
           position: relative;
