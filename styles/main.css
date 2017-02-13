@@ -432,7 +432,7 @@ footer.white-footer {
   .section-with-image-left .section-with-image-left-text {
     font-size: 18px;
     font-weight: 400;
-    margin: 0; }
+    margin: 0 0 20px 0; }
   @media only screen and (max-width: 1024px) {
     .section-with-image-left .section-with-image-left-container {
       padding: 40px 25px; }
@@ -1145,7 +1145,7 @@ input.custom-checkbox {
       background-color: #565fd2; }
       .section-feedback .section-feedback-container .section-feedback-header .section-feedback-title {
         color: #ffffff;
-        padding: 0 191px; }
+        padding: 0 160px; }
     .section-feedback .section-feedback-container form {
       padding: 40px 60px 50px 60px; }
       .section-feedback .section-feedback-container form .feedback-form-group {
@@ -1368,7 +1368,8 @@ input.custom-checkbox {
       margin: 0 0 40px 0; }
     .section-main-services .section-main-services-container .section-main-services-text {
       font-size: 18px;
-      font-weight: 400; }
+      font-weight: 400;
+      margin-bottom: 20px; }
     .section-main-services .section-main-services-container .section-main-services-image {
       width: 490px;
       height: 305px;
@@ -1400,6 +1401,8 @@ input.custom-checkbox {
         margin-right: 0; }
       .section-services-links .section-services-links-container .service-link-block:nth-of-type(2n+1) {
         margin-left: 0; }
+      .section-services-links .section-services-links-container .service-link-block:hover {
+        box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.11); }
       .section-services-links .section-services-links-container .service-link-block .service-link-block-image {
         width: 158px;
         height: 158px;
@@ -1419,7 +1422,11 @@ input.custom-checkbox {
         font-weight: 700;
         color: black;
         text-decoration: none;
-        padding: 50px 20px 0 218px; }
+        padding: 0 20px 0 218px; }
+        .section-services-links .section-services-links-container .service-link-block .service-link-block-title span {
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%); }
 
 .section-main-service {
   width: 100%;
@@ -1596,6 +1603,8 @@ input.custom-checkbox {
         margin-right: 0; }
       .section-another-services .section-advantages-container .service-link-block:first-child {
         margin-left: 0; }
+      .section-another-services .section-advantages-container .service-link-block:hover {
+        box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.11); }
       .section-another-services .section-advantages-container .service-link-block .service-link-block-image {
         width: 100px;
         height: 100px;

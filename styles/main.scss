@@ -664,7 +664,7 @@
 
       .section-feedback-title {
         color: $white;
-        padding: 0 191px;
+        padding: 0 160px;
       }
     }
 
@@ -949,6 +949,7 @@
     .section-main-services-text {
       font-size: 18px;
       font-weight: $font-regular;
+      margin-bottom: 20px;
     }
 
     .section-main-services-image {
@@ -992,6 +993,10 @@
         margin-left: 0;
       }
 
+      &:hover {
+        box-shadow: $card-double-box-shadow;
+      }
+
       .service-link-block-image {
         width: 158px;
         height: 158px;
@@ -1013,7 +1018,13 @@
         font-weight: $font-bold;
         color: $text-color;
         text-decoration: none;
-        padding: 50px 20px 0 218px;
+        padding: 0 20px 0 218px;
+
+        span {
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+        }
       }
     }
   }
@@ -1282,6 +1293,10 @@
 
       &:first-child {
         margin-left: 0;
+      }
+
+      &:hover {
+        box-shadow: $card-double-box-shadow;
       }
 
       .service-link-block-image {

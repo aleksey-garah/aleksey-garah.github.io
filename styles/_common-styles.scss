@@ -588,7 +588,7 @@ footer {
     margin: 0;
   }
 
-  @media only screen and (max-width: 1024px) {
+  @media only screen and (max-width: $tablet-max) {
 
     .section-with-image-right-container {
       padding: 40px 25px;
@@ -626,10 +626,10 @@ footer {
   .section-with-image-left-text {
     font-size: 18px;
     font-weight: $font-regular;
-    margin: 0;
+    margin: 0 0 20px 0;
   }
 
-  @media only screen and (max-width: 1024px) {
+  @media only screen and (max-width: $tablet-max) {
 
     .section-with-image-left-container {
       padding: 40px 25px;
