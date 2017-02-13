@@ -2,10 +2,10 @@ $(document).ready(function () {
     $("#project-card-info-tabs").tabs();
 
     var smallImageBlock = $(".galery-small-img");
-    var bigImgBlock = $(".galery-big-img");
 
     smallImageBlock.on("click", function (event) {
         var smallSrc = $(this).children().attr("src");
+        var bigImgBlock = $(this).parent().parent().children(".galery-big-img");
 
         $(this).parent().children(".galery-small-img").removeClass("active");
         $(this).addClass("active");

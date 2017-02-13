@@ -3427,19 +3427,21 @@ input.custom-checkbox {
             width: 100%;
             display: block; } }
 
-.section-popular-projects.section-project-card-last-finished .section-popular-projects-content .section-popular-projects-content-cards {
-  margin-bottom: 0; }
-  .section-popular-projects.section-project-card-last-finished .section-popular-projects-content .section-popular-projects-content-cards .popular-projects-item {
-    margin-bottom: 0;
-    background-color: #f6f6f6; }
-    .section-popular-projects.section-project-card-last-finished .section-popular-projects-content .section-popular-projects-content-cards .popular-projects-item:hover {
-      background-color: #46d251; }
-@media only screen and (max-width: 1024px) {
-  .section-popular-projects.section-project-card-last-finished .section-popular-projects-content .section-popular-projects-content-cards .popular-projects-item {
-    margin-bottom: 30px;
-    background-color: #f6f6f6; }
-    .section-popular-projects.section-project-card-last-finished .section-popular-projects-content .section-popular-projects-content-cards .popular-projects-item:hover {
-      background-color: #46d251; } }
+.section-popular-projects.section-project-card-last-finished {
+  background-color: #ffffff; }
+  .section-popular-projects.section-project-card-last-finished .section-popular-projects-content .section-popular-projects-content-cards {
+    margin-bottom: 0; }
+    .section-popular-projects.section-project-card-last-finished .section-popular-projects-content .section-popular-projects-content-cards .popular-projects-item {
+      margin-bottom: 0;
+      background-color: #f6f6f6; }
+      .section-popular-projects.section-project-card-last-finished .section-popular-projects-content .section-popular-projects-content-cards .popular-projects-item:hover {
+        background-color: #46d251; }
+  @media only screen and (max-width: 1024px) {
+    .section-popular-projects.section-project-card-last-finished .section-popular-projects-content .section-popular-projects-content-cards .popular-projects-item {
+      margin-bottom: 30px;
+      background-color: #f6f6f6; }
+      .section-popular-projects.section-project-card-last-finished .section-popular-projects-content .section-popular-projects-content-cards .popular-projects-item:hover {
+        background-color: #46d251; } }
 
 .section-main-finished-projects {
   width: 100%;
