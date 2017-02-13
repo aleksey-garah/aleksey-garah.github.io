@@ -225,6 +225,7 @@ footer.white-footer {
   border: 0;
   cursor: pointer;
   box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.13);
+  background-color: #d0d0d0;
   text-decoration: none;
   display: inline-block;
   transition: all 0.5s ease;
@@ -3181,7 +3182,7 @@ input.custom-checkbox {
     .section-main-project-card .section-main-project-card-container .section-main-project-card-title {
       font-size: 30px;
       font-weight: 700;
-      font-family: Conv_PFDinDisplayPro-Bold;
+      font-family: Conv_PFDinDisplayPro-Black;
       text-transform: uppercase;
       margin: 0 0 40px 0; }
       @media only screen and (max-width: 1024px) {
@@ -3582,7 +3583,6 @@ input.custom-checkbox {
   font-weight: 700;
   font-family: Conv_PFDinDisplayPro-Bold;
   color: black;
-  background-color: red;
   text-align: center; }
 @media only screen and (max-width: 1024px) {
   .section-main-finished-project-card .section-main-project-card-container {

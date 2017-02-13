@@ -9,7 +9,7 @@ $(document).ready(function () {
         $(this).addClass("active");
 
         bigImgBlock.children("img").attr("src", smallSrc);
-        bigImgBlock.children("a").attr("href", smallSrc);
+        bigImgBlock.children(".project-card-galery").children("a").attr("href", smallSrc);
     });
 
     $("#clarify-info-dialog").dialog({
