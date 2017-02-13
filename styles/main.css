@@ -1129,6 +1129,8 @@ input.custom-checkbox {
     background: url("../assets/images/homes-bg.png");
     background-size: cover;
     opacity: 0.5; }
+  .section-feedback.service-feedback-block:before {
+    background: url("../assets/images/usluga--bg.png"); }
   .section-feedback .section-feedback-container {
     width: 100%;
     max-width: 915px;
@@ -1503,7 +1505,7 @@ input.custom-checkbox {
         width: 100%; }
     @media only screen and (max-width: 1024px) {
       .section-main-service .section-main-service-container {
-        padding: 40px 25px; }
+        padding: 60px 90px; }
         .section-main-service .section-main-service-container .section-main-service-title {
           text-align: center; }
         .section-main-service .section-main-service-container .section-main-service-content .section-main-service-image {
@@ -2969,7 +2971,8 @@ input.custom-checkbox {
           text-align: center; } }
     .section-main-service-area .section-main-service-area-container .section-main-service-area-text {
       font-size: 18px;
-      font-weight: 400; }
+      font-weight: 400;
+      margin-bottom: 20px; }
     .section-main-service-area .section-main-service-area-container .section-main-service-area-image {
       width: 490px;
       height: 305px;
@@ -3029,7 +3032,11 @@ input.custom-checkbox {
         right: 0;
         top: 0;
         bottom: 0;
-        padding: 40px 25px 0 157px; }
+        padding: 0 25px 0 157px; }
+        .section-types-of-service .section-types-of-service-container .section-types-of-service-item .section-types-of-service-item-link span {
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%); }
     @media only screen and (max-width: 1024px) {
       .section-types-of-service .section-types-of-service-container {
         padding: 40px 25px;

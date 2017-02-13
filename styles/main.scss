@@ -648,6 +648,13 @@
     opacity: 0.5;
   }
 
+  &.service-feedback-block {
+
+    &:before {
+      background: url("../assets/images/usluga--bg.png");
+    }
+  }
+
   .section-feedback-container {
     width: 100%;
     max-width: 915px;
@@ -1140,7 +1147,7 @@
     }
 
     @media only screen and (max-width: $tablet-max) {
-      padding: 40px 25px;
+      padding: 60px 90px;
 
       .section-main-service-title {
         text-align: center;
@@ -3231,6 +3238,7 @@
     .section-main-service-area-text {
       font-size: 18px;
       font-weight: $font-regular;
+      margin-bottom: 20px;
     }
 
     .section-main-service-area-image {
@@ -3309,11 +3317,17 @@
         right: 0;
         top: 0;
         bottom: 0;
-        padding: 40px 25px 0 157px;
+        padding: 0 25px 0 157px;
+
+        span {
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+        }
       }
     }
 
-    @media only screen and (max-width: 1024px) {
+    @media only screen and (max-width: $tablet-max) {
       padding: 40px 25px;
       text-align: center;
 
