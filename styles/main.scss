@@ -1809,7 +1809,7 @@
     .section-main-comments-title {
       font-size: 30px;
       font-weight: $font-bold;
-      font-family: Conv_PFDinDisplayPro-Bold;
+      font-family: Conv_PFDinDisplayPro-Black;
       text-transform: uppercase;
       margin: 0 0 40px 0;
     }
@@ -1920,7 +1920,7 @@
               outline: none;
             }
 
-            @media only screen and (min-width: 1024px) {
+            @media only screen and (min-width: $tablet-max) {
 
               &:first-child {
                 display: none;
@@ -1932,6 +1932,7 @@
         .main-materials-images-block-tab {
           background-color: $comments-tab-content-color;
           padding: 32px 38px;
+          text-align: center;
 
           &.main-materials-project-tab {
 
@@ -1963,8 +1964,6 @@
             .main-materials-project-tab-button {
               color: $white;
               background-color: $green;
-              display: block;
-              margin: 0 auto;
 
               &:hover {
                 background-color: $dark-green;
@@ -1973,6 +1972,7 @@
           }
 
           .section-main-materials-text-block-content {
+            text-align: left;
 
             .main-materials-text-block-content-header {
               font-weight: $font-bold;
@@ -2140,7 +2140,7 @@
     }
   }
 
-  @media only screen and (max-width: 1024px) {
+  @media only screen and (max-width: $tablet-max) {
 
     .section-main-comments-container {
       padding: 40px 25px;
