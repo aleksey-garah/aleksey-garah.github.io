@@ -427,7 +427,7 @@
       .advantages-item {
         margin: 15px;
         max-width: none;
-        width: 180px;
+        width: 160px;
       }
     }
   }
@@ -4143,24 +4143,25 @@
           }
         }
 
-        @media only screen and (max-width: 1024px) {
+        @media only screen and (max-width: $tablet-max) {
           text-align: center;
 
           .finished-projects-list-item {
+            margin: 0 8px 30px 8px;
 
             &:nth-child(4n+1) {
-              margin-left: 15px;
+              margin-left: 8px;
             }
 
             &:nth-child(4n+4) {
-              margin-right: 15px;
+              margin-right: 8px;
             }
           }
         }
       }
     }
 
-    @media only screen and (max-width: 1024px) {
+    @media only screen and (max-width: $tablet-max) {
       padding: 40px 25px;
     }
   }
