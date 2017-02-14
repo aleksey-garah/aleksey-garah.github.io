@@ -434,14 +434,22 @@ footer {
       font-size: 26px;
     }
   }
+
+  @media only screen and (max-width: $tablet-min) {
+    height: 100px;
+
+    .default-forms-title {
+      padding: 0 20px;
+    }
+  }
 }
 
 .default-forms-arrow {
   width: 100%;
   margin-top: -1px;
 
-  @media only screen and (max-width: $tablet-max) {
-
+  @media only screen and (max-width: $tablet-min) {
+    height: 15px;
   }
 }
 
@@ -579,6 +587,29 @@ footer {
 
       span {
         top: 125px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: $tablet-min) {
+    width: 100%;
+
+    .default-card-image {
+      height: 150px;
+      margin-bottom: 40px;
+      display: flex;
+      align-items: center;
+
+      img {
+        height: 100%;
+        width: auto;
+      }
+    }
+
+    .default-card-title {
+
+      span {
+        top: 175px;
       }
     }
   }
@@ -1289,4 +1320,34 @@ input.custom-checkbox {
       height: 35px;
     }
   }
+}
+
+@media only screen and (min-width: $tablet-min) {
+
+  ::-webkit-input-placeholder { /* WebKit browsers */
+    color: transparent;
+  }
+  :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: transparent;
+  }
+  ::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: transparent;
+  }
+  :-ms-input-placeholder { /* Internet Explorer 10+ */
+    color: transparent;
+  }
+
+  textarea::-webkit-input-placeholder { /* WebKit browsers */
+    color: transparent;
+  }
+  textarea:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: transparent;
+  }
+  textarea::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: transparent;
+  }
+  textarea:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color: transparent;
+  }
+
 }

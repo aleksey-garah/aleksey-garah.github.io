@@ -276,10 +276,18 @@ footer.white-footer {
       height: 80px; }
       .default-forms-header .default-forms-title {
         font-size: 26px; } }
+  @media only screen and (max-width: 767px) {
+    .default-forms-header {
+      height: 100px; }
+      .default-forms-header .default-forms-title {
+        padding: 0 20px; } }
 
 .default-forms-arrow {
   width: 100%;
   margin-top: -1px; }
+  @media only screen and (max-width: 767px) {
+    .default-forms-arrow {
+      height: 15px; } }
 
 .default-button {
   text-transform: uppercase;
@@ -380,6 +388,19 @@ footer.white-footer {
         margin-bottom: 40px; }
       .default-card .default-card-title span {
         top: 125px; } }
+  @media only screen and (max-width: 767px) {
+    .default-card {
+      width: 100%; }
+      .default-card .default-card-image {
+        height: 150px;
+        margin-bottom: 40px;
+        display: flex;
+        align-items: center; }
+        .default-card .default-card-image img {
+          height: 100%;
+          width: auto; }
+      .default-card .default-card-title span {
+        top: 175px; } }
 
 .default-form-group {
   width: 100%;
@@ -865,6 +886,38 @@ input.custom-checkbox {
     width: 75px;
     height: 35px; }
 
+@media only screen and (min-width: 767px) {
+  ::-webkit-input-placeholder {
+    /* WebKit browsers */
+    color: transparent; }
+
+  :-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: transparent; }
+
+  ::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: transparent; }
+
+  :-ms-input-placeholder {
+    /* Internet Explorer 10+ */
+    color: transparent; }
+
+  textarea::-webkit-input-placeholder {
+    /* WebKit browsers */
+    color: transparent; }
+
+  textarea:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: transparent; }
+
+  textarea::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: transparent; }
+
+  textarea:-ms-input-placeholder {
+    /* Internet Explorer 10+ */
+    color: transparent; } }
 .section-main {
   padding-top: 100px;
   background-color: #eeeeee; }
@@ -1284,6 +1337,17 @@ input.custom-checkbox {
             margin-left: 8px; }
           .section-popular-projects .section-popular-projects-content .section-popular-projects-content-cards .popular-projects-item:nth-child(4n+4) {
             margin-right: 8px; } }
+  @media only screen and (max-width: 767px) {
+    .section-popular-projects .section-popular-projects-content {
+      padding: 30px 20px; }
+      .section-popular-projects .section-popular-projects-content .section-popular-projects-content-cards {
+        text-align: center; }
+        .section-popular-projects .section-popular-projects-content .section-popular-projects-content-cards .popular-projects-item {
+          margin: 0 0 15px 0; }
+          .section-popular-projects .section-popular-projects-content .section-popular-projects-content-cards .popular-projects-item:nth-child(4n+1) {
+            margin-left: 0; }
+          .section-popular-projects .section-popular-projects-content .section-popular-projects-content-cards .popular-projects-item:nth-child(4n+4) {
+            margin-right: 0; } }
 
 .section-last-projects {
   width: 100%; }
@@ -1347,6 +1411,17 @@ input.custom-checkbox {
             margin-left: 8px; }
           .section-last-projects .section-last-projects-content .section-last-projects-content-cards .last-projects-item:nth-child(4n+4) {
             margin-right: 8px; } }
+  @media only screen and (max-width: 767px) {
+    .section-last-projects .section-last-projects-content {
+      padding: 30px 20pxx; }
+      .section-last-projects .section-last-projects-content .section-last-projects-content-cards {
+        text-align: center; }
+        .section-last-projects .section-last-projects-content .section-last-projects-content-cards .last-projects-item {
+          margin: 0 0 15px 0; }
+          .section-last-projects .section-last-projects-content .section-last-projects-content-cards .last-projects-item:nth-child(4n+1) {
+            margin-left: 0; }
+          .section-last-projects .section-last-projects-content .section-last-projects-content-cards .last-projects-item:nth-child(4n+4) {
+            margin-right: 0; } }
 
 .section-feedback {
   width: 100%;
@@ -1408,6 +1483,23 @@ input.custom-checkbox {
           margin-bottom: 24px;
           max-width: none;
           display: block; } }
+  @media only screen and (max-width: 767px) {
+    .section-feedback .section-feedback-container {
+      width: 100%; }
+      .section-feedback .section-feedback-container .section-feedback-header .section-feedback-title {
+        padding: 0 25px;
+        font-size: 20px;
+        transform: translateY(-41%); }
+      .section-feedback .section-feedback-container form {
+        padding: 30px 20px; }
+        .section-feedback .section-feedback-container form .feedback-form-group .feedback-form-block .default-form-label {
+          display: none; }
+        .section-feedback .section-feedback-container form .feedback-form-group .feedback-form-block .default-form-control {
+          padding: 0 10px; }
+        .section-feedback .section-feedback-container form .feedback-form-textarea-block .default-form-label {
+          display: none; }
+        .section-feedback .section-feedback-container form .feedback-form-textarea-block .feedback-form-textarea {
+          padding: 10px; } }
 
 .section-team {
   width: 100%; }
@@ -1586,6 +1678,16 @@ input.custom-checkbox {
         font-size: 30px; }
       .section-buildings-coordinates .section-buildings-coordinates-header .default-section-header-block .section-buildings-coordinates-description {
         font-size: 20px; } }
+  @media only screen and (max-width: 767px) {
+    .section-buildings-coordinates .section-buildings-coordinates-header {
+      height: 227px; }
+      .section-buildings-coordinates .section-buildings-coordinates-header .default-section-header-block .section-buildings-coordinates-title {
+        font-size: 22px;
+        margin: 0 0 20px 0;
+        width: auto; }
+      .section-buildings-coordinates .section-buildings-coordinates-header .default-section-header-block .section-buildings-coordinates-description {
+        font-size: 18px;
+        width: auto; } }
 .section-buildings-coordinates .section-buildings-coordinates-content {
   height: 500px; }
 

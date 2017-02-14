@@ -640,6 +640,29 @@
       }
     }
   }
+
+  @media only screen and (max-width: $tablet-min) {
+
+    .section-popular-projects-content {
+      padding: 30px 20px;
+
+      .section-popular-projects-content-cards {
+        text-align: center;
+
+        .popular-projects-item {
+          margin: 0 0 15px 0;
+
+          &:nth-child(4n+1) {
+            margin-left: 0;
+          }
+
+          &:nth-child(4n+4) {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
 }
 
 .section-last-projects {
@@ -738,6 +761,29 @@
 
           &:nth-child(4n+4) {
             margin-right: 8px;
+          }
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: $tablet-min) {
+
+    .section-last-projects-content {
+      padding: 30px 20pxx;
+
+      .section-last-projects-content-cards {
+        text-align: center;
+
+        .last-projects-item {
+          margin: 0 0 15px 0;
+
+          &:nth-child(4n+1) {
+            margin-left: 0;
+          }
+
+          &:nth-child(4n+4) {
+            margin-right: 0;
           }
         }
       }
@@ -843,6 +889,50 @@
             margin-bottom: 24px;
             max-width: none;
             display: block;
+          }
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: $tablet-min) {
+    .section-feedback-container {
+      width: 100%;
+
+      .section-feedback-header {
+
+        .section-feedback-title {
+          padding: 0 25px;
+          font-size: 20px;
+          transform: translateY(-41%);
+        }
+      }
+
+      form {
+        padding: 30px 20px;
+
+        .feedback-form-group {
+
+          .feedback-form-block {
+
+            .default-form-label {
+              display: none;
+            }
+
+            .default-form-control {
+              padding: 0 10px;
+            }
+          }
+        }
+
+        .feedback-form-textarea-block {
+
+          .default-form-label {
+            display: none;
+          }
+
+          .feedback-form-textarea {
+            padding: 10px;
           }
         }
       }
@@ -1047,6 +1137,24 @@
 
         .section-buildings-coordinates-description {
           font-size: 20px;
+        }
+      }
+    }
+
+    @media only screen and (max-width: $tablet-min) {
+      height: 227px;
+
+      .default-section-header-block {
+
+        .section-buildings-coordinates-title {
+          font-size: 22px;
+          margin: 0 0 20px 0;
+          width: auto;
+        }
+
+        .section-buildings-coordinates-description {
+          font-size: 18px;
+          width: auto;
         }
       }
     }

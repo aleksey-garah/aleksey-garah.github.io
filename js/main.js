@@ -12,11 +12,10 @@ $(document).ready(function () {
 
     $("#opne-mobile-menu-button").on("click", function (even) {
         $("#mobile-menu").toggleClass("active");
-    })
+    });
 });
 
 $(window).on("load", function () {
-
     hiddenNavBar = {
         $menu: $('#menu'),
         init: function () {
