@@ -4831,59 +4831,6 @@
           text-decoration: none;
         }
       }
-
-      @media only screen and (max-width: $tablet-max) {
-        float: right;
-        width: 50%;
-        margin-bottom: 0;
-        height: 40px;
-        overflow: hidden;
-
-        &.active {
-          height: auto;
-          overflow: visible;
-
-          .catalog-info-tabs-button {
-            background-color: $green;
-            color: $white;
-
-            &:after {
-              transform: rotate(180deg);
-            }
-          }
-
-          ul {
-            width: 200%;
-            margin-left: -100%;
-          }
-
-          .detailed-project-card-info-tab {
-            width: 200%;
-            margin-left: -100%;
-          }
-        }
-
-        ul {
-
-          li {
-            display: block;
-            width: 100%;
-            margin-bottom: 2px;
-          }
-        }
-
-        .catalog-info-tabs-button {
-          display: block;
-          width: 100%;
-          text-align: left;
-
-          &:after {
-            font-family: 'icomoon';
-            content: '\e917';
-            float: right;
-          }
-        }
-      }
     }
 
     .left-filters-block {
@@ -4912,61 +4859,6 @@
           margin-left: 12px;
         }
       }
-
-      @media only screen and (max-width: $tablet-max) {
-        float: none;
-        width: 50%;
-        padding: 0;
-        height: 40px;
-        overflow: hidden;
-        min-height: auto;
-
-        &.active {
-          height: auto;
-          overflow: visible;
-          box-shadow: none;
-          border: none;
-
-          .left-filters-block-button {
-            background-color: $green;
-            color: $white;
-
-            &:after {
-              transform: rotate(180deg);
-            }
-          }
-
-          .left-filters-block-wrapper {
-            width: 200%;
-            margin-right: -100%;
-            background-color: #fafafa;
-            box-shadow: $card-box-shadow;
-            border: 1px solid $card-border-color;
-
-            .left-filter-block-section {
-              display: inline-block;
-              vertical-align: top;
-            }
-          }
-        }
-
-        .left-filters-block-button {
-          display: block;
-          width: 100%;
-          text-align: left;
-
-          &:after {
-            font-family: 'icomoon';
-            content: '\e917';
-            float: right;
-          }
-        }
-
-        .left-filter-block-section {
-          margin: 25px 0 0 0;
-          padding: 0 25px;
-        }
-      }
     }
 
     .main-content-block {
@@ -4992,7 +4884,7 @@
           font-weight: $font-regular;
           box-shadow: 5px 2px 5px 0 rgba(0, 0, 0, 0.11);
 
-          span {
+          .info-number {
             font-size: 24px;
             font-weight: $font-bold;
             font-family: Conv_PFDinDisplayPro-Bold;
@@ -5092,8 +4984,120 @@
           }
         }
       }
+    }
 
-      @media only screen and (max-width: $tablet-max) {
+    @media only screen and (max-width: $tablet-max) {
+      padding: 30px 20px;
+
+      .catalog-info-tabs {
+        float: right;
+        width: 50%;
+        margin-bottom: 0;
+        height: 40px;
+        overflow: hidden;
+
+        &.active {
+          height: auto;
+          overflow: visible;
+
+          .catalog-info-tabs-button {
+            background-color: $green;
+            color: $white;
+
+            &:after {
+              transform: rotate(180deg);
+            }
+          }
+
+          ul {
+            width: 200%;
+            margin-left: -100%;
+          }
+
+          .detailed-project-card-info-tab {
+            width: 200%;
+            margin-left: -100%;
+          }
+        }
+
+        ul {
+
+          li {
+            display: block;
+            width: 100%;
+            margin-bottom: 2px;
+          }
+        }
+
+        .catalog-info-tabs-button {
+          display: block;
+          width: 100%;
+          text-align: left;
+
+          &:after {
+            font-family: 'icomoon';
+            content: '\e917';
+            float: right;
+          }
+        }
+      }
+
+      .left-filters-block {
+        float: none;
+        width: 50%;
+        padding: 0;
+        height: 40px;
+        overflow: hidden;
+        min-height: auto;
+
+        &.active {
+          height: auto;
+          overflow: visible;
+          box-shadow: none;
+          border: none;
+
+          .left-filters-block-button {
+            background-color: $green;
+            color: $white;
+
+            &:after {
+              transform: rotate(180deg);
+            }
+          }
+
+          .left-filters-block-wrapper {
+            width: 200%;
+            margin-right: -100%;
+            background-color: #fafafa;
+            box-shadow: $card-box-shadow;
+            border: 1px solid $card-border-color;
+
+            .left-filter-block-section {
+              display: inline-block;
+              vertical-align: top;
+            }
+          }
+        }
+
+        .left-filters-block-button {
+          display: block;
+          width: 100%;
+          text-align: left;
+
+          &:after {
+            font-family: 'icomoon';
+            content: '\e917';
+            float: right;
+          }
+        }
+
+        .left-filter-block-section {
+          margin: 25px 0 0 0;
+          padding: 0 25px;
+        }
+      }
+
+      .main-content-block {
         margin: 25px 0 0 0;
         clear: both;
 
@@ -5101,13 +5105,133 @@
           text-align: center;
 
           .main-content-project-item {
+            margin: 0 8px 20px 8px;
 
             &:nth-child(3n+1) {
-              margin-left: 12px;
+              margin-left: 8px;
             }
 
             &:nth-child(3n) {
-              margin-right: 12px;
+              margin-right: 8px;
+            }
+          }
+        }
+      }
+    }
+
+    @media only screen and (max-width: $tablet-min) {
+
+      .catalog-info-tabs {
+        float: none;
+        width: 100%;
+
+        &.active {
+          height: auto;
+          overflow: visible;
+
+          .catalog-info-tabs-button {
+            background-color: $green;
+            color: $white;
+
+            &:after {
+              transform: rotate(180deg);
+            }
+          }
+
+          ul {
+            width: 100%;
+            margin-left: 0;
+          }
+
+          .detailed-project-card-info-tab {
+            width: 100%;
+            margin-left: 0;
+          }
+        }
+      }
+
+      .left-filters-block {
+        float: none;
+        width: 100%;
+
+        &.active {
+          height: auto;
+          overflow: visible;
+          box-shadow: none;
+          border: none;
+
+          .left-filters-block-button {
+            background-color: $green;
+            color: $white;
+
+            &:after {
+              transform: rotate(180deg);
+            }
+          }
+
+          .left-filters-block-wrapper {
+            width: 100%;
+            margin-right: 0;
+            background-color: #fafafa;
+            box-shadow: $card-box-shadow;
+            border: 1px solid $card-border-color;
+
+            .left-filter-block-section {
+              display: block;
+            }
+          }
+        }
+      }
+
+      .main-content-block {
+
+        .main-content-actions-block {
+
+          .main-content-block-search-info {
+            font-size: 0;
+
+            span {
+              font-size: 20px;
+
+              &.info-number {
+                font-size: 24px;
+              }
+            }
+          }
+
+          .main-content-block-actions {
+            height: auto;
+
+            .sort-block {
+              height: auto;
+              line-height: 36px;
+              position: static;
+              margin-top: 0;
+              padding: 5px;
+
+              select {
+                width: 180px;
+              }
+            }
+
+            .pagination-buttons {
+              position: static;
+              margin-top: 0;
+            }
+          }
+        }
+
+        .main-content-project-items-container {
+
+          .main-content-project-item {
+            margin: 0 0 20px 0;
+
+            &:nth-child(3n+1) {
+              margin-left: 0;
+            }
+
+            &:nth-child(3n) {
+              margin-right: 0;
             }
           }
         }
