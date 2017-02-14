@@ -1128,9 +1128,13 @@ input.custom-checkbox {
         margin: 0 0 25px 0; }
       .section-concrete-blocks-building .section-concrete-blocks-building-content .section-concrete-blocks-building-text {
         margin: 0;
-        text-align: center; }
+        text-align: center;
+        padding: 0; }
         .section-concrete-blocks-building .section-concrete-blocks-building-content .section-concrete-blocks-building-text p {
           text-align: left; } }
+  @media only screen and (max-width: 767px) {
+    .section-concrete-blocks-building .section-concrete-blocks-building-content {
+      padding: 30px 20px; } }
 
 .section-advantages {
   width: 100%;
@@ -1192,6 +1196,30 @@ input.custom-checkbox {
         margin: 15px;
         max-width: none;
         width: 160px; } }
+  @media only screen and (max-width: 767px) {
+    .section-advantages .section-advantages-container {
+      padding: 30px 20px; }
+      .section-advantages .section-advantages-container .advantages-item {
+        width: auto;
+        margin: 0 0 15px 25px; }
+        .section-advantages .section-advantages-container .advantages-item .advantages-item-icon {
+          width: 50px;
+          height: 50px;
+          margin-top: 33px;
+          margin-right: 26px;
+          float: left; }
+          .section-advantages .section-advantages-container .advantages-item .advantages-item-icon i {
+            font-size: 30px;
+            margin-top: -15px; }
+        .section-advantages .section-advantages-container .advantages-item .advantages-item-title {
+          margin: 23px 0 12px 0;
+          font-size: 18px;
+          text-align: left; }
+        .section-advantages .section-advantages-container .advantages-item .advantages-item-text {
+          font-size: 14px;
+          margin: 10px 0;
+          padding-left: 76px;
+          text-align: left; } }
 
 .section-popular-projects {
   width: 100%;
