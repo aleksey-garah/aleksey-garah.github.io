@@ -2108,11 +2108,11 @@ input.custom-checkbox {
         padding: 40px 0;
         text-align: center; }
         .section-another-services .section-advantages-container .service-link-block {
-          margin: 0 16px 20px 16px; }
+          margin: 0 8px 20px 8px; }
           .section-another-services .section-advantages-container .service-link-block:first-child {
-            margin-left: 16px; }
+            margin-left: 8px; }
           .section-another-services .section-advantages-container .service-link-block:last-child {
-            margin-right: 16px;
+            margin-right: 8px;
             margin-bottom: 0; }
           .section-another-services .section-advantages-container .service-link-block .service-link-block-title {
             padding: 0 20px 0 140px;
@@ -2128,8 +2128,11 @@ input.custom-checkbox {
           .section-another-services .section-advantages-container .service-link-block:last-child {
             margin-right: 0;
             margin-bottom: 0; }
+          .section-another-services .section-advantages-container .service-link-block .service-link-block-image {
+            width: 90px;
+            height: 90px; }
           .section-another-services .section-advantages-container .service-link-block .service-link-block-title {
-            padding: 0 20px 0 140px;
+            padding: 0 20px 0 130px;
             font-size: 18px; } }
 
 .section-main-materials {
@@ -3565,6 +3568,11 @@ input.custom-checkbox {
           float: none;
           width: 100%;
           margin: 0 0 25px 0; } }
+    @media only screen and (max-width: 767px) {
+      .section-main-service-area .section-main-service-area-container {
+        padding: 30px 20px; }
+        .section-main-service-area .section-main-service-area-container .section-main-service-area-image {
+          height: auto; } }
 
 .section-types-of-service {
   width: 100%;
@@ -3627,6 +3635,23 @@ input.custom-checkbox {
             margin-left: 15px; }
           .section-types-of-service .section-types-of-service-container .section-types-of-service-item:nth-of-type(3n+3) {
             margin-right: 15px; } }
+    @media only screen and (max-width: 767px) {
+      .section-types-of-service .section-types-of-service-container {
+        padding: 30px 20px; }
+        .section-types-of-service .section-types-of-service-container .section-types-of-service-item {
+          margin: 0 0 20px 0;
+          width: 100%; }
+          .section-types-of-service .section-types-of-service-container .section-types-of-service-item .section-types-of-service-item-img {
+            width: 90px;
+            height: 90px;
+            margin-top: -45px;
+            left: 20px; }
+          .section-types-of-service .section-types-of-service-container .section-types-of-service-item .section-types-of-service-item-link {
+            padding: 0 25px 0 135px; }
+          .section-types-of-service .section-types-of-service-container .section-types-of-service-item:nth-of-type(3n+1) {
+            margin-left: 0; }
+          .section-types-of-service .section-types-of-service-container .section-types-of-service-item:nth-of-type(3n+3) {
+            margin-right: 0; } }
 
 .section-main-project-card {
   width: 100%;
