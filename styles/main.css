@@ -4450,11 +4450,16 @@ input.custom-checkbox {
           position: static;
           margin-top: 0;
           padding: 5px; }
+          .section-main-catalog .section-main-catalog-container .main-content-block .main-content-actions-block .main-content-block-actions .sort-block label {
+            font-size: 16px;
+            margin-right: 10px; }
           .section-main-catalog .section-main-catalog-container .main-content-block .main-content-actions-block .main-content-block-actions .sort-block select {
-            width: 180px; }
+            width: 145px; }
         .section-main-catalog .section-main-catalog-container .main-content-block .main-content-actions-block .main-content-block-actions .pagination-buttons {
           position: static;
-          margin-top: 0; }
+          margin-top: 0;
+          width: auto;
+          padding: 5px 10px; }
       .section-main-catalog .section-main-catalog-container .main-content-block .main-content-project-items-container .main-content-project-item {
         margin: 0 0 20px 0; }
         .section-main-catalog .section-main-catalog-container .main-content-block .main-content-project-items-container .main-content-project-item:nth-child(3n+1) {
