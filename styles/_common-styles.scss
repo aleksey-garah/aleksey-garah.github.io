@@ -143,6 +143,10 @@ header {
     .top-navigation {
       padding: 23px 30px;
 
+      .main-navigation-logo {
+        margin-right: 20px;
+      }
+
       nav {
         display: none;
       }
@@ -182,6 +186,33 @@ header {
               text-transform: uppercase;
             }
           }
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: $tablet-min) {
+
+    .top-navigation {
+      padding: 20px 15px;
+
+      .main-navigation-logo {
+        margin-right: 5px;
+      }
+
+      .nav-phone-block {
+
+        .open-mobile-menu-button {
+          margin-left: 15px;
+        }
+
+        .nav-phone-number {
+          margin-right: 15px;
+        }
+
+        .nav-order-phone-button {
+          font-size: 0;
+          width: 40px;
         }
       }
     }
@@ -351,13 +382,28 @@ footer {
       }
     }
   }
+
+  @media only screen and (max-width: $tablet-min) {
+    height: 80px;
+
+    .default-section-header-block {
+
+      .default-section-title {
+        font-size: 22px;
+      }
+
+      .default-section-title-description {
+
+      }
+    }
+  }
 }
 
 .default-section-arrow {
   width: 100%;
 
-  @media only screen and (max-width: $tablet-max) {
-
+  @media only screen and (max-width: $tablet-min) {
+    height: 15px;
   }
 }
 
@@ -1232,7 +1278,7 @@ input.custom-checkbox {
 }
 
 .slider-inputs {
-@include clear-element;
+  @include clear-element;
 
   .slider-input-block {
     width: 50%;

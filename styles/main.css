@@ -100,6 +100,8 @@ header {
   @media only screen and (max-width: 1024px) {
     header .top-navigation {
       padding: 23px 30px; }
+      header .top-navigation .main-navigation-logo {
+        margin-right: 20px; }
       header .top-navigation nav {
         display: none; }
       header .top-navigation .nav-phone-block .open-mobile-menu-button {
@@ -122,6 +124,18 @@ header {
             font-family: Conv_PFDinDisplayPro-Light;
             font-size: 18px;
             text-transform: uppercase; } }
+  @media only screen and (max-width: 767px) {
+    header .top-navigation {
+      padding: 20px 15px; }
+      header .top-navigation .main-navigation-logo {
+        margin-right: 5px; }
+      header .top-navigation .nav-phone-block .open-mobile-menu-button {
+        margin-left: 15px; }
+      header .top-navigation .nav-phone-block .nav-phone-number {
+        margin-right: 15px; }
+      header .top-navigation .nav-phone-block .nav-order-phone-button {
+        font-size: 0;
+        width: 40px; } }
 
 footer.black-footer {
   width: 100%;
@@ -231,9 +245,17 @@ footer.white-footer {
       height: 80px; }
       .default-section-header .default-section-header-block .default-section-title {
         font-size: 26px; } }
+  @media only screen and (max-width: 767px) {
+    .default-section-header {
+      height: 80px; }
+      .default-section-header .default-section-header-block .default-section-title {
+        font-size: 22px; } }
 
 .default-section-arrow {
   width: 100%; }
+  @media only screen and (max-width: 767px) {
+    .default-section-arrow {
+      height: 15px; } }
 
 .default-forms-header {
   position: relative;
@@ -962,6 +984,27 @@ input.custom-checkbox {
               margin: 0 0 8px 0;
               font-size: 25px;
               text-align: center; } }
+  @media only screen and (max-width: 767px) {
+    .section-main .section-main-container {
+      height: auto; }
+      .section-main .section-main-container .section-main-background-image-block {
+        height: 200px; }
+      .section-main .section-main-container .section-main-content {
+        padding: 30px 25px; }
+        .section-main .section-main-container .section-main-content .section-main-content-title {
+          margin: 0 0 25px 0;
+          font-size: 20px; }
+        .section-main .section-main-container .section-main-content ul {
+          text-align: center;
+          margin: 0 0 30px 0; }
+          .section-main .section-main-container .section-main-content ul li {
+            width: 130px;
+            vertical-align: top;
+            margin-bottom: 20px; }
+            .section-main .section-main-container .section-main-content ul li:nth-of-type(3) {
+              margin-bottom: 0; }
+            .section-main .section-main-container .section-main-content ul li:nth-of-type(4) {
+              margin-bottom: 0; } }
 
 .section-steps {
   width: 100%; }
