@@ -827,6 +827,20 @@ footer {
       margin: 0 0 25px 0;
     }
   }
+
+  @media only screen and (max-width: $tablet-min) {
+
+    .section-with-image-left-container {
+      padding: 30px 20px;
+    }
+
+    .section-with-image-left-image {
+      width: 100%;
+      height: auto;
+      float: none;
+      margin: 0 0 25px 0;
+    }
+  }
 }
 
 //=====================================================================================
