@@ -9,6 +9,10 @@ $(document).ready(function () {
             $('.top-navigation').removeClass("start-scroll");
         }
     });
+
+    $("#opne-mobile-menu-button").on("click", function (even) {
+        $("#mobile-menu").toggleClass("active");
+    })
 });
 
 $(window).on("load", function () {
