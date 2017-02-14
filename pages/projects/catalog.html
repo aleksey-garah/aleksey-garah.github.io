@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Проекты</title>
+    <link rel="stylesheet" href="../../styles/ion.rangeSlider.css">
+    <link rel="stylesheet" href="../../styles/ion.rangeSlider.skinHTML5.css">
     <link rel="stylesheet" href="../../styles/main.css">
 </head>
 <body>
@@ -189,12 +191,45 @@
                 </div>
                 <div class="left-filter-block-section">
                     <h4>По количеству этажей:</h4>
+                    <div class="slider-inputs">
+                        <div class="slider-input-block slider-input-left-block">
+                            <label for="flores-ot">От</label>
+                            <input type="text" name="flores-ot" id="flores-ot"/>
+                        </div>
+                        <div class="slider-input-block slider-input-right-block">
+                            <label for="flores-do">До</label>
+                            <input type="text" name="flores-do" id="flores-do"/>
+                        </div>
+                    </div>
+                    <input type="text" id="number-flors-slider" name="number-flors-slider" value="">
                 </div>
                 <div class="left-filter-block-section">
                     <h4>По количеству комнат:</h4>
+                    <div class="slider-inputs">
+                        <div class="slider-input-block slider-input-left-block">
+                            <label for="flores-ot">От</label>
+                            <input type="text" name="flores-ot" id="rooms-ot"/>
+                        </div>
+                        <div class="slider-input-block slider-input-right-block">
+                            <label for="flores-do">До</label>
+                            <input type="text" name="flores-do" id="rooms-do"/>
+                        </div>
+                    </div>
+                    <input type="text" id="number-rooms-slider" name="number-rooms-slider" value="">
                 </div>
                 <div class="left-filter-block-section">
-                    <h4>Стоимость, тыс. рую.:</h4>
+                    <h4>Стоимость, тыс. руб.:</h4>
+                    <div class="slider-inputs">
+                        <div class="slider-input-block slider-input-left-block">
+                            <label for="flores-ot">От</label>
+                            <input type="text" name="flores-ot" id="price-ot"/>
+                        </div>
+                        <div class="slider-input-block slider-input-right-block">
+                            <label for="flores-do">До</label>
+                            <input type="text" name="flores-do" id="price-do"/>
+                        </div>
+                    </div>
+                    <input type="text" id="price-slider" name="price-slider" value="">
                 </div>
             </div>
         </div>
@@ -530,6 +565,7 @@
 
 <script src="../../js/jquery.min.js"></script>
 <script src="../../js/jquery-ui.min.js"></script>
+<script src="../../js/ion.rangeSlider.js"></script>
 <script src="../../js/main.js"></script>
 <script src="catalog.js"></script>
 </body>

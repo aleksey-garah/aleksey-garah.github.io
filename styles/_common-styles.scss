@@ -337,7 +337,7 @@ footer {
     }
   }
 
-  @media only screen and (max-width: 1024px) {
+  @media only screen and (max-width: $tablet-max) {
     height: 80px;
 
     .default-section-header-block {
@@ -356,7 +356,7 @@ footer {
 .default-section-arrow {
   width: 100%;
 
-  @media only screen and (max-width: 1024px) {
+  @media only screen and (max-width: $tablet-max) {
 
   }
 }
@@ -1177,5 +1177,70 @@ input.custom-checkbox {
 
   .mCustomScrollBox {
     outline: none;
+  }
+}
+
+//===========================================================
+
+.irs {
+  height: 40px;
+
+  .irs-line {
+    background: $white;
+    border: none;
+  }
+
+  .irs-min, .irs-max {
+    display: none;
+  }
+
+  .irs-from {
+    top: 10px;
+    z-index: 111;
+    background: transparent;
+    cursor: pointer;
+  }
+
+  .irs-to {
+    top: 10px;
+    z-index: 111;
+    background: transparent;
+    cursor: pointer;
+  }
+
+  .irs-slider.from {
+    background: $green;
+    border: none;
+    top: 6px;
+  }
+
+  .irs-slider {
+
+    &.to {
+      background: $green;
+      border: none;
+      top: 6px;
+    }
+  }
+
+  .irs-bar {
+    border: none;
+    background: $dark-green;
+    height: 3px;
+    top: 19px;
+  }
+}
+
+.slider-inputs {
+@include clear-element;
+
+  .slider-input-block {
+    width: 50%;
+    float: left;
+
+    input {
+      width: 75px;
+      height: 35px;
+    }
   }
 }

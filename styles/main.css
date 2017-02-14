@@ -801,6 +801,48 @@ input.custom-checkbox {
 .scrollable-content .mCustomScrollBox {
   outline: none; }
 
+.irs {
+  height: 40px; }
+  .irs .irs-line {
+    background: #ffffff;
+    border: none; }
+  .irs .irs-min, .irs .irs-max {
+    display: none; }
+  .irs .irs-from {
+    top: 10px;
+    z-index: 111;
+    background: transparent;
+    cursor: pointer; }
+  .irs .irs-to {
+    top: 10px;
+    z-index: 111;
+    background: transparent;
+    cursor: pointer; }
+  .irs .irs-slider.from {
+    background: #46d251;
+    border: none;
+    top: 6px; }
+  .irs .irs-slider.to {
+    background: #46d251;
+    border: none;
+    top: 6px; }
+  .irs .irs-bar {
+    border: none;
+    background: #009e4b;
+    height: 3px;
+    top: 19px; }
+
+.slider-inputs:after {
+  content: "";
+  display: block;
+  clear: both; }
+.slider-inputs .slider-input-block {
+  width: 50%;
+  float: left; }
+  .slider-inputs .slider-input-block input {
+    width: 75px;
+    height: 35px; }
+
 .section-main {
   padding-top: 100px;
   background-color: #eeeeee; }
@@ -3900,7 +3942,7 @@ input.custom-checkbox {
       width: 272px;
       float: left;
       min-height: 800px;
-      padding: 40px 0 0 20px;
+      padding: 40px 20px 0 20px;
       box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.11);
       border: 1px solid #cacaca;
       background-color: #fafafa; }
