@@ -387,6 +387,11 @@ footer {
     height: 80px;
 
     .default-section-header-block {
+      transform: translateY(-42%);
+
+      &.two-lined {
+        transform: translateY(-42%);
+      }
 
       .default-section-title {
         font-size: 22px;
@@ -598,11 +603,10 @@ footer {
       height: 150px;
       margin-bottom: 40px;
       display: flex;
-      align-items: center;
+      justify-content: center;
 
       img {
-        height: 100%;
-        width: auto;
+        width: 100%;
       }
     }
 

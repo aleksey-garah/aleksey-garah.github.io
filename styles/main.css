@@ -248,8 +248,12 @@ footer.white-footer {
   @media only screen and (max-width: 767px) {
     .default-section-header {
       height: 80px; }
-      .default-section-header .default-section-header-block .default-section-title {
-        font-size: 22px; } }
+      .default-section-header .default-section-header-block {
+        transform: translateY(-42%); }
+        .default-section-header .default-section-header-block.two-lined {
+          transform: translateY(-42%); }
+        .default-section-header .default-section-header-block .default-section-title {
+          font-size: 22px; } }
 
 .default-section-arrow {
   width: 100%; }
@@ -395,10 +399,9 @@ footer.white-footer {
         height: 150px;
         margin-bottom: 40px;
         display: flex;
-        align-items: center; }
+        justify-content: center; }
         .default-card .default-card-image img {
-          height: 100%;
-          width: auto; }
+          width: 100%; }
       .default-card .default-card-title span {
         top: 175px; } }
 
@@ -1435,7 +1438,7 @@ input.custom-checkbox {
             margin-right: 8px; } }
   @media only screen and (max-width: 767px) {
     .section-last-projects .section-last-projects-content {
-      padding: 30px 20pxx; }
+      padding: 30px 20 pxx; }
       .section-last-projects .section-last-projects-content .section-last-projects-content-cards {
         text-align: center; }
         .section-last-projects .section-last-projects-content .section-last-projects-content-cards .last-projects-item {
@@ -1906,6 +1909,18 @@ input.custom-checkbox {
           display: block;
           float: right;
           width: 50%; } }
+    @media only screen and (max-width: 767px) {
+      .section-main-service .section-main-service-container {
+        padding: 30px 20px; }
+        .section-main-service .section-main-service-container .section-main-service-content .section-main-service-image {
+          height: auto; }
+        .section-main-service .section-main-service-container .section-main-service-content .section-main-service-text-block .section-main-service-text {
+          margin-top: 0; }
+        .section-main-service .section-main-service-container .section-main-service-content .section-main-service-text-block .section-main-service-price {
+          width: 100%; }
+        .section-main-service .section-main-service-container .section-main-service-content .section-main-service-text-block .section-main-service-button {
+          float: none;
+          width: 100%; } }
 
 .section-how-we-work {
   background-color: #f2f2f2; }
@@ -1995,11 +2010,48 @@ input.custom-checkbox {
     .section-how-we-work .section-how-we-work-container {
       padding: 40px 0; }
       .section-how-we-work .section-how-we-work-container .section-how-we-work-blocks .section-how-we-work-block {
-        width: 180px; }
+        width: 155px; }
         .section-how-we-work .section-how-we-work-container .section-how-we-work-blocks .section-how-we-work-block .how-we-work-description {
           font-size: 16px; }
       .section-how-we-work .section-how-we-work-container .section-how-we-work-blocks .how-we-work-devider {
         width: 32px; } }
+  @media only screen and (max-width: 767px) {
+    .section-how-we-work .default-section-header {
+      height: 150px; }
+      .section-how-we-work .default-section-header .default-section-header-block {
+        transform: translateY(-47%); }
+        .section-how-we-work .default-section-header .default-section-header-block .default-section-title-description {
+          width: 90%;
+          font-size: 16px; }
+    .section-how-we-work .section-how-we-work-container {
+      padding: 30px 20px; }
+      .section-how-we-work .section-how-we-work-container .section-how-we-work-blocks {
+        margin-bottom: 30px; }
+        .section-how-we-work .section-how-we-work-container .section-how-we-work-blocks .section-how-we-work-block {
+          margin: 0 0 15px 0;
+          width: 100%;
+          max-width: none;
+          position: relative;
+          text-align: left; }
+          .section-how-we-work .section-how-we-work-container .section-how-we-work-blocks .section-how-we-work-block .how-we-work-icon {
+            width: 60px;
+            height: 60px;
+            margin: 20px 0 20px 20px;
+            text-align: center; }
+            .section-how-we-work .section-how-we-work-container .section-how-we-work-blocks .section-how-we-work-block .how-we-work-icon i {
+              font-size: 35px;
+              height: 60px;
+              width: 60px;
+              line-height: 60px; }
+          .section-how-we-work .section-how-we-work-container .section-how-we-work-blocks .section-how-we-work-block .how-we-work-description {
+            font-size: 16px;
+            position: absolute;
+            left: 120px;
+            margin: 0;
+            top: 50%;
+            transform: translateY(-50%); }
+        .section-how-we-work .section-how-we-work-container .section-how-we-work-blocks .how-we-work-devider {
+          display: none; } }
 
 .section-another-services {
   width: 100%;
@@ -2061,6 +2113,20 @@ input.custom-checkbox {
             margin-left: 16px; }
           .section-another-services .section-advantages-container .service-link-block:last-child {
             margin-right: 16px;
+            margin-bottom: 0; }
+          .section-another-services .section-advantages-container .service-link-block .service-link-block-title {
+            padding: 0 20px 0 140px;
+            font-size: 18px; } }
+    @media only screen and (max-width: 767px) {
+      .section-another-services .section-advantages-container {
+        padding: 30px 20px; }
+        .section-another-services .section-advantages-container .service-link-block {
+          margin: 0 0 20px 0;
+          width: 100%; }
+          .section-another-services .section-advantages-container .service-link-block:first-child {
+            margin-left: 0; }
+          .section-another-services .section-advantages-container .service-link-block:last-child {
+            margin-right: 0;
             margin-bottom: 0; }
           .section-another-services .section-advantages-container .service-link-block .service-link-block-title {
             padding: 0 20px 0 140px;
