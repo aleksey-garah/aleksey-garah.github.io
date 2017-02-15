@@ -468,6 +468,16 @@
 
   @media only screen and (max-width: $tablet-max) {
 
+    &.section-big-advantages {
+
+      .section-advantages-container {
+
+        .advantages-item {
+          width: 220px;
+        }
+      }
+    }
+
     &.finished-project-advantages {
 
       .section-advantages-container {
@@ -4012,10 +4022,6 @@
       font-family: Conv_PFDinDisplayPro-Black;
       text-transform: uppercase;
       margin: 0 0 40px 0;
-
-      @media only screen and (max-width: $tablet-max) {
-        text-align: center;
-      }
     }
 
     .section-main-project-card-galery {
@@ -4206,6 +4212,10 @@
 
       padding: 40px 25px;
 
+      .section-main-project-card-title {
+        text-align: center;
+      }
+
       .section-main-project-card-price-block {
         display: block;
         width: 100%;
@@ -4215,6 +4225,54 @@
       .default-button {
         width: 50%;
         float: left;
+      }
+    }
+
+    @media only screen and (max-width: $tablet-min) {
+
+      padding: 30px 20px;
+
+      .section-main-project-card-galery {
+
+        .section-main-project-card-galery-big-img {
+          height: auto;
+
+          .default-zoom-button {
+            display: none;
+          }
+        }
+
+        .section-main-project-card-galery-small-images {
+
+          .section-main-project-card-galery-small-img {
+            width: 60px;
+            height: 60px;
+          }
+        }
+      }
+
+      .section-main-project-card-info-block {
+
+        .section-main-project-card-info-row {
+
+          .section-main-project-card-info-row-title, .section-main-project-card-info-row-value {
+            font-size: 15px;
+          }
+        }
+      }
+
+      .section-main-project-card-price-block {
+        margin-bottom: 20px;
+
+        .section-main-project-card-price-title, .section-main-project-card-price-value {
+          font-size: 24px;
+        }
+      }
+
+      .default-button {
+        width: 100%;
+        float: none;
+        margin-bottom: 0;
       }
     }
   }
@@ -4284,6 +4342,10 @@
         padding: 30px;
         font-size: 0;
         background-color: $form-label-color;
+
+        .project-card-info-tabs-dropdown {
+          display: none;
+        }
 
         .detailed-project-card-info-tab-galery {
           width: 50%;
@@ -4393,8 +4455,25 @@
             }
           }
         }
+      }
+    }
 
-        @media only screen and (max-width: $tablet-max) {
+    @media only screen and (max-width: $tablet-max) {
+      padding: 60px 20px;
+
+      .detailed-project-card-info-tabs {
+
+        ul {
+
+          li {
+
+            a {
+              font-size: 18px;
+            }
+          }
+        }
+
+        .detailed-project-card-info-tab {
 
           .detailed-project-card-info-tab-galery {
             @include clear-element;
@@ -4452,6 +4531,94 @@
               padding: 30px 0 0 0;
               width: 100%;
               display: block;
+            }
+          }
+        }
+      }
+    }
+
+    @media only screen and (max-width: $tablet-min) {
+      padding: 60px 20px;
+
+      .detailed-project-card-info-tabs {
+
+        .project-card-info-tabs-dropdown {
+          display: block;
+          width: 100%;
+          text-align: left;
+
+          &.active {
+
+            &:after {
+              transform: rotate(180deg);
+            }
+          }
+
+          &:after {
+            font-family: 'icomoon';
+            content: "\e917";
+            float: right;
+          }
+        }
+
+        #project-card-info-tabs-menu {
+          height: 0;
+          overflow: hidden;
+
+          li {
+            display: block;
+            width: 100%;
+
+            a {
+              font-size: 18px;
+            }
+          }
+
+          &.active {
+            height: auto;
+          }
+        }
+
+        .detailed-project-card-info-tab {
+          padding: 20px 0 20px 0;
+
+          .detailed-project-card-info-tab-galery {
+
+            .detailed-project-card-info-tab-galery-big-img {
+              width: 100%;
+              height: 300px;
+              float: none;
+              margin-right: 0;
+              display: flex;
+              justify-content: center;
+
+              .default-zoom-button {
+                display: none;
+              }
+            }
+
+            .detailed-project-card-info-tab-galery-small-images {
+              font-size: 0;
+              white-space: nowrap;
+              overflow-x: hidden;
+
+              .detailed-project-card-info-tab-galery-small-img {
+                display: inline-block;
+                margin: 0 10px 0 0;
+              }
+            }
+          }
+
+          .detailed-project-card-info-tab-text-block {
+
+            &:first-child {
+              padding: 20px;
+              font-size: 16px;
+            }
+
+            &:last-child {
+              padding: 20px;
+              font-size: 16px;
             }
           }
         }

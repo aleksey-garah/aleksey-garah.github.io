@@ -8,6 +8,10 @@ $(document).ready(function () {
         $("#homes-subsection-galery-tabs-menu").toggleClass("active");
     });
 
+    $(".ui-tabs-tab").on("click", function (event) {
+        toggleTabsButton.text($(this).text());
+    });
+
     var smallImageBlock = $(".galery-small-img");
 
     smallImageBlock.on("click", function (event) {

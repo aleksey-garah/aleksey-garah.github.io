@@ -14,6 +14,18 @@ $(document).ready(function () {
         bigImgBlock.children("a").attr("href", smallSrc);
     });
 
+    var toggleTabsButton = $(".project-card-info-tabs-dropdown");
+    toggleTabsButton.text($(".ui-tabs-active").text());
+
+    toggleTabsButton.on("click", function (event) {
+        $("#project-card-info-tabs-menu").toggleClass("active");
+        $(this).toggleClass("active");
+    });
+
+    $(".ui-tabs-tab").on("click", function (event) {
+        toggleTabsButton.text($(this).text());
+    });
+
     $("#clarify-info-dialog").dialog({
         autoOpen: false
     });
