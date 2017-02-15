@@ -3962,6 +3962,8 @@ input.custom-checkbox {
     @media only screen and (max-width: 1024px) {
       .section-detailed-project-card-info .detailed-project-card-info-container {
         padding: 60px 20px; }
+        .section-detailed-project-card-info .detailed-project-card-info-container .detailed-project-card-info-tabs .project-card-info-tabs-dropdown {
+          display: none; }
         .section-detailed-project-card-info .detailed-project-card-info-container .detailed-project-card-info-tabs ul li a {
           font-size: 18px; }
         .section-detailed-project-card-info .detailed-project-card-info-container .detailed-project-card-info-tabs .detailed-project-card-info-tab .detailed-project-card-info-tab-galery:after {
