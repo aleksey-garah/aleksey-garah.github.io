@@ -3282,6 +3282,8 @@ input.custom-checkbox {
       font-family: Conv_PFDinDisplayPro-Black;
       text-transform: uppercase;
       margin: 0 0 40px 0; }
+    .section-main-prices-table .section-main-prices-table-container .section-main-prices-table-content .main-prices-table-tabs-dropdown {
+      display: none; }
     .section-main-prices-table .section-main-prices-table-container .section-main-prices-table-content .section-main-prices-table-content-tabs-headers {
       list-style: none;
       padding: 0;
@@ -3356,10 +3358,51 @@ input.custom-checkbox {
         margin-top: -18px;
         right: 16px; }
   @media only screen and (max-width: 1024px) {
+    .section-main-prices-table .main-prices-table-tabs-dropdown {
+      display: none; }
     .section-main-prices-table .section-main-prices-table-container {
       padding: 30px 20px; }
       .section-main-prices-table .section-main-prices-table-container .section-main-prices-table-title {
         text-align: center; } }
+  @media only screen and (max-width: 767px) {
+    .section-main-prices-table .section-main-prices-table-container .section-main-prices-table-content .main-prices-table-tabs-dropdown {
+      display: block;
+      width: 100%;
+      text-align: left; }
+      .section-main-prices-table .section-main-prices-table-container .section-main-prices-table-content .main-prices-table-tabs-dropdown:after {
+        font-family: 'icomoon';
+        content: '\e917';
+        float: right; }
+      .section-main-prices-table .section-main-prices-table-container .section-main-prices-table-content .main-prices-table-tabs-dropdown.active:after {
+        transform: rotate(180deg); }
+    .section-main-prices-table .section-main-prices-table-container .section-main-prices-table-content .section-main-prices-table-content-tabs-headers {
+      height: 0;
+      overflow: hidden; }
+      .section-main-prices-table .section-main-prices-table-container .section-main-prices-table-content .section-main-prices-table-content-tabs-headers li {
+        display: block;
+        width: 100%; }
+      .section-main-prices-table .section-main-prices-table-container .section-main-prices-table-content .section-main-prices-table-content-tabs-headers.active {
+        height: auto; }
+    .section-main-prices-table .section-main-prices-table-container .section-main-prices-table-content .section-main-prices-table-content-table {
+      overflow-x: scroll; }
+    .section-main-prices-table .section-main-prices-table-container .section-main-prices-table-content .section-main-prices-table-footer {
+      height: auto; }
+      .section-main-prices-table .section-main-prices-table-container .section-main-prices-table-content .section-main-prices-table-footer .sort-block {
+        height: auto;
+        line-height: 36px;
+        position: static;
+        margin-top: 0;
+        padding: 5px; }
+        .section-main-prices-table .section-main-prices-table-container .section-main-prices-table-content .section-main-prices-table-footer .sort-block label {
+          font-size: 16px;
+          margin-right: 10px; }
+        .section-main-prices-table .section-main-prices-table-container .section-main-prices-table-content .section-main-prices-table-footer .sort-block select {
+          width: 145px; }
+      .section-main-prices-table .section-main-prices-table-container .section-main-prices-table-content .section-main-prices-table-footer .pagination-buttons {
+        position: static;
+        margin-top: 0;
+        width: auto;
+        padding: 5px 10px; } }
 
 .section-main-contacts {
   width: 100%;

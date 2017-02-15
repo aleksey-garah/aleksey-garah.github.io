@@ -16,4 +16,16 @@ $(document).ready(function () {
     $(".ui-dialog-content").on("click", function (event) {
         event.stopPropagation();
     });
+
+    var toggleTabsButton = $(".main-prices-table-tabs-dropdown");
+    toggleTabsButton.text($(".ui-tabs-active").text());
+
+    toggleTabsButton.on("click", function (event) {
+        $(".section-main-prices-table-content-tabs-headers").toggleClass("active");
+        $(this).toggleClass("active");
+    });
+
+    $(".ui-tabs-tab").on("click", function (event) {
+        toggleTabsButton.text($(this).text());
+    });
 });
