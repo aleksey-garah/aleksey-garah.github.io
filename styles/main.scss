@@ -4976,6 +4976,56 @@
     @media only screen and (max-width: $tablet-max) {
       padding: 40px 25px;
     }
+
+    @media only screen and (max-width: $tablet-min) {
+      padding: 30px 20px;
+
+      .section-main-finished-projects-content {
+
+        .section-main-finished-projects-pagination-block {
+          height: auto;
+
+          .sort-block {
+            height: auto;
+            line-height: 36px;
+            position: static;
+            margin-top: 0;
+            padding: 5px;
+
+            label {
+              font-size: 16px;
+              margin-right: 10px;
+            }
+
+            select {
+              width: 145px;
+            }
+          }
+
+          .pagination-buttons {
+            position: static;
+            margin-top: 0;
+            width: auto;
+            padding: 5px 10px;
+          }
+        }
+
+        .section-main-finished-projects-list {
+
+          .finished-projects-list-item {
+            margin: 0 0 20px 0;
+
+            &:nth-child(4n+1) {
+              margin-left: 0;
+            }
+
+            &:nth-child(4n+4) {
+              margin-right: 0;
+            }
+          }
+        }
+      }
+    }
   }
 }
 

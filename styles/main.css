@@ -4247,6 +4247,33 @@ input.custom-checkbox {
     @media only screen and (max-width: 1024px) {
       .section-main-finished-projects .section-main-finished-projects-container {
         padding: 40px 25px; } }
+    @media only screen and (max-width: 767px) {
+      .section-main-finished-projects .section-main-finished-projects-container {
+        padding: 30px 20px; }
+        .section-main-finished-projects .section-main-finished-projects-container .section-main-finished-projects-content .section-main-finished-projects-pagination-block {
+          height: auto; }
+          .section-main-finished-projects .section-main-finished-projects-container .section-main-finished-projects-content .section-main-finished-projects-pagination-block .sort-block {
+            height: auto;
+            line-height: 36px;
+            position: static;
+            margin-top: 0;
+            padding: 5px; }
+            .section-main-finished-projects .section-main-finished-projects-container .section-main-finished-projects-content .section-main-finished-projects-pagination-block .sort-block label {
+              font-size: 16px;
+              margin-right: 10px; }
+            .section-main-finished-projects .section-main-finished-projects-container .section-main-finished-projects-content .section-main-finished-projects-pagination-block .sort-block select {
+              width: 145px; }
+          .section-main-finished-projects .section-main-finished-projects-container .section-main-finished-projects-content .section-main-finished-projects-pagination-block .pagination-buttons {
+            position: static;
+            margin-top: 0;
+            width: auto;
+            padding: 5px 10px; }
+        .section-main-finished-projects .section-main-finished-projects-container .section-main-finished-projects-content .section-main-finished-projects-list .finished-projects-list-item {
+          margin: 0 0 20px 0; }
+          .section-main-finished-projects .section-main-finished-projects-container .section-main-finished-projects-content .section-main-finished-projects-list .finished-projects-list-item:nth-child(4n+1) {
+            margin-left: 0; }
+          .section-main-finished-projects .section-main-finished-projects-container .section-main-finished-projects-content .section-main-finished-projects-list .finished-projects-list-item:nth-child(4n+4) {
+            margin-right: 8px; } }
 
 .section-finished-projects-image-right {
   background-color: #f7f7f7; }
