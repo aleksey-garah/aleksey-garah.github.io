@@ -3894,6 +3894,57 @@
       }
     }
   }
+
+  @media only screen and (max-width: $tablet-min) {
+
+    .section-main-contacts-container {
+
+      .section-main-contacts-content {
+
+        .section-main-contacts-half-block {
+          display: block;
+          width: 100%;
+
+          &.contacts-adress-block {
+            margin-bottom: 60px;
+
+            .contacts-item {
+
+              .contacts-item-description {
+                font-size: 16px;
+              }
+
+              .contacts-item-phones {
+
+                .contacts-item-phone {
+                  font-size: 16px;
+                }
+              }
+            }
+          }
+
+          &.contacts-persons-block {
+
+            .contacts-item {
+              margin-bottom: 30px;
+
+              .contacts-item-image {
+                margin-top: 10px;
+              }
+
+              .contacts-item-fio {
+                font-size: 22px;
+              }
+
+              .contacts-item-title {
+                font-size: 16px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 .section-contacts-map {
@@ -3921,6 +3972,11 @@
         .section-contacts-map-title {
           color: $white;
           padding: 0 50px;
+
+          @media only screen and (max-width: $tablet-max) {
+            font-size: 24px;
+            transform: translateY(-41%);
+          }
         }
       }
 
@@ -3960,13 +4016,41 @@
       }
     }
 
-    @media only screen and (max-width: 1024px) {
+    @media only screen and (max-width: $tablet-max) {
       height: 390px;
       position: relative;
 
       .section-contacts-map-feedback {
         top: 0;
         width: 100%;
+      }
+    }
+
+    @media only screen and (max-width: $tablet-min) {
+      height: 390px;
+      position: relative;
+
+      .section-contacts-map-feedback {
+        top: 0;
+        width: 100%;
+
+        form {
+          padding: 30px 20px;
+
+          .contacts-map-form-group {
+
+            .contacts-map-form-block {
+
+              .default-form-label {
+                display: none;
+              }
+
+              .contacts-map-form-control {
+                padding: 0 10px;
+              }
+            }
+          }
+        }
       }
     }
   }
