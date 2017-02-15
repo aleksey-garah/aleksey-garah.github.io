@@ -1911,6 +1911,20 @@
       }
     }
   }
+
+  @media only screen and (max-width: $tablet-max) {
+
+    .section-main-materials-container {
+      padding: 30px 20px;
+
+      .section-main-materials-content {
+
+        .section-main-materials-image {
+          height: auto;
+        }
+      }
+    }
+  }
 }
 
 .section-building-homes {
@@ -2158,6 +2172,59 @@
         }
       }
     }
+
+    @media only screen and (max-width: $tablet-max) {
+
+      .section-building-homes-subsection-info {
+        padding: 30px 20px;
+        margin-bottom: 40px;
+
+        .section-building-homes-subsection-info-video {
+          width: 100%;
+          margin: 0 0 25px 0;
+        }
+
+        .section-building-homes-subsection-info-text-block {
+
+          .section-building-homes-subsection-info-button {
+            display: block;
+            margin: 0 auto;
+          }
+        }
+      }
+
+      .section-building-homes-subsection-galery-tabs {
+        margin: 0 20px;
+
+        ul {
+          position: static;
+        }
+
+        .galery-tab {
+          margin: 0;
+          padding: 25px;
+
+          .galery-tab-images {
+            margin-left: 0;
+            float: none;
+            width: 100%;
+
+            .galery-tab-big-image {
+              height: auto;
+            }
+
+            .galery-tab-small-images {
+              margin-bottom: 20px;
+
+              .galery-tab-small-image {
+                width: 60px;
+                height: 60px;
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }
 
@@ -2192,6 +2259,10 @@
         text-align: center;
         font-size: 26px;
       }
+    }
+
+    @media only screen and (max-width: $tablet-min) {
+      padding: 30px 20px;
     }
   }
 }
@@ -4545,7 +4616,7 @@
 
       .detailed-project-card-info-tabs {
 
-        .project-card-info-tabs-dropdown{
+        .project-card-info-tabs-dropdown {
           display: none;
         }
 
