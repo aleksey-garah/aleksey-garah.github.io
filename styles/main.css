@@ -4273,7 +4273,7 @@ input.custom-checkbox {
           .section-main-finished-projects .section-main-finished-projects-container .section-main-finished-projects-content .section-main-finished-projects-list .finished-projects-list-item:nth-child(4n+1) {
             margin-left: 0; }
           .section-main-finished-projects .section-main-finished-projects-container .section-main-finished-projects-content .section-main-finished-projects-list .finished-projects-list-item:nth-child(4n+4) {
-            margin-right: 8px; } }
+            margin-right: 0; } }
 
 .section-finished-projects-image-right {
   background-color: #f7f7f7; }
@@ -4321,6 +4321,27 @@ input.custom-checkbox {
       float: none; }
     .section-main-finished-project-card .section-main-project-card-container .section-main-project-card-galery {
       text-align: left; } }
+@media only screen and (max-width: 767px) {
+  .section-main-finished-project-card .section-main-project-card-container {
+    padding: 30px 20px; }
+    .section-main-finished-project-card .section-main-project-card-container .section-main-project-card-title {
+      font-size: 24px; }
+    .section-main-finished-project-card .section-main-project-card-container .section-main-project-card-galery {
+      text-align: left; }
+      .section-main-finished-project-card .section-main-project-card-container .section-main-project-card-galery .section-main-project-card-galery-big-img {
+        height: 280px;
+        display: flex;
+        justify-content: center; }
+        .section-main-finished-project-card .section-main-project-card-container .section-main-project-card-galery .section-main-project-card-galery-big-img .project-card-galery span {
+          font-size: 16px; }
+        .section-main-finished-project-card .section-main-project-card-container .section-main-project-card-galery .section-main-project-card-galery-big-img .project-card-galery .default-zoom-button {
+          display: none; }
+    .section-main-finished-project-card .section-main-project-card-container .section-main-project-card-comment-button,
+    .section-main-finished-project-card .section-main-project-card-container .section-main-project-card-clarify-button,
+    .section-main-finished-project-card .section-main-project-card-container .section-main-project-card-wanna-same-button {
+      display: block;
+      width: 100%;
+      margin-bottom: 0; } }
 
 .section-main-catalog {
   width: 100%;
