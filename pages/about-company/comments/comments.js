@@ -25,6 +25,18 @@ $(document).ready(function () {
     $(".ui-dialog-content").on("click", function (event) {
         event.stopPropagation();
     });
+
+    var toggleTabsButton = $(".materials-images-block-tabs-dropdown");
+    toggleTabsButton.text($(".ui-tabs-active").text());
+
+    toggleTabsButton.on("click", function (event) {
+        $("#materials-images-block-tabs-menu").toggleClass("active");
+        $(this).toggleClass("active");
+    });
+
+    $(".ui-tabs-tab").on("click", function (event) {
+        toggleTabsButton.text($(this).text());
+    });
 });
 
 $(window).on("load", function () {

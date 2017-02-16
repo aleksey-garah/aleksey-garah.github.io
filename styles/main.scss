@@ -1912,12 +1912,16 @@
     }
   }
 
-  @media only screen and (max-width: $tablet-max) {
+  @media only screen and (max-width: $tablet-min) {
 
     .section-main-materials-container {
       padding: 30px 20px;
 
       .section-main-materials-content {
+
+        .section-main-materials-header {
+
+        }
 
         .section-main-materials-image {
           height: auto;
@@ -2647,11 +2651,87 @@
           float: none;
           width: 100%;
 
+          .materials-images-block-tabs-dropdown {
+            display: none;
+          }
+
           ul {
 
             li {
               width: 25%;
             }
+          }
+        }
+
+        .section-main-materials-text-block {
+          display: none;
+        }
+      }
+    }
+
+    .comment-senders-list {
+
+      .comment-senders-list-container {
+        padding: 0 25px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: $tablet-min) {
+
+    .section-main-comments-container {
+      padding: 30px 20px 40px 20px;
+
+      .section-main-materials-content {
+
+        .section-main-materials-header {
+
+          .main-materials-text-block-header-name {
+
+            .text-block-header-fio, .text-block-header-location {
+              font-size: 22px;
+            }
+          }
+        }
+
+        .main-materials-images-block-tabs {
+
+          .materials-images-block-tabs-dropdown {
+            width: 100%;
+            display: block;
+            text-align: left;
+
+            &:after {
+              font-family: 'icomoon';
+              content: '\e917';
+              float: right;
+            }
+
+            &.active {
+
+              &:after {
+                transform: rotate(180deg);
+              }
+            }
+          }
+
+          #materials-images-block-tabs-menu {
+            height: 0;
+            padding: 0;
+            overflow: hidden;
+
+            li {
+              display: block;
+              width: 100%;
+            }
+
+            &.active {
+              height: auto;
+            }
+          }
+
+          .main-materials-images-block-tab {
+            padding: 20px 10px;
           }
         }
 
