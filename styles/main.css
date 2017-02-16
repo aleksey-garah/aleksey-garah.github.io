@@ -661,10 +661,11 @@ input.custom-checkbox {
     margin-right: 0; }
 
 .InfoWindowContent {
-  width: 214px; }
+  width: 214px;
+  background-color: #ffffff; }
   .InfoWindowContent p {
     margin: 0;
-    padding: 12px 0;
+    padding: 12px 10px 12px 20px;
     font-size: 16px;
     font-weight: 300;
     font-family: Conv_PFDinDisplayPro-Light; }
@@ -680,6 +681,13 @@ input.custom-checkbox {
     background-color: #46d251; }
     .InfoWindowContent a:hover {
       background-color: #009e4b; }
+
+.gm-style-iw + div {
+  width: 20px !important;
+  height: 20px !important; }
+  .gm-style-iw + div img {
+    left: 0 !important;
+    top: -331px !important; }
 
 #menu ul li.on-hidden {
   display: none; }
