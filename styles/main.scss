@@ -1184,6 +1184,70 @@
       }
     }
   }
+
+  @media only screen and (max-width: $tablet-min) {
+
+    .section-team-header {
+
+      .default-section-header-block {
+        transform: translateY(-48%);
+
+        .section-team-title-description {
+          width: 95%;
+          font-size: 16px;
+        }
+      }
+    }
+
+    .section-team-content {
+      padding: 0;
+
+      .team-member-block {
+        position: relative;
+        height: auto;
+        padding: 20px;
+
+        .team-member-block-image {
+          width: 80px;
+          margin-right: 20px;
+          height: 80px;
+          display: flex;
+          justify-content: center;
+          box-shadow: $card-box-shadow;
+
+          img {
+            width: auto;
+            height: 100%;
+          }
+        }
+
+        .team-member-block-info {
+          margin-left: 0;
+          padding: 0;
+
+          .team-member-block-fio {
+            font-size: 22px;
+            margin: 10px 0 10px 0;
+          }
+
+          .team-member-block-title {
+            font-size: 16px;
+            margin: 0 0 20px 0;
+          }
+
+          .team-member-block-text {
+            font-size: 17px;
+            padding-top: 10px;
+          }
+
+          #open-connect-with-worker-dialog {
+            width: 100%;
+            position: static;
+          }
+        }
+      }
+    }
+  }
 }
 
 .section-buildings-coordinates {
