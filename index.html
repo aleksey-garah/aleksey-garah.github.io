@@ -686,6 +686,7 @@
 
         marker1.addListener('click', function () {
             infowindow.open(map, marker1);
+            marker1.setIcon("assets/images/marker-active.png");
         });
 
         var marker2 = new google.maps.Marker({
@@ -700,10 +701,15 @@
         map.mapTypes.set('map_style', styledMap);
         map.setMapTypeId('map_style');
 
-        google.maps.event.addListener(marker, 'click', (function (marker, i) {
-            marker.setIcon("assets/images/marker-active.png");
+        marker2.addListener('click', function () {
+            marker2.setIcon("assets/images/marker-active.png");
+            infowindow.open(map, marker2);
+        });
 
-        })(marker, i));
+        infowindow.addListener('closeclick', function () {
+            marker2.setIcon("assets/images/marker.png");
+            marker1.setIcon("assets/images/marker.png");
+        });
     }
 </script>
 

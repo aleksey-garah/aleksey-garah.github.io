@@ -1158,6 +1158,7 @@
         height: 370px;
 
         .team-member-block-image {
+          position: relative;
           width: 280px;
           height: 330px;
           display: flex;
@@ -1167,6 +1168,7 @@
           img {
             width: auto;
             height: 100%;
+            position: absolute;
           }
         }
 
@@ -1214,8 +1216,10 @@
           display: flex;
           justify-content: center;
           box-shadow: $card-box-shadow;
+          position: relative;
 
           img {
+            position: absolute;
             width: auto;
             height: 100%;
           }
