@@ -1623,6 +1623,7 @@ input.custom-checkbox {
         clear: both; }
       .section-team .section-team-content .team-member-block .team-member-block-image {
         width: 340px;
+        height: 344px;
         float: left;
         overflow: hidden; }
         .section-team .section-team-content .team-member-block .team-member-block-image img {
@@ -1739,8 +1740,35 @@ input.custom-checkbox {
           font-family: Conv_PFDinDisplayPro-Light;
           margin: 0; }
   @media only screen and (max-width: 1024px) {
-    .section-team {
-      display: none; } }
+    .section-team .section-team-header .default-section-header-block {
+      transform: translateY(-39%); }
+      .section-team .section-team-header .default-section-header-block .section-team-title {
+        margin: 0 0 10px 0; }
+      .section-team .section-team-header .default-section-header-block .section-team-title-description {
+        width: 70%;
+        margin: 0 auto; }
+    .section-team .section-team-content {
+      padding: 30px 20px 0 20px; }
+      .section-team .section-team-content .team-member-block {
+        position: relative;
+        height: 370px; }
+        .section-team .section-team-content .team-member-block .team-member-block-image {
+          width: 280px;
+          height: 330px;
+          display: flex;
+          justify-content: center;
+          box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.11); }
+          .section-team .section-team-content .team-member-block .team-member-block-image img {
+            width: auto;
+            height: 100%; }
+        .section-team .section-team-content .team-member-block .team-member-block-info {
+          margin-left: 300px;
+          padding: 20px 20px 20px 0; }
+          .section-team .section-team-content .team-member-block .team-member-block-info #open-connect-with-worker-dialog {
+            width: 280px;
+            position: absolute;
+            left: 0;
+            top: 330px; } }
 
 .section-buildings-coordinates .section-buildings-coordinates-header {
   width: 100%;
@@ -2538,6 +2566,8 @@ input.custom-checkbox {
       .section-main-comments .section-main-comments-container .section-main-materials-content .main-materials-images-block-tabs {
         float: right;
         width: 585px; }
+        .section-main-comments .section-main-comments-container .section-main-materials-content .main-materials-images-block-tabs .materials-images-block-tabs-dropdown {
+          display: none; }
         .section-main-comments .section-main-comments-container .section-main-materials-content .main-materials-images-block-tabs ul {
           width: 100%;
           list-style: none;

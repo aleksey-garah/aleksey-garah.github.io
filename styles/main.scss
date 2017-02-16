@@ -1014,6 +1014,7 @@
 
       .team-member-block-image {
         width: 340px;
+        height: 344px;
         float: left;
         overflow: hidden;
 
@@ -1132,7 +1133,56 @@
   }
 
   @media only screen and (max-width: $tablet-max) {
-    display: none;
+
+    .section-team-header {
+
+      .default-section-header-block {
+        transform: translateY(-39%);
+
+        .section-team-title {
+          margin: 0 0 10px 0;
+        }
+
+        .section-team-title-description {
+          width: 70%;
+          margin: 0 auto;
+        }
+      }
+    }
+
+    .section-team-content {
+      padding: 30px 20px 0 20px;
+
+      .team-member-block {
+        position: relative;
+        height: 370px;
+
+        .team-member-block-image {
+          width: 280px;
+          height: 330px;
+          display: flex;
+          justify-content: center;
+          box-shadow: $card-box-shadow;
+
+          img {
+            width: auto;
+            height: 100%;
+          }
+        }
+
+        .team-member-block-info {
+          margin-left: 300px;
+          padding: 20px 20px 20px 0;
+
+          #open-connect-with-worker-dialog {
+            width: 280px;
+            position: absolute;
+            left: 0;
+            top: 330px;
+          }
+        }
+      }
+    }
   }
 }
 
@@ -2353,6 +2403,10 @@
         float: right;
         width: 585px;
 
+        .materials-images-block-tabs-dropdown {
+          display: none;
+        }
+
         ul {
           width: 100%;
           list-style: none;
@@ -3498,7 +3552,7 @@
               display: none;
             }
 
-            .subscribe-form-control  {
+            .subscribe-form-control {
               padding: 0 10px;
             }
           }
