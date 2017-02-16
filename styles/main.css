@@ -135,7 +135,16 @@ header {
         margin-right: 15px; }
       header .top-navigation .nav-phone-block .nav-order-phone-button {
         font-size: 0;
-        width: 40px; } }
+        width: 40px;
+        position: relative; }
+        header .top-navigation .nav-phone-block .nav-order-phone-button:before {
+          font-family: 'icomoon';
+          content: '\e910';
+          color: #ffffff;
+          font-size: 19px;
+          position: absolute;
+          left: 0;
+          right: 0; } }
 
 footer.black-footer {
   width: 100%;

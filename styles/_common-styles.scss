@@ -213,6 +213,17 @@ header {
         .nav-order-phone-button {
           font-size: 0;
           width: 40px;
+          position: relative;
+
+          &:before {
+            font-family: 'icomoon';
+            content: '\e910';
+            color: $white;
+            font-size: 19px;
+            position: absolute;
+            left: 0;
+            right: 0;
+          }
         }
       }
     }
