@@ -818,7 +818,7 @@ input.custom-checkbox {
   right: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.5);
-  z-index: 10; }
+  z-index: 999999999; }
 
 .modal-window.section-feedback-container {
   width: 100%;
@@ -856,6 +856,23 @@ input.custom-checkbox {
         margin-bottom: 24px;
         max-width: none;
         display: block; } }
+  @media only screen and (max-width: 767px) {
+    .modal-window.section-feedback-container .section-feedback-header {
+      height: 100px; }
+      .modal-window.section-feedback-container .section-feedback-header .section-feedback-title {
+        padding: 0 30px;
+        font-size: 22px;
+        transform: translateY(-40%); }
+    .modal-window.section-feedback-container form {
+      padding: 30px 20px; }
+      .modal-window.section-feedback-container form .feedback-form-group .feedback-form-block .default-form-label {
+        display: none; }
+      .modal-window.section-feedback-container form .feedback-form-group .feedback-form-block .feedback-form-control {
+        padding: 0 10px; }
+      .modal-window.section-feedback-container form .feedback-form-textarea-block .default-form-label {
+        display: none; }
+      .modal-window.section-feedback-container form .feedback-form-textarea-block .feedback-form-textarea {
+        padding: 10px; } }
 
 .scrollable-content .mCustomScrollBox {
   outline: none; }
@@ -934,6 +951,51 @@ input.custom-checkbox {
   textarea:-ms-input-placeholder {
     /* Internet Explorer 10+ */
     color: transparent; } }
+.ui-dialog-titlebar {
+  display: none; }
+
+@media only screen and (max-width: 1024px) {
+  .ui-dialog-titlebar {
+    display: block;
+    text-align: right;
+    padding: 10px; }
+    .ui-dialog-titlebar .ui-dialog-titlebar-close {
+      position: relative;
+      font-size: 0;
+      text-transform: uppercase;
+      line-height: 40px;
+      padding: 0 21px;
+      border: 0;
+      cursor: pointer;
+      box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.13);
+      background-color: #565fd2;
+      text-decoration: none;
+      display: inline-block; }
+      .ui-dialog-titlebar .ui-dialog-titlebar-close:before, .ui-dialog-titlebar .ui-dialog-titlebar-close:after {
+        content: '';
+        display: block;
+        width: 30px;
+        height: 5px;
+        background-color: #ffffff;
+        position: absolute;
+        left: 50%;
+        top: 48%;
+        margin-left: -15px; }
+      .ui-dialog-titlebar .ui-dialog-titlebar-close:before {
+        transform: rotate(45deg); }
+      .ui-dialog-titlebar .ui-dialog-titlebar-close:after {
+        transform: rotate(-45deg); } }
+@media only screen and (max-width: 767px) {
+  .ui-dialog-titlebar {
+    padding: 5px; }
+    .ui-dialog-titlebar .ui-dialog-titlebar-close {
+      line-height: 30px;
+      padding: 0 15px;
+      border: 0; }
+      .ui-dialog-titlebar .ui-dialog-titlebar-close:before, .ui-dialog-titlebar .ui-dialog-titlebar-close:after {
+        width: 24px;
+        height: 4px;
+        margin-left: -12px; } }
 .section-main {
   padding-top: 100px;
   background-color: #eeeeee; }

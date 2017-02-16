@@ -63,4 +63,7 @@ $(window).on("load", function () {
     };
 
     hiddenNavBar.init();
+
+    var height = $(window).height()/2 - $(".modal-window ").height()/2;
+    $(".ui-dialog-titlebar").css("top", height);
 });

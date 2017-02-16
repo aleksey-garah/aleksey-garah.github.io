@@ -1203,7 +1203,7 @@ input.custom-checkbox {
   right: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.5);
-  z-index: 10;
+  z-index: 999999999;
 }
 
 .modal-window {
@@ -1270,6 +1270,48 @@ input.custom-checkbox {
             margin-bottom: 24px;
             max-width: none;
             display: block;
+          }
+        }
+      }
+    }
+
+    @media only screen and (max-width: $tablet-min) {
+
+      .section-feedback-header {
+        height: 100px;
+
+        .section-feedback-title {
+          padding: 0 30px;
+          font-size: 22px;
+          transform: translateY(-40%);
+        }
+      }
+
+      form {
+        padding: 30px 20px;
+
+        .feedback-form-group {
+
+          .feedback-form-block {
+
+            .default-form-label {
+              display: none;
+            }
+
+            .feedback-form-control {
+              padding: 0 10px;
+            }
+          }
+        }
+
+        .feedback-form-textarea-block {
+
+          .default-form-label {
+            display: none;
+          }
+
+          .feedback-form-textarea {
+            padding: 10px;
           }
         }
       }
@@ -1378,5 +1420,68 @@ input.custom-checkbox {
   textarea:-ms-input-placeholder { /* Internet Explorer 10+ */
     color: transparent;
   }
+}
 
+.ui-dialog-titlebar {
+  display: none;
+}
+
+@media only screen and (max-width: $tablet-max) {
+
+  .ui-dialog-titlebar {
+    display: block;
+    text-align: right;
+    padding: 10px;
+
+    .ui-dialog-titlebar-close {
+      position: relative;
+      font-size: 0;
+      text-transform: uppercase;
+      line-height: 40px;
+      padding: 0 21px;
+      border: 0;
+      cursor: pointer;
+      box-shadow: $buttons-box-shadow;
+      background-color: $forms-blue;
+      text-decoration: none;
+      display: inline-block;
+
+      &:before, &:after {
+        content: '';
+        display: block;
+        width: 30px;
+        height: 5px;
+        background-color: $white;
+        position: absolute;
+        left: 50%;
+        top: 48%;
+        margin-left: -15px;
+      }
+      &:before {
+        transform: rotate(45deg)
+      }
+      &:after {
+        transform: rotate(-45deg)
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $tablet-min) {
+
+  .ui-dialog-titlebar {
+    padding: 5px;
+
+    .ui-dialog-titlebar-close {
+      line-height: 30px;
+      padding: 0 15px;
+      border: 0;
+
+      &:before, &:after {
+        width: 24px;
+        height: 4px;
+        margin-left: -12px;
+      }
+    }
+  }
 }
