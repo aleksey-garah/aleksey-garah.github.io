@@ -294,6 +294,7 @@
 
         marker1.addListener('click', function () {
             infowindow.open(map, marker1);
+            marker1.setIcon("./../assets/images/marker-active.png");
         });
 
         var marker2 = new google.maps.Marker({
@@ -307,6 +308,34 @@
 
         map.mapTypes.set('map_style', styledMap);
         map.setMapTypeId('map_style');
+
+        marker2.addListener('click', function () {
+            marker2.setIcon("../../assets/images/marker-active.png");
+            infowindow.open(map, marker2);
+        });
+
+        infowindow.addListener('closeclick', function () {
+            marker2.setIcon("../..assets/images/marker.png");
+            marker1.setIcon("../..assets/images/marker.png");
+        });
+
+        google.maps.event.addListener(infowindow, 'domready', function() {
+
+            var iwOuter = $('.gm-style-iw');
+
+            var iwBackground = iwOuter.prev();
+            iwBackground.children(':nth-child(2)').css({'display' : 'none'});
+            iwBackground.children(':nth-child(4)').css({'display' : 'none'});
+
+            var iwCloseBtn = iwOuter.next();
+
+            iwCloseBtn.css({
+                opacity: '1', // by default the close button has an opacity of 0.7
+                right: '38px', top: '9px', // button repositioning
+                'border-radius': '13px' // circular effect
+            });
+
+        });
     }
 </script>
 
