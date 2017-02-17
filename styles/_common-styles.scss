@@ -1232,6 +1232,11 @@ input.custom-checkbox {
 }
 
 .modal-window {
+  display: none;
+
+  &.ui-dialog-content.ui-widget-content {
+    display: block;
+  }
 
   &.section-feedback-container {
     width: 100%;

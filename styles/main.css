@@ -837,59 +837,63 @@ input.custom-checkbox {
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 999999999; }
 
-.modal-window.section-feedback-container {
-  width: 100%;
-  max-width: 915px;
-  margin: 0 auto;
-  top: 50%;
-  left: 0;
-  right: 0;
-  transform: translateY(-50%);
-  position: absolute;
-  background-color: #ffffff; }
-  .modal-window.section-feedback-container .section-feedback-header {
-    background-color: #565fd2; }
-    .modal-window.section-feedback-container .section-feedback-header .section-feedback-title {
-      color: #ffffff;
-      padding: 0 50px; }
-  .modal-window.section-feedback-container form {
-    padding: 40px 60px 50px 60px; }
-    .modal-window.section-feedback-container form .feedback-form-group {
-      margin-bottom: 24px; }
-    .modal-window.section-feedback-container form .feedback-form-textarea-block {
-      margin-bottom: 40px; }
-    .modal-window.section-feedback-container form .section-feedback-submit-button {
-      background-color: #4650c4;
-      color: #ffffff;
-      text-transform: uppercase;
-      display: block;
-      margin: 0 auto; }
-      .modal-window.section-feedback-container form .section-feedback-submit-button:hover {
-        background-color: #1e289a; }
-  @media only screen and (max-width: 1024px) {
-    .modal-window.section-feedback-container form .feedback-form-group {
-      margin-bottom: 0; }
-      .modal-window.section-feedback-container form .feedback-form-group .feedback-form-block {
-        margin-bottom: 24px;
-        max-width: none;
-        display: block; } }
-  @media only screen and (max-width: 767px) {
+.modal-window {
+  display: none; }
+  .modal-window.ui-dialog-content.ui-widget-content {
+    display: block; }
+  .modal-window.section-feedback-container {
+    width: 100%;
+    max-width: 915px;
+    margin: 0 auto;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    position: absolute;
+    background-color: #ffffff; }
     .modal-window.section-feedback-container .section-feedback-header {
-      height: 100px; }
+      background-color: #565fd2; }
       .modal-window.section-feedback-container .section-feedback-header .section-feedback-title {
-        padding: 0 30px;
-        font-size: 22px;
-        transform: translateY(-40%); }
+        color: #ffffff;
+        padding: 0 50px; }
     .modal-window.section-feedback-container form {
-      padding: 30px 20px; }
-      .modal-window.section-feedback-container form .feedback-form-group .feedback-form-block .default-form-label {
-        display: none; }
-      .modal-window.section-feedback-container form .feedback-form-group .feedback-form-block .feedback-form-control {
-        padding: 0 10px; }
-      .modal-window.section-feedback-container form .feedback-form-textarea-block .default-form-label {
-        display: none; }
-      .modal-window.section-feedback-container form .feedback-form-textarea-block .feedback-form-textarea {
-        padding: 10px; } }
+      padding: 40px 60px 50px 60px; }
+      .modal-window.section-feedback-container form .feedback-form-group {
+        margin-bottom: 24px; }
+      .modal-window.section-feedback-container form .feedback-form-textarea-block {
+        margin-bottom: 40px; }
+      .modal-window.section-feedback-container form .section-feedback-submit-button {
+        background-color: #4650c4;
+        color: #ffffff;
+        text-transform: uppercase;
+        display: block;
+        margin: 0 auto; }
+        .modal-window.section-feedback-container form .section-feedback-submit-button:hover {
+          background-color: #1e289a; }
+    @media only screen and (max-width: 1024px) {
+      .modal-window.section-feedback-container form .feedback-form-group {
+        margin-bottom: 0; }
+        .modal-window.section-feedback-container form .feedback-form-group .feedback-form-block {
+          margin-bottom: 24px;
+          max-width: none;
+          display: block; } }
+    @media only screen and (max-width: 767px) {
+      .modal-window.section-feedback-container .section-feedback-header {
+        height: 100px; }
+        .modal-window.section-feedback-container .section-feedback-header .section-feedback-title {
+          padding: 0 30px;
+          font-size: 22px;
+          transform: translateY(-40%); }
+      .modal-window.section-feedback-container form {
+        padding: 30px 20px; }
+        .modal-window.section-feedback-container form .feedback-form-group .feedback-form-block .default-form-label {
+          display: none; }
+        .modal-window.section-feedback-container form .feedback-form-group .feedback-form-block .feedback-form-control {
+          padding: 0 10px; }
+        .modal-window.section-feedback-container form .feedback-form-textarea-block .default-form-label {
+          display: none; }
+        .modal-window.section-feedback-container form .feedback-form-textarea-block .feedback-form-textarea {
+          padding: 10px; } }
 
 .scrollable-content .mCustomScrollBox {
   outline: none; }
