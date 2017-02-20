@@ -1352,7 +1352,8 @@ input.custom-checkbox {
         width: 160px; } }
   @media only screen and (max-width: 767px) {
     .section-advantages.section-small-advantages .section-advantages-container {
-      padding: 30px 20px; }
+      padding: 30px 20px;
+      text-align: left; }
       .section-advantages.section-small-advantages .section-advantages-container .advantages-item {
         width: 130px;
         margin: 15px 5px; }
@@ -1366,7 +1367,8 @@ input.custom-checkbox {
         .section-advantages.section-small-advantages .section-advantages-container .advantages-item .advantages-item-title {
           font-size: 18px; }
     .section-advantages.section-big-advantages .section-advantages-container {
-      padding: 30px 20px; }
+      padding: 30px 20px;
+      text-align: left; }
       .section-advantages.section-big-advantages .section-advantages-container .advantages-item {
         width: auto;
         margin: 0 0 15px 25px; }
@@ -1798,39 +1800,38 @@ input.custom-checkbox {
       .section-team .section-team-header .default-section-header-block .section-team-title-description {
         width: 95%;
         font-size: 16px; }
-    .section-team .section-team-content {
-      padding: 0; }
-      .section-team .section-team-content .team-member-block {
-        position: relative;
-        height: auto;
-        padding: 20px; }
-        .section-team .section-team-content .team-member-block .team-member-block-image {
-          width: 80px;
-          margin-right: 20px;
-          height: 80px;
-          display: flex;
-          justify-content: center;
-          box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.11);
-          position: relative; }
-          .section-team .section-team-content .team-member-block .team-member-block-image img {
-            position: absolute;
-            width: auto;
-            height: 100%; }
-        .section-team .section-team-content .team-member-block .team-member-block-info {
-          margin-left: 0;
-          padding: 0; }
-          .section-team .section-team-content .team-member-block .team-member-block-info .team-member-block-fio {
-            font-size: 22px;
-            margin: 10px 0 10px 0; }
-          .section-team .section-team-content .team-member-block .team-member-block-info .team-member-block-title {
-            font-size: 16px;
-            margin: 0 0 20px 0; }
-          .section-team .section-team-content .team-member-block .team-member-block-info .team-member-block-text {
-            font-size: 17px;
-            padding-top: 10px; }
-          .section-team .section-team-content .team-member-block .team-member-block-info #open-connect-with-worker-dialog {
-            width: 100%;
-            position: static; } }
+    .section-team .section-team-content .team-member-block {
+      position: relative;
+      height: auto;
+      padding: 20px; }
+      .section-team .section-team-content .team-member-block .team-member-block-image {
+        width: 80px;
+        margin-right: 20px;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.11);
+        position: relative; }
+        .section-team .section-team-content .team-member-block .team-member-block-image img {
+          position: absolute;
+          width: auto;
+          height: 100%; }
+      .section-team .section-team-content .team-member-block .team-member-block-info {
+        margin-left: 0;
+        padding: 0; }
+        .section-team .section-team-content .team-member-block .team-member-block-info .team-member-block-fio {
+          font-size: 22px;
+          margin: 10px 0 10px 0; }
+        .section-team .section-team-content .team-member-block .team-member-block-info .team-member-block-title {
+          font-size: 16px;
+          margin: 0 0 20px 0; }
+        .section-team .section-team-content .team-member-block .team-member-block-info .team-member-block-text {
+          font-size: 17px;
+          padding-top: 10px; }
+        .section-team .section-team-content .team-member-block .team-member-block-info #open-connect-with-worker-dialog {
+          width: 100%;
+          position: relative;
+          top: auto; } }
 
 .section-buildings-coordinates .section-buildings-coordinates-header {
   width: 100%;

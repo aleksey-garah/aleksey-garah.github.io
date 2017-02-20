@@ -515,6 +515,7 @@
 
       .section-advantages-container {
         padding: 30px 20px;
+        text-align: left;
 
         .advantages-item {
           width: 130px;
@@ -542,6 +543,7 @@
 
       .section-advantages-container {
         padding: 30px 20px;
+        text-align: left;
 
         .advantages-item {
           width: auto;
@@ -1202,7 +1204,6 @@
     }
 
     .section-team-content {
-      padding: 0;
 
       .team-member-block {
         position: relative;
@@ -1246,7 +1247,8 @@
 
           #open-connect-with-worker-dialog {
             width: 100%;
-            position: static;
+            position: relative;
+            top: auto;
           }
         }
       }
