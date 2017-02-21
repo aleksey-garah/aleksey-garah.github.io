@@ -1352,8 +1352,7 @@ input.custom-checkbox {
         width: 160px; } }
   @media only screen and (max-width: 767px) {
     .section-advantages.section-small-advantages .section-advantages-container {
-      padding: 30px 20px;
-      text-align: left; }
+      padding: 30px 20px; }
       .section-advantages.section-small-advantages .section-advantages-container .advantages-item {
         width: 130px;
         margin: 15px 5px; }
@@ -1530,7 +1529,7 @@ input.custom-checkbox {
             margin-right: 8px; } }
   @media only screen and (max-width: 767px) {
     .section-last-projects .section-last-projects-content {
-      padding: 30px 20 pxx; }
+      padding: 30px 20px; }
       .section-last-projects .section-last-projects-content .section-last-projects-content-cards {
         text-align: center; }
         .section-last-projects .section-last-projects-content .section-last-projects-content-cards .last-projects-item {
