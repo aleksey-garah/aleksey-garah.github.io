@@ -3256,7 +3256,8 @@ input.custom-checkbox {
         .section-main-news .section-main-news-container .section-main-news-content .section-main-news-image {
           height: 240px;
           display: flex;
-          justify-content: center; }
+          justify-content: center;
+          align-items: center; }
         .section-main-news .section-main-news-container .section-main-news-content .section-main-news-text-block {
           padding: 40px 25px 0 25px; }
           .section-main-news .section-main-news-container .section-main-news-content .section-main-news-text-block .section-main-news-text-title {
