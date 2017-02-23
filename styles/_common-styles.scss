@@ -609,6 +609,7 @@ footer {
 
   @media only screen and (max-width: $tablet-min) {
     width: 100%;
+    max-width: 270px;
 
     .default-card-image {
       height: 150px;
