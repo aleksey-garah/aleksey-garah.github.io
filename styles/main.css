@@ -41,23 +41,27 @@ header {
       margin-left: 79px;
       margin-right: 347px;
       overflow: hidden; }
+      header .top-navigation nav#menu.opened .main-navigation-menu {
+        white-space: normal; }
       header .top-navigation nav .main-navigation-menu {
         list-style: none;
         display: inline-block;
         margin: 0;
         padding: 0;
         text-transform: uppercase;
-        white-space: nowrap; }
+        white-space: nowrap;
+        font-size: 0; }
         header .top-navigation nav .main-navigation-menu .main-navigation-menu-item {
           display: inline-block;
-          padding: 0 20px; }
+          margin: 0 40px 0 0; }
           header .top-navigation nav .main-navigation-menu .main-navigation-menu-item.on-hidden {
             display: none; }
           header .top-navigation nav .main-navigation-menu .main-navigation-menu-item:first-child {
-            padding-left: 0; }
+            margin-left: 0; }
           header .top-navigation nav .main-navigation-menu .main-navigation-menu-item:last-child {
-            padding-right: 0; }
+            margin-right: 0; }
           header .top-navigation nav .main-navigation-menu .main-navigation-menu-item a {
+            display: block;
             color: #6b4d2f;
             text-decoration: none;
             font-size: 13px; }

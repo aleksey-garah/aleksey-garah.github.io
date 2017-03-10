@@ -52,6 +52,13 @@ header {
       margin-right: 347px;
       overflow: hidden;
 
+      &#menu.opened {
+
+        .main-navigation-menu {
+          white-space: normal;
+        }
+      }
+
       .main-navigation-menu {
         list-style: none;
         display: inline-block;
@@ -59,24 +66,26 @@ header {
         padding: 0;
         text-transform: uppercase;
         white-space: nowrap;
+        font-size: 0;
 
         .main-navigation-menu-item {
           display: inline-block;
-          padding: 0 20px;
+          margin: 0 40px 0 0;
 
           &.on-hidden {
             display: none;
           }
 
           &:first-child {
-            padding-left: 0;
+            margin-left: 0;
           }
 
           &:last-child {
-            padding-right: 0;
+            margin-right: 0;
           }
 
           a {
+            display: block;
             color: $nav-brown;
             text-decoration: none;
             font-size: 13px;
