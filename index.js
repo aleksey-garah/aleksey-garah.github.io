@@ -1,5 +1,7 @@
 $(document).ready(function () {
 
+    $("#section-interactive-tabs").tabs();
+
     //===========modals============
     $("#calculate-dialog").dialog({
         autoOpen: false

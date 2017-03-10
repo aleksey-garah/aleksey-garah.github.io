@@ -42,6 +42,15 @@ header {
       vertical-align: middle;
       margin-right: 27px;
       padding: 5px 0;
+      width: 60px;
+      overflow: hidden;
+      -webkit-transition: width .25s ease;
+      transition: width .25s ease;
+
+      &:hover {
+        width: 198px;
+        transition: all 1s ease;
+      }
     }
 
     nav {
