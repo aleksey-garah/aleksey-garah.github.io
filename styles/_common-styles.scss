@@ -46,6 +46,7 @@ header {
       overflow: hidden;
       -webkit-transition: width .25s ease;
       transition: width .25s ease;
+      cursor: pointer;
 
       &:hover {
         width: 198px;
@@ -1544,3 +1545,18 @@ input.custom-checkbox {
 //  border: 1px solid rgba(72, 181, 233, 0.6);
 //  border-radius: 2px 2px 0 0;
 //}
+
+.ui-tooltip {
+  padding: 8px;
+  position: absolute;
+  z-index: 9999;
+  max-width: 300px;
+  background-color: $section-building-homes;
+  font-size: 16px;
+  font-family: Conv_PFDinDisplayPro-Light;
+  box-shadow: $default-box-shadow;
+}
+
+body .ui-tooltip {
+  border-width: 2px;
+}

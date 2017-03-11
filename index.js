@@ -2,6 +2,14 @@ $(document).ready(function () {
 
     $("#section-interactive-tabs").tabs();
 
+    $(".interactive-item-number-left").tooltip({
+        position: {my: "left+15 center", at: "right center"}
+    });
+
+    $(".interactive-item-number-right").tooltip({
+        position: {my: "right-15 center", at: "left center"}
+    });
+
     //===========modals============
     $("#calculate-dialog").dialog({
         autoOpen: false

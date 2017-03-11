@@ -457,17 +457,28 @@
         position: relative;
         padding: 50px 70px;
 
+        .interactive-image {
+          display: block;
+          margin: 0 auto;
+        }
+
         .interactive-item-number {
-          background-color: $green;
+          background-color: $dark-green;
           width: 58px;
           height: 58px;
           position: absolute;
-          top: 50%;
           margin-top: -29px;
           transform: rotate(45deg);
-          border: 2px solid $dark-green;
-          outline: 4px solid $green;
+          border: 2px solid $green;
+          outline: 4px solid $dark-green;
           box-shadow: $buttons-box-shadow;
+          cursor: pointer;
+
+          &:hover {
+            background-color: $green;
+            border: 2px solid $dark-green;
+            outline: 4px solid $green;
+          }
 
           div {
             color: $white;
@@ -479,9 +490,43 @@
             width: 58px;
             line-height: 50px;
           }
+
+          &:nth-of-type(1) {
+            left: 122px;
+            top: 102px;
+          }
+
+          &:nth-of-type(2) {
+            left: 122px;
+            top: 50%;
+          }
+
+          &:nth-of-type(3) {
+            left: 122px;
+            bottom: 73px;
+          }
+
+          &:nth-of-type(4) {
+            right: 122px;
+            top: 102px;
+          }
+
+          &:nth-of-type(5) {
+            right: 122px;
+            top: 50%;
+          }
+
+          &:nth-of-type(6) {
+            right: 122px;
+            bottom: 73px;
+          }
         }
       }
     }
+  }
+
+  @media only screen and (max-width: $tablet-max) {
+    display: none;
   }
 }
 

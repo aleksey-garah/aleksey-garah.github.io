@@ -37,7 +37,8 @@ header {
       width: 60px;
       overflow: hidden;
       -webkit-transition: width .25s ease;
-      transition: width .25s ease; }
+      transition: width .25s ease;
+      cursor: pointer; }
       header .top-navigation .main-navigation-logo:hover {
         width: 198px;
         transition: all 1s ease; }
@@ -1029,6 +1030,19 @@ input.custom-checkbox {
         width: 24px;
         height: 4px;
         margin-left: -12px; } }
+.ui-tooltip {
+  padding: 8px;
+  position: absolute;
+  z-index: 9999;
+  max-width: 300px;
+  background-color: #f7f7f7;
+  font-size: 16px;
+  font-family: Conv_PFDinDisplayPro-Light;
+  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.13); }
+
+body .ui-tooltip {
+  border-width: 2px; }
+
 .section-main {
   padding-top: 100px;
   background-color: #eeeeee; }
@@ -1342,17 +1356,24 @@ input.custom-checkbox {
       .section-interactive .section-interactive-container .section-interactive-tabs .interactive-tab {
         position: relative;
         padding: 50px 70px; }
+        .section-interactive .section-interactive-container .section-interactive-tabs .interactive-tab .interactive-image {
+          display: block;
+          margin: 0 auto; }
         .section-interactive .section-interactive-container .section-interactive-tabs .interactive-tab .interactive-item-number {
-          background-color: #46d251;
+          background-color: #009e4b;
           width: 58px;
           height: 58px;
           position: absolute;
-          top: 50%;
           margin-top: -29px;
           transform: rotate(45deg);
-          border: 2px solid #009e4b;
-          outline: 4px solid #46d251;
-          box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.13); }
+          border: 2px solid #46d251;
+          outline: 4px solid #009e4b;
+          box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.13);
+          cursor: pointer; }
+          .section-interactive .section-interactive-container .section-interactive-tabs .interactive-tab .interactive-item-number:hover {
+            background-color: #46d251;
+            border: 2px solid #009e4b;
+            outline: 4px solid #46d251; }
           .section-interactive .section-interactive-container .section-interactive-tabs .interactive-tab .interactive-item-number div {
             color: #ffffff;
             font-size: 30px;
@@ -1362,6 +1383,27 @@ input.custom-checkbox {
             height: 58px;
             width: 58px;
             line-height: 50px; }
+          .section-interactive .section-interactive-container .section-interactive-tabs .interactive-tab .interactive-item-number:nth-of-type(1) {
+            left: 122px;
+            top: 102px; }
+          .section-interactive .section-interactive-container .section-interactive-tabs .interactive-tab .interactive-item-number:nth-of-type(2) {
+            left: 122px;
+            top: 50%; }
+          .section-interactive .section-interactive-container .section-interactive-tabs .interactive-tab .interactive-item-number:nth-of-type(3) {
+            left: 122px;
+            bottom: 73px; }
+          .section-interactive .section-interactive-container .section-interactive-tabs .interactive-tab .interactive-item-number:nth-of-type(4) {
+            right: 122px;
+            top: 102px; }
+          .section-interactive .section-interactive-container .section-interactive-tabs .interactive-tab .interactive-item-number:nth-of-type(5) {
+            right: 122px;
+            top: 50%; }
+          .section-interactive .section-interactive-container .section-interactive-tabs .interactive-tab .interactive-item-number:nth-of-type(6) {
+            right: 122px;
+            bottom: 73px; }
+  @media only screen and (max-width: 1024px) {
+    .section-interactive {
+      display: none; } }
 
 .section-advantages {
   width: 100%;
