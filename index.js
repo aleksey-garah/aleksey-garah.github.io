@@ -1,64 +1,63 @@
 $(document).ready(function () {
+    var commentsCarusel = $(".comments-carusel");
+    var commentsPrev = $(".comments-prev-control");
+    var commentsNext = $(".comments-next-control");
 
-    $("#section-interactive-tabs").tabs();
-
-    $(".interactive-item-number-left").tooltip({
-        position: {my: "left+15 center", at: "right center"}
+    commentsCarusel.owlCarousel({
+        loop: true,
+        margin: 10,
+        dots: false,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 3
+            },
+            1000: {
+                items: 4
+            }
+        }
     });
 
-    $(".interactive-item-number-right").tooltip({
-        position: {my: "right-15 center", at: "left center"}
+    commentsNext.click(function() {
+        commentsCarusel.trigger('next.owl.carousel');
     });
 
-    //===========modals============
-    $("#calculate-dialog").dialog({
-        autoOpen: false
-    });
-    $("#open-calculate-window").on("click", function (event) {
-        $("#calculate-dialog").dialog("open");
+    commentsPrev.click(function() {
+        commentsCarusel.trigger('prev.owl.carousel', [300]);
     });
 
-    $("#order-call-dialog").dialog({
-        autoOpen: false
-    });
-    $("#open-order-call-window").on("click", function (event) {
-        $("#order-call-dialog").dialog("open");
+    var partnersCarusel = $(".partners-carusel");
+    var partnersPrev = $(".partners-prev-control");
+    var partnersNext = $(".partners-next-control");
+
+    partnersCarusel.owlCarousel({
+        loop: true,
+        margin: 0,
+        dots: false,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 3
+            },
+            1000: {
+                items: 6
+            }
+        }
     });
 
-    $("#connect-with-worker-dialog").dialog({
-        autoOpen: false
-    });
-    $("#open-connect-with-worker-dialog").on("click", function (event) {
-        $("#connect-with-worker-dialog").dialog("open");
+    partnersNext.click(function() {
+        partnersCarusel.trigger('next.owl.carousel');
     });
 
-    //============================
-
-    $(".ui-dialog").on("click", function (event) {
-        $("#calculate-dialog").dialog("close");
-        $("#order-call-dialog").dialog("close");
-        $("#connect-with-worker-dialog").dialog("close");
-    });
-
-    $(".ui-dialog-content").on("click", function (event) {
-        event.stopPropagation();
+    partnersPrev.click(function() {
+        partnersCarusel.trigger('prev.owl.carousel', [300]);
     });
 });
 
 $(window).on("load", function () {
-    $(".scrollable-content").mCustomScrollbar({
-        axis: "x",
-        scrollButtons: {
-            enable: true
-        }
-    });
 
-    $(".team-members-list-item").on("click", function (event) {
-        $(".team-members-list-item").removeClass("active");
-        $(this).addClass("active");
-
-        $(".team-member-block-image").children().attr("src", $(this).children("img").attr("src"));
-        $(".team-member-block-fio").text($(this).children(".team-members-list-item-fio").text());
-        $(".team-member-block-title").text($(this).children(".team-members-list-item-title").text());
-    });
 });

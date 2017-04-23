@@ -1,6 +1,12 @@
-@mixin default-container {
+@mixin big-container {
   width: 100%;
-  max-width: 1170px;
+  max-width: 1410px;
+  margin: 0 auto;
+}
+
+@mixin small-container {
+  width: 100%;
+  max-width: 1267px;
   margin: 0 auto;
 }
 
@@ -9,64 +15,5 @@
     content: "";
     display: block;
     clear: both;
-  }
-}
-
-@mixin text-overfolow {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-@mixin forScrollHorizontal {
-  white-space: nowrap;
-  overflow: hidden;
-
-  .mCSB_scrollTools.mCSB_scrollTools_horizontal {
-    background-color: $white;
-
-    .mCSB_dragger {
-      background-color: $green;
-
-      .mCSB_dragger_bar {
-        background-color: $green;
-      }
-    }
-
-    .mCSB_buttonLeft {
-      text-decoration: none;
-      color: $white;
-      background-color: $green;
-      font-size: 10px;
-      opacity: 1;
-      background-image: none;
-      text-align: center;
-      line-height: 16px;
-
-      &:before {
-        font-family: 'icomoon';
-        content: '\e903';
-      }
-    }
-
-    .mCSB_buttonRight {
-      text-decoration: none;
-      color: $white;
-      background-color: $green;
-      font-size: 10px;
-      opacity: 1;
-      background-image: none;
-      text-align: center;
-      line-height: 16px;
-
-      &:before {
-        font-family: 'icomoon';
-        content: '\e904';
-      }
-    }
-  }
-
-  .mCSB_scrollTools .mCSB_draggerRail {
-    background-color: $white;
   }
 }
