@@ -15,12 +15,67 @@ header {
       transform: translateY(-50%); }
 
 .section-main {
-  width: 100%;
-  height: 828px; }
+  width: 100%; }
   .section-main .section-main-container {
     width: 100%;
     max-width: 1410px;
-    margin: 0 auto; }
+    margin: 0 auto;
+    height: 828px;
+    position: relative; }
+    .section-main .section-main-container .main-info-block {
+      width: 676px;
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%); }
+      .section-main .section-main-container .main-info-block .main-title {
+        color: #303b53;
+        font-size: 36px;
+        text-align: center;
+        margin: 0 0 60px 0; }
+      .section-main .section-main-container .main-info-block .main-info-block-options {
+        font-size: 0;
+        text-align: justify;
+        margin-bottom: 68px; }
+        .section-main .section-main-container .main-info-block .main-info-block-options:after {
+          content: '';
+          display: inline-block;
+          width: 100%; }
+        .section-main .section-main-container .main-info-block .main-info-block-options .main-info-block-option {
+          display: inline-block;
+          width: 220px;
+          height: 100px;
+          background-color: #ff4031; }
+          .section-main .section-main-container .main-info-block .main-info-block-options .main-info-block-option .main-info-block-option-description {
+            font-size: 18px;
+            line-height: 25px;
+            color: #303b53;
+            text-align: center;
+            margin: 0; }
+      .section-main .section-main-container .main-info-block .main-info-block-feedback {
+        width: 370px;
+        margin: 0 auto;
+        background-color: #fff;
+        box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.13);
+        border-radius: 0 0 5px 5px; }
+        .section-main .section-main-container .main-info-block .main-info-block-feedback .main-info-block-feedback-title {
+          font-size: 24px;
+          line-height: 30px;
+          margin: 0;
+          padding: 20px;
+          color: #fff;
+          background-color: #535f6c;
+          text-align: center;
+          border-radius: 5px 5px 0 0; }
+        .section-main .section-main-container .main-info-block .main-info-block-feedback form {
+          padding: 35px 48px 40px 48px; }
+          .section-main .section-main-container .main-info-block .main-info-block-feedback form .form-group {
+            margin-bottom: 25px; }
+            .section-main .section-main-container .main-info-block .main-info-block-feedback form .form-group:nth-child(2) {
+              margin-bottom: 30px; }
+          .section-main .section-main-container .main-info-block .main-info-block-feedback form .btn {
+            display: block;
+            margin: 0 auto; }
 
 .section-reasons .section-reasons-container {
   width: 100%;
@@ -103,35 +158,39 @@ header {
     .section-counter-clients .section-counter-clients-container .section-counter-clients-feedback {
       border-radius: 5px;
       background-color: #fff;
-      padding: 54px;
       width: 454px;
       position: absolute;
       right: 0;
       top: 50%;
-      transform: translateY(-50%); }
-      .section-counter-clients .section-counter-clients-container .section-counter-clients-feedback .section-counter-clients-feedback-title {
-        font-size: 30px;
-        text-align: center;
-        color: #4f555e;
-        line-height: 30px;
-        margin: 0; }
-      .section-counter-clients .section-counter-clients-container .section-counter-clients-feedback .section-counter-clients-feedback-description {
-        font-size: 20px;
-        text-align: center;
-        color: #4f555e;
-        line-height: 30px;
-        margin: 0 0 46px 0; }
-      .section-counter-clients .section-counter-clients-container .section-counter-clients-feedback form .form-group {
-        margin-bottom: 26px; }
-        .section-counter-clients .section-counter-clients-container .section-counter-clients-feedback form .form-group:nth-child(2) {
-          margin-bottom: 36px; }
-        .section-counter-clients .section-counter-clients-container .section-counter-clients-feedback form .form-group label {
+      transform: translateY(-50%);
+      box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.13); }
+      .section-counter-clients .section-counter-clients-container .section-counter-clients-feedback .section-counter-clients-feedback-header {
+        padding: 50px 50px 0 50px; }
+        .section-counter-clients .section-counter-clients-container .section-counter-clients-feedback .section-counter-clients-feedback-header .section-counter-clients-feedback-title {
+          font-size: 30px;
+          text-align: center;
+          color: #4f555e;
+          line-height: 30px;
+          margin: 0; }
+        .section-counter-clients .section-counter-clients-container .section-counter-clients-feedback .section-counter-clients-feedback-header .section-counter-clients-feedback-description {
+          font-size: 20px;
+          text-align: center;
+          color: #4f555e;
+          line-height: 30px;
+          margin: 0; }
+      .section-counter-clients .section-counter-clients-container .section-counter-clients-feedback form {
+        padding: 50px 70px; }
+        .section-counter-clients .section-counter-clients-container .section-counter-clients-feedback form .form-group {
+          margin-bottom: 26px; }
+          .section-counter-clients .section-counter-clients-container .section-counter-clients-feedback form .form-group:nth-child(2) {
+            margin-bottom: 36px; }
+          .section-counter-clients .section-counter-clients-container .section-counter-clients-feedback form .form-group label {
+            display: block;
+            margin: 0 0 7px 0; }
+        .section-counter-clients .section-counter-clients-container .section-counter-clients-feedback form .btn {
           display: block;
-          margin: 0 0 7px 0; }
-      .section-counter-clients .section-counter-clients-container .section-counter-clients-feedback form .btn {
-        display: block;
-        margin: 0 auto;
-        font-size: 20px; }
+          margin: 0 auto;
+          font-size: 20px; }
 
 .section-comments {
   background-color: #efeff2; }
@@ -155,12 +214,28 @@ header {
         .section-comments .section-comments-container .section-comments-header .section-comments-description span {
           font-weight: 700; }
     .section-comments .section-comments-container .comments-carusel-wrapper {
-      position: relative; }
+      position: relative;
+      padding: 0 20px; }
       .section-comments .section-comments-container .comments-carusel-wrapper .comments-carusel .comments-carusel-item {
         width: 246px;
         height: 326px;
         background-color: #fff;
-        box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.13); }
+        box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.13);
+        margin: 0 auto; }
+      .section-comments .section-comments-container .comments-carusel-wrapper .comments-prev-control {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        text-decoration: none;
+        z-index: 2; }
+      .section-comments .section-comments-container .comments-carusel-wrapper .comments-next-control {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        text-decoration: none;
+        z-index: 2; }
 
 .section-partners .section-partners-container {
   width: 100%;
@@ -173,11 +248,25 @@ header {
     margin: 0 0 86px 0; }
   .section-partners .section-partners-container .partners-carusel-wrapper {
     position: relative;
-    margin-bottom: 60px; }
+    margin-bottom: 60px;
+    padding: 0 40px; }
     .section-partners .section-partners-container .partners-carusel-wrapper .partners-carusel .partners-carusel-item {
-      width: 100px;
       height: 80px;
       border-right: 2px solid #cad0d4; }
+    .section-partners .section-partners-container .partners-carusel-wrapper .partners-prev-control {
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      text-decoration: none;
+      z-index: 2; }
+    .section-partners .section-partners-container .partners-carusel-wrapper .partners-next-control {
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      text-decoration: none;
+      z-index: 2; }
   .section-partners .section-partners-container .section-partners-btn {
     display: block;
     margin: 0 auto; }
@@ -188,6 +277,32 @@ header {
     width: 100%;
     max-width: 1267px;
     margin: 0 auto; }
+    .section-contacts-map .section-contacts-container .section-contacts-map-feedback {
+      padding: 60px;
+      width: 546px;
+      box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.13);
+      border-radius: 4px;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 1;
+      background-color: #fff; }
+      .section-contacts-map .section-contacts-container .section-contacts-map-feedback .feedback-title {
+        font-size: 26px;
+        line-height: 30px;
+        text-align: center;
+        margin: 0 0 58px 0; }
+      .section-contacts-map .section-contacts-container .section-contacts-map-feedback form .form-group {
+        margin-bottom: 20px; }
+        .section-contacts-map .section-contacts-container .section-contacts-map-feedback form .form-group:nth-child(3) {
+          margin-bottom: 46px; }
+        .section-contacts-map .section-contacts-container .section-contacts-map-feedback form .form-group label {
+          display: block;
+          margin: 0 0 7px 0; }
+      .section-contacts-map .section-contacts-container .section-contacts-map-feedback form .btn {
+        display: block;
+        margin: 0 auto;
+        font-size: 20px; }
   .section-contacts-map #contacts-map {
     width: 100%;
     height: 723px; }
@@ -245,5 +360,25 @@ footer {
   background-color: #f0f0f0;
   border: 2px solid #cad0d4;
   padding: 0 10px; }
+
+.form-textarea {
+  width: 100%;
+  background-color: #f0f0f0;
+  border: 2px solid #cad0d4;
+  padding: 0 10px; }
+
+.remodal form {
+  text-align: left; }
+  .remodal form .form-group {
+    margin-bottom: 25px; }
+    .remodal form .form-group:nth-child(2) {
+      margin-bottom: 35px; }
+    .remodal form .form-group label {
+      display: block;
+      margin: 0 0 7px 0; }
+  .remodal form .btn {
+    display: block;
+    margin: 0 auto;
+    font-size: 20px; }
 
 /*# sourceMappingURL=main.css.map */

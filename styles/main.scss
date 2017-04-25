@@ -24,10 +24,90 @@ header {
 //==========================MAIN=================================
 .section-main {
   width: 100%;
-  height: 828px;
 
   .section-main-container {
     @include big-container;
+
+    height: 828px;
+    position: relative;
+
+    .main-info-block {
+      width: 676px;
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+
+      .main-title {
+        color: $txt-color_1;
+        font-size: 36px;
+        text-align: center;
+        margin: 0 0 60px 0;
+      }
+
+      .main-info-block-options {
+        font-size: 0;
+        text-align: justify;
+        margin-bottom: 68px;
+
+        &:after {
+          content: '';
+          display: inline-block;
+          width: 100%;
+        }
+
+        .main-info-block-option {
+          display: inline-block;
+          width: 220px;
+          height: 100px;
+          background-color: $button-color;
+
+          .main-info-block-option-description {
+            font-size: 18px;
+            line-height: 25px;
+            color: $txt-color_1;
+            text-align: center;
+            margin: 0;
+          }
+        }
+      }
+
+      .main-info-block-feedback {
+        width: 370px;
+        margin: 0 auto;
+        background-color: $white;
+        box-shadow: $default-box-shadow;
+        border-radius: 0 0 5px 5px;
+
+        .main-info-block-feedback-title {
+          font-size: 24px;
+          line-height: 30px;
+          margin: 0;
+          padding: 20px;
+          color: $white;
+          background-color: $form-header-bg-color;
+          text-align: center;
+          border-radius: 5px 5px 0 0;
+        }
+
+        form {
+          padding: 35px 48px 40px 48px;
+
+          .form-group {
+            margin-bottom: 25px;
+
+            &:nth-child(2) {
+              margin-bottom: 30px;
+            }
+          }
+
+          .btn {
+            display: block;
+            margin: 0 auto;
+          }
+        }
+      }
+    }
   }
 }
 
@@ -142,30 +222,35 @@ header {
     .section-counter-clients-feedback {
       border-radius: 5px;
       background-color: $white;
-      padding: 54px;
       width: 454px;
       position: absolute;
       right: 0;
       top: 50%;
       transform: translateY(-50%);
+      box-shadow: $default-box-shadow;
 
-      .section-counter-clients-feedback-title {
-        font-size: 30px;
-        text-align: center;
-        color: $txt-color_3;
-        line-height: 30px;
-        margin: 0;
-      }
+      .section-counter-clients-feedback-header {
+        padding: 50px 50px 0 50px;
 
-      .section-counter-clients-feedback-description {
-        font-size: 20px;
-        text-align: center;
-        color: $txt-color_3;
-        line-height: 30px;
-        margin: 0 0 46px 0;
+        .section-counter-clients-feedback-title {
+          font-size: 30px;
+          text-align: center;
+          color: $txt-color_3;
+          line-height: 30px;
+          margin: 0;
+        }
+
+        .section-counter-clients-feedback-description {
+          font-size: 20px;
+          text-align: center;
+          color: $txt-color_3;
+          line-height: 30px;
+          margin: 0;
+        }
       }
 
       form {
+        padding: 50px 70px;
 
         .form-group {
           margin-bottom: 26px;
@@ -223,6 +308,7 @@ header {
 
     .comments-carusel-wrapper {
       position: relative;
+      padding: 0 20px;
 
       .comments-carusel {
 
@@ -231,7 +317,26 @@ header {
           height: 326px;
           background-color: $white;
           box-shadow: $default-box-shadow;
+          margin: 0 auto;
         }
+      }
+
+      .comments-prev-control {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        text-decoration: none;
+        z-index: 2;
+      }
+
+      .comments-next-control {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        text-decoration: none;
+        z-index: 2;
       }
     }
   }
@@ -254,14 +359,32 @@ header {
     .partners-carusel-wrapper {
       position: relative;
       margin-bottom: 60px;
+      padding: 0 40px;
 
       .partners-carusel {
 
         .partners-carusel-item {
-          width: 100px;
           height: 80px;
           border-right: 2px solid $counter-border-color;
         }
+      }
+
+      .partners-prev-control {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        text-decoration: none;
+        z-index: 2;
+      }
+
+      .partners-next-control {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        text-decoration: none;
+        z-index: 2;
       }
     }
 
@@ -278,6 +401,47 @@ header {
 
   .section-contacts-container {
     @include small-container;
+
+    .section-contacts-map-feedback {
+      padding: 60px;
+      width: 546px;
+      box-shadow: $default-box-shadow;
+      border-radius: 4px;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 1;
+      background-color: $white;
+
+      .feedback-title {
+        font-size: 26px;
+        line-height: 30px;
+        text-align: center;
+        margin: 0 0 58px 0;
+      }
+
+      form {
+
+        .form-group {
+          margin-bottom: 20px;
+
+          &:nth-child(3) {
+            margin-bottom: 46px;
+          }
+
+          label {
+            display: block;
+            margin: 0 0 7px 0;
+          }
+        }
+
+        .btn {
+          display: block;
+          margin: 0 auto;
+          font-size: 20px;
+        }
+      }
+    }
   }
 
   #contacts-map {
@@ -355,4 +519,37 @@ footer {
   background-color: $input-bg-color;
   border: 2px solid $counter-border-color;
   padding: 0 10px;
+}
+
+.form-textarea {
+  width: 100%;
+  background-color: $input-bg-color;
+  border: 2px solid $counter-border-color;
+  padding: 0 10px;
+}
+
+.remodal {
+
+  form {
+    text-align: left;
+
+    .form-group {
+      margin-bottom: 25px;
+
+      &:nth-child(2) {
+        margin-bottom: 35px;
+      }
+
+      label {
+        display: block;
+        margin: 0 0 7px 0;
+      }
+    }
+
+    .btn {
+      display: block;
+      margin: 0 auto;
+      font-size: 20px;
+    }
+  }
 }

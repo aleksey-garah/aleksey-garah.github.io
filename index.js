@@ -56,6 +56,12 @@ $(document).ready(function () {
     partnersPrev.click(function() {
         partnersCarusel.trigger('prev.owl.carousel', [300]);
     });
+
+    var modal_1 = $("#modal_1").remodal();
+
+    $(".btn-nav-order-call").on("click", function (event) {
+        modal_1.open();
+    })
 });
 
 $(window).on("load", function () {
