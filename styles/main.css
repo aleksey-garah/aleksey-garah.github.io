@@ -286,7 +286,10 @@ header {
     padding: 0 40px; }
     .section-partners .section-partners-container .partners-carusel-wrapper .partners-carusel .partners-carusel-item {
       height: 80px;
+      padding: 20px 30px;
       border-right: 2px solid #cad0d4; }
+      .section-partners .section-partners-container .partners-carusel-wrapper .partners-carusel .partners-carusel-item img {
+        height: 100%; }
     .section-partners .section-partners-container .partners-carusel-wrapper .partners-prev-control {
       position: absolute;
       left: 0;

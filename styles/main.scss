@@ -415,7 +415,12 @@ header {
 
         .partners-carusel-item {
           height: 80px;
+          padding: 20px 30px;
           border-right: 2px solid $counter-border-color;
+
+          img {
+            height: 100%;
+          }
         }
       }
 
