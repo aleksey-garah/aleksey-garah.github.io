@@ -1,9 +1,11 @@
 @import "./normalize.css";
+@import "../assets/fonts/stylesheet.css";
 @import "conf/variables";
 @import "conf/mixins";
 
 header {
   width: 100%;
+  box-shadow: $default-box-shadow;
 
   nav {
     @include big-container;
@@ -12,11 +14,38 @@ header {
     height: 60px;
     background-color: $white;
 
+    .main-logo {
+      text-decoration: none;
+      height: 60px;
+
+      img {
+        height: 100%;
+      }
+    }
+
     .btn-nav-order-call {
       position: absolute;
       right: 0;
       top: 50%;
       transform: translateY(-50%);
+    }
+
+    .nav-phone-block {
+      right: 192px;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+
+      .nav-phone-block-phone {
+        font-size: 18px;
+        font-weight: $font-bold;
+        margin: 0 0 7px 0;
+      }
+
+      .nav-phone-block-city {
+        font-size: 14px;
+        margin: 0;
+      }
     }
   }
 }
@@ -24,6 +53,8 @@ header {
 //==========================MAIN=================================
 .section-main {
   width: 100%;
+  background-image: url("../assets/img/main.jpg");
+  background-size: cover;
 
   .section-main-container {
     @include big-container;
@@ -39,6 +70,7 @@ header {
       transform: translateY(-50%);
 
       .main-title {
+        font-family: 'pf_beausans_probold';
         color: $txt-color_1;
         font-size: 36px;
         text-align: center;
@@ -60,7 +92,11 @@ header {
           display: inline-block;
           width: 220px;
           height: 100px;
-          background-color: $button-color;
+
+          .main-info-block-option-image {
+            display: block;
+            margin: 0 auto 12px auto;
+          }
 
           .main-info-block-option-description {
             font-size: 18px;
@@ -159,6 +195,14 @@ header {
           border-radius: 61px;
           background-color: $reasons-item-bg-color;
           margin: 0 auto 26px auto;
+          position: relative;
+
+          img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+          }
         }
 
         .section-reasons-item-text {
@@ -175,7 +219,8 @@ header {
 
 //=============================Counter Clients=================
 .section-counter-clients {
-  background-color: $counter-bg-color;
+  background-image: url("../assets/img/counterLayer.jpg");
+  background-size: cover;
 
   .section-counter-clients-container {
     @include small-container;
@@ -318,6 +363,11 @@ header {
           background-color: $white;
           box-shadow: $default-box-shadow;
           margin: 0 auto;
+
+          img {
+            width: 100%;
+            height: 100%;
+          }
         }
       }
 
@@ -459,10 +509,11 @@ footer {
   .footer-container {
     @include big-container;
 
-    padding: 18px 0;
+    padding: 21px 0;
 
     &:after {
       content: '';
+      clear: both;
       display: block;
       width: 100%;
     }

@@ -1,6 +1,8 @@
 @import url(./normalize.css);
+@import url(../assets/fonts/stylesheet.css);
 header {
-  width: 100%; }
+  width: 100%;
+  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.13); }
   header nav {
     width: 100%;
     max-width: 1410px;
@@ -8,14 +10,33 @@ header {
     position: relative;
     height: 60px;
     background-color: #fff; }
+    header nav .main-logo {
+      text-decoration: none;
+      height: 60px; }
+      header nav .main-logo img {
+        height: 100%; }
     header nav .btn-nav-order-call {
       position: absolute;
       right: 0;
       top: 50%;
       transform: translateY(-50%); }
+    header nav .nav-phone-block {
+      right: 192px;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%); }
+      header nav .nav-phone-block .nav-phone-block-phone {
+        font-size: 18px;
+        font-weight: 700;
+        margin: 0 0 7px 0; }
+      header nav .nav-phone-block .nav-phone-block-city {
+        font-size: 14px;
+        margin: 0; }
 
 .section-main {
-  width: 100%; }
+  width: 100%;
+  background-image: url("../assets/img/main.jpg");
+  background-size: cover; }
   .section-main .section-main-container {
     width: 100%;
     max-width: 1410px;
@@ -29,6 +50,7 @@ header {
       top: 50%;
       transform: translateY(-50%); }
       .section-main .section-main-container .main-info-block .main-title {
+        font-family: 'pf_beausans_probold';
         color: #303b53;
         font-size: 36px;
         text-align: center;
@@ -44,8 +66,10 @@ header {
         .section-main .section-main-container .main-info-block .main-info-block-options .main-info-block-option {
           display: inline-block;
           width: 220px;
-          height: 100px;
-          background-color: #ff4031; }
+          height: 100px; }
+          .section-main .section-main-container .main-info-block .main-info-block-options .main-info-block-option .main-info-block-option-image {
+            display: block;
+            margin: 0 auto 12px auto; }
           .section-main .section-main-container .main-info-block .main-info-block-options .main-info-block-option .main-info-block-option-description {
             font-size: 18px;
             line-height: 25px;
@@ -111,7 +135,13 @@ header {
         height: 122px;
         border-radius: 61px;
         background-color: #eeeff1;
-        margin: 0 auto 26px auto; }
+        margin: 0 auto 26px auto;
+        position: relative; }
+        .section-reasons .section-reasons-container .section-reasons-items .section-reasons-item .section-reasons-item-icon img {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%); }
       .section-reasons .section-reasons-container .section-reasons-items .section-reasons-item .section-reasons-item-text {
         margin: 0;
         text-align: center;
@@ -120,7 +150,8 @@ header {
         color: #4f555e; }
 
 .section-counter-clients {
-  background-color: #4f5d69; }
+  background-image: url("../assets/img/counterLayer.jpg");
+  background-size: cover; }
   .section-counter-clients .section-counter-clients-container {
     width: 100%;
     max-width: 1267px;
@@ -222,6 +253,9 @@ header {
         background-color: #fff;
         box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.13);
         margin: 0 auto; }
+        .section-comments .section-comments-container .comments-carusel-wrapper .comments-carusel .comments-carusel-item img {
+          width: 100%;
+          height: 100%; }
       .section-comments .section-comments-container .comments-carusel-wrapper .comments-prev-control {
         position: absolute;
         left: 0;
@@ -315,9 +349,10 @@ footer {
     width: 100%;
     max-width: 1410px;
     margin: 0 auto;
-    padding: 18px 0; }
+    padding: 21px 0; }
     footer .footer-container:after {
       content: '';
+      clear: both;
       display: block;
       width: 100%; }
     footer .footer-container .developers-copyright {
