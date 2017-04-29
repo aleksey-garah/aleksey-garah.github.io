@@ -36,7 +36,8 @@ header {
       header nav .nav-phone-block .nav-phone-block-city {
         font-size: 14px;
         font-family: 'pf_beausans_proregular';
-        margin: 0; }
+        margin: 0;
+        color: #303c53; }
 
 .section-main {
   width: 100%;
