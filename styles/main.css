@@ -19,7 +19,9 @@ header {
       position: absolute;
       right: 0;
       top: 50%;
-      transform: translateY(-50%); }
+      transform: translateY(-50%);
+      font-size: 16px;
+      font-family: 'pf_beausans_probold'; }
     header nav .nav-phone-block {
       right: 192px;
       position: absolute;
@@ -27,10 +29,12 @@ header {
       transform: translateY(-50%); }
       header nav .nav-phone-block .nav-phone-block-phone {
         font-size: 18px;
+        font-family: 'pf_beausans_probold';
         font-weight: 700;
         margin: 0 0 7px 0; }
       header nav .nav-phone-block .nav-phone-block-city {
         font-size: 14px;
+        font-family: 'pf_beausans_proregular';
         margin: 0; }
 
 .section-main {
@@ -65,7 +69,7 @@ header {
           width: 100%; }
         .section-main .section-main-container .main-info-block .main-info-block-options .main-info-block-option {
           display: inline-block;
-          width: 220px;
+          width: 222px;
           height: 100px; }
           .section-main .section-main-container .main-info-block .main-info-block-options .main-info-block-option .main-info-block-option-image {
             display: block;
@@ -73,6 +77,7 @@ header {
           .section-main .section-main-container .main-info-block .main-info-block-options .main-info-block-option .main-info-block-option-description {
             font-size: 18px;
             line-height: 25px;
+            font-family: 'pf_beausans_proregular';
             color: #303b53;
             text-align: center;
             margin: 0; }
@@ -85,12 +90,13 @@ header {
         .section-main .section-main-container .main-info-block .main-info-block-feedback .main-info-block-feedback-title {
           font-size: 24px;
           line-height: 30px;
+          font-family: 'pf_beausans_prosemibold';
           margin: 0;
           padding: 20px;
           color: #fff;
-          background-color: #535f6c;
           text-align: center;
-          border-radius: 5px 5px 0 0; }
+          border-radius: 5px 5px 0 0;
+          background-image: url("../assets/img/FormsBg.jpg"); }
         .section-main .section-main-container .main-info-block .main-info-block-feedback form {
           padding: 35px 48px 40px 48px; }
           .section-main .section-main-container .main-info-block .main-info-block-feedback form .form-group {
@@ -98,6 +104,9 @@ header {
             .section-main .section-main-container .main-info-block .main-info-block-feedback form .form-group:nth-child(2) {
               margin-bottom: 30px; }
           .section-main .section-main-container .main-info-block .main-info-block-feedback form .btn {
+            font-size: 20px;
+            line-height: 24px;
+            font-family: 'pf_beausans_probold';
             display: block;
             margin: 0 auto; }
 
@@ -111,14 +120,17 @@ header {
     .section-reasons .section-reasons-container .section-reasons-header .section-reasons-title {
       font-size: 38px;
       line-height: 47px;
+      font-family: 'pf_beausans_probold';
       color: #101010;
       margin: 0 0 14px 0;
       text-align: center; }
     .section-reasons .section-reasons-container .section-reasons-header .section-reasons-description {
+      font-family: 'pf_beausans_probold';
       color: #4f555e;
       text-align: center;
       font-size: 20px;
-      line-height: 24px; }
+      line-height: 24px;
+      margin: 0; }
   .section-reasons .section-reasons-container .section-reasons-items {
     text-align: justify;
     font-size: 0; }
@@ -147,7 +159,8 @@ header {
         text-align: center;
         font-size: 16px;
         line-height: 24px;
-        color: #4f555e; }
+        color: #4f555e;
+        font-family: 'pf_beausans_proregular'; }
 
 .section-counter-clients {
   background-image: url("../assets/img/counterLayer.jpg");
@@ -161,6 +174,7 @@ header {
     .section-counter-clients .section-counter-clients-container .section-counter-clients-title {
       font-size: 38px;
       line-height: 47px;
+      font-family: 'pf_beausans_probold';
       margin: 0 0 40px 0;
       width: 654px;
       color: #fff;
@@ -184,12 +198,13 @@ header {
         margin: 0 6px 34px 6px; }
       .section-counter-clients .section-counter-clients-container .section-counter-clients-counter .counter-description {
         font-size: 28px;
+        font-family: 'pf_beausans_probold';
         color: #fff;
         margin: 0; }
     .section-counter-clients .section-counter-clients-container .section-counter-clients-feedback {
       border-radius: 5px;
       background-color: #fff;
-      width: 454px;
+      width: 457px;
       position: absolute;
       right: 0;
       top: 50%;
@@ -198,16 +213,17 @@ header {
       .section-counter-clients .section-counter-clients-container .section-counter-clients-feedback .section-counter-clients-feedback-header {
         padding: 50px 50px 0 50px; }
         .section-counter-clients .section-counter-clients-container .section-counter-clients-feedback .section-counter-clients-feedback-header .section-counter-clients-feedback-title {
-          font-size: 30px;
+          font-size: 26px;
+          line-height: 30px;
+          font-family: 'pf_beausans_prosemibold';
           text-align: center;
           color: #4f555e;
-          line-height: 30px;
-          margin: 0; }
+          margin: 0 0 8px 0; }
         .section-counter-clients .section-counter-clients-container .section-counter-clients-feedback .section-counter-clients-feedback-header .section-counter-clients-feedback-description {
-          font-size: 20px;
+          font-size: 18px;
+          font-family: 'pf_beausans_proregular';
           text-align: center;
           color: #4f555e;
-          line-height: 30px;
           margin: 0; }
       .section-counter-clients .section-counter-clients-container .section-counter-clients-feedback form {
         padding: 50px 70px; }
@@ -235,13 +251,14 @@ header {
       text-align: center; }
       .section-comments .section-comments-container .section-comments-header .section-comments-title {
         font-size: 38px;
-        line-height: 47px;
+        line-height: 42px;
         color: #626d79;
-        margin-bottom: 27px; }
+        margin: 0 0 27px 0; }
       .section-comments .section-comments-container .section-comments-header .section-comments-description {
         font-size: 20px;
         color: #626d79;
-        line-height: 24px; }
+        font-family: 'pf_beausans_proregular';
+        margin: 0; }
         .section-comments .section-comments-container .section-comments-header .section-comments-description span {
           font-weight: 700; }
     .section-comments .section-comments-container .comments-carusel-wrapper {
@@ -278,8 +295,11 @@ header {
   padding: 90px 0; }
   .section-partners .section-partners-container .section-partners-title {
     font-size: 24px;
+    line-height: 36px;
+    font-family: 'pf_beausans_proregular';
     text-align: center;
-    margin: 0 0 86px 0; }
+    margin: 0 0 86px 0;
+    color: #4f555e; }
   .section-partners .section-partners-container .partners-carusel-wrapper {
     position: relative;
     margin-bottom: 60px;
@@ -315,7 +335,6 @@ header {
     max-width: 1267px;
     margin: 0 auto; }
     .section-contacts-map .section-contacts-container .section-contacts-map-feedback {
-      padding: 60px;
       width: 546px;
       box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.13);
       border-radius: 4px;
@@ -327,19 +346,24 @@ header {
       .section-contacts-map .section-contacts-container .section-contacts-map-feedback .feedback-title {
         font-size: 26px;
         line-height: 30px;
+        font-family: 'pf_beausans_prosemibold';
         text-align: center;
-        margin: 0 0 58px 0; }
-      .section-contacts-map .section-contacts-container .section-contacts-map-feedback form .form-group {
-        margin-bottom: 20px; }
-        .section-contacts-map .section-contacts-container .section-contacts-map-feedback form .form-group:nth-child(3) {
-          margin-bottom: 46px; }
-        .section-contacts-map .section-contacts-container .section-contacts-map-feedback form .form-group label {
+        padding: 60px 56px 0 56px;
+        margin: 0;
+        color: #4f555e; }
+      .section-contacts-map .section-contacts-container .section-contacts-map-feedback form {
+        padding: 50px 77px 50px 77px; }
+        .section-contacts-map .section-contacts-container .section-contacts-map-feedback form .form-group {
+          margin-bottom: 20px; }
+          .section-contacts-map .section-contacts-container .section-contacts-map-feedback form .form-group:nth-child(3) {
+            margin-bottom: 44px; }
+          .section-contacts-map .section-contacts-container .section-contacts-map-feedback form .form-group label {
+            display: block;
+            margin: 0 0 7px 0; }
+        .section-contacts-map .section-contacts-container .section-contacts-map-feedback form .btn {
           display: block;
-          margin: 0 0 7px 0; }
-      .section-contacts-map .section-contacts-container .section-contacts-map-feedback form .btn {
-        display: block;
-        margin: 0 auto;
-        font-size: 20px; }
+          margin: 0 auto;
+          font-size: 20px; }
   .section-contacts-map #contacts-map {
     width: 100%;
     height: 723px; }
@@ -363,6 +387,7 @@ footer {
       width: 50%;
       line-height: 24px;
       font-size: 16px;
+      font-family: 'pf_beausans_proregular';
       color: #fff;
       text-align: right;
       font-style: normal; }
@@ -371,10 +396,12 @@ footer {
       width: 50%;
       line-height: 24px;
       font-size: 16px;
+      font-family: 'pf_beausans_proregular';
       color: #fff;
       font-style: normal; }
 
 .btn {
+  font-family: 'pf_beausans_probold';
   background-color: #ff4031;
   border-radius: 4px;
   outline: none;
@@ -390,7 +417,8 @@ footer {
 .form-group {
   width: 100%; }
   .form-group label {
-    font-size: 16px; }
+    font-size: 16px;
+    font-family: 'pf_beausans_proregular'; }
 
 .form-control {
   width: 100%;

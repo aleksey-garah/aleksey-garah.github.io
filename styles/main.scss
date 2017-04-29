@@ -28,6 +28,8 @@ header {
       right: 0;
       top: 50%;
       transform: translateY(-50%);
+      font-size: 16px;
+      font-family: 'pf_beausans_probold';
     }
 
     .nav-phone-block {
@@ -38,12 +40,14 @@ header {
 
       .nav-phone-block-phone {
         font-size: 18px;
+        font-family: 'pf_beausans_probold';
         font-weight: $font-bold;
         margin: 0 0 7px 0;
       }
 
       .nav-phone-block-city {
         font-size: 14px;
+        font-family: 'pf_beausans_proregular';
         margin: 0;
       }
     }
@@ -90,7 +94,7 @@ header {
 
         .main-info-block-option {
           display: inline-block;
-          width: 220px;
+          width: 222px;
           height: 100px;
 
           .main-info-block-option-image {
@@ -101,6 +105,7 @@ header {
           .main-info-block-option-description {
             font-size: 18px;
             line-height: 25px;
+            font-family: 'pf_beausans_proregular';
             color: $txt-color_1;
             text-align: center;
             margin: 0;
@@ -118,12 +123,13 @@ header {
         .main-info-block-feedback-title {
           font-size: 24px;
           line-height: 30px;
+          font-family: 'pf_beausans_prosemibold';
           margin: 0;
           padding: 20px;
           color: $white;
-          background-color: $form-header-bg-color;
           text-align: center;
           border-radius: 5px 5px 0 0;
+          background-image: url("../assets/img/FormsBg.jpg");
         }
 
         form {
@@ -138,6 +144,9 @@ header {
           }
 
           .btn {
+            font-size: 20px;
+            line-height: 24px;
+            font-family: 'pf_beausans_probold';
             display: block;
             margin: 0 auto;
           }
@@ -161,16 +170,19 @@ header {
       .section-reasons-title {
         font-size: 38px;
         line-height: 47px;
+        font-family: 'pf_beausans_probold';
         color: $txt-color_2;
         margin: 0 0 14px 0;
         text-align: center;
       }
 
       .section-reasons-description {
+        font-family: 'pf_beausans_probold';
         color: $txt-color_3;
         text-align: center;
         font-size: 20px;
         line-height: 24px;
+        margin: 0;
       }
     }
 
@@ -211,6 +223,7 @@ header {
           font-size: 16px;
           line-height: 24px;
           color: $txt-color_3;
+          font-family: 'pf_beausans_proregular';
         }
       }
     }
@@ -231,6 +244,7 @@ header {
     .section-counter-clients-title {
       font-size: 38px;
       line-height: 47px;
+      font-family: 'pf_beausans_probold';
       margin: 0 0 40px 0;
       width: 654px;
       color: $white;
@@ -259,6 +273,7 @@ header {
 
       .counter-description {
         font-size: 28px;
+        font-family: 'pf_beausans_probold';
         color: $white;
         margin: 0;
       }
@@ -267,7 +282,7 @@ header {
     .section-counter-clients-feedback {
       border-radius: 5px;
       background-color: $white;
-      width: 454px;
+      width: 457px;
       position: absolute;
       right: 0;
       top: 50%;
@@ -278,18 +293,19 @@ header {
         padding: 50px 50px 0 50px;
 
         .section-counter-clients-feedback-title {
-          font-size: 30px;
+          font-size: 26px;
+          line-height: 30px;
+          font-family: 'pf_beausans_prosemibold';
           text-align: center;
           color: $txt-color_3;
-          line-height: 30px;
-          margin: 0;
+          margin: 0 0 8px 0;
         }
 
         .section-counter-clients-feedback-description {
-          font-size: 20px;
+          font-size: 18px;
+          font-family: 'pf_beausans_proregular';
           text-align: center;
           color: $txt-color_3;
-          line-height: 30px;
           margin: 0;
         }
       }
@@ -335,15 +351,16 @@ header {
 
       .section-comments-title {
         font-size: 38px;
-        line-height: 47px;
+        line-height: 42px;
         color: $footer-bg-color;
-        margin-bottom: 27px;
+        margin: 0 0 27px 0;
       }
 
       .section-comments-description {
         font-size: 20px;
         color: $footer-bg-color;
-        line-height: 24px;
+        font-family: 'pf_beausans_proregular';
+        margin: 0;
 
         span {
           font-weight: $font-bold;
@@ -402,8 +419,11 @@ header {
 
     .section-partners-title {
       font-size: 24px;
+      line-height: 36px;
+      font-family: 'pf_beausans_proregular';
       text-align: center;
       margin: 0 0 86px 0;
+      color: $txt-color_3;
     }
 
     .partners-carusel-wrapper {
@@ -458,7 +478,6 @@ header {
     @include small-container;
 
     .section-contacts-map-feedback {
-      padding: 60px;
       width: 546px;
       box-shadow: $default-box-shadow;
       border-radius: 4px;
@@ -471,17 +490,21 @@ header {
       .feedback-title {
         font-size: 26px;
         line-height: 30px;
+        font-family: 'pf_beausans_prosemibold';
         text-align: center;
-        margin: 0 0 58px 0;
+        padding: 60px 56px 0 56px;
+        margin: 0;
+        color: $txt-color_3;
       }
 
       form {
+        padding: 50px 77px 50px 77px;
 
         .form-group {
           margin-bottom: 20px;
 
           &:nth-child(3) {
-            margin-bottom: 46px;
+            margin-bottom: 44px;
           }
 
           label {
@@ -528,6 +551,7 @@ footer {
       width: 50%;
       line-height: 24px;
       font-size: 16px;
+      font-family: 'pf_beausans_proregular';
       color: $white;
       text-align: right;
       font-style: normal;
@@ -538,6 +562,7 @@ footer {
       width: 50%;
       line-height: 24px;
       font-size: 16px;
+      font-family: 'pf_beausans_proregular';
       color: $white;
       font-style: normal;
     }
@@ -546,6 +571,7 @@ footer {
 
 //===================== C O M M O N =============================
 .btn {
+  font-family: 'pf_beausans_probold';
   background-color: $button-color;
   border-radius: 4px;
   outline: none;
@@ -566,6 +592,7 @@ footer {
 
   label {
     font-size: 16px;
+    font-family: 'pf_beausans_proregular';
   }
 }
 
