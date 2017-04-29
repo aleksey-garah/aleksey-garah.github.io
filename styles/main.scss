@@ -52,6 +52,30 @@ header {
       }
     }
   }
+
+  @media screen and (max-width: $tablet-max) {
+    padding: 0 20px;
+  }
+
+  @media screen and (max-width: $phone-max) {
+    nav {
+
+      .main-logo {
+
+        img {
+          width: 100px;
+        }
+      }
+
+      .nav-phone-block {
+        display: none;
+      }
+
+      .btn-nav-order-call {
+        font-size: 14px;
+      }
+    }
+  }
 }
 
 //==========================MAIN=================================
@@ -189,6 +213,32 @@ header {
       }
     }
   }
+
+  @media screen and (max-width: $phone-max) {
+    .section-main-container {
+      padding: 40px 0 50px 0;
+
+      .main-info-block {
+        width: auto;
+
+        .main-title {
+          font-size: 25px;
+        }
+
+        .main-info-block-options {
+          display: none;
+        }
+
+        .main-info-block-feedback {
+          width: 290px;
+
+          form {
+            padding: 35px 30px 40px 30px;
+          }
+        }
+      }
+    }
+  }
 }
 
 //==========================REASONS=============================
@@ -318,14 +368,38 @@ header {
         margin-bottom: 40px;
 
         .section-reasons-title {
-          font-size: 30px;
+          font-size: 26px;
         }
       }
 
       .section-reasons-items {
 
         .section-reasons-item {
-          display: block;
+          display: flex;
+          align-items: center;
+          width: 100%;
+          margin: 0 0 20px 0;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+
+          .section-reasons-item-icon {
+            margin: 0;
+            flex: none;
+            margin-right: 20px;
+            width: 100px;
+            height: 100px;
+            border-radius: 50px;
+
+            img {
+              width: 40px;
+            }
+          }
+
+          .section-reasons-item-text {
+            height: 50px;
+          }
         }
       }
     }
@@ -460,6 +534,90 @@ header {
       }
     }
   }
+
+  @media screen and (max-width: $tablet-min) {
+
+    .section-counter-clients-container {
+      padding: 60px 20px;
+
+      .section-counter-clients-counter {
+        width: 100%;
+        max-width: 450px;
+        padding: 20px 30px;
+
+        .counter-item {
+          width: 70px;
+          height: 70px;
+          line-height: 70px;
+          font-size: 50px;
+          margin: 0 6px 20px 6px;
+        }
+
+        .counter-description {
+          font-size: 20px;
+        }
+      }
+
+      .section-counter-clients-feedback {
+        width: 400px;
+
+        .section-counter-clients-feedback-header {
+          padding: 30px 30px 0 30px;
+
+          .section-counter-clients-feedback-title {
+            font-size: 24px;
+            line-height: 25px;
+          }
+
+          .section-counter-clients-feedback-description {
+            font-size: 16px;
+          }
+        }
+
+        form {
+          padding: 25px 50px;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: $phone-max) {
+
+    .section-counter-clients-container {
+
+      .section-counter-clients-title {
+        font-size: 27px;
+        line-height: normal;
+      }
+
+      .section-counter-clients-counter {
+        padding: 20px 20px;
+
+        .counter-item {
+          width: 42px;
+          height: 42px;
+          line-height: 42px;
+          font-size: 37px;
+        }
+      }
+
+      .section-counter-clients-feedback {
+        width: 290px;
+
+        .section-counter-clients-feedback-header {
+          padding: 30px 15px 0 15px;
+
+          .section-counter-clients-feedback-title {
+            font-size: 20px;
+          }
+        }
+
+        form {
+          padding: 25px 30px;
+        }
+      }
+    }
+  }
 }
 
 //=============================COMMENTS=========================
@@ -550,6 +708,23 @@ header {
       }
     }
   }
+
+  @media screen and (max-width: $tablet-min) {
+
+    .section-comments-container {
+      padding: 60px 20px;
+
+      .section-comments-header {
+        margin: 0 0 30px 0;
+
+        .section-comments-title {
+          font-size: 30px;
+          margin: 0 0 15px 0;
+          line-height: normal;
+        }
+      }
+    }
+  }
 }
 
 //=============================PARTNERS==========================
@@ -617,6 +792,31 @@ header {
 
       .section-partners-title {
         margin: 0 0 50px 0;
+      }
+    }
+  }
+
+  @media screen and (max-width: $tablet-min) {
+
+    .section-partners-container {
+      padding: 60px 20px;
+
+      .section-partners-title {
+        margin: 0 0 30px 0;
+      }
+
+      .partners-carusel-wrapper {
+
+        .partners-carusel {
+
+          .partners-carusel-item {
+            justify-content: center;
+
+            img {
+              width: 200px;
+            }
+          }
+        }
       }
     }
   }
@@ -696,6 +896,66 @@ header {
 
         form {
           padding: 25px 40px 30px 40px;
+
+          .form-textarea {
+            max-width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: $tablet-min) {
+
+    .section-contacts-container {
+
+      .section-contacts-map-feedback {
+        left: 50%;
+        top: 40px;
+        transform: translateX(-50%);
+        width: 360px;
+
+        .feedback-title {
+          padding: 30px 16px 0 16px;
+          font-size: 24px;
+          line-height: 26px;
+        }
+
+        form {
+          padding: 20px 40px 30px 40px;
+
+          .form-group {
+
+            &:nth-child(3) {
+              margin-bottom: 30px;
+            }
+
+            .form-control {
+              height: 30px;
+            }
+          }
+
+          .form-textarea {
+            height: 100px;
+          }
+        }
+      }
+    }
+
+    #contacts-map {
+      height: 800px;
+    }
+  }
+
+  @media screen and (max-width: $phone-max) {
+
+    .section-contacts-container {
+
+      .section-contacts-map-feedback {
+        width: 280px;
+
+        form {
+          padding: 20px 25px 30px 25px;;
         }
       }
     }
@@ -704,7 +964,7 @@ header {
 
 //==============================================================
 footer {
-  height: 65px;
+  height: 66px;
   width: 100%;
   background-color: $footer-bg-color;
 
@@ -739,6 +999,27 @@ footer {
       font-family: 'pf_beausans_proregular';
       color: $white;
       font-style: normal;
+    }
+  }
+
+  @media screen and (max-width: $tablet-min) {
+    height: auto;
+
+    .footer-container {
+      padding: 21px 10px;
+
+      .developers-copyright {
+        float: none;
+        width: 100%;
+        text-align: center;
+      }
+
+      .customer-copyright {
+        float: none;
+        width: 100%;
+        text-align: center;
+        margin: 0 0 10px 0;
+      }
     }
   }
 }

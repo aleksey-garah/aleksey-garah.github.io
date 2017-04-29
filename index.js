@@ -64,6 +64,10 @@ $(document).ready(function () {
 
     $(".btn-nav-order-call").on("click", function (event) {
         modal_1.open();
+    });
+
+    $(".section-partners-btn").on("click", function (event) {
+        modal_1.open();
     })
 });
 
