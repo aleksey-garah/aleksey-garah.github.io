@@ -111,6 +111,22 @@ header {
             font-family: 'pf_beausans_probold';
             display: block;
             margin: 0 auto; }
+  @media screen and (max-width: 1024px) {
+    .section-main {
+      background-image: none;
+      background-color: #e3e3e6; }
+      .section-main .section-main-container {
+        height: auto;
+        padding: 60px 0 90px 0; }
+        .section-main .section-main-container .main-info-block {
+          position: static;
+          margin: 0 auto;
+          transform: none; } }
+  @media screen and (max-width: 480px) {
+    .section-main .section-main-container {
+      padding: 40px 0 50px 0; }
+      .section-main .section-main-container .main-info-block .main-info-block-options {
+        display: none; } }
 
 .section-reasons .section-reasons-container {
   width: 100%;
@@ -163,6 +179,15 @@ header {
         line-height: 24px;
         color: #4f555e;
         font-family: 'pf_beausans_proregular'; }
+@media screen and (max-width: 1024px) {
+  .section-reasons .section-reasons-container {
+    padding: 80px 0 90px 0; }
+    .section-reasons .section-reasons-container .section-reasons-header {
+      margin-bottom: 50px; }
+    .section-reasons .section-reasons-container .section-reasons-items {
+      text-align: center; }
+      .section-reasons .section-reasons-container .section-reasons-items .section-reasons-item {
+        margin: 10px; } }
 
 .section-counter-clients {
   background-image: url("../assets/img/counterLayer.jpg");

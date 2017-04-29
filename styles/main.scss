@@ -154,6 +154,36 @@ header {
       }
     }
   }
+
+  @media screen and (max-width: $tablet-max) {
+    background-image: none;
+    background-color: #e3e3e6;
+
+    .section-main-container {
+      height: auto;
+      padding: 60px 0 90px 0;
+
+      .main-info-block {
+        position: static;
+        margin: 0 auto;
+        transform: none;
+      }
+    }
+  }
+
+  @media screen and (max-width: $phone-max) {
+
+    .section-main-container {
+      padding: 40px 0 50px 0;
+
+      .main-info-block {
+
+        .main-info-block-options {
+          display: none;
+        }
+      }
+    }
+  }
 }
 
 //==========================REASONS=============================
@@ -224,6 +254,25 @@ header {
           line-height: 24px;
           color: $txt-color_3;
           font-family: 'pf_beausans_proregular';
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: $tablet-max) {
+
+    .section-reasons-container {
+      padding: 80px 0 90px 0;
+
+      .section-reasons-header {
+        margin-bottom: 50px;
+      }
+
+      .section-reasons-items {
+        text-align: center;
+
+        .section-reasons-item {
+          margin: 10px;
         }
       }
     }
