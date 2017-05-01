@@ -22,6 +22,39 @@ header {
       transform: translateY(-50%);
     }
 
+    .main-menu {
+      font-size: 0;
+      text-align: justify;
+      margin: 0 390px 0 auto;
+      padding: 0;
+      width: 530px;
+
+      &:after {
+        content: '';
+        display: inline-block;
+        width: 100%;
+      }
+
+      .main-menu-item {
+        display: inline-block;
+        line-height: 60px;
+        height: 60px;
+
+        a {
+          display: block;
+          padding: 0 10px;
+          text-decoration: none;
+          font-size: 15px;
+          font-family: 'pf_beausans_proregular';
+          color: #303c53;
+
+          &:hover {
+            color: #080810;
+          }
+        }
+      }
+    }
+
     .btn-nav-order-call {
       position: absolute;
       right: 0;
@@ -60,6 +93,12 @@ header {
 
   @media screen and (max-width: $tablet-max) {
     padding: 0 20px;
+
+    nav {
+      .main-menu {
+        display: none;
+      }
+    }
   }
 
   @media screen and (max-width: $phone-max) {

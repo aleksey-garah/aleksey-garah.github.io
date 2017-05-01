@@ -69,6 +69,13 @@ $(document).ready(function () {
     $(".section-partners-btn").on("click", function (event) {
         modal_1.open();
     })
+
+    $("a.scrollto").click(function () {
+        var elementClick = $(this).attr("href");
+        var destination = $(elementClick).offset().top;
+        $("html:not(:animated),body:not(:animated)").animate({scrollTop: destination}, 1100);
+        return false;
+    });
 });
 
 $(window).on("load", function () {
