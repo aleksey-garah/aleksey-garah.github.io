@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./styles/owl.theme.default.min.css">
     <link rel="stylesheet" href="./styles/remodal.css">
     <link rel="stylesheet" href="./styles/remodal-default-theme.css">
+    <link rel="stylesheet" href="./styles/lightbox.min.css">
     <link rel="stylesheet" href="./styles/main.css">
 </head>
 <body>
@@ -16,7 +17,7 @@
     <nav>
         <a class="main-logo" href="javascript:void(0)"><img src="./assets/img/logo.png" alt=""></a>
         <div class="nav-phone-block">
-            <p class="nav-phone-block-phone">121-424-777</p>
+            <p class="nav-phone-block-phone">+7(831) 429-17-88</p>
             <p class="nav-phone-block-city">Нижний Новгород</p>
         </div>
         <button class="btn btn-nav-order-call">Заказать звонок</button>
@@ -81,7 +82,7 @@
                 <div class="section-reasons-item-icon">
                     <img src="./assets/img/Forma_1-4.png" alt="">
                 </div>
-                <p class="section-reasons-item-text">Заметная экономия времени. Решение банка за три дня</p>
+                <p class="section-reasons-item-text">Заметная экономия времени. Решение банка за 2 дня</p>
             </div>
             <div class="section-reasons-item">
                 <div class="section-reasons-item-icon">
@@ -114,7 +115,7 @@
             <div class="section-counter-clients-feedback-header">
                 <h4 class="section-counter-clients-feedback-title">Запишитесь на бесплатную консультацию прямо
                     сейчас</h4>
-                <p class="section-counter-clients-feedback-description">и получите одобрение через 3 дня!</p>
+                <p class="section-counter-clients-feedback-description">и получите одобрение через 2 дня!</p>
             </div>
             <form>
                 <div class="form-group">
@@ -139,18 +140,18 @@
         </div>
         <div class="comments-carusel-wrapper">
             <div class="owl-carousel owl-theme comments-carusel">
-                <div class="comments-carusel-item">
+                <a href="./assets/img/commentImage.jpg" data-lightbox="roadtrip" class="comments-carusel-item">
                     <img src="./assets/img/commentImage.jpg" alt="">
-                </div>
-                <div class="comments-carusel-item">
+                </a>
+                <a href="./assets/img/commentImage.jpg" data-lightbox="roadtrip" class="comments-carusel-item">
                     <img src="./assets/img/commentImage.jpg" alt="">
-                </div>
-                <div class="comments-carusel-item">
+                </a>
+                <a href="./assets/img/commentImage.jpg" data-lightbox="roadtrip" class="comments-carusel-item">
                     <img src="./assets/img/commentImage.jpg" alt="">
-                </div>
-                <div class="comments-carusel-item">
+                </a>
+                <a href="./assets/img/commentImage.jpg" data-lightbox="roadtrip" class="comments-carusel-item">
                     <img src="./assets/img/commentImage.jpg" alt="">
-                </div>
+                </a>
             </div>
             <a class="comments-prev-control" href="javascript:void(0)"><img src="./assets/img/leftArrow.png" alt=""></a>
             <a class="comments-next-control" href="javascript:void(0)"><img src="./assets/img/arrow.png" alt=""></a>
@@ -243,14 +244,14 @@
 <script src="./assets/libs/jquery.min.js"></script>
 <script src="./assets/libs/owl.carousel.min.js"></script>
 <script src="./assets/libs/remodal.min.js"></script>
+<script src="./assets/libs/lightbox.min.js"></script>
 <script src="index.js"></script>
 
 <script type="text/javascript">
     var map;
     function initMap() {
-        var center = {lat: -25.363, lng: 131.044};
-        var myLatLng1 = {lat: -25.363, lng: 131.044};
-//        var myLatLng2 = {lat: -27.365, lng: 134.055};
+        var center = {lat: 56.273752, lng: 43.97};
+        var myLatLng1 = {lat: 56.273752, lng: 43.992427};
         var styles = [{
             "featureType": "water",
             "elementType": "geometry",
@@ -307,22 +308,12 @@
             {name: "Styled Map"});
 
         var map = new google.maps.Map(document.getElementById('contacts-map'), {
-            zoom: 4,
+            zoom: 13,
             center: center,
             mapTypeControlOptions: {
                 mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'map_style']
             }
         });
-
-//        var contentString = '<div class="InfoWindowContent">' +
-//            '<p>Attribution: Uluru,' +
-//            '(last visited June 22, 2009).</p>' +
-//            '<a href="/pages/projects/project-card/project-card.html">Посмотреть проект</a>' +
-//            '</div>';
-
-//        var infowindow = new google.maps.InfoWindow({
-//            content: contentString
-//        });
 
         var marker1 = new google.maps.Marker({
             position: myLatLng1,
@@ -332,52 +323,8 @@
             title: 'Hello World!'
         });
 
-//        infowindow.open(map, marker1);
-
-//        marker1.addListener('click', function () {
-//            infowindow.open(map, marker1);
-//            marker1.setIcon("assets/images/marker-active.png");
-//        });
-
-//        var marker2 = new google.maps.Marker({
-//            position: myLatLng2,
-//            icon: "assets/images/marker.png",
-//            map: map,
-//            draggable: true,
-//            animation: google.maps.Animation.DROP,
-//            title: 'Hello World!'
-//        });
-
         map.mapTypes.set('map_style', styledMap);
         map.setMapTypeId('map_style');
-
-//        marker2.addListener('click', function () {
-//            marker2.setIcon("assets/images/marker-active.png");
-//            infowindow.open(map, marker2);
-//        });
-//
-//        infowindow.addListener('closeclick', function () {
-//            marker2.setIcon("assets/images/marker.png");
-//            marker1.setIcon("assets/images/marker.png");
-//        });
-
-//        google.maps.event.addListener(infowindow, 'domready', function () {
-//
-//            var iwOuter = $('.gm-style-iw');
-//
-//            var iwBackground = iwOuter.prev();
-//            iwBackground.children(':nth-child(2)').css({'display': 'none'});
-//            iwBackground.children(':nth-child(4)').css({'display': 'none'});
-//
-//            var iwCloseBtn = iwOuter.next();
-//
-//            iwCloseBtn.css({
-//                opacity: '1', // by default the close button has an opacity of 0.7
-//                right: '38px', top: '9px', // button repositioning
-//                'border-radius': '13px' // circular effect
-//            });
-//
-//        });
     }
 </script>
 

@@ -37,7 +37,11 @@ header {
         font-size: 14px;
         font-family: 'pf_beausans_proregular';
         margin: 0;
-        color: #303c53; }
+        color: #303c53;
+        text-align: center; }
+  @media screen and (max-width: 1460px) {
+    header {
+      padding: 0 40px; } }
   @media screen and (max-width: 1024px) {
     header {
       padding: 0 20px; } }
@@ -121,6 +125,9 @@ header {
             font-family: 'pf_beausans_probold';
             display: block;
             margin: 0 auto; }
+  @media screen and (max-width: 1460px) {
+    .section-main {
+      background-position: -200px; } }
   @media screen and (max-width: 1024px) {
     .section-main {
       background-image: none;
@@ -417,6 +424,8 @@ header {
       position: relative;
       padding: 0 20px; }
       .section-comments .section-comments-container .comments-carusel-wrapper .comments-carusel .comments-carusel-item {
+        display: block;
+        text-decoration: none;
         width: 246px;
         height: 326px;
         background-color: #fff;
