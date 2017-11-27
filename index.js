@@ -23,11 +23,11 @@ $(document).ready(function () {
         }
     });
 
-    commentsNext.click(function() {
+    commentsNext.click(function () {
         commentsCarusel.trigger('next.owl.carousel');
     });
 
-    commentsPrev.click(function() {
+    commentsPrev.click(function () {
         commentsCarusel.trigger('prev.owl.carousel', [300]);
     });
 
@@ -52,11 +52,11 @@ $(document).ready(function () {
         }
     });
 
-    partnersNext.click(function() {
+    partnersNext.click(function () {
         partnersCarusel.trigger('next.owl.carousel');
     });
 
-    partnersPrev.click(function() {
+    partnersPrev.click(function () {
         partnersCarusel.trigger('prev.owl.carousel', [300]);
     });
 
@@ -68,7 +68,7 @@ $(document).ready(function () {
 
     $(".section-partners-btn").on("click", function (event) {
         modal_1.open();
-    })
+    });
 
     $("a.scrollto").click(function () {
         var elementClick = $(this).attr("href");
