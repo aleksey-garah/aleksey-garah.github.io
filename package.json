@@ -1,5 +1,5 @@
 {
-  "name": "bloger",
+  "name": "leo-leo",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,9 +9,6 @@
   "author": "Aleksey G",
   "license": "ISC",
   "dependencies": {
-    "jquery": "^3.2.1",
-    "lightbox2": "^2.9.0",
-    "owl.carousel": "^2.2.0",
-    "remodal": "^1.1.1"
+    "jquery": "^3.3.1"
   }
 }
